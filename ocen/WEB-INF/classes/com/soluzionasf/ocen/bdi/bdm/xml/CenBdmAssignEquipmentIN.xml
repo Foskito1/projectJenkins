@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiAssignEquipment>
+	<Md_Assign>(man)
+		<Md_Measurement_Code>(man)(long)Measurement Code for which equipment will be assigned.</Md_Measurement_Code>
+		<Md_Optimist_Lock>(man)(long)Contains updating control number</Md_Optimist_Lock>
+		<Eq_Equipment_Code>(man)(long)Code of equipment to be assigned.</Eq_Equipment_Code>
+		<Eq_Init_Date>(DateTimeI18n)Date from which equipment will be asigned</Eq_Init_Date>
+		<Eq_End_Date>(DateTimeI18n)Date until which equipment will be asigned</Eq_End_Date>
+	</Md_Assign>
+</CenBdiAssignEquipment>

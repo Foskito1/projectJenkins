@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdmSendFile -->
+<CenBdiSendFiles>
+	<File>(seq)
+		<Calculate>Indicara si el calculo habra que hacerlo online o batch</Calculate>
+		<Format>Formato que tendra el fichero de texto</Format>
+		<Content_File>(String)Contenido de un fichero de texto comprimido y codificado en base 64</Content_File>
+		<Name_File>(String)(man)Nombre del fichero de texto</Name_File>
+	</File>
+</CenBdiSendFiles>

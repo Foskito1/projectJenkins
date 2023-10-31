@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><CenBdmMeasurementsWrite>
+  <Measures>
+  <Measure>(sequence_item)
+  <Cod_Measure>(man)(Long)Código univoco que identifica a la Measure (cod_Measure de la bbdd).</Cod_Measure>
+  <Gradiente>(Double)GRADIENTE.</Gradiente>
+  <Min_Alert>(Double) MINIMO PARA Alert.</Min_Alert>
+  <Max_Alert>(Double) MAXIMO PARA Alert.</Max_Alert>
+  <Data_Quality_Status>(String) Data_Quality_Starus.</Data_Quality_Status>
+  <Frequency_kpi_valore>(Double) FREQUENCY_KPI_VALORE. </Frequency_kpi_valore>
+  <Behavior_kpi_valore>(Double) BEHAVIOR_KPI_VALORE. </Behavior_kpi_valore>
+  <invalido>(Long) INVALIDO</invalido>
+  <Historical_Min>(Double)MINIMO STORICO.</Historical_Min>
+  <Historical_Max>(Double) MASSIMO STORICO.</Historical_Max>
+  <Max_Speed_Increasing>(Double) VELOCITA MAX CRESCENTE.</Max_Speed_Increasing>
+  <Max_Speed_Decreasing>(Double) VELOCITA MAX DECRESCENTE.</Max_Speed_Decreasing>
+  <Calibration_date_ini>(DateTime) FECHA CALIBRACIÓN DESDE</Calibration_date_ini>
+  <Calibration_date_end>(DateTime) FECHA CALIBRACIÓN HASTA</Calibration_date_end>
+  </Measure>
+  </Measures>
+</CenBdmMeasurementsWrite>

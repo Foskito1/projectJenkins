@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiInitializePAgrSession>
+	<Initialize_PAgrSession>(man)
+		<Cod_Session>(long)(man)Código de la sesión que hay que inicializar</Cod_Session>
+		<Optimist_Lock>(long)(man)</Optimist_Lock>
+	</Initialize_PAgrSession>
+</CenBdiInitializePAgrSession>

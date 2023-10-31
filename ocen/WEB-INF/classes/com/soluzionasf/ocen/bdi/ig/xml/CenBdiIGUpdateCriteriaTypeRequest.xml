@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiIgUpdateCriteriaType>
+<Global>
+	<InsertUpdate> 
+		<Criteria>(seq)
+			<id_criteria_type>(man)(Long) Negativo para insertar o id del criterio a actualizar de CENBDT_CRITERIA_TYPE </id_criteria_type>
+			<description>(man)(String) Descripción del criterio </description>
+			<is_row> (man)(Long) Indicador de fila </is_row>
+			<is_column>(man)(Long) Indicador de columna </is_column>
+			<module>(man)(String) Contiene el módulo al que pertenece el criterio </module>
+			<optimist_lock> (man) (Long) Control de registro corrupto </optimist_lock>
+		</Criteria>
+	 </InsertUpdate>
+	 <Delete>
+		<id_criteria_type>(seq)(man)(Long) id del criterio a eliminar de CENBDT_CRITERIA_TYPE</id_criteria_type>
+	 </Delete>
+</Global>
+</CenBdiIgUpdateCriteriaType>

@@ -1,0 +1,2 @@
+CENMAN.EmLmsUpdatePrices;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmILmsSupplyPricesAndStocksUpdateService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmILmsSupplyPricesAndStocksUpdateRequestDOMImpl
+CENMAN.EmLmsUpdatePricesList;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmILmsListSupplyPricesAndStocksUpdateService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmILmsListSupplyPricesAndStocksUpdateRequestDOMImpl

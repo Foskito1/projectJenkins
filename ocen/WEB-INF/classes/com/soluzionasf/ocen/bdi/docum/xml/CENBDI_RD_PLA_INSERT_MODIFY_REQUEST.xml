@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiRegDocPlans>
+	<id_plano>(Long)(man) Id del plano</id_plano>
+	<optimist_lock>(Long)(man) Optimist lock del plano </optimist_lock>
+	<n_entrada>(Long)(man) Número de entrada, es un secuencial </n_entrada>
+	<procedencia>(String)(man) Código de la vista CENBDT_V_PROCEDENCIA_PLANOS </procedencia>
+	<id_elemento>(Long)(man) Id de la tabla CENBDE_ELEMENTOS </id_elemento>
+	<id_docum>(Long) Id de la tabla CENBDT_DOCUMENTOS </id_docum>
+	<descripcion>(String) Descripción del plano </descripcion>
+	<localizacion>(String)(man) Localización del plano </localizacion>
+	<bloque>(String)(man) Código de la vista CENBDT_V_PLANO_BLOQUE </bloque>
+	<sistema>(String)(man) Código de la vista CENBDT_V_PLANO_SISTEMA, relacionada con bloque </sistema>
+	<equipo>(String)Equipo del plano </equipo>
+	<componente>(String) Componente del plano </componente>
+	<archivo>(String) Archivo del plano </archivo>
+	<codigo_uf>(String) Código UF para el plano </codigo_uf>
+	<origen>(String) Origen / Nº Plano </origen>
+	<grupo>(String) Grupo del plano </grupo>
+	<fecha_realiza>(Date) Fecha de realización del plano </fecha_realiza>
+	<revision>(String) Revisión del plano </revision>
+	<fecha_revision>(Date) Fecha de revisión del plano </fecha_revision>
+	<pl_sustituye>(String) Plano al que sustituye </pl_sustituye>
+	<pl_sustituido>(String) Plano sustituido </pl_sustituido>
+	<n_hojas>(Long) Número de hojas del plano </n_hojas>
+	<formato>(String) Código de la vista CENBDT_V_PLANO_FORMATO </formato>
+	<tamano>(String) Código de la vista CENBDT_V_PLANO_TAMANO</tamano>
+	<cjto_parcial>(String) Conjunto parcial del plano </cjto_parcial>
+	<escala>(String) Escala del plano </escala>
+	<observaciones>(String) Observaciones sobre el plano </observaciones>
+	<prestado>(Boolean) Código de la vista CENBDT_V_SI_NO </prestado>
+	<id_plano_prestamo>(Long) Id de la tabla CENBDT_PLANO_PRESTAMO </id_plano_prestamo>
+	<Ubicaciones> Listado de ubicaciones asociadas al plano.
+		<ubicacion>
+			<id_ubicacion>(man)(Long)Id de la tabla CENBDT_PLANOS_UBICACION</id_ubicacion>
+			<optimist_lock>(Long)Optimist Lock de la tabla CENBDT_PLANOS_UBICACION</optimist_lock>
+			<id_elemento>(Long)Id de la tabla CENBDE_ELEMENTOS</id_elemento>
+			(sequence_item)
+		</ubicacion>
+	</Ubicaciones>
+</CenBdiRegDocPlans>

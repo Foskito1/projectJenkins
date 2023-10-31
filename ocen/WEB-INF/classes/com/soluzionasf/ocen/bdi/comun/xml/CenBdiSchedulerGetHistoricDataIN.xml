@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiSchedulerGetHistoricData>
+    <List>(seq)
+    <tipo_entidad>(man)(String)</tipo_entidad>
+    <id_entidad>(man)(Long) ID_OT </id_entidad>
+    <fec_inicio_ts>(DateTimeI18n)FEC_INICIO_TS</fec_inicio_ts>
+    <fec_fin_ts>(DateTimeI18n)FEC_FIN_TS</fec_fin_ts>
+    </List>
+</CenBdiSchedulerGetHistoricData>

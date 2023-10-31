@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmEntityCharactInsertIN>
+	<list_charact>
+		<charact>(seq)
+			<nom_caracteristica>(man)(String)</nom_caracteristica>
+			<des_caracteristica>(man)(String)</des_caracteristica>
+			<modulo>(man)(String)</modulo>
+			<cod_tipo_dato>(man)(String)</cod_tipo_dato>			
+			<cod_tipo_enumerado>(String)</cod_tipo_enumerado>			
+			<ind_historico>(man)(Long)</ind_historico>
+		</charact>
+	</list_charact>
+</CenBdmEntityCharactInsertIN>

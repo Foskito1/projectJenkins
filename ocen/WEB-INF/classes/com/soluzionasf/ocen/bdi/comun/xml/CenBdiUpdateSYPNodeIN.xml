@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiUpdateSYPNode> 
+   <Row User_Id="(man)(long)Contiene el Id de usuario" Functional_Code="(man)Contiene el código funcional" Company_Flag="(man)Contiene el flag de empresa" Panel_Name="(man)Contiene el nombre de panel" Action_Name="(man)Contiene el nombre de la acción a realizar" Optimist_Lock="(Long)Contiene el número de control de actualización (0 o null si es un alta)" Level="Contiene el nivel del elemento" Active="Contiene el flag de activo/inactivo">(man)(sequence_item)</Row> 
+</CenBdiUpdateSYPNode> 

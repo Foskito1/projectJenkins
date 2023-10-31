@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiGetDashboard>
+	<nodo>(Long)(man) Nodo de conexión del usuario</nodo>
+	<token>(String) Token de acceso</token>
+	<login_name>(String)(man) String con login name del usuario</login_name>
+	<public>(Long) Indica si se filtra por público o privado</public>
+	<type_elem>(String) Tipo de elemento por el que filtrar </type_elem>
+	<elements_list> 
+        <elem>(seq)(Long) elementos seleccionados </elem>
+	</elements_list>
+	<category>(String) categoría por la que filtrar </category>
+</CenBdiGetDashboard>

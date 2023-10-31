@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmEmergencyManagement>
+	<measuresList>
+		<measure>(seq)
+			<cod_med>(Long) Id de la medida</cod_med>			
+			<f_emergencia>(boolean) activar/desactivar modo emergencia</f_emergencia>
+		</measure>
+	</measuresList>
+</CenBdmEmergencyManagement>

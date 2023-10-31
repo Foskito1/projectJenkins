@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiNextPeriodDateTZ>
+	<DateResult> (seq)
+		<reference_date> (DateTimeI18n) (man) Fecha y hora de referencia que se envio en la peticion </reference_date>
+		<period> (long) (man) Código de periodicidad </period>
+		<result_date> (DateTimeI18n) (man) Fecha y hora obtenida </result_date>
+	</DateResult>
+</CenBdiNextPeriodDateTZ>

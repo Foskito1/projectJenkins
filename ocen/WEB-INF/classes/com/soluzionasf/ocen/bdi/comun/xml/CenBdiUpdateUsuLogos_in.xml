@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiUpdateUsuLogos>
+   <ConfigUsu>
+      <UserId>(Long)Código del usuario.</UserId>
+      <LogoInactive>(String)Logo del arbol: estado inactivo, asociado al usuario.</LogoInactive>
+      <LogoVoid>(String)Logo del arbol: estado vacio, asociado al usuario.</LogoVoid>
+      <ChkShowIcon>(Long)Flag que indica si se deben usar los iconos de estado en el arbol BDI</ChkShowIcon>
+   </ConfigUsu>
+</CenBdiUpdateUsuLogos>

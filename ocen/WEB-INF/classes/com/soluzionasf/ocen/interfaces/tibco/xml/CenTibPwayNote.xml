@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibPwayNote>
+	<PwayNote>		
+		<IdMsg>(String) </IdMsg>
+		<CodInventory>(String) </CodInventory>
+		<DateNote>(DateTimeI18n) </DateNote>
+		<LoginUser>(String) </LoginUser>
+		<NameUser>(String) </NameUser>
+		<CodMeasure>(Long) </CodMeasure>
+		<FlgBollettino>(Boolean) </FlgBollettino>
+		<Note>(String) </Note>
+		<SapSystem>(String)</SapSystem>
+		<SapClient>(String)</SapClient>
+	</PwayNote>	
+</CenTibPwayNote> 

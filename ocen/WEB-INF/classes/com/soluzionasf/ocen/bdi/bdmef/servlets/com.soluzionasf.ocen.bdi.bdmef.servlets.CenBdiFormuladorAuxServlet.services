@@ -1,0 +1,6 @@
+#**************************
+#METODOS DEL FORMULADOR AUXILIAR DE BDI
+#**************************
+
+CenBdiFormuladorAux;com.soluzionasf.ocen.bdi.bdmef.domain.CenBdiFormuladorAux;com.soluzionasf.ocen.bdi.bdmef.servlets.CenBdiFormuladorAuxRequestDOMImpl
+

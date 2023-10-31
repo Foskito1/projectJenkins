@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- MethodName: CenBdmDeleteMeasurementList -->
+<CenBdmDeleteMeasurementList>
+   <Measure>(seq)
+      <cod_measure>(Long)(man) Código de la medida.</cod_measure>
+      <date_time>(String)(man) Fecha de la medición que hay que eliminar.</date_time>
+      <calen_desp>(Long) Desplazamiento de calendario, si la medida a la que pertenece la medición se ve afectada por la gestión de calendario.</calen_desp>
+      <optimist_lock>(Long)(man) Control de acceso a la eliminación.</optimist_lock>
+   </Measure>
+	<modeMTZ>(Long) Cambiar el modo MTZ por defecto en el entorno: 0, desactivado. 1, conversiones bioxo. 2, conversion por usuario. 3, conversion por medida.</modeMTZ> 
+</CenBdmDeleteMeasurementList>

@@ -1,0 +1,12 @@
+<CenBdmDeletedMeasurements>
+	<Measure>(sequence_item)
+		<Update_Date>(DateTime) Fecha y hora de actualización de la medición.</Update_Date>
+		<Update_Date_End>(DateTime) Fecha y hora de actualización de la medición.</Update_Date_End>
+		<Cod_Measure>(Long) Id de la medida a recuperar</Cod_Measure>
+		<Type_Measure>(Long) Id del tipo de medida a recuperar</Type_Measure>
+		<ID_Time_Zone>(Long) Time_ID_Zona_Horaria</ID_Time_Zone>
+	</Measure>
+	<Pagination>
+		<Id_Query_In_Progress>(Long) Id de la consulta</Id_Query_In_Progress>
+	</Pagination>
+</CenBdmDeletedMeasurements>

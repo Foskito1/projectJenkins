@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiDeleteAcqPoints>
+	<Md_Delete_P_A_Det>
+		<Measurement_Code>Código de medida que se pretende modificar o vacío si es una inserción</Measurement_Code>
+	</Md_Delete_P_A_Det>
+</CenBdiDeleteAcqPoints>

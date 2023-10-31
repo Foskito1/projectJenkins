@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiInsInPhoto>
+   <ID_PHOTO>(Long)</ID_PHOTO>
+   <INST_IN_PHOTO ID_INST_IN_PHOTO="(Long)" ID_INSTRUMENT="(Long)" COORD_X="(Long)" COORD_Y="(Long)">
+      
+      (sequence_item)
+      
+      </INST_IN_PHOTO>
+</CenBdiInsInPhoto>

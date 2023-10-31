@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmValidationCodesUpdate>
+	<Global>
+		<CenBdm_validation_codes>
+		    <ValidationCode>(seq)		
+		        <id_code> (Long) (man) VALIDATION CODE ID </id_code>
+		        <optimist_lock> (Long) (man) OPTIMIST_LOCK </optimist_lock>
+		    </ValidationCode>
+		</CenBdm_validation_codes>
+	</Global>
+</CenBdmValidationCodesUpdate>

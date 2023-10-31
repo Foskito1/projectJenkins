@@ -1,0 +1,330 @@
+
+URL:[HTTP://10.98.10.42:3101/ocen/com.soluzionasf.ocen.bdi.comun.servlets.CenBdiServlet]
+[<?xml version="1.0" encoding="ISO-8859-1"?><content method="CenBdiUpdateInterface" sessionId="roma-2f1d2719:107f104975b:-7ff2" authorityId="roma.OCEN.ssn-2" user="541" userName="Alejandro Martinez Ramirez" language="it" country="IT" profileId="-1">
+CenBdiUpdateInterface	<Modules><Destine_Module>BDI</Destine_Module><Source_Module>BDI</Source_Module><Id_Module>0</Id_Module></Modules>
+<Format><Fields Type="CMP_IDA" Data="DATE" Order="1" Id_Data="0"></Fields><Fields Type="CLS_IDA" Data="java.util.Date" Order="1" Id_Data="0"></Fields><Fields Type="CMP_VTA" Data="RESULT" Order="1" Id_Data="0"></Fields><Fields Type="CLS_VTA" Data="java.util.ArrayList" Order="1" Id_Data="0"></Fields></Format>
+<View empty="0"></View>
+<Oplink empty="0"></Oplink>
+<File empty="0"></File>
+<HTTP empty="0"></HTTP>
+<OutputFile empty="0"></OutputFile>
+<Servlet empty="1"><Class_Out>0</Class_Out><Class_In>0</Class_In><Field_Out>0</Field_Out><Field_In>0</Field_In><Nom_Class>com.soluzionasf.ocen.interfaces.bo.dwoperacion.helper.CenDwOpeTermoHelper</Nom_Class><Nom_Method>retrieveDimNacion</Nom_Method><Interface_Id>0</Interface_Id></Servlet>
+<Interface><Formato_Fecha>yyyy-MM-dd HH:mm:ss</Formato_Fecha><Separador_Decimales>,</Separador_Decimales><Directo>N</Directo><Online>S</Online><Batch>N</Batch><LogActive>S</LogActive><Active>S</Active><Periode></Periode><Periode_Num></Periode_Num><End_Date></End_Date><Initial_Date></Initial_Date><Offset_Fin_Segs></Offset_Fin_Segs><Offset_Fin_Mins></Offset_Fin_Mins><Offset_Fin_Horas></Offset_Fin_Horas><Offset_Fin_Dias></Offset_Fin_Dias><Offset_Fin_Meses></Offset_Fin_Meses><Offset_Ini_Segs></Offset_Ini_Segs><Offset_Ini_Mins></Offset_Ini_Mins><Offset_Ini_Horas></Offset_Ini_Horas><Offset_Ini_Dias></Offset_Ini_Dias><Offset_Ini_Meses></Offset_Ini_Meses><Interface_Class_Id>1</Interface_Class_Id><Interface_Mod_Id>0</Interface_Mod_Id><Interface_Des>Dim Struct. Nacione [Actual]</Interface_Des><Interface_Cod>BORDTNA001</Interface_Cod><Optimist_Lock>0</Optimist_Lock><Interface_Id>0</Interface_Id></Interface>
+
+
+
+// Llamadas a cada una de las funciones:
+HTTP://10.98.10.42:3101/ocen/com.soluzionasf.ocen.bdi.comun.servlets.CenBdiServlet
+
+CenIntTibcoPublish
+
+// Llamadas
+
+CenIntRupDinamicoNE	<RupDinamicoNE><FecHorAct>05-12-2005 09:47:16</FecHorAct><ListaValores><CodElem>COD_FUNCIONAL_001</CodElem><Fecha>06-12-2005 00:00:00</Fecha><DesExito>OK</DesExito></ListaValores><ListaValores><CodElem>COD_FUNCIONAL_002</CodElem><Fecha>07-12-2005 00:00:00</Fecha><DesExito>KO Se ha producido un error en la recepción</DesExito></ListaValores><ListaValores><CodElem>COD_FUNCIONAL_003</CodElem><Fecha>08-12-2005 00:00:00</Fecha><DesExito>KO El valor supera los limites</DesExito></ListaValores></RupDinamicoNE>
+CenIntSirapMeeteringNE	<SirapMeeteringNE><FecHorAct>05-12-2005 09:47:16</FecHorAct><ListaElementos><CodElem>COD_FUNCIONAL_001</CodElem><Fecha>06-12-2005 00:00:00</Fecha><DesExito>OK</DesExito></ListaElementos><ListaElementos><CodElem>COD_FUNCIONAL_002</CodElem><Fecha>07-12-2005 00:00:00</Fecha><DesExito>KO Se ha producido un error en la recepción</DesExito></ListaElementos><ListaElementos><CodElem>COD_FUNCIONAL_003</CodElem><Fecha>08-12-2005 00:00:00</Fecha><DesExito>KO El valor supera los limites</DesExito></ListaElementos></SirapMeeteringNE>
+CenIntSirapPVMCNE	<SirapPVMCNE><FecHorAct>05-12-2005 09:47:16</FecHorAct><ListaElementos><CodElem>COD_FUNCIONAL_001</CodElem><Fecha>06-12-2005 00:00:00</Fecha><DesExito>OK</DesExito></ListaElementos><ListaElementos><CodElem>COD_FUNCIONAL_002</CodElem><Fecha>07-12-2005 00:00:00</Fecha><DesExito>KO Se ha producido un error en la recepción</DesExito></ListaElementos><ListaElementos><CodElem>COD_FUNCIONAL_003</CodElem><Fecha>08-12-2005 00:00:00</Fecha><DesExito>KO El valor supera los limites</DesExito></ListaElementos></SirapPVMCNE>
+CenIntExt15PVNE	<Ext15PVNE><FecHorAct>05-12-2005 09:47:16</FecHorAct><ListaElementos><CodElem>COD_FUNCIONAL_001</CodElem><Fecha>06-12-2005 00:00:00</Fecha><DesExito>OK</DesExito></ListaElementos><ListaElementos><CodElem>COD_FUNCIONAL_002</CodElem><Fecha>07-12-2005 00:00:00</Fecha><DesExito>KO Se ha producido un error en la recepción</DesExito></ListaElementos><ListaElementos><CodElem>COD_FUNCIONAL_003</CodElem><Fecha>08-12-2005 00:00:00</Fecha><DesExito>KO El valor supera los limites</DesExito></ListaElementos></Ext15PVNE>
+CenIntSapPmAnagraficaNE	<SapPmAnagraficaNE><FecHorAct>05-12-2005 09:47:16</FecHorAct><ListSedeTecnica><CodST>COD_FUNCIONAL_001</CodST><CodExito>KO</CodExito><DesExito>KO Se ha producido un error en la recepción</DesExito></ListSedeTecnica><ListSedeTecnica><CodST>COD_FUNCIONAL_002</CodST><CodExito>KO</CodExito><DesExito>KO Sistema no disponible</DesExito></ListSedeTecnica><ListSedeTecnica><CodST>COD_FUNCIONAL_003</CodST><CodExito>OK</CodExito><DesExito>OK</DesExito></ListSedeTecnica></SapPmAnagraficaNE>
+CenIntSapPmModifAdmNE	<SapPmModifAdmNE><CodAnomaliaSAP>ESIM234532</CodAnomaliaSAP><TipoAccion>F</TipoAccion><FecHorAct>05-12-2005 09:47:16</FecHorAct><CodExito>OK</CodExito><DesExito>OK</DesExito></SapPmModifAdmNE>
+CenIntSapPmCatAdmNE	<SapPmCatAdmNE><FecHorAct>05-12-2005 09:47:16</FecHorAct><ListaCatalogo><TipoCatalogo>1</TipoCatalogo><CodGrupo>GR01</CodGrupo><CodCatalogo>CAT01</CodCatalogo><CodExito>KO</CodExito><DesExito>KO Se ha producido un error en la recepción</DesExito></ListaCatalogo><ListaCatalogo><TipoCatalogo>2</TipoCatalogo><CodGrupo>GR02</CodGrupo><CodCatalogo>CAT02</CodCatalogo><CodExito>OK</CodExito><DesExito>OK</DesExito></ListaCatalogo><ListaCatalogo><TipoCatalogo>2</TipoCatalogo><CodGrupo>GR02</CodGrupo><CodCatalogo>CAT03</CodCatalogo><CodExito>KO</CodExito><DesExito>KO Sistema no disponible</DesExito></ListaCatalogo></SapPmCatAdmNE>
+CenIntIppPianoGiornaliero	
+CenIntRupPianoGiorDeca	
+CenIntRupVariazioniPiano	
+CenIntSapPmCreaAdm	<SapPmCreaAdm><TipoAviso>P</TipoAviso><CodSedeTecnica>COD_FUNCIONAL_001</CodSedeTecnica><CodAnomaliaOCEN>8273219</CodAnomaliaOCEN><CodUsuarioAct>Pepe Fernandez Rosa</CodUsuarioAct><FecHorVerif>05-12-2005 09:47:16</FecHorVerif><Prioridad>PR01</Prioridad><CodGrupoCondiciones>GRO02</CodGrupoCondiciones><CodCondiciones>O02</CodCondiciones><CodGrupoCausa>GRC02</CodGrupoCausa><CodCausa>C02</CodCausa><CodGrupoDesc>GRD02</CodGrupoDesc><CodDesc>D02</CodDesc><CodGrupoTipoOt>GRT02</CodGrupoTipoOt><CodTipoOt>T02</CodTipoOt><DesTipoOt>Pepito Perez</DesTipoOt><DesAnomaliaOCEN>Pepito Perez y Perez</DesAnomaliaOCEN><FechaIni>02-12-2005 16:27:00</FechaIni><FechaFin>08-12-2005 09:12:00</FechaFin><ParametrosTecnicos>ParametrosTecnicos</ParametrosTecnicos></SapPmCreaAdm>
+
+
+
+// Detalle 
+
+CenIntRupDinamicoNE	
+	<RupDinamicoNE>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<ListaValores>
+			<CodElem>COD_FUNCIONAL_001</CodElem>
+			<Fecha>06-12-2005 00:00:00</Fecha>
+			<DesExito>OK</DesExito>
+		</ListaValores>
+		<ListaValores>
+			<CodElem>COD_FUNCIONAL_002</CodElem>
+			<Fecha>07-12-2005 00:00:00</Fecha>
+			<DesExito>KO Se ha producido un error en la recepción</DesExito>
+		</ListaValores>
+		<ListaValores>
+			<CodElem>COD_FUNCIONAL_003</CodElem>
+			<Fecha>08-12-2005 00:00:00</Fecha>
+			<DesExito>KO El valor supera los limites</DesExito>
+		</ListaValores>
+	</RupDinamicoNE>
+
+CenIntSirapMeeteringNE
+	<SirapMeeteringNE>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_001</CodElem>
+			<Fecha>06-12-2005 00:00:00</Fecha>
+			<DesExito>OK</DesExito>
+		</ListaElementos>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_002</CodElem>
+			<Fecha>07-12-2005 00:00:00</Fecha>
+			<DesExito>KO Se ha producido un error en la recepción</DesExito>
+		</ListaElementos>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_003</CodElem>
+			<Fecha>08-12-2005 00:00:00</Fecha>
+			<DesExito>KO El valor supera los limites</DesExito>
+		</ListaElementos>
+	</SirapMeeteringNE>
+
+CenIntSirapPVMCNE	
+	<SirapPVMCNE>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_001</CodElem>
+			<Fecha>06-12-2005 00:00:00</Fecha>
+			<DesExito>OK</DesExito>
+		</ListaElementos>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_002</CodElem>
+			<Fecha>07-12-2005 00:00:00</Fecha>
+			<DesExito>KO Se ha producido un error en la recepción</DesExito>
+		</ListaElementos>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_003</CodElem>
+			<Fecha>08-12-2005 00:00:00</Fecha>
+			<DesExito>KO El valor supera los limites</DesExito>
+		</ListaElementos>
+	</SirapPVMCNE>
+
+
+CenIntExt15PVNE	
+	<Ext15PVNE>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_001</CodElem>
+			<Fecha>06-12-2005 00:00:00</Fecha>
+			<DesExito>OK</DesExito>
+		</ListaElementos>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_002</CodElem>
+			<Fecha>07-12-2005 00:00:00</Fecha>
+			<DesExito>KO Se ha producido un error en la recepción</DesExito>
+		</ListaElementos>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_003</CodElem>
+			<Fecha>08-12-2005 00:00:00</Fecha>
+			<DesExito>KO El valor supera los limites</DesExito>
+		</ListaElementos>
+	</Ext15PVNE>
+
+
+CenIntSapPmAnagraficaNE	
+	<SapPmAnagraficaNE>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<ListSedeTecnica>
+			<CodST>COD_FUNCIONAL_001</CodST>
+			<CodExito>KO</CodExito>
+			<DesExito>KO Se ha producido un error en la recepción</DesExito>
+		</ListSedeTecnica>
+		<ListSedeTecnica>
+			<CodST>COD_FUNCIONAL_002</CodST>
+			<CodExito>KO</CodExito>
+			<DesExito>KO Sistema no disponible</DesExito>
+		</ListSedeTecnica>
+		<ListSedeTecnica>
+			<CodST>COD_FUNCIONAL_003</CodST>
+			<CodExito>OK</CodExito>
+			<DesExito>OK</DesExito>
+		</ListSedeTecnica>
+	</SapPmAnagraficaNE>
+
+
+CenIntSapPmModifAdmNE	
+	<SapPmModifAdmNE>
+		<CodAnomaliaSAP>ESIM234532</CodAnomaliaSAP>
+		<TipoAccion>F</TipoAccion>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<CodExito>OK</CodExito>
+		<DesExito>OK</DesExito>
+	</SapPmModifAdmNE>
+
+
+CenIntSapPmCatAdmNE	
+	<SapPmCatAdmNE>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<ListaCatalogo>
+			<TipoCatalogo>1</TipoCatalogo>
+			<CodGrupo>GR01</CodGrupo>
+			<CodCatalogo>CAT01</CodCatalogo>
+			<CodExito>KO</CodExito>
+			<DesExito>KO Se ha producido un error en la recepción</DesExito>
+		</ListaCatalogo>
+		<ListaCatalogo>
+			<TipoCatalogo>2</TipoCatalogo>
+			<CodGrupo>GR02</CodGrupo>
+			<CodCatalogo>CAT02</CodCatalogo>
+			<CodExito>OK</CodExito>
+			<DesExito>OK</DesExito>
+		</ListaCatalogo>
+		<ListaCatalogo>
+			<TipoCatalogo>2</TipoCatalogo>
+			<CodGrupo>GR02</CodGrupo>
+			<CodCatalogo>CAT03</CodCatalogo>
+			<CodExito>KO</CodExito>
+			<DesExito>KO Sistema no disponible</DesExito>
+		</ListaCatalogo>
+	</SapPmCatAdmNE>
+
+CenIntIppPianoGiornaliero	
+	<IppPianoGiornaliero>
+		<TipoComunicacion>G</TipoComunicacion>
+		<DatosGenerales>
+			(sequence_item)(man)
+			<CodCentral>(String)(man)</CodCentral>
+			<DatosPlan>
+				(sequence_item)(man)
+				<FechaPlan>(DateTime)(man)</FechaPlan>
+				<DatosElemProduccion>
+					(sequence_item)(man)
+					<CodElem>(String)(man)</CodElem>
+					<DatosElemFecha>
+						(sequence_item)(man)
+						<Fecha>(DateTime)(man)</Fecha>
+			    		<PotMax>(Double)(man)</PotMax>
+			    		<PotMin>(Double)(man)</PotMin>
+			    		<PotBruta>(Double)(man)</PotBruta>
+			    		<Semibanda>(Double)(man)</Semibanda>
+						<Disponibilidad>(String)(man)</Disponibilidad>
+						<FecHorAct>(DateTime)(man)</FecHorAct>
+						<Nota>(String)(man)</Nota>
+					</DatosElemFecha>
+				</DatosElemProduccion>
+				<DatosSesionProduccion>
+					(sequence_item)(man)
+					<CodSesion>(String)(man)</CodSesion>
+					<DatosSesionFecha>
+						(sequence_item)(man)
+						<CodAseto>(String)(man)</CodAseto>
+			    		<GVR>(Double)(man)</GVR>
+						<FecHorAct>(DateTime)(man)</FecHorAct>
+						<Nota>(String)(man)</Nota>
+					</DatosSesionFecha>
+				</DatosSesionProduccion>
+				<DatosMixCombustible>
+					(sequence_item)(man)
+					<CodElemento>(String)(man)</CodElemento>
+					<DatosCombusFecha>
+						(sequence_item)(man)
+						<Fecha>(DateTime)(man)</Fecha>
+						<DatosCombusFechaPor>
+							(sequence_item)(man)
+							<CodCombustible>(String)(man)</CodCombustible>
+							<CombustiblePor>(String)(man)</CombustiblePor>
+							<Fecha>(DateTime)(man)</Fecha>
+							<Nota>(String)(man)</Nota>
+						</DatosCombusFechaPor>
+					</DatosCombusFecha>
+				</DatosMixCombustible>
+			</DatosPlan>
+		</DatosGenerales>
+	</IppPianoGiornaliero>
+
+
+CenIntRupPianoGiorDeca	
+	<RupPianoGiorDeca>
+		<TipoConvalidacion>(String)(man)</TipoConvalidacion>
+		<TipoComunicacion>(String)(man)</TipoComunicacion>
+		<ListaCentrales>
+			(sequence_item)(man)
+			<CodigoCentral>(String)(man)</CodigoCentral>
+			<ListaPlanFecha>
+				(sequence_item)(man)
+				<Fecha>(DateTime)(man)</Fecha>
+				<DatosFechaHoraVariacion>
+					(sequence_item)(man)
+					<FechaHoraVariacion>(DateTime)(man)</FechaHoraVariacion>
+					<DisponibilidadUp>(Integer)(man)</DisponibilidadUp>
+					<DatosElemProduccion>
+						(sequence_item)(man)
+						<CodAseto>(String)(man)</CodAseto>
+						<DisponibilidadAseto>(Integer)(man)</DisponibilidadAseto>
+			    		<PotMax>(Double)(man)</PotMax>
+			    		<PotMin>(Double)(man)</PotMin>
+			    		<PotBruta>(Double)(man)</PotBruta>
+			    		<Semibanda>(Double)(man)</Semibanda>
+						<GradienteDown>(Double)(man)</GradienteDown>
+						<GradienteUp>(Double)(man)</GradienteUp>
+						<IdMotivacion>(String)(man)</IdMotivacion>
+						<DesMotivacion>(String)(man)</DesMotivacion>
+						<TcaDown>(DateTime)(man)</TcaDown>
+						<TcaUp>(DateTime)(man)</TcaUp>
+						<TiempoArresto>(DateTime)(man)</TiempoArresto>
+						<TiempoAviamiento>(DateTime)(man)</TiempoAviamiento>
+						<FecHorAct>(DateTime)(man)</FecHorAct>
+						<Note>(String)(man)</Note>
+					</DatosElemProduccion>
+				</DatosFechaHoraVariacion>
+			</ListaPlanFecha>
+		</ListaCentrales>
+	</RupPianoGiorDeca>
+
+CenIntRupVariazioniPiano	
+	<RupVariazioniPiano>
+		<ListaCentrales>
+			(sequence_item)(man)
+			<CodigoCentral>(String)(man)</CodigoCentral>
+			<ListaPlanFecha>
+				(sequence_item)(man)
+				<Fecha>(DateTime)(man)</Fecha>
+				<DatosFechaHoraVariacion>
+					(sequence_item)(man)
+					<FechaHoraVariacion>(DateTime)(man)</FechaHoraVariacion>
+					<DisponibilidadUp>(Integer)(man)</DisponibilidadUp>
+					<DatosElemProduccion>
+						(sequence_item)(man)
+						<CodAseto>(String)(man)</CodAseto>
+						<DisponibilidadAseto>(Integer)(man)</DisponibilidadAseto>
+			    		<PotMax>(Double)(man)</PotMax>
+			    		<PotMin>(Double)(man)</PotMin>
+			    		<PotBruta>(Double)(man)</PotBruta>
+			    		<Semibanda>(Double)(man)</Semibanda>
+						<GradienteDown>(Double)(man)</GradienteDown>
+						<GradienteUp>(Double)(man)</GradienteUp>
+						<IdMotivacion>(String)(man)</IdMotivacion>
+						<DesMotivacion>(String)(man)</DesMotivacion>
+						<TcaDown>(DateTime)(man)</TcaDown>
+						<TcaUp>(DateTime)(man)</TcaUp>
+						<TiempoArresto>(DateTime)(man)</TiempoArresto>
+						<TiempoAviamiento>(DateTime)(man)</TiempoAviamiento>
+						<FecHorAct>(DateTime)(man)</FecHorAct>
+						<Note>(String)(man)</Note>
+					</DatosElemProduccion>
+				</DatosFechaHoraVariacion>
+			</ListaPlanFecha>
+		</ListaCentrales>
+	</RupVariazioniPiano>
+
+
+CenIntSapPmCreaAdm	
+	<SapPmCreaAdm>
+		<TipoAviso>P</TipoAviso>
+		<CodSedeTecnica>COD_FUNCIONAL_001</CodSedeTecnica>
+		<CodAnomaliaOCEN>8273219</CodAnomaliaOCEN>
+		<CodUsuarioAct>Pepe Fernandez Rosa</CodUsuarioAct>
+		<FecHorVerif>05-12-2005 09:47:16</FecHorVerif>
+		<Prioridad>PR01</Prioridad>
+		<CodGrupoCondiciones>GRO02</CodGrupoCondiciones>
+		<CodCondiciones>O02</CodCondiciones>
+		<CodGrupoCausa>GRC02</CodGrupoCausa>
+		<CodCausa>C02</CodCausa>
+		<CodGrupoDesc>GRD02</CodGrupoDesc>
+		<CodDesc>D02</CodDesc>
+		<CodGrupoTipoOt>GRT02</CodGrupoTipoOt>
+		<CodTipoOt>T02</CodTipoOt>
+		<DesTipoOt>Pepito Perez</DesTipoOt>
+		<DesAnomaliaOCEN>Pepito Perez y Perez</DesAnomaliaOCEN>
+		<FechaIni>02-12-2005 16:27:00</FechaIni>
+		<FechaFin>08-12-2005 09:12:00</FechaFin>
+		<ParametrosTecnicos>ParametrosTecnicos</ParametrosTecnicos>
+	</SapPmCreaAdm>
+

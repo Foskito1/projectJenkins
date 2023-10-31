@@ -1,0 +1,1 @@
+CENMAN.updateSGA;com.soluzionasf.ocen.man.maint_exec.domain.CenmanEMUpdateSGADataService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmUpdateSGADataRequestDOMImpl

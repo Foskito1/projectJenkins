@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmEntityCharactValueUpdateIN>
+	<list_charact_value>
+		<charact>(seq)
+			<id_asoc_hist>(man)(Long)</id_asoc_hist>
+			<valor_numero>(Double)</valor_numero>
+			<valor_enum>(String)</valor_enum>
+			<valor_cadena>(String)</valor_cadena>
+			<fec_hor_inicio>(man)(DateTimeI18n)</fec_hor_inicio>
+			<fec_hor_fin>(DateTimeI18n)</fec_hor_fin>
+			<comentario>(String)</comentario>
+			<optimist_lock>(man)(Long)</optimist_lock>
+		</charact>
+	</list_charact_value>
+</CenBdmEntityCharactValueUpdateIN>

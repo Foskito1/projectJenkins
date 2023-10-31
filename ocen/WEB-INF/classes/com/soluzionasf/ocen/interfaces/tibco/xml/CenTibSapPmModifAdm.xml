@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibSapPmModifAdm>
+	<SapPmModifAdm>
+		<CodAnomaliaOCEN>(String)(man)</CodAnomaliaOCEN>
+		<CodAnomaliaSAP>(String)(man)</CodAnomaliaSAP>
+		<FechaCierre>(DateTimeI18n)(man)</FechaCierre>
+		<IdocNumber>(String)(man)</IdocNumber>
+		<SapSystem>(String)(man)</SapSystem>
+		<SapClient>(String)(man)</SapClient>
+		<SapSorgente>(String)</SapSorgente>
+		<IdMsg>(String)</IdMsg>
+	</SapPmModifAdm>
+</CenTibSapPmModifAdm>

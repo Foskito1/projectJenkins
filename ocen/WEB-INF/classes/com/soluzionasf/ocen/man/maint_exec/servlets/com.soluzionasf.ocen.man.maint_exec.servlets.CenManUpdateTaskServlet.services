@@ -1,0 +1,1 @@
+CENMAN.updateEmTareas;com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmTareasUpdateService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmTareasUpdateRequestDOMImpl

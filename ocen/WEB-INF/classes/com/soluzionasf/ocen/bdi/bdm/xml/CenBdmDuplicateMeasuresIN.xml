@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiDuplicateMeasures>
+	<Measures>
+		(man)	
+		<Row 	Md_Desc="New description for new measurement"
+	 		Md_Code="(man)Code from original measurement to be duplicated"
+	 		Md_Measure_Type="New type for new measurement"
+		 	Md_Position="Allocation code for new measurement"
+			Md_Position_Type="Type of Allocation for new measurement"
+			Md_Position_Desc="Description of new Allocation for new measurement"
+			Md_Parameter="New Parameter for new measurement"
+	 		Md_Value_Type="New value type for new measurement"
+		 	Md_Origin="New Origin for new measurement"
+		 	Md_Periodicity="New periodicity for new measurement"
+	 		Md_Measure_Device="New Measure Device for new measurement"
+		 	Md_Unit_Code="New Unit Code for new measurement"
+		 	Md_Updateable_Flag="New Updatable Measurement Flag for new measurement"
+	 		Md_Protected_Flag="New Protected Measurement Flag for new measurement"
+		 	Md_Calendar_Flag="New Calendar Flag for new measurement"
+		 	Md_Measurement_Flag="New Measurement Readings Flag for new measurement"
+	 		Md_Cod_For_Act="New Formule for new measurement"
+		 	Md_Cod_Tipo_Enum="New Enumerated type for new measurement"
+		 	Md_Valor_Min="New minimum value for new measurement"
+	 		Md_Valor_Max="New maximum value for new measurement"
+	 		Md_Stored_Value_Flag="New Store Value Flag for new measurement"
+	 		Md_Stored_Maxmin_Flag="New Store Max/Min Value Flag for new measurement"
+			Md_V_Min_Contador="New minimum counter value for new measurement" 
+			Md_V_Max_Contador="New maximum counter value for new measurement" 
+			Md_F_Index_Ant="New previous index Value Flag for new measurement" 
+			Md_F_Index_Post="New following index Value Flag for new measurement">(man)(sequence_item)
+		</Row>
+	</Measures>
+</CenBdiDuplicateMeasures>

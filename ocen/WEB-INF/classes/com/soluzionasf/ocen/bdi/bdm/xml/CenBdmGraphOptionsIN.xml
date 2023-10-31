@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmGraphOptions>
+   <Graph_Options>(man)
+	    <tipo_grafico>(man)(String) Codigo del tipo de grafico (LIN Tradicional / DIS Dispersion / CMP Comparativo)</tipo_grafico>
+      <color_fondo_grafico>(String) Codigo del color de fondo del grafico</color_fondo_grafico>
+      <color_fondo_plot>(String) Codigo del color de fondo del plot</color_fondo_plot>
+      <antialising>(Long) Si se usa antialiasing o no </antialising>
+      <cuadricula>(Long) Si se muestra cuadricula o no</cuadricula>
+      <formato>(String) Formato de la imagen generada </formato>
+      <Titulo>
+         <texto>(String) Texto del titulo</texto>
+         <orientacion>(String) Orientacion del titulo (TOP / BOTTOM / LEFT / RIGHT)</orientacion>
+      </Titulo>
+      <Subtitulos>
+         <Subtitulo>(seq)
+            <texto>(String) Texto del subtitulo</texto>
+            <orientacion>(String) Orientacion del subtitulo  (TOP / BOTTOM / LEFT / RIGHT)</orientacion>
+            <orden>(Integer) Orden del subtitulo dentro de la misma orientacion</orden>
+         </Subtitulo>
+      </Subtitulos>
+      <EscalaDominio>
+         <etiqueta>(String) Etiqueta de la escala</etiqueta>
+         <color>(String) Codigo del color de la escala</color>
+         <unidad_cuadricula>(String) Unidad utilizada para mostrar las lineas de la cuadricula para esta escala</unidad_cuadricula>
+         <unidades_intervalo>(String) Numero de unidades tras las que se dibuja una nueva linea de la cuadricula</unidades_intervalo>
+      </EscalaDominio>
+      <EscalasValores>
+         <EscalaValores>(seq)
+            <id>(Long) id de la escala de valores (secuencial)</id>
+            <etiqueta>(String) Etiqueta de la escala</etiqueta>
+            <tipo_escala>(String) Tipo de escala (PRI Principal / SEC Secundaria)</tipo_escala>
+            <color>(String) Codigo del color de la escala</color>
+            <orientacion>(String) Orientacion de la escala (LEFT / RIGHT)</orientacion>
+            <unidad_cuadricula>(String) Unidad utilizada para mostrar las lineas de la cuadricula para esta escala</unidad_cuadricula>
+            <tipo_limite>(String) Tipo de limite utilizado (VAR_AJUST Autoajustable / FIJO Fijo / VAR_VAL_F Variable/ VAR_PRCNT Variable con Porcentaje)</tipo_limite>
+            <limite_inferior>(Double) Valor del limite inferior</limite_inferior>
+            <limite_superior>(Double) Valor del limite superior</limite_superior>
+         </EscalaValores>
+      </EscalasValores>
+      <Series>
+         <Serie>(seq)
+            <id>(Long) id de la serie. Corresponde con el codigo de la medida.</id>
+            <etiqueta>(String) Etiqueta de la serie</etiqueta>
+            <color>(String) Codigo del color de la serie</color>
+            <id_escala_asociada>(Long) id de la escala de valores a la que se asocia la serie</id_escala_asociada>
+			<orden>(Long)Orden de la serie. Segun este orden, se formara la leyenda del grafico.</orden>
+         </Serie>
+      </Series>
+   </Graph_Options>
+</CenBdmGraphOptions>

@@ -1,0 +1,1 @@
+CENMAN.pricesTableGenDelete;com.soluzionasf.ocen.man.maint_exec.domain.CenManPricesTableDeleteGenService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManPricesTableGenDeleteRequestDOMImpl

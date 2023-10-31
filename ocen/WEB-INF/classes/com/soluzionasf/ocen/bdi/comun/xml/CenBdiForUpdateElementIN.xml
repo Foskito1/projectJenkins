@@ -1,0 +1,9 @@
+<CenBdiForUpdateElement>
+	<ForElement>(man)
+		<Cod_Element>(man)(long) Contiene el Código de Elemento de Formulacion.</Cod_Element>
+		<Cod_Type_Element>(man)(long) Contiene el Código de Tipo de Elemento de Formulacion.</Cod_Type_Element>
+		<Des_Element>(man) Contiene la Descripcion de Elemento de Formulacion.</Des_Element>
+		<Es_Inicial>(man) Flag que indica si el elemento es inicial.</Es_Inicial>
+		<Optimist_Lock>(Long) Contiene un numero de control de acturalizacion.</Optimist_Lock>
+	</ForElement>	
+</CenBdiForUpdateElement>

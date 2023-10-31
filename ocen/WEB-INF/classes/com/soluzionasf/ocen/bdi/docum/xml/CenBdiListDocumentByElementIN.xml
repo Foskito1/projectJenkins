@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiListDocumentByElement>
+  <usuario>(String)(man)</usuario>
+  <idioma>(String)(man)</idioma>
+  <cod_funcional>(String)(man)</cod_funcional>
+  <num_nivel>(Long)(man)</num_nivel>  
+</CenBdiListDocumentByElement>

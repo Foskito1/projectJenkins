@@ -1,0 +1,66 @@
+<!-- Pagina que muestra un informe de una OT -->
+<html >
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<title>File upload</title>
+<style>
+	<!--
+	.header {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; color: #000000; background-color:#011460;list-style-type: square; list-style-image: url(bullet.gif); line-height: 14pt; font-weight: bold}
+	.etiqueta {font-family: Verdana, Arial, Helvetica, sans-serif;font-weight: bold; font-size: 9pt; line-height: 16pt; background-color:#F0F0F8;  vertical-align:top;}
+	.campo {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 16pt; background-color:#F0F0F8; border-color:#000000;border:inset; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; vertical-align:top;} 
+	.etiquetagrid {font-family: Verdana, Arial, Helvetica, sans-serif;font-weight: bold; font-size: 9pt; line-height: 16pt; background-color:#7C8EB2;  vertical-align:top;}
+	.campogrid {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 16pt; background-color:#F9FCE9; border-color: black;border:inset; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; vertical-align:top;} 
+	
+	
+		-->
+</style>
+
+</head>
+<body   bgcolor='#F0F0F8'  >
+<form name=l action="http://sfpc1975/servlet/com.soluzionasf.ocen.bdi.docum.helper.DocumFileWriteServlet" method="POST" ENCTYPE="multipart/form-data">
+<table class="titulartabla32gris" border ="0" width = "98%" align = "right">
+<tr>
+<td width = "100%" colspan =2  >
+ 
+  
+	<table    width = 100% >
+		<tr>                       
+ 			<td class="etiqueta" > Código del Documento </td>
+			<td class=campo> |root.CENBDI_DOC_DOCUMENT_DETAIL_QUERY.Row@COD_DOCUM|  </td>
+		</tr>
+		<tr>                       
+ 			<td class="etiqueta"  > Titulo del Documento </td>
+			<td class=campo > |root.CENBDI_DOC_DOCUMENT_DETAIL_QUERY.Row@TITULO_DOCUM|  </td>
+		</tr>
+	</table>
+
+	
+</td>	
+  
+	</tr> 
+	
+<tr> 
+ <td align =center>
+  &nbsp;
+ </td>
+ <td  align =center>  
+ 	&nbsp;
+ </td>
+ </tr>
+ 
+ <tr> 
+ <td align =center>
+ <INPUT TYPE="submit" NAME="enviar" VALUE="Guardar fichero">
+ </td>
+
+ <td  align =center>  
+ 	<INPUT TYPE="file" NAME="fichero"   >
+ </td></tr>
+</table>
+<INPUT TYPE="HIDDEN" NAME="ID_DOCUM" VALUE="|root.CENBDI_DOC_DOCUMENT_DETAIL_QUERY.Row@ID_DOCUM|">
+<INPUT TYPE="HIDDEN" NAME="OPTIMIST_LOCK" VALUE="|root.CENBDI_DOC_DOCUMENT_DETAIL_QUERY.Row@OPTIMIST_LOCK|">
+</form>
+</body>
+
+</html>

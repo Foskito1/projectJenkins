@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiSendDocuments>
+	<asunto>(String)</asunto>
+	<flag_comprimido>(Boolean)</flag_comprimido>	
+	<email_usuario>(String)</email_usuario>
+	<lista_usuarios>
+		<usuario> (man)(seq)
+			<id_grupo>(Long)</id_grupo>
+			<mail>(String)</mail>
+		</usuario>
+	</lista_usuarios>
+	<lista_docum_bd>
+		<docum>(seq)
+			<id_docum>(man)(Long)</id_docum>
+		</docum>
+	</lista_docum_bd>
+	<lista_docum_docm>
+		<docum>(seq)
+			<id_docum>(man)(String)</id_docum>
+		</docum>
+	</lista_docum_docm>
+</CenBdiSendDocuments>

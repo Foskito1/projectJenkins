@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content>
+   <DataGeneral>
+      <row id_funtional="long" id_inventory="long" cod_funtional="string" cod_inventory="string" name_funtional="string" name_inventory="string" funtional_parent="string" item="string" type_element="string" state_element="string" state_active_funtional="long" state_available_funtional="long" state_delete_funtional="long" state_active_inventory="long" state_raised_inventory="long" state_delete_inventory="long">(seq)</row>
+   </DataGeneral>
+</content>

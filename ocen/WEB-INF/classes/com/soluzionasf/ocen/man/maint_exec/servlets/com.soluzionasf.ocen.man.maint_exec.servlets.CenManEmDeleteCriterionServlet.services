@@ -1,0 +1,1 @@
+CENMAN.deleteCriterion;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmDeleteCriterionService;com.soluzionasf.ocen.man.maint_exec.servlets.CenmanEmCriterionDeleteRequestDOMImpl

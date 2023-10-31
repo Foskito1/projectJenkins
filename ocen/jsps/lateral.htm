@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<link rel=stylesheet href="css/ocen.css" type="text/css">
+<script>
+	function actualiza () {
+		if (parent.central.listaOfers.idOferta.value=='') {
+			alert ('Debe seleccionar una oferta para poder cumplimentarla');
+		}
+		else {
+			parent.navegacion.document.irADetalle.idOferta.value=parent.central.listaOfers.idOferta.value;
+			parent.navegacion.document.irADetalle.submit();
+		}
+	}
+
+	function actualizaVer () {
+		if (parent.central.listaOfers.idOferta.value=='') {
+			alert ('Debe seleccionar una oferta para poder visualizarla');
+		}
+		else {
+			parent.navegacion.document.irAVer.codOffer.value=parent.central.listaOfers.codOffer.value;
+			parent.navegacion.document.irAVer.expedient.value=parent.central.listaOfers.expedient.value;
+			parent.navegacion.document.irAVer.numVersion.value=parent.central.listaOfers.numVersion.value;
+			parent.navegacion.document.irAVer.creationDate.value=parent.central.listaOfers.creationDate.value;
+			parent.navegacion.document.irAVer.submit();
+		}
+	}
+
+</script>
+
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+
+</head>
+
+<body class="new3">
+  <table width="100%" height="28" class="opcioneslaterales" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td class="nueva1"><a href="#" onClick="actualiza()" class="enlacesprincipales1"><img src="../images/expand.gif" border="0">&nbsp;&nbsp;Cumplimentar</a><td>
+    </tr>
+  </table>
+  <form name="irADetalle" target="_top" action="./cumplimentar.jsp">
+	<INPUT TYPE="HIDDEN" name="idOferta">
+	<input type="hidden" name ="codOffer">
+	<input type="hidden" name ="expedient">
+	<input type="hidden" name ="numVersion">
+	<input type="hidden" name ="descripcion">
+	<input type="hidden" name ="fechaLimite"><%ICM SCI 052234%>
+  </form>
+<form name="irAVer" target="_top" action="./ver.jsp">
+	<INPUT TYPE="HIDDEN" name="idOferta">
+	<input type="hidden" name ="codOffer">
+	<input type="hidden" name ="expedient">
+	<input type="hidden" name ="numVersion">
+	<input type="hidden" name ="creationDate">
+</form>
+ </body>
+<head>
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+</head>
+</html>

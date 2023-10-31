@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmEntityCharactValueUpdateOUT>
+	<list_charact_value>
+		<charact>(seq)
+			<id_asoc_hist>(man)(Long)</id_asoc_hist>
+			<optimist_lock>(man)(Long)</optimist_lock>
+			<iderror>(man)(Long)</iderror>
+			<errormessage>(String)</errormessage>
+			<nom_caracteristica>(String)</nom_caracteristica>
+		</charact>
+	</list_charact_value>
+</CenBdmEntityCharactValueUpdateOUT>

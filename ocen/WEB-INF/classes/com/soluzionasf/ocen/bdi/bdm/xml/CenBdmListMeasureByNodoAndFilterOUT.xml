@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?>
+<CenBdmListMeasureByNodoAndFilter>
+	<measures>(seq) 		
+		<code_measure> (String) (man) Codigo de la medida </code_measure>
+		<name_measure> (String) (man) Nombre funcional del elemento </name_measure>
+		<code_element> (String) Codigo funcional del elemento </code_element>
+		<code_import> (String) Codigo importancion  </code_import>		
+		<code_monograph> (String) (man) codigo monografico </code_monograph>
+		<parameter> (String) Parametro </parameter>
+		<type_parameter> (String) Tipo parametro </type_parameter>		
+		<unit_measure> (String) Unidad </unit_measure>	
+		<min_str> (String) Min str </min_str>	
+		<max_str> (String) Max str </max_str>
+		<gradient> (String) Gradiente </gradient>
+		<min_alarm> (String) Minimo Alarma </min_alarm>
+		<max_alarm> (String) Max Alarma </max_alarm>
+		<frecuency_measures> (String) Frecuencia medidas diaria </frecuency_measures>
+		<max_timeout_service> (String) Maximo timeOut del servicio </max_timeout_service>
+		<use> (String) Usabilidad  </use>
+		<measure_emergency_conditions> (String) Condiciones de emergencia medida </measure_emergency_conditions>
+		<code_quality_status> (String) Codigo estado de calidad </code_quality_status>
+		<data_quality_status> (String) Descripción estado de la calidad </data_quality_status>
+		<value_quality_status> (String) Valor estado de la calidad </value_quality_status>
+		<frequency_kpi_value> (String) Valor Frecuencia KPI  </frequency_kpi_value>
+		<behavior_kpi_value> (String) Valor Comportamiento KPI </behavior_kpi_value>
+		<invalido>(String) Invalido</invalido>
+		<min_value>(Float) MINIMO_HIST</min_value>
+		<max_value>(Float) MAXIMO_HIST</max_value>
+		<max_speed_increasing>(Float) VELOCIDAD_MIN</max_speed_increasing>
+		<max_speed_decreasing>(Float) VELOCIDAD_MAX</max_speed_decreasing>
+		<calibration_date_ini>(DateTime) FECHA CALIBRACIÓN DESDE</calibration_date_ini>
+		<calibration_date_end>(DateTime) FECHA CALIBRACIÓN HASTA</calibration_date_end>
+		<reading> (String) Lectura </reading>
+		<calculated_measures>(seq)			
+			<code_measure>(String) (man)</code_measure>			
+		</calculated_measures>
+		<reading_measures> (seq)			
+			<code_measure>(String) (man)</code_measure>			
+		</reading_measures>
+		<calculation_formula>(String) Fomula de calculo de la medida</calculation_formula>	
+		<description_formule>(String) DES_FOR</description_formule>	
+		<periodicity>(String)Periodicidad</periodicity>
+		<periodicity_seconds>(String) Periodicidad en segundos</periodicity_seconds>	
+		<latitude> (Float) Latitudine </latitude>
+		<longitude> (Float) Longitudine </longitude>
+		<altitude> (Float) Altitudine </altitude>	
+		<cte_K1>(String) Valore della costante K1. Valorizzato se presente nella formula</cte_K1>
+		<cte_K2>(String) Valore della costante K2. Valorizzato se presente nella formula</cte_K2>		
+		<cte_K3>(String) Valore della costante K3. Valorizzato se presente nella formula</cte_K3>		
+		<cte_K4>(String) Valore della costante K4. Valorizzato se presente nella formula</cte_K4>		
+		<cte_K5>(String) Valore della costante K5. Valorizzato se presente nella formula</cte_K5>		
+		<cte_L0>(String) Valore della costante L0. Valorizzato se presente nella formula</cte_L0>		
+		<cte_QT>(String) Valore della costante Qt. Valorizzato se presente nella formula</cte_QT>		
+		<cte_ALFA>(String) Valore della costante alfa. Valorizzato se presente nella formula</cte_ALFA>		
+		<cte_QS>(String) Valore della costante Qs. Valorizzato se presente nella formula</cte_QS>		
+		<cte_V0>(String) Valore della costante V0. Valorizzato se presente nella formula</cte_V0>		
+		<cte_MU>(String) Valore della costante mu. Valorizzato se presente nella formula</cte_MU>		
+		<cte_QF>(String) Valore della costante Qf. Valorizzato se presente nella formula</cte_QF>
+	</measures>		
+	<pagination>
+	<last_id>(Long) id devuelto</last_id>
+	<flag_complete>(Long) Indica si con esta respuesta está completa la petición</flag_complete>
+	</pagination>	
+</CenBdmListMeasureByNodoAndFilter>

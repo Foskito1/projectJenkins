@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiGetDashboard>
+	<Dashboard>(seq)
+		<nodo>(Long) Nodo del dashboard</nodo>
+		<desc_nodo>(String) Descripción del nodo</desc_nodo>
+		<publico>(Long) 0 o 1 si es privado o publico</publico>
+		<id_dashboard>(String) id del dashboard</id_dashboard>
+		<name_dashboard>(String) nombre del dashboard </name_dashboard>
+		<user_id>(Long) usuario que creo el dashboard</user_id>
+		<user_desc>(String) nombre del usuario</user_desc>
+		<url_edit>(String) url de edición del dashboard</url_edit>
+		<url_view>(String) url de visualización del dashboard</url_view>
+		<create_date>(DateTime) Fecha de creación</create_date>
+		<updated_date>(DateTime) Fecha de actualización</updated_date>
+		<optimist_lock>(Long) optimist lock </optimist_lock>
+		<favourite>(Boolean) Indica si es el dashboard favorito </favourite>
+		<type_element>(String) Tipo de elemento</type_element>
+		<category>(String) Categoría </category>
+		<image>(String) imagen </image>
+	</Dashboard>
+	<SessionData>
+		<token>(String) Token de acceso</token>
+		<refresh_token>(String) token de refresco</refresh_token>
+	</SessionData>
+</CenBdiGetDashboard>

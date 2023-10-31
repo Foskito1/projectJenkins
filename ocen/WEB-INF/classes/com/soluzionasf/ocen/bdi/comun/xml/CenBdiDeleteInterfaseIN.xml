@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiDeleteInterfase>
+	<Interfase_Delete>
+		<Interfase_Code>Código de interfase que se pretende borrar</Interfase_Code>
+	</Interfase_Delete>
+</CenBdiDeleteInterfase>

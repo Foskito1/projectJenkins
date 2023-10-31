@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiRegDocPlansQuery>
+   <Filter>
+      <n_entrada>(String) Condiciones del filtro del campo n_entrada.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(Long) Valor</cond>
+          </condition>
+      </n_entrada>
+      <procedencia>(String) Condicion de filtro del campo procedencia.</procedencia>
+      <id_elemento>(Long) Condicion de filtro del campo id_elemento.</id_elemento>
+      <nom_elemento>(String) Descripcion de la instalacion, no se utiliza en el filtrado. </nom_elemento>
+      <f_dep>(Long) 0/1 - Filtrado jerarquico por instalacion </f_dep>
+      <id_ubicacion>(Long) Condicion de filtro del campo id_elemento.</id_ubicacion>
+      <descripcion>(String) Condiciones del filtro del campo descripcion.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(String) Valor</cond>
+          </condition>
+      </descripcion>
+      <bloque>(String) Condiciones del filtro del campo bloque.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(String) Valor</cond>
+              <sistema>(String) Condiciones del filtro del campo sistema.
+                  <op>(String) Operador</op>
+                  <cond>(String) Valor</cond>
+              </sistema>
+          </condition>
+      </bloque>
+      <localizacion>(String) Condicion de filtro del campo localizacion.</localizacion>
+      <id_docum>(Long) Condicion de filtro del campo id_docum.</id_docum>
+      <cod_docum>(String) Codigo del documento, no se utiliza en el filtrado.</cod_docum>
+      <origen>(String) Condicion de filtro del campo origen.</origen>
+      <cjto_parcial>(String) Condicion de filtro del campo cjto_parcial.</cjto_parcial>
+      <grupo>(String) Condicion de filtro del campo grupo>.</grupo>
+      <codigo_uf>(String) Condicion de filtro del campo codigo_uf.</codigo_uf>
+      <fecha_realiza>(String) Condiciones del filtro del campo fecha_realiza.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(Date) Valor</cond>
+          </condition>
+      </fecha_realiza>
+      <archivo>(String) Condiciones del filtro del campo archivo.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(String) Valor</cond>
+          </condition>
+      </archivo>
+      <observaciones>(String) Condiciones del filtro del campo observaciones.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(String) Valor</cond>
+          </condition>
+      </observaciones>
+   </Filter>
+</CenBdiRegDocPlansQuery>

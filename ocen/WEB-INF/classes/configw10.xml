@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- utiliza las properties de W10 -->
+<!-- El sistema busca este fichero en el se definen los ficheros de properties que va a cargar 
+-->
+<configuration>
+  <properties fileName="wsclient-config.properties"/>
+</configuration>

@@ -1,0 +1,1 @@
+CENMAN.WorkOrderPrint;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmWorkOrderPrintService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmWorkOrderPrintRequestDOMImpl

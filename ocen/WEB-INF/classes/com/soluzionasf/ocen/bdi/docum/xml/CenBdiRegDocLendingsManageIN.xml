@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiRegDocLendingsManage>
+   <Registro>
+      <origen>(man)(String) Documento sobre el que se realiza el prestamo (REG - Registros / PLA - Planos)</origen>
+      <id_registro>(man)(Long) Id del documento sobre el que se realiza el préstamo </id_registro>
+      <prestado>(man)(Long) Id del documento sobre el que se realiza el préstamo </prestado>
+      <prestamo>(seq)
+        <accion>(man)(String) Accion a realizar con el registro (N - Prestamo / MS - Modificacion de un registro prestado / MN - Modificacion de un registro no prestado / D - Devolucion)</accion>
+        <id_prestamo>(Long) Id del registro de prestamo (Obligatorio para D, MS y MN).</id_prestamo>
+        <solicitante>(String) Solicitante del prestamo (Obligatorio para N).</solicitante>
+        <fecha_desde>(Date) Fecha de prestamo (Obligatorio para N y MS).</fecha_desde>
+        <fecha_hasta>(Date) Fecha de devolución (Obligatorio para D y MN).</fecha_hasta>
+        <observaciones>(String) Observaciones de la accion.</observaciones>
+      </prestamo>
+   </Registro>
+</CenBdiRegDocLendingsManage>

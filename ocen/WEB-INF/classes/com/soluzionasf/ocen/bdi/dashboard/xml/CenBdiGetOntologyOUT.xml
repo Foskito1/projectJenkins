@@ -1,0 +1,5 @@
+<CenBdiGetOntology>
+	<ontologyList>
+		<identification>(seq)(String) Identificador de la ontología </identification>
+	</ontologyList>
+</CenBdiGetOntology>

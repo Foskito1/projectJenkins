@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibSapPmOdmPmidUpdate>
+	<SapPmOdmPmidUpdate>
+		<CodOdm>(String)(man)</CodOdm>
+		<CodOdmExt>(String)(man)</CodOdmExt>
+		<OperacionOdm>(String)(man)</OperacionOdm>
+		<OperacionOdmExt>(String)(man)</OperacionOdmExt>
+		<CodRdl>(String)(man)</CodRdl>
+		<CodSedeTecnicaIndisp>(String)(man)</CodSedeTecnicaIndisp>
+		<CodSedeTecnicaIndispExt>(String)(man)</CodSedeTecnicaIndispExt>
+		<TipoFuncion>(String)(man)</TipoFuncion>
+		<CodSedeTecnicaInterv>(String)(man)</CodSedeTecnicaInterv>
+		<CodSedeTecnicaIntervExt>(String)(man)</CodSedeTecnicaIntervExt>
+		<FecHorIniActivInterv>(DateTimeI18n)(man)</FecHorIniActivInterv>
+		<FecHorFinActivInterv>(DateTimeI18n)(man)</FecHorFinActivInterv>
+		<FecHorNonPrima>(DateTimeI18n)(man)</FecHorNonPrima>
+		<FecHorNonDopo>(DateTimeI18n)(man)</FecHorNonDopo>
+		<FecHorIniIndisp>(DateTimeI18n)(man)</FecHorIniIndisp>
+		<FecHorFinIndisp>(DateTimeI18n)(man)</FecHorFinIndisp>
+		<CodIndisp>(String)(man)</CodIndisp>
+		<EstadoUsuarioOdm>(String)(man)</EstadoUsuarioOdm>
+		<IdMsg>(String)(man)</IdMsg>
+	</SapPmOdmPmidUpdate>
+</CenTibSapPmOdmPmidUpdate>

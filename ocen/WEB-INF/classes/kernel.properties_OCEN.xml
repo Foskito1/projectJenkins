@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content>
+	<isf>
+		<db>
+			<SequenceGeneratorManager>
+			<!--Generador seleccionado. Admite dos alternativas:
+				isf.db.SequenceGeneratorTableBased
+				isf.db.SequenceGeneratorOracleBased
+			-->
+				<!--Manager de generadores de secuencias para las clases de persistencia-->
+				<default_generator>isf.db.SequenceGeneratorOracleBased</default_generator>
+			</SequenceGeneratorManager>		
+			<!--Perfil por defecto de acceso a datos (del pool)-->
+			<db>
+				<!--Clase del driver JDBC-->
+				<driver_class>oracle.jdbc.driver.OracleDriver</driver_class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<!--URL de provisión de conexiones-->
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<!--Usuario de la conexión JDBC-->
+				<user>CENBDT_USR</user>
+				<!--Password de la conexión JDBC-->
+				<password>cambiar</password>
+				<encrypted>off</encrypted>
+				<!--Nº máximo de conexiones mantenibles-->
+				<max>50</max>
+				<!--Tiempo máximo de inactividad de cada conexión asignada (ms)-->
+				<max_unused_interval> 90000000</max_unused_interval>
+				<!--Tiempo máximo de concesión de cada conexión (ms)-->
+				<max_granted_time> 90000000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout></max_availabiliy_timeout>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user></max_per_user>
+			</db>
+			<!--Perfil dedicado a los servicios ARQv10-->
+			<dbarq>
+				<!--Clase del driver JDBC-->
+				<driver_class>oracle.jdbc.driver.OracleDriver</driver_class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<!--URL de provisión de conexiones-->
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<!--Usuario de la conexión JDBC-->
+				<user>CENBDT_USR</user>
+				<password>cambiar</password>
+				<!--Nº máximo de conexiones mantenibles-->
+				<max>50</max>
+				<!--Tiempo máximo de inactividad de cada conexión asignada (ms)-->
+				<max_unused_interval>90000000</max_unused_interval>
+				<!--Tiempo máximo de concesión de cada conexión (ms)-->
+				<max_granted_time>90000000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout/>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user/>
+			</dbarq>
+			<dbcenbat>
+				<driver_class>oracle.jdbc.driver.OracleDriver</driver_class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<user>CENBDM_USR</user>
+				<password>cambiar</password>
+				<encrypted>off</encrypted>
+				<max>50</max>
+				<!--Tiempo máximo de inactividad de cada conexión asignada (ms)-->
+				<max_unused_interval> 90000000</max_unused_interval>
+				<!--Tiempo máximo de concesión de cada conexión (ms)-->
+				<max_granted_time> 90000000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout></max_availabiliy_timeout>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user></max_per_user>
+			</dbcenbat>
+			<dbcenbdi>
+				<driver_class>oracle.jdbc.driver.OracleDriver</driver_class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<user>CENBDE_USR</user>
+				<password>cambiar</password>
+				<encrypted>off</encrypted>
+				<max>50</max>
+				<!--Tiempo máximo de inactividad de cada conexión asignada (ms)-->
+				<max_unused_interval> 90000000</max_unused_interval>
+				<!--Tiempo máximo de concesión de cada conexión (ms)-->
+				<max_granted_time> 90000000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout></max_availabiliy_timeout>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user></max_per_user>
+			</dbcenbdi>
+			<dbcenshp>
+				<class>oracle.jdbc.driver.OracleDriver</class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<user>CENSHP_USR</user>
+				<password>cambiar</password>
+				<encrypted>off</encrypted>
+				<max>30</max>
+				<!--Tiempo máximo de inactividad de cada conexión asignada (ms)-->
+				<max_unused_interval> 900000</max_unused_interval>
+				<!--Tiempo máximo de concesión de cada conexión (ms)-->
+				<max_granted_time> 900000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout></max_availabiliy_timeout>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user></max_per_user>
+			</dbcenshp>
+			<dbcencom>
+				<class>oracle.jdbc.driver.OracleDriver</class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<user>CENCMB_USR</user>
+				<password>cambiar</password>
+				<encrypted>off</encrypted>
+				<max>30</max>
+				<!--Tiempo máximo de inactividad de cada conexión asignada (ms)-->
+				<max_unused_interval> 900000</max_unused_interval>
+				<!--Tiempo máximo de concesión de cada conexión (ms)-->
+				<max_granted_time> 900000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout></max_availabiliy_timeout>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user></max_per_user>
+			</dbcencom>
+			<dbcenope>
+				<class>oracle.jdbc.driver.OracleDriver</class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<user>CENOPE_USR</user>
+				<password>cambiar</password>
+				<encrypted>off</encrypted>
+				<max>30</max>
+				<!--Tiempo máximo de inactividad de cada conexión asignada (ms)-->
+				<max_unused_interval> 900000</max_unused_interval>
+				<!--Tiempo máximo de concesión de cada conexión (ms)-->
+				<max_granted_time> 900000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout></max_availabiliy_timeout>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user></max_per_user>
+			</dbcenope>
+			<dbcenopebig>
+				<class>oracle.jdbc.driver.OracleDriver</class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<user>CENOPE_USR</user>
+				<password>cambiar</password>
+				<encrypted>off</encrypted>
+				<max>30</max>
+				<!--Tiempo máximo de inactividad de cada conexión asignada (ms)-->
+				<max_unused_interval> 9000000</max_unused_interval>
+				<!--Tiempo máximo de concesión de cada conexión (ms)-->
+				<max_granted_time> 9000000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout></max_availabiliy_timeout>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user></max_per_user>
+			</dbcenopebig>
+			<dbcenmam>
+				<class>oracle.jdbc.driver.OracleDriver</class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<user>CENMAM_USR</user>
+				<password>cambiar</password>
+				<encrypted>off</encrypted>
+				<max>25</max>
+				<!--Tiempo máximo de inactividad de cada conexión asignada (ms)-->
+				<max_unused_interval> 900000</max_unused_interval>
+				<!--Tiempo máximo de concesión de cada conexión (ms)-->
+				<max_granted_time> 900000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout/>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user/>
+			</dbcenmam>
+			<dbcenlab>
+				<class>oracle.jdbc.driver.OracleDriver</class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<user>CENLAB_USR</user>
+				<password>cambiar</password>
+				<max>25</max>
+				<!--Tiempo m_mo de inactividad de cada conexi__signada (ms)-->
+				<max_unused_interval> 900000</max_unused_interval>
+				<!--Tiempo m_mo de concesi__e cada conexi__ms)-->
+				<max_granted_time> 900000</max_granted_time>
+				<!--Tiempo m_mo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout/>
+				<!--Nº m_mo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user/>
+			</dbcenlab>
+			<dbcenemi>
+				<class>oracle.jdbc.driver.OracleDriver</class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<user>CENEMI_USR</user>
+				<password>cambiar</password>
+				<max>25</max>
+				<!--Tiempo m_mo de inactividad de cada conexi__signada (ms)-->
+				<max_unused_interval> 900000</max_unused_interval>
+				<!--Tiempo m_mo de concesi__e cada conexi__ms)-->
+				<max_granted_time> 900000</max_granted_time>
+				<!--Tiempo m_mo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout/>
+				<!--Nº m_mo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user/>
+			</dbcenemi>
+			<dbcenman>
+				<driver_class>oracle.jdbc.driver.OracleDriver</driver_class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<user>CENMAN_USR</user>
+				<password>cambiar</password>
+				<encrypted>off</encrypted>
+				<max>30</max>
+				<!--Tiempo máximo de inactividad de cada conexión asignada (ms)-->
+				<max_unused_interval> 90000000</max_unused_interval>
+				<!--Tiempo máximo de concesión de cada conexión (ms)-->
+				<max_granted_time> 90000000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout></max_availabiliy_timeout>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user></max_per_user>
+			</dbcenman>
+			<dbcensap>
+				<class>oracle.jdbc.driver.OracleDriver</class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<user>CENSAP_USR</user>
+				<password>cambiar</password>
+				<encrypted>off</encrypted>
+				<max>30</max>
+				<!--Tiempo máximo de inactividad de cada conexión asignada (ms)-->
+				<max_unused_interval> 900000</max_unused_interval>
+				<!--Tiempo máximo de concesión de cada conexión (ms)-->
+				<max_granted_time> 900000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout></max_availabiliy_timeout>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user></max_per_user>
+			</dbcensap>
+			<dbgcsm>
+				<class>oracle.jdbc.driver.OracleDriver</class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</url>
+				<user>CENBDT_USR</user>
+				<password>cambiar</password>
+				<encrypted>off</encrypted>
+				<log>./db.log</log>
+				<max>30</max>
+				<!--Tiempo máximo de inactividad de cada conexión asignada (ms)-->
+				<max_unused_interval> 900000</max_unused_interval>
+				<!--Tiempo máximo de concesión de cada conexión (ms)-->
+				<max_granted_time> 900000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout></max_availabiliy_timeout>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user></max_per_user>
+			</dbgcsm>
+			<dbcenmam_pre>
+				<!--Base de datos de Preexplotacion-->
+				<class>oracle.jdbc.driver.OracleDriver</class>
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<url>jdbc:oracle:thin:@10.98.10.184:1538:orcl18</url>
+				<user>CENMAM_USR</user>
+				<password>cambiar</password>
+				<max>25</max>
+				<!--Tiempo máximo de inactividad de cada conexión asignada (ms)-->
+				<max_unused_interval> 900000</max_unused_interval>
+				<!--Tiempo máximo de concesión de cada conexión (ms)-->
+				<max_granted_time> 900000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout/>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user/>
+			</dbcenmam_pre>
+			<!--Declaración de nº de conexiones por perfil creadas automáticamente al inicio-->
+			<InitialConnections>
+				<db>1</db>
+			</InitialConnections>
+			<!--Propiedades del Pool de conexiones JDBC-->
+			<Pool>
+				<!--Clase de implementación del pool: isf.db.BasicPool (primitivo) o isf.db.AdvancedPool (revisado)-->
+				<implementation_class>isf.db.AdvancedPool</implementation_class>
+				<!--Indicador de comportamiento al liberar abruptamente: (0:ninguno | 1:liberar & abortar thread usuario | 2: liberar y destruir conexión)-->
+				<abrupt_behaviour>2</abrupt_behaviour>
+				<!--Tiempo de recuperación ante errores JDBC (ms)-->
+				<error_recovery_time>2000</error_recovery_time>
+				<!--Clase de generación de secuencias-->
+				<sequence_generator>isf.db.SequenceGeneratorTableBased</sequence_generator>
+				<!--Mínimo lapso de tiempo admisible entre instantes de aviso de inactividade (en ms)-->
+				<min_activity_time_step>1000</min_activity_time_step>
+				<!--Indicador de comportamiento al finalizar la JVM: false: no hacer nada; true: liberar todas las conexiones por la fuerza-->
+				<release_on_shutdown>true</release_on_shutdown>
+				<!--Indicador de forma de cierre de las conexiones: true: asíncrono; false: síncrono-->
+				<asynchronous_close>true</asynchronous_close>
+				<!--Listeners asociados a los drivers-->
+				<driver_listeners>
+					<oracle.jdbc.driver.OracleDriver>oracle.jdbc.driver.OracleDriver</oracle.jdbc.driver.OracleDriver>
+					<org.postgresql.Driver>org.postgresql.Driver</org.postgresql.Driver>
+				</driver_listeners>
+				<!--Listeners globales-->
+				<global_listeners>
+					<listener.1>isf.db.ConnectionMonitor</listener.1>
+				</global_listeners>
+				<!--Obligación de envío de información de traceo al motor BD Oracle-->
+				<WRITE_CLIENT_INFO>true</WRITE_CLIENT_INFO>
+				<!--Período de sondeo del estado de cada conexión-->
+				<connection_verification_interval>180000000</connection_verification_interval>
+				<autoCommit>false</autoCommit>
+			</Pool>
+		</db>
+		<util>
+			<!--Gestor de sockets TCP para un intervalo de puertos-->
+			<ftp>
+				<!--Fábrica de clientes de FTP-->
+				<FTPClientFactory>
+					<!--Implementación por defecto-->
+					<default>isf.util.ftp.FTPClientImpl</default>
+				</FTPClientFactory>
+				<!--Manejador ABSTRACTO de transmisión de DATOS para una conexión FTP-->
+				<FTPClientDataTransfer>
+					<!--Tiempo máximo de espera para las operaciones I/O (milisegundos)-->
+					<so_timeout>20000</so_timeout>
+					<!--Tiempo máximo de espera para el cierre de sockets (milisegundos)-->
+					<so_linger>1000</so_linger>
+				</FTPClientDataTransfer>
+				<!--Intérprete de protocolo de control para una conexión FTP-->
+				<FTPClientProtocolInterpreter>
+					<!--Tiempo máximo de espera para las operaciones I/O (milisegundos)-->
+					<so_timeout>10000</so_timeout>
+					<!--Tiempo máximo de espera para el cierre de sockets (milisegundos)-->
+					<so_linger>1000</so_linger>
+				</FTPClientProtocolInterpreter>
+				<!--Implementación básica de un cliente FTP-->
+				<FTPClientImpl>
+					<!--Charset para la conversión bytes -> chars-->
+					<charset_encoding>ISO-8859-1</charset_encoding>
+					<!--Deserializador por defecto para los listados completos de ficheros-->
+					<deserializer_default>isf.util.ftp.FileInfoDeserializer_Unix</deserializer_default>
+				</FTPClientImpl>
+				<!--Deserializador de información-ficheros para FileSystems estilo Unix-->
+				<FileInfoDeserializer_Unix>
+					<!--Formato por defecto de cada línea serializada-->
+					<format_default>{attrs}{ignore}{ignore}{ignore}{size}{last_date}{name}</format_default>
+					<!--Idioma por defecto para los formatos de fecha admitidos-->
+					<locale_language>en</locale_language>
+					<!--Formatos de fecha admitidos-->
+					<date_formats>
+						<date_format1>MMM dd hh:mm</date_format1>
+						<date_format2>MMM dd  yyyy</date_format2>
+					</date_formats>
+				</FileInfoDeserializer_Unix>
+			</ftp>
+			<!--Cliente de servicios remotos ARQv10 con parámetros por defecto-->
+			<!--Encriptacion-->
+			<crypt>
+				<KeyStoreMediator>
+					<!--Password elegida para el almacen de claves-->
+					<key_store_password>VincentyJules</key_store_password>
+					<!--Localizacion del fichero que soporta el almacen de claves-->
+					<key_store_file_path>file:/soflib00/evol/ocen/webapps/WEB-INF/classes/properties/crypt/.keystore</key_store_file_path>
+				</KeyStoreMediator>
+			</crypt>
+			<!--Logs-->
+			<log>
+				<providers>
+					<!-- Proveedores registrados. -->
+					<console>isf.util.log.ConsoleLog</console>
+					<!--<console>isf.util.log.ConsoleLog</console>-->
+				</providers>
+				<Log>
+					<!-- Se han definido 6 niveles de trazas : -->
+					<!-- INFO_LEVEL(1) Solo trazas sobre la ejecución -->
+					<!-- CRITICAL_ERROR_LEVEL (2) Sólo errores críticos y trazas de información. -->
+					<!-- ERROR_LEVEL(3). Errores normales y todos los anteriores niveles. -->
+					<!-- WARNING_LEVEL(4). Avisos y todos los anteriores niveles. -->
+					<!-- DETAIL_LEVEL(5). Trazas de detalle de la ejecucion y todos los anteriores. -->
+					<!-- TRACE_LEVEL(6). Trazas de desarrollo y todos los anteriores. -->
+					<!-- DEACTIVATE_LEVEL (0) Trazas desactivadas. -->
+					<!-- Máscara de niveles reportables (criterio más prioritario) -->
+					<reportable_level_codes>1,2,3,4,5,6</reportable_level_codes>
+					<!-- Máximo nivel reportable (criterio menos prioritario) -->
+					<max_trace_level>6</max_trace_level>
+					<resolver_implementation_class>isf.util.log.LogActivityResolver</resolver_implementation_class>
+				</Log>
+				<LogActivityResolver>
+					<!-- Numero de hilos que se encargan de dejar las trazas. -->
+					<num_threads>6</num_threads>
+					<!-- Tiempo de muestreo de actividades pendientes (en milisegundos) -->
+					<poll_time>1000</poll_time>
+				</LogActivityResolver>
+				<LogActivityResolverOptimized> 
+					<!-- Numero de hilos que se encargan de dejar las trazas. --> 
+					<num_threads>10</num_threads> 
+				</LogActivityResolverOptimized>
+			</log>
+			<!--Monitoring Threads entries factory-->
+			<tms>
+				<ThreadMonitoringService>
+					<!--Monitoring entries factory-->
+					<entry_factory>isf.util.tms.ServletCallInfoFactory</entry_factory>
+					<!--Monitoring device-->
+					<monitoring_device>isf.util.tms.LogDevice</monitoring_device>
+					<!--Max number of concurrent entries-->
+					<max_entries>2000</max_entries>
+					<!--Parameters for servelt call monitoring-->
+					<monitorize_servlets>false</monitorize_servlets>
+					<call_connections_info>false</call_connections_info>
+					<call_servlet_name>true</call_servlet_name>
+					<call_service_name>true</call_service_name>
+					<call_session>true</call_session>
+					<call_begin_date>true</call_begin_date>
+					<call_end_date>true</call_end_date>
+					<call_input>true</call_input>
+					<call_output>false</call_output>
+					<call_is_authorized>false</call_is_authorized>
+					<call_client_IP_address>true</call_client_IP_address>
+					<call_extra_info>true</call_extra_info>
+					<!--Parameters for connection monitoring-->
+					<conn_profile_id>false</conn_profile_id>
+					<conn_assigned_to>false</conn_assigned_to>
+					<conn_open_date>false</conn_open_date>
+					<conn_close_date>false</conn_close_date>
+					<conn_extra_info>false</conn_extra_info>
+					<conn_open_date_ms>false</conn_open_date_ms>
+					<conn_close_date_ms>false</conn_close_date_ms>
+				</ThreadMonitoringService>
+			</tms>
+			<!--No encontrado-->
+			<RoundHelper>
+				<moneda_pts>0</moneda_pts>
+				<moneda_euro>4</moneda_euro>
+				<decimales_bd>6</decimales_bd>
+				<factura_base_pts>0</factura_base_pts>
+				<factura_base_euro>2</factura_base_euro>
+				<factura_precio_pts>3</factura_precio_pts>
+				<factura_precio_euro>4</factura_precio_euro>
+				<factura_importe_pts>0</factura_importe_pts>
+				<factura_importe_euro>2</factura_importe_euro>
+				<anexo_base_pts>2</anexo_base_pts>
+				<anexo_base_euro>2</anexo_base_euro>
+			</RoundHelper>
+			<!--No encontrado-->
+			<Tracer>
+				<log_active>false</log_active>
+			</Tracer>
+		</util>
+		<domain>
+			<gcdb>
+				<InitializePool>
+					<development_server>http://alonso.indra.es:7998/servlet/isf.servlets.gcdb.GcdbConnectionManagerServlet</development_server>
+				</InitializePool>
+			</gcdb>
+			<gces>
+				<GcesEventSystemServerImp>
+					<!--Nombre del subsistema actuall-->
+					<subsystem>OCEN</subsystem>
+					<!--Puerto del RMIRegistry-->
+					<port>1299</port>
+				</GcesEventSystemServerImp>
+				<system_event>
+					<!--URL de provisión de conexiones-->
+					<host_server>alonso.indra.es</host_server>
+					<!--host_server>alonso.indra.es</host_server-->
+					<!--host_server>halcon</host_server-->
+					<port>1299</port>
+				</system_event>
+			</gces>
+			<gcps>
+				<ProcessService>
+					<!--db-->
+					<db.driver>oracle.jdbc.driver.OracleDriver</db.driver>
+					<db.url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</db.url>
+					<db.user>CENBDT_USR</db.user>
+					<db.password>cambiar</db.password>
+					<db.encrypted>off</db.encrypted>
+					<!--dbcb-->
+				</ProcessService>
+				<QueryService>
+					<!--db-->
+					<db.driver>oracle.jdbc.driver.OracleDriver</db.driver>
+					<db.url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</db.url>
+					<db.user>CENBDM_USR</db.user>
+					<db.password>CENBDM_AZOR</db.password>
+					<db.encrypted>off</db.encrypted>
+					<!--dbcenope-->
+					<dbcenope.driver>oracle.jdbc.driver.OracleDriver</dbcenope.driver>
+					<dbcenope.url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</dbcenope.url>
+					<dbcenope.user>CENOPE_USR</dbcenope.user>
+					<dbcenope.password>CENOPE_AZOR</dbcenope.password>
+					<dbcenope.encrypted>off</dbcenope.encrypted>
+					<!--dbcenbdi-->
+					<dbcenbdi.driver>oracle.jdbc.driver.OracleDriver</dbcenbdi.driver>
+					<dbcenbdi.url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</dbcenbdi.url>
+					<dbcenbdi.user>CENBDM_USR</dbcenbdi.user>
+					<dbcenbdi.password>CENBDM_AZOR</dbcenbdi.password>
+					<dbcenbdi.encrypted>off</dbcenbdi.encrypted>
+					<!--dbcenshp-->
+					<dbcenshp.driver>oracle.jdbc.driver.OracleDriver</dbcenshp.driver>
+					<dbcenshp.url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</dbcenshp.url>
+					<dbcenshp.user>CENSHP_USR</dbcenshp.user>
+					<dbcenshp.password>CENSHP_AZOR</dbcenshp.password>
+					<dbcenshp.encrypted>off</dbcenshp.encrypted>
+					<!--dbcencom-->
+					<dbcencom.driver>oracle.jdbc.driver.OracleDriver</dbcencom.driver>
+					<dbcencom.url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</dbcencom.url>
+					<dbcencom.user>CENCMB_USR</dbcencom.user>
+					<dbcencom.password>CENCMB_AZOR</dbcencom.password>
+					<dbcencom.encrypted>off</dbcencom.encrypted>
+					<!--dbcensap-->
+					<dbcensap.driver>oracle.jdbc.driver.OracleDriver</dbcensap.driver>
+					<dbcensap.url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</dbcensap.url>
+					<dbcensap.user>CENSAP_USR</dbcensap.user>
+					<dbcensap.password>CENSAP_AZOR</dbcensap.password>
+					<dbcensap.encrypted>off</dbcensap.encrypted>
+					<!--dbcenbat-->
+					<dbcenbat.driver>oracle.jdbc.driver.OracleDriver</dbcenbat.driver>
+					<dbcensap.url>jdbc:oracle:thin:@MADPPVOCENGE.indra.es:1526:ocendes</dbcensap.url>
+					<dbcenbat.user>CENBDT_USR</dbcenbat.user>
+					<dbcenbat.password>cambiar</dbcenbat.password>
+					<dbcenbat.encrypted>off</dbcenbat.encrypted>
+				</QueryService>
+			</gcps>
+			<gcqs>
+				<GcqsQuerySystem>
+					<default_profile>db</default_profile>
+					<!--Production/Developement flag-->
+					<production>true</production>
+					<!-- Max size for the QS objects cache (MRU cache) --> 
+					<max_cache_size>0</max_cache_size> 
+					 <!-- true para poner trazas en cada consulta ejecutada  --> 
+					<log_execution>false</log_execution> 
+					<!-- true para poner trazas en cada llamada al servlet   --> 
+					<log_call>true</log_call> 
+					<!--  Default package for query classes --> 
+					<!--  TECNOLOGÍA/OBJETOS COMUNES --> 
+					<package>com.soluzionasf.ocen.man.qs</package>
+					<!--  TECNOLOGÍA/OBJETOS COMUNES --> 
+					<!--  BDI --> 
+					<package.1>com.soluzionasf.ocen.bdi.bdinst.qs</package.1> 
+					<!--  BDM --> 
+					<package.2>com.soluzionasf.ocen.bdi.bdm.qs</package.2> 
+					<!--  BDI COMUN --> 
+					<package.3>com.soluzionasf.ocen.bdi.comun.qs</package.3> 
+					<!--  BDI DOCUMENTACION --> 
+					<package.4>com.soluzionasf.ocen.bdi.docum.qs</package.4> 
+					<!--  COMBUSTIBLES --> 
+					<package.5>com.soluzionasf.ocen.combustibles.qs</package.5> 
+					<!--  MANTENIMIENTO --> 
+					<package.6>com.soluzionasf.ocen.man.qs</package.6> 
+					<!--  MEDIO AMBIENTE --> 
+					<package.7>com.soluzionasf.ocen.mam.qs</package.7> 
+					<!--  OPERACION --> 
+					<package.8>com.soluzionasf.ocen.operacion.qs</package.8> 
+					<!--  SAP --> 
+					<package.9>com.soluzionasf.ocen.sap.qs</package.9> 
+					<!--  SHIP PROG --> 
+					<package.10>com.soluzionasf.ocen.shp.qs</package.10> 
+					<!--  LAB --> 
+					<package.11>com.soluzionasf.ocen.lab.qs</package.11> 
+					<!-- EMISIONES -->
+					<package.12>com.soluzionasf.ocen.emi.qs</package.12> 
+					<!--  Indicador para redirigir las peticiones a isf.servlets.gcqs.GcqsMIMEQuerySystemServlet
+								(optimización de la serialización de resultados) --> 
+					<use_mime_servlet>true</use_mime_servlet> 
+					<!--Gestor de consultas paginadas-->
+					<GcqsPagingQuerySystem>
+						<!--Indica si la cache del qs esta activa o no-->
+						<cache_enabled>false</cache_enabled>
+						<!--Timeout de almacenamiento de las ejecuciones paginadas caducadas (ms)-->
+						<cleanup_timeout>3000000</cleanup_timeout>
+						<!--Timeouts de almacenamiento de las ejecuciones paginadas (ms)-->
+						<cache_timeouts>
+							<!--Timeout de almacenamiento de las ejecuciones paginadas sin caché (ms)-->
+							<none>6000000</none>
+							<!--Timeout de almacenamiento de las ejecuciones paginadas con caché para la query actual (ms)-->
+							<current>9000000</current>
+							<!--Timeout de almacenamiento de las ejecuciones paginadas con caché para todas las queries (ms)-->
+							<all>3000000</all>
+						</cache_timeouts>
+					</GcqsPagingQuerySystem>				
+				</GcqsQuerySystem>
+			</gcqs>
+			<gcrs>
+				<ConfigurationManager>
+					<!--URL para indicar un directorio en un .jar: jar:file:/y:/jar/templates.jar!/isf/domain/gcrs/templates/-->
+					<url_path>file:/soflib00/evol/ocen/webapps/WEB-INF/classes/templates/</url_path>
+					<query_timeout>100000</query_timeout>
+					<query_system_url>http://alonso.indra.es:7998/servlet/isf.servlets.gcqs.GcqsQuerySystemServlet</query_system_url>
+					<query_system_method>execute</query_system_method>
+					<query_system_date_time_format>yyyy-MM-dd HH:mm:ss.S</query_system_date_time_format>
+					<alternate_date_time_format>yyyy-MM-dd</alternate_date_time_format>
+					<query_system_number_format>#,###.#;-#,###.#</query_system_number_format>
+					<query_system_currency_format>$0.0</query_system_currency_format>
+					<query_system_true_format>1</query_system_true_format>
+					<query_system_false_format>0</query_system_false_format>
+					<!--Formato de fecha por defecto generado por este servicio.-->
+					<date_time_format_out>dd-MM-yyyy</date_time_format_out>
+					<!--Formato de número por defecto generado por este servicio.-->
+					<number_format_out>#,###.#</number_format_out>
+					<!--Formato de moneda por defecto generado por este servicio.-->
+					<currency_format_out>###,###,###,###</currency_format_out>
+					<!--Número de decimales presentados en la salida (redondeo)-->
+					<curency_decimal_digits_out>4</curency_decimal_digits_out>
+				</ConfigurationManager>
+				<FunctionFactory>
+					<TO_DATE>isf.domain.gcrs.DateFormater</TO_DATE>
+					<TO_NUMBER>isf.domain.gcrs.NumberFormater</TO_NUMBER>
+					<TO_BOOLEAN>isf.domain.gcrs.BooleanFormater</TO_BOOLEAN>
+					<DECODE>isf.domain.gcrs.DecodeFormater</DECODE>
+					<GRID>isf.domain.gcrs.GridFormatter</GRID>
+					<MULTILINE_GRID>isf.domain.gcrs.MultilineGridFormatter</MULTILINE_GRID>
+					<MULTILINE>isf.domain.gcrs.Multiline</MULTILINE>
+					<GENERIC_HEADER>com.soluzionasf.ocen.man.common.domain.GenericHeader</GENERIC_HEADER>
+					<GRID_BOLD>com.soluzionasf.ocen.man.common.domain.GridFormatterBoldRow</GRID_BOLD>
+				</FunctionFactory>
+				<!--Clases de formateo de columnas en un grid (por tipo de dato)-->
+				<GridColumnFormattersFactory>
+					<!--Formateador por defecto-->
+					<default>isf.domain.gcrs.StringFormater</default>
+					<!--Formateador de strings-->
+					<STRING>isf.domain.gcrs.StringFormater</STRING>
+					<!--Formateador de fechas-->
+					<DATE>isf.domain.gcrs.DateFormater</DATE>
+					<!--Formateador de numéricos reales-->
+					<DECIMAL>isf.domain.gcrs.NumberFormater</DECIMAL>
+					<!--Formateador de booleanos-->
+					<BOOLEAN>isf.domain.gcrs.BooleanFormaterGrid</BOOLEAN>
+					<!--Formateador de moneda euro-->
+					<EURO>isf.domain.gcrs.EurosToCentsFormater</EURO>
+					<!--Formateador de celda multilínea-->
+					<MULTILINE>isf.domain.gcrs.Multiline</MULTILINE>
+					<!--Alineación por tipo (left|right|center)-->
+					<aligns>
+						<STRING>left</STRING>
+						<DATE>right</DATE>
+						<DECIMAL>right</DECIMAL>
+						<BOOLEAN>center</BOOLEAN>
+						<EURO>right</EURO>
+					</aligns>
+				</GridColumnFormattersFactory>
+				<MethodTemplateResolver>
+					<!--Dirección en la que se encuentran los ficheros .services en los que se indica el nombre de los métodos de cada Servlet-->
+					<!--y el nombre de la clase de dominio y de su request-->
+					<path>file:/soflib00/evol/ocen/webapps/WEB-INF/classes/com/soluzionasf/ocen</path>
+				</MethodTemplateResolver>
+			</gcrs>
+			<gcsm>
+				<InternalDBProfileHolder>
+					<db_profile_id>db</db_profile_id>
+				</InternalDBProfileHolder>
+				<config>
+					<historic_provider_impl>isf.domain.gcsm.CompleteHistoricGeneratorImpl</historic_provider_impl>
+				</config>
+			</gcsm>
+			<gcss>
+				<InactiveSessionsRemover>
+					<!--Propiedades del proceso de eliminacion automatica de sesiones inactivas-->
+					<!--Tiempos expresados en SEGUNDOS-->
+					<programmed_removing_delay>5</programmed_removing_delay>
+					<max_inactivity_time>60</max_inactivity_time>
+				</InactiveSessionsRemover>
+				<LoginServiceImpl_UF>
+					<!--Propiedades del proceso de login de FENOSA-->
+					<openlinksb_racf_directory>c://win32app/jswdk-1.0.1/webpages/WEB-INF/servlets/</openlinksb_racf_directory>
+					<project_racf>SGC</project_racf>
+					<server_racf>USD002GC</server_racf>
+				</LoginServiceImpl_UF>
+				<SecurityAgent>
+					<!--Sistema de Seguridad activado-->
+					<security_enabled>false</security_enabled>
+					<security_method_enabled>false</security_method_enabled>
+					<penalty_time_login>300</penalty_time_login>
+					<max_autentication_attempts>3</max_autentication_attempts>
+				</SecurityAgent>
+				<SecurityContextRMI>
+					<security_user_id>1</security_user_id>
+					<security_user_name>SEC_USER</security_user_name>
+					<security_profile_id>1</security_profile_id>
+					<!--Periodo de actualizacion de BD sobre las tablas locales (en segundos)-->
+					<db_load_lapse>10</db_load_lapse>
+				</SecurityContextRMI>
+				<SessionAuthorityManager>
+					<!--Perfil de acceso a la BD-->
+					<security_profile>db</security_profile>
+					<!--Periodo de actualizacion de las tablas locales sobre la BD (en segundos)-->
+					<db_save_lapse>60</db_save_lapse>
+					<!--Nombre del subsistema actuall-->
+					<subsystem>OCEN</subsystem>
+					<!--Puerto del RMIRegistry-->
+					<port>1299</port>
+					<!-- checkCredentials. Comprueba o no la autenticación de usuario y password -->
+					<checkCredentials>true</checkCredentials>
+					<!-- use_rmi. Habilita o Inhabilita el RMI -->
+					<use_rmi>false</use_rmi>
+				</SessionAuthorityManager>
+				<SessionAuthorityRMI>
+					<!--Periodo de carga actualizacion de las tablas locales desde la BD (en segundos)-->
+					<db_load_lapse>10</db_load_lapse>
+				</SessionAuthorityRMI>
+				<LogDestinationPath>
+					<!--Ruta en el servidor donde se dejaran los ficheros de log generados por las funciones de procesamiento masivo del sistema de seguridad -->
+					<path>c:\\temp\\</path>
+				</LogDestinationPath> 				
+			</gcss>
+			<gcws>
+				<workflow>
+					<!--# FILE:isf/domain/gcws/workflow.properties-->
+					<!--# AUTHOR: ALA 27/10/2000-->
+					<!--# PROPERTIES FILE FOR WORKFLOW SYSTEM'S SERVERS-->
+					<!--# servers start mode: check_restart=true load and continue with current execution (if exists), check_restart=false ignore current execution-->
+					<check_restart>false</check_restart>
+					<!--# registered system user and profile for db updates-->
+					<user_id>2</user_id>
+					<user_name>ALA</user_name>
+					<profile_id>0</profile_id>
+					<!--# country and language codes for messages-->
+					<language_code>es</language_code>
+					<country_code>ES</country_code>
+					<!--# directory for log and error files. Needs \\ to separate directories and at the end of the path. ie: c:\\wf\\tmp\\-->
+					<log_dir>/soflib00/user/oceevo00/ocen/tmpbatchfich/</log_dir>
+					<error_extension>err</error_extension>
+					<log_extension>log</log_extension>
+					<!--# trace level: trace_level=0 only errors, trace_level=1 0 level + main information, trace_level&amp;amp;amp;amp;gt;=2 1 level + verbose-->
+					<trace_level>2</trace_level>
+					<!--# ACTIVITY MANAGER RMI SERVERS-->
+					<activity_manager_object_name>activityManager</activity_manager_object_name>
+					<!--# time in milliseconds to sleep threads if there are not workitems-->
+					<activity_manager_sleep_time>1000</activity_manager_sleep_time>
+					<activity_manager_files_name>am</activity_manager_files_name>
+					<!--# WORKFLOW ENGINE RMI SERVERS (WORKFLOW SYSTEM)-->
+					<workflow_system_object_name>workflowSystem</workflow_system_object_name>
+					<!--# time in milliseconds without any change in diagram to notify end of execution. 10000 minimun-->
+					<workflow_system_time_out>3600000</workflow_system_time_out>
+					<workflow_system_hanged_time_out>2500000</workflow_system_hanged_time_out>
+					<workflow_system_delete_workitems_time_out>30000</workflow_system_delete_workitems_time_out>
+					<workflow_system_files_name>ws</workflow_system_files_name>
+					<!--#WORKFLOW MANAGER RMI SERVER (SCHEDULER)-->
+					<workflow_manager_object_name>workflowManager</workflow_manager_object_name>
+					<workflow_manager_host_name>alonso.indra.es</workflow_manager_host_name>
+					<workflow_manager_files_name>wm</workflow_manager_files_name>
+					<!--# RMIRegistry port-->
+					<port>1299</port>
+				</workflow>
+			</gcws>
+		</domain>
+		<servlets>
+			<show_error_description>false</show_error_description>
+			<show_stack_trace>false</show_stack_trace>
+			<parse_dtd>false</parse_dtd>
+			<DTDContainer>
+				<dtd>&lt;!DOCTYPE GCcom_DocType [&lt;!ENTITY aacute 'á'&gt;&lt;!ENTITY Aacute 'Á'&gt;&lt;!ENTITY Ccedil 'Ç' &gt;&lt;!ENTITY ccedil 'ç'&gt;&lt;!ENTITY eacute 'é'&gt;&lt;!ENTITY Eacute 'É'&gt;&lt;!ENTITY iacute 'í'&gt;&lt;!ENTITY Iacute 'Í' &gt;&lt;!ENTITY ntilde 'ñ'&gt;&lt;!ENTITY Ntilde 'Ñ'&gt;&lt;!ENTITY oacute 'ó'&gt;&lt;!ENTITY Oacute 'Ó'&gt;&lt;!ENTITY Uacute 'Ú'&gt;&lt;!ENTITY uacute 'ú'&gt;&lt;!ENTITY uuml 'ü'&gt;&lt;!ENTITY Uuml 'Ü'&gt;]&gt; </dtd>
+			</DTDContainer>
+			<InternationalizationManager>
+				<version>1.0</version>
+				<encoding>ISO-8859-1</encoding>
+				<language>es</language>
+				<country>ES</country>
+			</InternationalizationManager>
+			<EncodingImplFactory>
+				<compress>isf.servlets.CompressCoderImpl</compress>
+				<gzip>isf.servlets.GZipCoderImpl</gzip>
+			</EncodingImplFactory>
+			<CompressCoderImpl>
+				<!--Charset usado en la conversión byte[]-String-->
+				<encoding>ISO-8859-1</encoding>
+			</CompressCoderImpl>
+ 			<GZipCoderImpl>
+				<!--Charset usado en la conversión byte[]-String-->
+				<encoding>ISO-8859-1</encoding>
+			</GZipCoderImpl>
+			<!--Manager de índices de servicios-->
+			<ServiceManager>
+				<!--Implementación del lector de catálogos usable-->
+				<catalog>isf.servlets.ServiceCatalogTreeImpl</catalog>
+			</ServiceManager>
+			<!--Helper para la gestión de llamadas actuales-->
+			<gcvs>
+				<VersionManager>
+					<!--Productos instalados-->
+					<kernel>
+						<product>KERNEL ARQV10</product>
+						<date>17 Junio 2005</date>
+						<version>v10.07.0003</version>
+					</kernel>
+					<OCEN>
+						<product>OCEN</product>
+						<date>23 Julio 2003</date>
+						<version>2003.01</version>
+						<Upgrade> SAP (N/A), BDI (N/A), Operación (Resolución de Incidencias y Nuevos revision del Seguimiento de la Generación), Combustibles (N/A) </Upgrade>
+						<VersionHistory>
+						</VersionHistory>
+					</OCEN>
+				</VersionManager>
+			</gcvs>
+			<!--Helper para la gestión de llamadas actuales-->
+			<CallManagerHelper>
+				<!--Indicador de servicio activado (true) o desactivado (false).-->
+				<enabled>true</enabled>
+			</CallManagerHelper>
+			<ServiceIndexManager></ServiceIndexManager>
+		</servlets>
+		<xml>
+			<XMLHelper> 
+			<!--Clase implememtación de la serialización de un DOM: 
+			isf.xml.DOMSerializerClassic (clásico) (por defecto) 
+			isf.xml.DOMSerializerAdvanced (optimizado)  --> 
+				<serialization_class>isf.xml.DOMSerializerAdvanced</serialization_class> 
+			</XMLHelper> 
+		</xml>
+	</isf>
+</content>

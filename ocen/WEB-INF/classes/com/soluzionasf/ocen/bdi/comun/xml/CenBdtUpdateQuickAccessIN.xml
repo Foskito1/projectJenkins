@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<CenBdtUpdateQuickAccess>
+	<QuickAccesList>
+		<Panel> (seq)
+			<idQuickAccess>(Long) (man) Identificador de la tabla, -1 si es un alta </idQuickAccess>
+			<idEntry>(Long) (man) Identificador del panel </idEntry>
+			<userId>(Long) (man) Identificador del usuario</userId>
+			<description>(String) Descripción del panel</description>
+			<optimistLock>(Long) (man) Optimist lock del registro</optimistLock>
+		</Panel>
+	</QuickAccesList>
+	<QuickAccesListDelete>
+		<Panel> (seq)
+			<idQuickAccess>(Long) (man) Identificador de la tabla, -1 si es un alta </idQuickAccess>
+			<optimistLock>(Long) (man) Optimist lock del registro</optimistLock>
+		</Panel>
+	</QuickAccesListDelete>
+</CenBdtUpdateQuickAccess>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiUpdateAction>
+   <id_action>(Long) Identificador de la acción</id_action>
+   <optimist_lock>(Long) Optimist lock.</optimist_lock>
+</CenBdiUpdateAction>

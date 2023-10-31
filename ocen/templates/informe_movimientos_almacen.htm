@@ -1,0 +1,47 @@
+<!-- Pagina que muestra un informe de una OT -->
+<html>
+<head>
+	<title>Lista de Movimientos de Almacén</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<style>
+	<!--.tablemaster {width: 100%; border-collapse:separate; border: #000000 solid; border-top-width: 1px; border-right-width:1px; border-bottom-width: 1px; border-left-width: 1px }
+	.cabecera{width: 100%; border-collapse:collapse; border: #000000 solid; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px; }
+	.textocabecera {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; color: #000033; list-style-type: square; list-style-image: url(bullet.gif); line-height: 12pt; font-weight: bold}
+	.textonegrita {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; color: #000000; list-style-type: square; list-style-image: url(bullet.gif); line-height: 14pt; font-weight: bold}
+	.textoformulario {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; color: #00000; list-style-type: square; list-style-image: url(bullet.gif); line-height: 14pt}
+	.tableforminf {width: 100%; border-collapse:collapse; border: none}
+	.titulartabla21 {font-family: Arial; font-size: 7pt; border: #000000 solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; color: #000033; list-style-type: square; list-style-image: url(bullet.gif); line-height: 10pt;}
+	.tablemaster3 {width: 100%; border-collapse:collapse; border: #000000 solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px;}
+	.titulartabla32blanco {font-family: Arial; font-size: 7pt; line-height: 10pt; border: #000000 solid; border-top-width: 0px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; vertical-align:top;}-->
+	</style>
+	<!--<link rel="STYLESHEET" type="text/css" href="c:\arqv10\server\templates\gccc_hojaEstiloConsultas.css">-->
+	
+
+</head>
+<body>
+<table border ="0" width = "98%" aling = "right">
+<tr>
+<td width = "100%">
+<TABLE class="tablemaster" valign = "top">
+
+				<table class="tableform">
+					<tr>                       
+						<td><img src="/images/logo_company.bmp" width="120" height="25"></td>
+					</tr>
+				</table>
+
+	|GENERIC_HEADER(root,&quot;{table:class=tablemaster,row=textocabecera,row1=textonegrita,row2=textoformulario}&quot;)|
+	<tr>
+		<td align = "center">
+		|GRID(root,&quot;{table:class=tablemaster3,row1=titulartabla32blanco,row2=titulartabla32blanco}{column:name=&nbsp;Fec.Movimiento&nbsp;,type=date, block=CENMAN_EM_PRINT_REPORT_WAREHOUSE_MOVE_QUERY,extLabel=Row@FEC_MOVIMIENTO, class=titulartabla21}{column:name=Número OT, type=decimal, block=CENMAN_EM_PRINT_REPORT_WAREHOUSE_MOVE_QUERY,extLabel=Row@NUM_OT, class=titulartabla21}{column:name=Cód. Funcional, type=string, block=CENMAN_EM_PRINT_REPORT_WAREHOUSE_MOVE_QUERY,extLabel=Row@CODIGO, class=titulartabla21}{column:name=Descripción, type=string, block=CENMAN_EM_PRINT_REPORT_WAREHOUSE_MOVE_QUERY,extLabel=Row@DESCRIPCION, class=titulartabla21}{column:name=Núm Vale SGA, type=string, block=CENMAN_EM_PRINT_REPORT_WAREHOUSE_MOVE_QUERY,extLabel=Row@VALE_SALIDA,class=titulartabla21}{column:name=Tipo Movimiento, type=string, block=CENMAN_EM_PRINT_REPORT_WAREHOUSE_MOVE_QUERY,extLabel=Row@TIPO_MOV,class=titulartabla21}{column:name=Cód. Repuesto, type=string, block=CENMAN_EM_PRINT_REPORT_WAREHOUSE_MOVE_QUERY,extLabel=Row@COD_RPTO,class=titulartabla21}{column:name=Descripción Rpto, type=string, block=CENMAN_EM_PRINT_REPORT_WAREHOUSE_MOVE_QUERY,extLabel=Row@DES_RPTO,class=titulartabla21}{column:name=Cantidad, type=decimal, block=CENMAN_EM_PRINT_REPORT_WAREHOUSE_MOVE_QUERY,extLabel=Row@CAN_MOVIDA,class=titulartabla21}{column:name=Importe,type=decimal, block=CENMAN_EM_PRINT_REPORT_WAREHOUSE_MOVE_QUERY,extLabel=Row@IMP_UNITARIO,class=titulartabla21}&quot;)| 
+		</td>
+	</tr>
+</TABLE>	
+</td>
+<td width = "5%"> &nbsp;&nbsp;
+</td>
+</tr>
+</table>
+
+</body>
+</html>

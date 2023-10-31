@@ -1,0 +1,15 @@
+<StepWFMaintenance>
+   <StepList>
+      <Step>(seq)
+         <codDevelop>(man)(String)'Codigo de desarrollo de paso'</codDevelop>
+         <nameType>(man)(String)'Nombre del paso'</nameType>
+         <bitmap>(man)(String)'Fichero con el icono'</bitmap>
+         <optimistLock>(man)(Long)'Indicador de bloqueo'</optimistLock>
+         <shortName>(man)(String)'Nombre corto'</shortName>
+         <interface>(String)'Interface'</interface>
+		<stepGroup>(String)'Step group'</stepGroup>
+		<finalStep>(Long) 0 if step is not final, 1 if it's final</finalStep>
+      </Step>
+   </StepList>
+   <codModule>(man)(Long)'Modulo'</codModule>
+</StepWFMaintenance>

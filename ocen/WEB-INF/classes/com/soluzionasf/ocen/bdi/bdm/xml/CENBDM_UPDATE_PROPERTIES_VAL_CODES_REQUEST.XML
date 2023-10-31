@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmPropValCodesUpdate>
+	<Global>
+		<CenBdm_prop_val_codes>
+		    <Prop_val_code>(seq)	
+			    <id_property_code>(Long) PROPERTIES_VAL_CODES ID </id_property_code>
+			    <id_property>(Long) CODE</id_property>
+			    <id_code>(Long) CODE</id_code>
+			    <optimist_lock> (Long) OPTIMIST_LOCK </optimist_lock>
+			    <active> (Long) deleted flag </active>
+		    </Prop_val_code>
+		</CenBdm_prop_val_codes>
+	</Global>
+</CenBdmPropValCodesUpdate>

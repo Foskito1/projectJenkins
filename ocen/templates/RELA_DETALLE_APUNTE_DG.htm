@@ -1,0 +1,416 @@
+<html>
+<head>
+<title>Impresión de los datos de un apunte</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+/* Título del informe  */
+.bigtitle
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center ;
+	border-collapse: collapse;
+	border-color:black ;
+	border-width:1px ;
+	border-style:solid;
+	line-height: 1.4;
+}
+/* Campo con borde oscuro a la izquierda */
+.leftnormal
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.4;
+	text-align: left;
+	border-style: solid;
+	vertical-align: top
+}
+
+/* Campo con borde claro a la izquierda */
+.leftnormalclaro
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.4;
+	text-align: left;
+	border-width: 1px;
+	border-color: white;
+	border-style: solid;
+	vertical-align: top
+}
+
+/* Campo en negrita con borde claro a la izquierda */
+.leftnormalbold
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1.4;
+	text-align: left;
+	border-style: none;
+	vertical-align: top
+	border-collapse: collapse;
+}
+/* Campo con borde, negrita y centrado */
+.centerbold
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1.4;
+	text-align: center;
+	border-style: solid;
+	vertical-align: top
+}
+.table {  text-align: center; vertical-align: super; width: 100%; border-collapse: collapse;}
+.headertable 	{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ;  }
+.row1 		{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; horizontal-align: center; text-align: left ; border-color:black ; border-width:1px ; border-style:solid ; }
+</style>
+
+
+<script language="JavaScript">
+
+<!-- Función para saber si mostramos un Mensaje o una Instrucción  -->
+function esMsIn() {
+	var tipoCom = '|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@COD_TIPO_COMUNICACION|';
+	return tipoCom;
+};
+
+<!-- Función para saber el tipo de instrucción que mostramos -->
+function tipoInstruccion() {
+	var tipoIns = '|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@COD_TIPO_INSTRUCCION|';
+	return tipoIns;
+};
+
+<!-- BEGIN [AQUERO] SCI 102558. RQ 2010.15 -->
+<!-- Función para saber si esta activa la mejora Ciclado de Grupos -->
+function activoCiclado() {
+	var actCiclado = '|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@ACT_CICLADO|';
+	return actCiclado;
+};
+
+<!-- Función para saber la constante  -->
+function acople() {
+	var acople = '|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@COD_ACOPLE|';
+	return acople;
+};
+
+<!-- Función para saber si esta activa la mejora Ciclado de Grupos -->
+function desacople() {
+	var desacople = '|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@COD_DESACOPLE|';
+	return desacople;
+};
+
+<!-- Función para saber si esta activa la mejora Ciclado de Grupos -->
+function asignacion() {
+	var asignacion = '|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@COD_ASIGNACION|';
+	return asignacion;
+};
+
+<!-- Función para saber si esta activa la mejora Ciclado de Grupos -->
+function ciclado() {
+	var cod_ciclado = '|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@COD_CICLADO|';
+	return cod_ciclado;
+};
+<!-- END [AQUERO] SCI 102558. RQ 2010.15 -->
+
+<!-- Función para saber si mostramos el historico -->
+function mostrarHistorico(){
+  var res = 'FALSE';
+	var rows = '|root.CENOPE_QRY_RELA_IMPR_HIST_COM_DG@NUM_RETURNED_ROWS|';
+
+	if (rows > 1)	{
+		res = 'TRUE';
+	}
+	return res;
+};
+</script>
+
+</script>
+
+
+
+</head>
+
+<body bgcolor="#ffffff">
+
+<table width="100%" border="0">
+	<tr> 
+		<td> 
+			<table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+				<!-- Título general del informe y logo -->
+				<tr> 	
+	         		 	<td  rowspan="7" width="12%"><IMG src="\images\UFGN3.jpg"></td>
+      	    				<td  colspan="2" class = 'bigtitle' > <b>Detalle del Apunte Comunicación D.G.</b> </td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>	
+				<!-- Datos Generales del apunte -->
+				<tr>
+		 	    		<td  width="20%" class = 'centerbold' bgcolor="#c0c0c0"><b>Fecha del Apunte</b></td>
+					<td  width="40%" class = 'centerbold' bgcolor="#c0c0c0"><b>Estado</b></td>
+				</tr>
+				<tr>
+					<td width="20%" class = 'leftnormal'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@FEC_HOR_APUNTE|&nbsp;</td>
+		 	    		<td class = 'leftnormal'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_ESTADO |&nbsp;</td>		 	    	
+				</tr>
+				<tr>
+					<td></td>
+				</tr>	
+				<tr>
+	   	 			<td  width="40%" class = 'centerbold' bgcolor="#c0c0c0"><b>Emisor</b> </td>
+					<td  width="40%" class = 'centerbold' bgcolor="#c0c0c0"> <b>Usuario Emisor</b></td>
+				</tr>
+        			<tr>
+					<td class = 'leftnormal'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_INST_EMISOR| &nbsp;</td>
+     	    				<td class = 'leftnormal'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_USUARIO|&nbsp;</td>
+				</tr>
+			<br>
+			</table>
+			<br>
+		</td>
+	</tr>
+	<tr>	
+		<table width="35%" border="0" bordercolor="#000000" cellspacing="0">
+		<tr>
+<script language="JavaScript">
+<!--Mostramos el tipo de instrucción si se trata de una instrucción  -->
+var tipoIns;
+
+tipoCom = esMsIn(); <!-- Miramos si es un Mensaje o una instrucción -->
+		if (tipoCom == 'IN'){
+				document.write("	<td class = 'leftnormalbold'>Fecha del Envío</td> ");
+				document.write("	<td class = 'leftnormalclaro'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@FEC_HOR_APUNTE |&nbsp;</td>	");		
+		} else {
+				document.write("	<td class = 'leftnormalbold'>Fecha de Lectura</td> ");		
+				document.write("	<td class = 'leftnormalclaro'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@FEC_HOR_ESTADO |&nbsp;</td>	");		
+		}
+	
+		<!--document.write("	<td class = 'leftnormalclaro'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@FEC_HOR_APUNTE |&nbsp;</td>	");		-->
+		document.write("</tr> ");
+		document.write("</table> ");		
+		document.write("<table width='50%' border='0' bordercolor='#000000' cellspacing='0'> ");
+		document.write("<tr>  ");
+		document.write("	<td class = 'leftnormalbold' width='40%'> Receptor </td> ");
+		if (tipoCom == 'IN')	
+			document.write("<td class = 'leftnormalbold'> Fecha de Lectura </td> ");
+		document.write("</tr> ");
+		document.write("<br> ");
+		document.write("<tr> ");	
+		document.write("	<td class = 'leftnormalclaro'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_INST_RECEPTOR|&nbsp;</td> ");
+		if (tipoCom == 'IN')
+			document.write("	<td class = 'leftnormalclaro'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@FEC_HOR_ESTADO|&nbsp;</td> ");
+		document.write("</tr> ");
+		document.write("</table> ");
+		<!--BEGIN MEJORA 2010.15 -->
+		activo = activoCiclado();
+		acople = acople()
+		desacople = desacople()
+		asignacion = asignacion()
+		ciclado = ciclado()
+		tipoIns = tipoInstruccion();
+		
+		if(activo == 'false') {<!--lo que se hacia antes-->
+			document.write("<table width='100%' border='0' bordercolor='#000000' cellspacing='0'>")
+			document.write("	<tr>") 
+			document.write("		<tr>")
+			document.write("		<td class = 'leftnormalbold'> Asunto: </td>")				
+			document.write("		</tr>")
+			document.write("		<tr>")
+			document.write("			<td class = 'leftnormalclaro'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_DESCRIPCION|&nbsp;</td>")
+			document.write("		</tr>")
+			document.write("	</tr>")
+			document.write("	<br>")
+			document.write("	<tr>") 
+			document.write("		<tr>")
+			document.write("			<td class = 'leftnormalbold'> Descripción: </td>")
+			document.write("		</tr>")
+			document.write("		<tr>")					
+			document.write("			<td class = 'leftnormalclaro'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_CONTENIDO|&nbsp;</td>")
+			document.write("		</tr>")
+			document.write("	</tr>")		
+			document.write("</table>")
+		} else {
+			if (tipoIns == ciclado)	{	<!-- Si es una instrucc. de CICLADO -->	
+				document.write("<table width='100%' border='0' bordercolor='#000000' cellspacing='0'>")
+				document.write("	<tr>")
+				document.write("		<td class = 'leftnormalbold'> Motivo: </td>")				
+				document.write("		<td class = 'leftnormalclaro' colspan = 3>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_MOTIVO|&nbsp;</td>")
+				document.write("	</tr>")
+				document.write("	<tr>")
+				document.write("		<td class = 'leftnormalbold' width='8%'></td>")				
+				document.write("		<td class = 'leftnormalbold' width='15%'> Fecha de desacople: </td>")	
+				document.write("		<td class = 'leftnormalclaro' align='left' width='15%'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@FECHA_CICLADO_DESAC|</td>")
+				document.write("		<td class = 'leftnormalclaro' align='left' width='35%'><b>Entre las:</b>&nbsp;&nbsp;|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@HORA_CICLADO_DESAC_DE|&nbsp;&nbsp;<b>y las:</b>&nbsp;&nbsp;|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@HORA_CICLADO_DESAC_A|&nbsp;</td>")
+				document.write("		<td class = 'leftnormalclaro' width='27%'></td>")
+				document.write("	</tr>")
+				document.write("	<br>")
+				document.write("	<tr>")
+				document.write("		<td class = 'leftnormalbold' width='8%'></td>")		
+				document.write("		<td class = 'leftnormalbold' width='15%'> Fecha de acople: </td>")				
+				document.write("		<td class = 'leftnormalclaro' align='left' width='15%'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@FECHA_CICLADO_ACOP|</td>")
+				document.write("		<td class = 'leftnormalclaro' align='left' width='35%'><b> Hora:</b>&nbsp;&nbsp;|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@HORA_CICLADO_ACOP_DE|&nbsp;</td>")
+				document.write("		<td class = 'leftnormalclaro' width='27%'></td>")
+				document.write("	</tr>")
+				document.write("</table>")
+				document.write("<table width='100%' border='0' bordercolor='#000000' cellspacing='0'>")
+				document.write("	<br>")
+				document.write("	<tr>")
+				document.write("		<td class = 'leftnormalbold' > Descripción: </td>")
+				document.write("	</tr>")
+				document.write("	<tr>")					
+				document.write("		<td class = 'leftnormalclaro' >|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_CONTENIDO|&nbsp;</td>")
+				document.write("	</tr>")
+				document.write("</table>")
+			} else {
+				if (tipoIns == desacople)	{	<!-- Si es una instrucc. de DESACOPLE -->	
+					document.write("<table width='100%' border='0' bordercolor='#000000' cellspacing='0'>")
+					document.write("	<tr>")
+					document.write("		<td class = 'leftnormalbold'> Motivo: </td>")				
+					document.write("		<td class = 'leftnormalclaro' colspan = 5>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_MOTIVO|&nbsp;</td>")
+					document.write("	</tr>")
+					document.write("	<tr>")
+					document.write("		<td class = 'leftnormalbold' width='8%'></td>")		
+					document.write("		<td class = 'leftnormalbold' width='15%'> Fecha de desacople: </td>")				
+					document.write("		<td class = 'leftnormalclaro' align='left' width='15%'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@FECHA_DESACOPLE|</td>")					
+					document.write("		<td class = 'leftnormalclaro' align='left' width='35%'><b>Entre las:&nbsp;&nbsp;</b>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@HORA_DESACOPLE_DE|&nbsp;&nbsp;<b>y las:</b>&nbsp;&nbsp;|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@HORA_DESACOPLE_A|&nbsp;</td>")
+					document.write("		<td class = 'leftnormalclaro' width='27%'></td>")
+					document.write("	</tr>")
+					document.write("	<br>")
+					document.write("</table>")
+					document.write("<table width='100%' border='0' bordercolor='#000000' cellspacing='0'>")
+					document.write("	<br>")
+					document.write("	<tr>")
+					document.write("		<td class = 'leftnormalbold' > Descripción: </td>")
+					document.write("	</tr>")
+					document.write("	<tr>")					
+					document.write("		<td class = 'leftnormalclaro' >|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_CONTENIDO|&nbsp;</td>")
+					document.write("	</tr>")
+					document.write("</table>")
+				} else {
+					if (tipoIns == acople)	{	<!-- Si es una instrucc. de ACOPLE -->	
+						document.write("<table width='100%' border='0' bordercolor='#000000' cellspacing='0'>")
+						document.write("	<tr>")
+						document.write("		<td class = 'leftnormalbold'> Motivo: </td>")				
+						document.write("		<td class = 'leftnormalclaro' colspan = 5>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_MOTIVO|&nbsp;</td>")
+						document.write("	</tr>")
+						document.write("	<tr>")
+						document.write("		<td class = 'leftnormalbold' width='8%'></td>")				
+						document.write("		<td class = 'leftnormalbold' width='12%'> Fecha de acople: </td>")				
+						document.write("		<td class = 'leftnormalclaro' align='left' width='15%'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@FECHA_ACOPLE_GRUPO|</td>")
+						document.write("		<td class = 'leftnormalbold' width='5%'> Hora: </td>")				
+						document.write("		<td class = 'leftnormalclaro' align='left' width='15%'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@HORA_ACOPLE_GRUPO|</td>")
+						document.write("		<td class = 'leftnormalclaro' width='45%'></td>")								
+						document.write("	</tr>")
+						document.write("	<br>")
+						document.write("</table>")
+						document.write("<table width='100%' border='0' bordercolor='#000000' cellspacing='0'>")
+						document.write("	<br>")
+						document.write("	<tr>")
+						document.write("		<td class = 'leftnormalbold' > Descripción: </td>")
+						document.write("	</tr>")
+						document.write("	<tr>")					
+						document.write("		<td class = 'leftnormalclaro' >|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_CONTENIDO|&nbsp;</td>")
+						document.write("	</tr>")
+						document.write("</table>")
+					} else {
+							document.write("<table width='100%' border='0' bordercolor='#000000' cellspacing='0'>")
+							document.write("	<tr>") 
+							document.write("		<tr>")
+							document.write("		<td class = 'leftnormalbold'> Asunto: </td>")				
+							document.write("		</tr>")
+							document.write("		<tr>")
+							document.write("			<td class = 'leftnormalclaro'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_DESCRIPCION|&nbsp;</td>")
+							document.write("		</tr>")
+							document.write("	</tr>")
+							document.write("	<br>")
+							document.write("	<tr>") 
+							document.write("		<tr>")
+							document.write("			<td class = 'leftnormalbold'> Descripción: </td>")
+							document.write("		</tr>")
+							document.write("		<tr>")					
+							document.write("			<td class = 'leftnormalclaro'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_CONTENIDO|&nbsp;</td>")
+							document.write("		</tr>")
+							document.write("	</tr>")		
+							document.write("</table>")
+					}
+				}
+			}
+		}
+				
+		</script>
+<BR>
+<br>
+<script language="JavaScript">
+<!--Mostramos el tipo de instrucción si se trata de una instrucción  -->
+var tipoIns;
+var tipoCom;
+
+tipoCom = esMsIn(); <!-- Miramos si es un Mensaje o una instrucción -->
+if (tipoCom == 'IN')
+{
+		document.writeln(" <table width='60%' border='0' bordercolor='#000000' cellspacing='0'> ");
+		document.writeln(" <tr> ");
+		document.writeln(" 	<td colspan = '3' width='100%' class = 'leftnormalbold'> Datos de la Instrucción<td> ");
+		document.writeln(" </tr>  ");
+		document.writeln(" <tr> ");
+		document.writeln(" 	<td width='100%' colspan='3' class = 'leftnormalclaro'>Tipo de Instrucción:&nbsp;&nbsp;|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@DES_TIPO_INSTRUCCION|&nbsp;<td> ");
+		document.writeln(" </tr> ");
+
+	tipoIns = tipoInstruccion();
+	document.writeln("<tr> ");
+	document.writeln("	<td width='34%' align='center' class = 'leftnormalclaro'>Fecha de Instrucción</td> ");
+	if (tipoIns == 'C')	{	<!-- Si es una instrucc. de carga -->			
+		document.writeln("	<td width='34%' align='center' class = 'leftnormalclaro'>Rampa (MW/Min)</td> ");
+		document.writeln("	<td width='34%' align='center' class = 'leftnormalclaro'>Carga (MW)</td> ");
+	}
+	
+	document.writeln("</tr> ");
+	document.writeln("<tr> ");
+	document.writeln("	<td width='34%' align='center' class = 'leftnormalclaro'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@FEC_HOR_INSTRUCCION|&nbsp;</td> ");
+	if (tipoIns == 'C')	{			
+		document.writeln("	<td width='34%' align='center' class = 'leftnormalclaro'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@NUM_RAMPA|&nbsp;</td> ");
+		document.writeln("	<td width='34%' align='center' class = 'leftnormalclaro'>|root.CENOPE_QRY_RELA_IMPR_DET_COM_DG.Row@NUM_CARGA|&nbsp;</td> ");
+	}
+	document.writeln("</tr>	");	
+	document.writeln("</table> ");		
+}	
+</script>		
+<BR>
+<br>
+
+<script language="JavaScript">
+<!--Mostramos los datos adicionales si se trata de un evento/actividad -->
+var tipoCom;
+var datos;
+var mostrarHistorico 
+tipoCom = esMsIn();                    <!-- Miramos si es un Mensaje o una instrucción -->
+mostrarHistorico = mostrarHistorico(); <!-- Miramos si el mesaje es enviado a varios destinatarios-->
+
+if (tipoCom == 'IN' || (tipoCom == 'MS' && mostrarHistorico == 'TRUE'))  <!-- Si es una instrucción mostramos el histórico -->
+{
+	datos = '|GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1}{column:name=Fecha Cambio,type= datetime,block=CENOPE_QRY_RELA_IMPR_HIST_COM_DG,label= FEC_HOR_ESTADO,class=headertable}{column:name=Responsable ,type=string, block=CENOPE_QRY_RELA_IMPR_HIST_COM_DG, label= DES_INST_RESP,class=headertable}{column:name=Estado ,type=string, block=CENOPE_QRY_RELA_IMPR_HIST_COM_DG, label=DES_ESTADO, class=headertable}{column:name=Comentario ,type=string, block=CENOPE_QRY_RELA_IMPR_HIST_COM_DG, label=DES_COMENTARIO, class=headertable}&QUOT;)|'
+	<!-- Tabla de histórico de Estados -->
+	document.writeln("<table width='100%' border='1' bordercolor='#000000' cellspacing='0'> ");
+	document.writeln("  <tr>  ");
+	document.writeln("  	<td align='middle'  class='headertable' bgcolor='#c0c0c0'>  ");
+	document.writeln("      <b>HISTÓRICOS DE ESTADOS</b> ");
+	document.writeln("    </td> ");
+	document.writeln("  </tr> ");
+	document.writeln("  <tr> ");
+	document.writeln("  	<td>" + datos + " </td> ");
+	document.writeln(" </tr> ");
+	document.writeln("</table> ");
+}
+</script>
+  </td>
+</tr>
+</table>
+
+
+</body>
+</html>

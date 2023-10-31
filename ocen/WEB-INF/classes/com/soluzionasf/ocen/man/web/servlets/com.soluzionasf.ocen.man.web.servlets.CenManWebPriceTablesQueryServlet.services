@@ -1,0 +1,1 @@
+CENMAN.WebPriceTablesQuery;com.soluzionasf.ocen.man.web.domain.CenManWebPriceTableQueryService;com.soluzionasf.ocen.man.web.servlets.CenManWebPricesTablesQueryRequestDOMImpl

@@ -1,0 +1,29 @@
+http://sfnt1060/servlet/com.soluzionasf.ocen.bdi.comun.servlets.CenBdiServlet
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+	<content 
+		method="CenBdiUpdateUserMail" 
+		sessionId="sfnt1060--232daf10:f40a383e15:-7fca" 
+		authorityId="sfnt1060.OCEN.ssn-1" 
+		user="23" 
+		userName="Alberto Muñoz Mena" 
+		language="es" country="ES">
+		<UpdateUserMail>
+			<Id_Correo_Electronico>1</Id_Correo_Electronico>
+			<Optimist_Lock>0</Optimist_Lock>
+			<Cod_Usuario>UF283251</Cod_Usuario>
+			<Nombre_Usuario>Ignacio Gil de Azcoiti</Nombre_Usuario>
+			<Direccion_Correo>igil@soluziona.com</Direccion_Correo>
+			<Privado>S</Privado>
+			<User_Id>23</User_Id>
+		</UpdateUserMail>
+		<UpdateUserMail>
+			<Id_Correo_Electronico>2</Id_Correo_Electronico>
+			<Optimist_Lock>0</Optimist_Lock>
+			<Cod_Usuario>UF999999</Cod_Usuario>
+			<Nombre_Usuario>Usuario del Sistema</Nombre_Usuario>
+			<Direccion_Correo>uf999999@uef.es</Direccion_Correo>
+			<Privado>S</Privado>
+			<User_Id>23</User_Id>
+		</UpdateUserMail>
+	</content>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdmMeasurements -->
+<CenBdiMeasurements>
+	<medida>
+	   <cod_medida>(man)(long)Codigo de la medición que se ha grabado</cod_medida>
+	   <fecha_medida>(man)(String)Fecha de la medición que se ha grabado</fecha_medida>
+	   <calen_despl>(man)(long)Desplazamiento de la Fecha de la medición que se ha grabado</calen_despl>
+	   <optimist_lock>(man)(long)OptimistLock de la medición que se ha grabado</optimist_lock>
+	   <valor>(double)Valor de la medición que se ha grabado</valor>
+	   <valor_cadena>(String)Valor de la medición, si es de tipo cadena, que se ha gabado</valor_cadena>
+       <fec_Hor_Act> (DateTimeI18n) Nuevo campo</fec_Hor_Act>
+	   <cod_user_act> (String) Nuevo campo</cod_user_act>
+	</medida>
+</CenBdiMeasurements>

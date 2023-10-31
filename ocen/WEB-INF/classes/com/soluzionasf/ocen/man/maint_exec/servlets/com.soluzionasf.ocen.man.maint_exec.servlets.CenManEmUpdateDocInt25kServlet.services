@@ -1,0 +1,2 @@
+CENMAN.updateDocInt25k;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmUpdateDocInt25kService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmOtDocInt25kUpdateRequestDOMImpl
+CENMAN.validateDocInt25k;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmUpdateDocInt25kService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmOtDocInt25kValidateRequestDOMImpl

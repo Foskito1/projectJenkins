@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdmBeDoneCalculation -->
+<CenBdiBeDoneCalculation>
+	<Be_Done_Calculation>(man)(sequence_item)
+		<Cod_Attr>(long)(man)Código del atributo</Cod_Attr>
+		<Fecha_Aplicacion>(DateTime)Fecha desde la que es válida la asignacion</Fecha_Aplicacion>
+		<Cod_Measurement>(long)(man)Código de la medida a la que se va ha asignar una fórmula</Cod_Measurement>
+		<Fecha_Desde>(DateTime)(man)Fecha desde la que es válida la asignacion</Fecha_Desde>
+		<Fecha_Hasta>(DateTime)(man)Fecha hasta la que es válida la asignacion</Fecha_Hasta>
+		<Valor>(String)valor del atributo</Valor>
+	</Be_Done_Calculation>
+</CenBdiBeDoneCalculation>

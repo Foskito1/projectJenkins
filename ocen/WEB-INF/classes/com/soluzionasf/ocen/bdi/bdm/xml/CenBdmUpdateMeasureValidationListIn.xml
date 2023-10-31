@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiUpdateMeasureValidationList>
+	<Validation>
+		<Row COD_MEDIDA="(man)(long)Measure code" ORDEN = "(man)(long)Order" COD_VALIDACION="(man)(long)Validation Code" INITIAL_DATE="(DateTimeI18n)Init Date" FINAL_DATE="(DateTimeI18n)End Date" OPTIMIST_LOCK="(man)(long)Optimist Lock">(seq)</Row>
+	</Validation>
+</CenBdiUpdateMeasureValidationList>

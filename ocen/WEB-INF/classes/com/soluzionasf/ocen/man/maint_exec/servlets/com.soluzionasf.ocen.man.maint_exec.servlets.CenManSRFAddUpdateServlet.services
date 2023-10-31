@@ -1,0 +1,3 @@
+CENMAN.CenmanAddSRF;com.soluzionasf.ocen.man.maint_exec.domain.CenmanAddSRF;com.soluzionasf.ocen.man.maint_exec.servlets.CenManAddSrfServiceRequestDOMImpl
+
+CENMAN.CenmanUpdateStateSRF;com.soluzionasf.ocen.man.maint_exec.domain.CenmanUpdateStateSRF;com.soluzionasf.ocen.man.maint_exec.servlets.CenManUpdateStateSRFRequestDOMImpl

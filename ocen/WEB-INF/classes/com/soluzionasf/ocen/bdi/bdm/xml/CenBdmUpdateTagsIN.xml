@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- MethodName: CenBdmUpdateTags -->
+<CenBdiUpdateTags>
+   <Main_Update_Tag_Det>
+      <Update_Tag_Det>
+         <Id_Tag>(man)(Long)Identificador del tag que se pretende modificar o insertar</Id_Tag>
+         <Optimist_Lock>(man)(Long)Contiene el código de control de actualización del registro</Optimist_Lock>
+         <Code_Tag_Type>(man)(String)Código del tipo de tag asociado</Code_Tag_Type>
+         <Des_Tag>(man)(String)Descripción del tag que se pretende modificar o insertar</Des_Tag>
+         <Valor_Tag>(man)(String)Valor del tag que se pretende modificar o insertar</Valor_Tag>
+         <Id_Ubicacion>(Long)Identificador de la ubicación asociada al tag</Id_Ubicacion>
+         <Code_Type_Location>(Long)Código del tipo de ubicación</Code_Type_Location>
+         <Code_Location>(String)Código de ubicación</Code_Location>
+         <Des_Location>(String)Descripción de la ubicación</Des_Location>
+         <Code_Param>(Long)Código del parámetro asociado al tag</Code_Param>
+         <Id_Tag_Rec>(Long)Identificador del tag.</Id_Tag_Rec>
+         <Id_Ubicacion_Rec>(Long)Identificador de la ubicación asociada al tag</Id_Ubicacion_Rec>
+         <Code_Param_Rec>(Long)Código del parámetro asociado al tag</Code_Param_Rec>
+      </Update_Tag_Det>
+   </Main_Update_Tag_Det>
+</CenBdiUpdateTags>

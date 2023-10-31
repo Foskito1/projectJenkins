@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiListElementByNodoAndFilter>
+  <node>(String)(man)</node>
+  <type_element>(String)</type_element>
+  <name_funtional>(String)</name_funtional> 
+  <code_funtional>(String)</code_funtional>
+  <num_level>(Long)</num_level>
+  <min_id>(Long)</min_id>
+  <max_id>(Long)</max_id>
+  <latitude_min> (Float) Latitud Minima </latitude_min>
+  <latitude_max> (Float) Latitud Maxima </latitude_max>
+  <longitude_min> (Float) Longitud Minima </longitude_min>
+  <longitude_max> (Float) Longitud Maxima </longitude_max>
+  <altitude_min> (Float) Altitud Minima </altitude_min>	
+  <altitude_max> (Float) Altitud Maxima </altitude_max>	
+  <crit_kpi>(Integer) 1/0 Indica si se debe mostrar el bloque KPI para los tipos configurados</crit_kpi>
+</CenBdiListElementByNodoAndFilter>

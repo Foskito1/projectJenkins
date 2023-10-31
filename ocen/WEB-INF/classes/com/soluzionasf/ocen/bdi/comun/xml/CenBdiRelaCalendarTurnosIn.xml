@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiRelaCalendarTurnos>
+	<id_secuencial> (man) Nodo asociado</id_secuencial>
+	<fecha_inicio> (man) (DateTime) Fecha inicio filtrado</fecha_inicio>
+	<fecha_fin> (man) (DateTime) Fecha fin filtrado</fecha_fin>
+	<cod_tipo_entidad> (man) (long) Código tipo entidad</cod_tipo_entidad>
+	<desglose> (long) 1 Si se quiere el desglose de todos los turnos del año en curso</desglose>
+	<ind_turno_nodo>(long) 1 Si se quiere devolver todos los turnos configurados para el id_secuencial</ind_turno_nodo>
+	<turno_nodo_list>
+		<idTurno>(seq) (long)id del turno al que le vamos a setear la descripcion</idTurno>
+	</turno_nodo_list>
+</CenBdiRelaCalendarTurnos>

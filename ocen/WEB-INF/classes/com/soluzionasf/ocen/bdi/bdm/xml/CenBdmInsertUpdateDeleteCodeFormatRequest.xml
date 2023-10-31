@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CenBDM_Code_Format>
+	<Format_list>
+		<Format>
+			(seq)
+			<action>(String) (man) La accion a realizar (I, U, D) </action>
+			<id_formato>(Long) (man) Id del formato</id_formato>
+			<background_color>(Long) Color del formato</background_color>
+			<text_color>(Long) Color del texto</text_color>
+			<bold>(Long) Indica si es negrita.</bold>
+			<italic>(Long) Indica si es cursiva.</italic>
+			<description>(String) Descripción del formato</description>
+		</Format>
+	</Format_list>
+</CenBDM_Code_Format>

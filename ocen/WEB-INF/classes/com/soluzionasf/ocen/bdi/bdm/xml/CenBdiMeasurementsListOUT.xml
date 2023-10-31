@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiMeasurementsList>
+	<Global>
+    <Medida>(man)(sequence_item)
+    		<Medicion> (man)(sequence_item)
+					<cod_medida>(man)(Long)Codigo de la medición</cod_medida>
+					<fecha_medida>(man)(String)Fecha de la medición</fecha_medida>
+					<valor>(Double)Valor de la medición</valor>
+					<valor_cadena>(String)Valor de la medición, si la medida es de tipo cadena</valor_cadena>
+					<calen_despl>(Long) Desplazamiento del calendario. </calen_despl>
+					<result>(man)(Long)Resultado de la inserción 1:correcta, 2:Error bloqueo, 3:Error validación, 4: Error bd</result>
+					<flag_pi>(String)Flag PI: Resultado de la validación</flag_pi>
+					<protegida> (String) Nuevo campo </protegida> 
+					<modificable> (String) Nuevo campo </modificable> 
+			</Medicion>
+		</Medida> 
+	</Global>
+</CenBdiMeasurementsList> 
+

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<relation>
+	<code id_funtional="id secuencial del hueco" type_element="tipo del elemento que se quiere dar de alta" action="si la llamada viene de alta o de modificar"/>
+</relation>	  

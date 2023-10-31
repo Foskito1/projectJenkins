@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiModifyPAgrEstimate>
+	<Modify_PAgrEstimate>(man)(sequence_item)
+		<Cod_Session>(long)(man)Código de la sesión que hay que eliminar</Cod_Session>
+		<Cod_Table>(man)Codigo de la tabla particionada que contiene las mediciones</Cod_Table>
+		<Cod_Agr>(long)(man)Código de agrupaciones de medidas</Cod_Agr>
+		<Cod_Measure>(long)(man)Código de medidas</Cod_Measure>
+		<Optimist_Lock>(long)(man)</Optimist_Lock>
+		<N_Rows>(long)(man)Numero de filas previsto</N_Rows>
+	</Modify_PAgrEstimate>
+</CenBdiModifyPAgrEstimate>

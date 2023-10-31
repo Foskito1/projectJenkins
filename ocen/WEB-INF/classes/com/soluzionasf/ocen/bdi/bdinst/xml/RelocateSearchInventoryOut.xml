@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<detalle>
+   <DataGeneral>
+      <row id_inventory="(String)" cod_inventory="(String)" name_inventory="(String)" type_element="(String)" cod_special_location="(String)" item="(String)" optimist_lock="(String)">(seq)</row>
+   </DataGeneral>
+</detalle>

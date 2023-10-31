@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+  <CenBdiCaracTDependGetFilterDataOUT>
+	<common_data>
+	  <table_cod>(man)(String)</table_cod>
+	  <id_tipo_resto>(man)(Long)</id_tipo_resto>
+	</common_data>
+	<filters>(seq)
+	  <filter_name>(man)(String)</filter_name>
+	  <id_tipo_resto_asoc>(man)(Long)</id_tipo_resto_asoc>
+      <des_caracteristica>(man)(String)</des_caracteristica>
+	  <b_obligatorio>(man)(String)</b_obligatorio>
+	  <id_decod_ct_def>(man)(Long)</id_decod_ct_def>
+	</filters>
+	<columns>(seq)
+	  <column_name>(man)(String)Nombre de las columnas que son posibles filtros.</column_name>
+	</columns>
+  </CenBdiCaracTDependGetFilterDataOUT> 

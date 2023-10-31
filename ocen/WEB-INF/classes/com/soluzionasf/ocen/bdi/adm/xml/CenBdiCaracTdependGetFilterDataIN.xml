@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiCaracTDependGetFilterDataIN>
+	<common_data>(man)
+	  <nom_tabla>(man)(String)Código de la tabla </nom_tabla>
+	  <id_tipo_resto>(man)(Long)Id_tipo_resto de la característica</id_tipo_resto>
+	</common_data>
+</CenBdiCaracTDependGetFilterDataIN> 

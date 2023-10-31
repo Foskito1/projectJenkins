@@ -1,0 +1,129 @@
+<!-- Página que muestra los inventarios relacionados con un repuesto -->
+<html>
+<head>
+	<title>Lista de Inventarios de un Repuesto</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<style>
+	<!--.tablemaster {width: 100%; border-collapse:separate; border: #000000 solid; border-top-width: 1px; border-right-width:1px; border-bottom-width: 1px; border-left-width: 1px }
+	.cabecera{width: 100%; border-collapse:collapse; border: #000000 solid; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px; }
+	.textocabecera {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; color: #000033; list-style-type: square; list-style-image: url(bullet.gif); line-height: 12pt; font-weight: bold}
+	.textonegrita {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; color: #000000; list-style-type: square; list-style-image: url(bullet.gif); line-height: 10pt; font-weight: bold}
+	.textoformulario {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; color: #00000; list-style-type: square; list-style-image: url(bullet.gif); line-height: 14pt}
+	.tableforminf {width: 100%; border-collapse:collapse; border: none}
+	.titulartabla21 {font-family: Arial; font-size: 9pt; border: #000000 solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #000033; list-style-type: square; list-style-image: url(bullet.gif); line-height: 12pt; width:30%}
+	.titulartabla22 {font-family: Arial; font-size: 9pt; border: #000000 solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #000033; list-style-type: square; list-style-image: url(bullet.gif); line-height: 12pt;width:40%}
+	.tablemaster3 {width: 100%; border-collapse:collapse; border: #000000 solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px;}
+	.titulartabla32blanco {font-family: Arial; font-size: 8pt; line-height: 14pt; background-color:#FFFFFF; border: #000000 solid; border-top-width: 0px; border-right-width: 1px; border-bottom-width: 0px; border-left-width: 1px; vertical-align:top;padding-left:3px;padding-right:3px;}-->
+	</style>
+	<!--<link rel="STYLESHEET" type="text/css" href="c:\arqv10\server\templates\gccc_hojaEstiloConsultas.css">-->
+	
+
+</head>
+<body>
+<table border ="0" width = "98%" aling = "right">
+<tr>
+<td width = "100%">
+<TABLE class="tablemaster" valign = "top">
+	<!--<tr>
+		<td height="2px"></td>
+	</tr>-->
+	<tr>
+		<td>
+		<table align ="center" class="tablemaster" >
+			<tr>
+				<td class= "textocabecera" align ="center"> DATOS DE APROVISIONAMIENTO </TD>
+			</tr>
+		</table>
+		</td>
+	</tr>
+
+	<TR>
+	<td>
+	<TABLE class="tablemaster" >
+		<tr>
+			<TD class = "textonegrita" width="10%"> C&oacute;digo SGA: </TD>
+			<!--<TD class = "textoformulario"> CODIGO001230 &nbsp; &nbsp; DESCRIPCION CODIGO001230 </TD>-->
+			<TD class = "textoformulario"> |root.CENMAN_EM_EQUIPMENTS_SPARE_PARTS_HEADER_QUERY.Row@CODIGO_SGA|&nbsp;&nbsp;&nbsp;|root.CENMAN_EM_EQUIPMENTS_SPARE_PARTS_HEADER_QUERY.Row@DES_SGA|</td>
+		</TR>
+		<TR>
+			<TD class = "textonegrita"> C&oacute;digo Mto: </TD>
+			<TD class = "textoformulario" > |root.CENMAN_EM_EQUIPMENTS_SPARE_PARTS_HEADER_QUERY.Row@CODIGO_MTO|&nbsp;&nbsp;&nbsp;|root.CENMAN_EM_EQUIPMENTS_SPARE_PARTS_HEADER_QUERY.Row@DES_MTO|</TD>
+			
+		</TR>
+		<TR>
+			<TD colspan = "2">
+				<TABLE width = "100%" align = center>
+					<TR>
+					<TD class = "textonegrita" width="15">	Familia:</TD>
+					<TD class = "textoformulario" width="170">|root.CENMAN_EM_EQUIPMENTS_SPARE_PARTS_HEADER_QUERY.Row@DES_FAMILIA|</TD>
+					<TD class = "textonegrita" width="15">	Subfamilia:</TD>
+					<TD class = "textoformulario" width="170">|root.CENMAN_EM_EQUIPMENTS_SPARE_PARTS_HEADER_QUERY.Row@DES_SUBFAMILIA|</TD>
+					<TD class = "textonegrita" width="10">	Clase:</TD>
+					<TD class = "textoformulario" width="170">|root.CENMAN_EM_EQUIPMENTS_SPARE_PARTS_HEADER_QUERY.Row@DES_CLASE|</TD>
+					<TD class = "textonegrita" width="10">	Unidad:</TD>
+					<TD class = "textoformulario" width="170">|root.CENMAN_EM_EQUIPMENTS_SPARE_PARTS_HEADER_QUERY.Row@U_MEDIDA|</TD>
+					<TR>	
+				</TABLE>
+			</TD>
+		</TR>
+	</TABLE>
+	</td>
+	</tr>
+	
+	<tr>
+		<td>
+		<table align ="center" class="tablemaster" >
+			<tr>
+				<td class= "textocabecera" align ="center"> DIRECTOS </TD>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td align = "center">
+		|GRID(root,&quot;{table:class=tablemaster3,row1=titulartabla32blanco,row2=titulartabla32blanco}{column:name=C&oacute;digo Inventario,type=string, block=CENMAN_EM_EQUIPMENT_SPARE_PARTS,extLabel=Row@COD_INVENTARIO, class=titulartabla21}{column:name=C&oacute;digo Funcional,type=string,block=CENMAN_EM_EQUIPMENT_SPARE_PARTS,extLabel=Row@COD_FUNCIONAL,class=titulartabla21}{column:name=Descripci&oacute;n F&iacute;sica,type=string,block=CENMAN_EM_EQUIPMENT_SPARE_PARTS,extLabel=Row@NOM_INVENTARIO,class=titulartabla22}&quot;)| 
+		
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<table align ="center" class="tablemaster" >
+			<tr>
+				<td class= "textocabecera" align ="center"> EN EL DESPIECE </TD>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td align = "center">
+		|GRID(root,&quot;{table:class=tablemaster3,row1=titulartabla32blanco,row2=titulartabla32blanco}{column:name=C&oacute;digo Inventario,type=string, block=CENMAN_EM_WAREHOUSE_EQUIPMENT_SPARE_PARTS_BREAK,extLabel=Row@COD_INVENTARIO, class=titulartabla21}{column:name=C&oacute;digo Funcional,type=string,block=CENMAN_EM_WAREHOUSE_EQUIPMENT_SPARE_PARTS_BREAK,extLabel=Row@COD_FUNCIONAL,class=titulartabla21}{column:name=Descripci&oacute;n F&iacute;sica,type=string,block=CENMAN_EM_WAREHOUSE_EQUIPMENT_SPARE_PARTS_BREAK,extLabel=Row@NOM_INVENTARIO,class=titulartabla22}&quot;)| 
+		
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<table align ="center" class="tablemaster" >
+			<tr>
+				<td class= "textocabecera" align ="center"> EN &Oacute;RDENES DE TRABAJO </TD>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td align = "center">
+			|GRID(root,&quot;{table:class=tablemaster3,row1=titulartabla32blanco,row2=titulartabla32blanco}{column:name=C&oacute;digo Inventario,type=string, block=CENMAN_EM_EQUIPMENT_SPARE_PARTS_WO,extLabel=Row@COD_INVENTARIO, class=titulartabla21}{column:name=C&oacute;digo Funcional,type=string,block=CENMAN_EM_EQUIPMENT_SPARE_PARTS_WO,extLabel=Row@COD_FUNCIONAL,class=titulartabla21}{column:name=Descripci&oacute;n F&iacute;sica,type=string,block=CENMAN_EM_EQUIPMENT_SPARE_PARTS_WO,extLabel=Row@NOM_INVENTARIO,class=titulartabla22}&quot;)| 
+		
+		</td>
+	</tr>
+	
+	
+	
+</TABLE>	
+</td>
+<td width = "5%"> &nbsp;&nbsp;
+</td>
+</tr>
+</table>
+
+</body>
+</html>

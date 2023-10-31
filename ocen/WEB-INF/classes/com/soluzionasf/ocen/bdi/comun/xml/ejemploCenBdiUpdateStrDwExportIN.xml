@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<content method="CenBdiUpdateStrDwExport" user="1" userName="FRU" profileId="4" language="es" country = "ES" sessionId="sfpc1102-e3e60:e61f0056f9:-7ec0" authorityId="sfpc1102.GCCOM.ssn-1">
+   <DatawindowDefinition>
+      <Panel_Title>Main Panel</Panel_Title> 
+      <Panel_Name>TPanel</Panel_Name> 
+      <Dw_Name>TDataWindow</Dw_Name> 
+   </DatawindowDefinition>
+   <StructureDefinition>
+      <User_Id>AP003132</User_Id> 
+      <Des_Dw_Export>Estructura de exportación de prueba.</Des_Dw_Export> 
+      <Dw_Order></Dw_Order> 
+      <Dw_Filter>Filtro</Dw_Filter> 
+      <Dw_Export_Private>1</Dw_Export_Private> 
+   </StructureDefinition>
+   <FieldsDefinition>
+      <Row FIELD_NAME="CAMPO1" FIELD_ORDER="1"></Row> 
+      <Row FIELD_NAME="CAMPO2" FIELD_ORDER="2"></Row> 
+      <Row FIELD_NAME="CAMPO3" FIELD_ORDER="3"></Row> 
+   </FieldsDefinition>
+</content> 

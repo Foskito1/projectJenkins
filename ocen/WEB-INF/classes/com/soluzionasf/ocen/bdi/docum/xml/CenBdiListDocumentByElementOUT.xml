@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiListDocumentByElement>
+	<elementos>
+		<elemento> (seq)
+			<cod_funcional> (String) (man) Codigo del elemento </cod_funcional>
+			<nombre_funcional> (String) (man) Nombre del elemento </nombre_funcional>		
+			<documentos>
+				<documento> (seq)
+					<id_docum> (String) (man) Identificador del documento </id_docum> 
+					<cod_docum> (String) (man) Codigo del documento </cod_docum>
+					<titulo_docum> (String) (man) Titulo del documento </titulo_docum>
+					<cod_estado_docum> (String) (man) Codigo estado documento </cod_estado_docum>
+					<num_version_docum> (String) (man) Numero de versión del documento </num_version_docum>
+					<nombre_fichero> (String) (man) Nombre del fichero </nombre_fichero>
+					<url_docum> (String) (man) Url del documento </url_docum>
+				</documento>
+			</documentos>
+		</elemento>		
+	</elementos>	
+</CenBdiListDocumentByElement>

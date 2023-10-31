@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibGeodeAssocGrupComb>
+	<GeodeAssocGrupComb>
+		<GrupProd>(String) </GrupProd>
+		<IdMsg>(String) </IdMsg>
+		<ClassComb> (sequence_item)
+			<ClassComb>(String) </ClassComb>
+			<FecIniVal>(DateTimeI18n) </FecIniVal>
+			<FecFinVal>(DateTimeI18n) </FecFinVal>
+		</ClassComb>
+	</GeodeAssocGrupComb>
+</CenTibGeodeAssocGrupComb>

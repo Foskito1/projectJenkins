@@ -1,0 +1,11 @@
+<?xml version="1.0" ?> 
+<ExportDetailOut>
+<DataGeneral>
+	<code>(seq)
+		<Row elem_id="identificador de caracteristica" char_class="clase de caracteristica: G, T o S" code=" codigo en Ref_Cod_Param(T) o en fichero TXT(G)" cod_character="codigo de la caracteristica" nom_character="descripcion de la caracteristica" des_character="descripcion larga de la caracteristica" id_rest="id en valor_caract_tipo" obligatory="si el campo es obligatorio" type_character="tipo de la caracteristica" size="tamano de la caracteristica" decode="si la caracteristica esta codificada"  decimal="numero de decimales" value_min="valor minimo" value_max="valor maximo" value="valor de la caracteristica">(seq)</Row>
+	</code>
+</DataGeneral>
+<code>(seq) 
+	<Row elem_id="identificador de caracteristica" char_class="clase de caracteristica: G, T o S" code=" codigo en Ref_Cod_Param(T) o en fichero TXT(G)" cod_character="codigo de la caracteristica" nom_character="descripcion de la caracteristica" des_character="descripcion larga de la caracteristica" id_rest="id en valor_caract_tipo" obligatory="si el campo es obligatorio" type_character="tipo de la caracteristica" size="tamano de la caracteristica" decode="si la caracteristica esta codificada"  decimal="numero de decimales" value_min="valor minimo" value_max="valor maximo" value="valor de la caracteristica">(seq)</Row>
+</code>
+</ExportDetailOut>

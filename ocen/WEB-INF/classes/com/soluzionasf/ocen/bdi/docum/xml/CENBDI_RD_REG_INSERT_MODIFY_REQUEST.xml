@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiRegDocRegisters>
+	<id_reg_docum>(Long)(man) Id del Registro Documental.</id_reg_docum>
+	<optimist_lock>(Long)(man) Optimist lock del Registro Documental.</optimist_lock>
+	<n_entrada>(Long)(man) Número de entrada, es un secuencial.</n_entrada>
+	<procedencia>(String)(man) Código de la vista CENBDT_V_PROCEDENCIA_%.</procedencia>
+	<titulo>(String) (man) Título del Registro Documental.</titulo>
+  <cod_archivo>(String)(man) Código Archivo del Registro Documental.</cod_archivo>
+	<indice>(String)índice del Registro Documental.</indice>
+	<localizacion>(String) Localización del Registro Documental.</localizacion>	
+	<id_elemento>(Long) Id de la tabla CENBDE_ELEMENTOS.</id_elemento>
+	<id_docum>(Long) Id de la tabla CENBDT_DOCUMENTOS.</id_docum>
+	<materia>(String)(man) Código de la vista CENBDT_V_REG_DOC_MATERIA .</materia>
+	<submateria>(String) Código de la vista CENBDT_V_REG_DOC_SUBMATERIA, relacionada con materia.</submateria>
+	<tipo_es>(String)(man)Tipo E/S del Registro Documental.</tipo_es>
+	<archivo>(String) Archivo del Registro Documental.</archivo>
+	<version>(String) Versión del Registro Documental.</version>
+	<id_concesion>(Long) Id de la tabla CENBDT_RD_CONCESIONES.</id_concesion>	
+	<fecha_es>(Date) Fecha E/S del Registro Documental.</fecha_es>	
+	<fecha_documento>(Date) Fecha documento del Registro Documental.</fecha_documento>
+	<fecha_vigencia>(Date) Fecha vigencia del Registro Documental.</fecha_vigencia>
+	<fecha_dist>(Date) Fecha distribucion del Registro Documental.</fecha_dist>
+	<fecha_reunion>(Date) Fecha de reunión del Registro Documental.</fecha_reunion>
+	<resumen>(String) Resumen del Registro Documental.</resumen>
+	<observaciones>(String) Observaciones sobre el Registro Documental.</observaciones>
+	<prestado>(Boolean) Código de la vista CENBDT_V_SI_NO.</prestado>
+	<id_reg_doc_prestamo>(Long) Id de la tabla CENBDT_REG_DOC_PRESTAMO.</id_reg_doc_prestamo>
+	<n_registro_e>(String) Numero de registroe electronico.</n_registro_e>
+	<fecha_registro>(Date) Fecha de registro.</fecha_registro>
+	<expediente>(String) Codigo de expediente.</expediente>
+	<Entidades> Listado de entidades asociadas al Registro Documental.
+		<entidad>
+			<id_reg_doc_entidad>(man)(Long)Id de la tabla CENBDT_REG_DOC_ENTIDAD.</id_reg_doc_entidad>
+			<optimist_lock>(Long)Optimist Lock de la tabla CENBDT_REG_DOC_ENTIDAD.</optimist_lock>
+			<id_rd_entidad>(Long)Id de la tabla CENBDT_RD_ENTIDAD.</id_rd_entidad>
+			(sequence_item)
+		</entidad>
+	</Entidades>
+	<Ubicaciones> Listado de ubicaciones asociadas al Registro Documental.
+		<ubicacion>
+			<id_ubicacion>(man)(Long)Id de la tabla CENBDT_REG_DOC_UBICACION.</id_ubicacion>
+			<optimist_lock>(Long)Optimist Lock de la tabla CENBDT_REG_DOC_UBICACION.</optimist_lock>
+			<id_elemento>(Long)Id de la tabla CENBDE_ELEMENTOS.</id_elemento>
+			(sequence_item)
+		</ubicacion>
+	</Ubicaciones>
+</CenBdiRegDocRegisters>

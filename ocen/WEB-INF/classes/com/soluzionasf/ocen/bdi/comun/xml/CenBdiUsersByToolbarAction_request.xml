@@ -1,0 +1,8 @@
+<CenBdiUsersByToolbarAction>
+    <toolbar> (String) </toolbar>
+	<accion> (String) </accion>
+	<nodo>(Long)</nodo>
+	<ind_ocensyp>(String)</ind_ocensyp>
+	<ind_flg_empresa>(String)</ind_flg_empresa>
+	<id_user>(long)</id_user>
+</CenBdiUsersByToolbarAction>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!--CenBdiModifyElmntTypes-->
+<content>
+	<ElmntTypeData>
+		<Cod_Elmnt_Type>(String[3]) Contiene el código del tipo de elemento</Cod_Elmnt_Type>
+		<Elmnt_Type_Name>(String[60]) Contiene el nombre del tipo de elemento</Elmnt_Type_Name>
+		<Elmnt_Type_Desc>(String[200]) Contiene la descripción del tipo de elemento</Elmnt_Type_Desc>
+		<Elmnt_Table>(String[30]) Contiene la tabla asociada al tipo de elemento en caso de que sea parametrizable</Elmnt_Table>
+      <Elmnt_Icon>(String[100]) Contiene el nombre del archivo con el icono que se mostrará para el elemento</Elmnt_Icon>
+      <Riseable>(Number[1]) Contiene 1 si es levantable o 0 en caso contrario.</Riseable>
+		<Optimist_Lock>(Number[2]) Contiene un numero de control de actualización</Optimist_Lock>
+	</ElmntTypeData>
+</content>
+<!--/CenBdiModifyElmntTypes-->

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<content method="CenBdiDeleteStrDwExport" user="1" userName="FRU" profileId="4" language="es" country = "ES" sessionId="sfpc1102-e3e60:e61f0056f9:-7ec0" authorityId="sfpc1102.GCCOM.ssn-1">
+   <StructureDefinition>
+      <User_Id>16</User_Id>
+      <Cod_Dw_Export>1</Cod_Dw_Export>
+   </StructureDefinition>
+</content>

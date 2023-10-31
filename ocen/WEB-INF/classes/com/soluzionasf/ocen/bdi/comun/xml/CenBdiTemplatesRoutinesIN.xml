@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiTemplatesRoutines>
+	<Campos>(seq)
+		<campo>(man)(String) Nombre Campo</campo>
+		<valor>(man)(String) Valor Campo</valor>
+	</Campos>
+	<interfase>(man)(String) Nombre de la interfaz </interfase>
+</CenBdiTemplatesRoutines>
+

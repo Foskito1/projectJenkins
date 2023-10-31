@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiNewModifyGroup>
+	<Data>
+		<type>(String)(man) Tipo de operacion Alta o Modificacion</type>		
+		<id_group>(long) Id del grupo en caso de ser una modificación</id_group>
+		<cod_group>(String)(man) Codigo del grupo a modificar o crear</cod_group>
+		<nodo>(long)(man) Tipo de operacion Alta o Modificacion</nodo>	
+		<des_group>(String)(man) Tipo de operacion Alta o Modificacion</des_group>					
+	</Data>		
+	<measures_list>
+		<measure>(seq)
+			<Cod_Measure>(long) Código de la medida que hay que añadir al grupo.</Cod_Measure>
+			<cod_externo>(String) Codigo Externo para otros sistemas</cod_externo>
+		</measure>
+	</measures_list>
+</CenBdiNewModifyGroup>

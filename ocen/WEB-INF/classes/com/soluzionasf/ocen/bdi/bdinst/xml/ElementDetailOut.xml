@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<detail>
+<code>
+<DataGeneral cod_company="codigo de la empresa" cod_funtional="codigo del hueco funcional"
+	name_funtional="nombre del hueco funcional" cod_inventory="codigo de inventario"
+	name_inventory="nombre del inventario" id_inventory="identificador secuencial de inventario" id_funtional="identificador secuencial de elemento" 
+	funtional_parent="codigo del hueco funcional del padre" item="item del inventario" item_f="item del hueco funcional"
+	level="nivel del padre" type_element="tipo de elemento"	class_element="clase del elemento"
+	state_active_funtional="campo de estado activo del hueco" state_available_funtional="campo de estado de disponibilidad del hueco"
+	state_delete_funtional="campo de estado borrado del hueco"
+	state_active_inventory="campo de estado activo del inventario" state_raised_inventory="campo de estado levantado del inventario"
+	state_delete_inventory="campo de estado borrado del inventario"	cod_manufacturer="codigo del fabricante" 
+	especial_pos="ubicacion especial" mark="marca del inventario" num_serie="numero serie" date_service="fecha de puesta en servicio" 
+	date_manufacturer="fecha de fabricacion" model="modelo del inventario" cod_bars="codigo de barras" position="situacion" observations="observaciones"
+	optimist_lock_inventory="optimist lock del inventario" optimist_lock_funtional="optimist lock del hueco" id_sap="id sap">
+</DataGeneral>
+<DataTechnical>
+	<register nom_character="nombre de la caracteristica" des_character="descripcion de la caracteristica" value="valor de la caracteristica"
+		 id_rest="id de la tabla tipo resto" decode="si la caracteristica esta codificada" cod_character="codigo de la caracteristica"
+		 size="tamano de la caracteristica" decimal="numero de decimales" value_max="valor maximo" value_min="valor minimo"
+		 obligatory="si el campo es obligatorio" type_character="tipo de la caracteristica"
+		 id_rest_type_asoc="id resto de la caracteristica asociada">
+		(seq)</register>
+</DataTechnical>
+<list>
+	<register num_character="codigo de la caracteristica" nom_character="nombre de la caracteristica" des_character="descripcion de la caracteristica"
+		type_character="tipo de la caracteristica" size="tamano de la caracteristica"
+		decimal="numero de decimales" value_max="valor maximo" value_min="valor minimo"
+		obligatory="si el campo es obligatorio" decode="si se trata de una caracteristica
+		codificada" value="valor de la caracteristica">(seq)</register>
+</list>
+(seq)</code>
+</detail>	  

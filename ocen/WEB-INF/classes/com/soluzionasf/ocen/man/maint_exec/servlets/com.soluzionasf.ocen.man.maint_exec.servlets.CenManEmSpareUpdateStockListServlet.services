@@ -1,0 +1,1 @@
+CENMAN.updateSpareStocks;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmSpareUpdateStockListService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmSpareUpdateStockListRequestDOMImpl

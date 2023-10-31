@@ -1,0 +1,3 @@
+#MultiIdioma
+login;com.soluzionasf.ocen.bdi.comun.domain.CenBdiGetLanguages;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiGetLanguagesRequestDOMImpl;
+CenBdiGetLanguages;com.soluzionasf.ocen.bdi.comun.domain.CenBdiGetLanguages;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiGetLanguagesRequestDOMImpl;

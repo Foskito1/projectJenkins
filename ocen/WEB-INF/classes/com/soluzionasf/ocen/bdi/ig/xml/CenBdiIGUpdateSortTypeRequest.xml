@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiIgUpdateSortType>
+<Global>
+	<InsertUpdate> 
+		<SortType>(seq)
+			<id_sort_type>(man)(Long) Negativo para insertar o id del criterio a actualizar de CENBDT_SORT_TYPE </id_sort_type>
+			<id_criteria_type>(man)(Long) Tipo de Criterio asociado </id_criteria_type>
+			<description>(man)(String) Descripción del criterio </description>
+			<module>(man)(String) Contiene el módulo al que pertenece el criterio </module>
+			<optimist_lock> (man) (Long) Control de registro corrupto </optimist_lock>
+		</SortType>
+	 </InsertUpdate>
+	 <Delete>
+		<id_sort_type>(seq)(man)(Long) id del criterio a eliminar de CENBDT_SORT_TYPE</id_sort_type>
+		<optimist_lock>(seq)(man)(Long) Control de registro corrupto en CENBDT_SORT_TYPE</optimist_lock>
+	 </Delete>
+</Global>
+</CenBdiIgUpdateSortType>

@@ -1,0 +1,1 @@
+CenMan.updateEmWorkOrderPartUpdate;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmWorkOrderPartUpdateService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmWorkOrderPartUpdateRequestDOMImpl

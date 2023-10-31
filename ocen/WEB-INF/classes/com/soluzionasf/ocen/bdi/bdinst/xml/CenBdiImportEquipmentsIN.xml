@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiImportEquipments>
+    <global>
+         <email>(String) Email para notificacion</email>
+         <file>(String) Nombre del fichero importado</file>
+         <eq>(seq) Equipo
+            <f>(Long) Fila</f>
+            <er> Errores
+                <e>(seq)(String) Error</e>
+            </er>
+            <d> Datos
+                <cf>  (String) Codigo funcional</cf>
+                <nf>  (String) Nombre funcional</nf>
+                <cte> (String) Codigo tipo elemento</cte>
+                <nte> (String) Nombre tipo elemento</nte>
+                <cfp> (String) Codigo funcional padre</cfp>
+                <if>  (String) Codigo alternativo funcional o item funcional</if>
+                <ci>  (String) Codigo inventario</ci>
+                <ni>  (String) Nombre inventario</ni>
+                <ce>  (String) Clase elemento</ce>
+                <i>   (String) Codigo alternativo inventario o item</i>
+                <df>  (String) Descripcion fabricante</df>
+                <ma>  (String) Marca</ma>
+                <mo>  (String) Modelo</mo>
+                <ns>  (String) Numero serie</ns>
+                <fps> (String) Fecha puesta servicio</fps>
+                <o>   (String) Observaciones</o>
+                <s>   (String) Situacion</s>
+                <cb>  (String) Codigo barras</cb>
+                <ff>  (String) Fecha fabricacion</ff>
+            </d>
+        </eq>
+		<cts>(seq) Característica
+			<f>(Long) Fila</f>
+			<er> Errores
+                <e>(seq)(String) Error</e>
+            </er>
+			<d>
+				<mdo> (String) Modulo</mdo>
+				<mv> (String) Multi Valor</mv>
+				<cca> (String) Codigo Característica Asociada</cca>
+				<va> (String) Vista Asociada</va>
+				<obl> (String) Obligatorio</obl>
+				<ndec> (String) Numero Decimales</ndec>
+				<tmn> (String) Tamaño</tmn>
+				<vmin> (String) Valor Minimo </vmin>
+				<vmax>(String) Valor Maximo</vmax>
+				<td>(String) Tipo Dato</td>
+				<dc>(String) Descripcion Característica</dc>
+				<nc>(String) Nombre Característica</nc>
+				<cc>(String) Codigo Característica</cc>
+				<cce>(String) Codigo Tipo Elemento</cce>
+			</d>
+		</cts>
+		<vlr_cts>(seq) Valor Característica
+			<f>(Long) Fila</f>
+			<er> Errores
+                <e>(seq)(String) Error</e>
+            </er>
+			<d>
+				<vlr>(String) Valor Característica</vlr>
+				<fhc>(String) Fecha / Hora Cambio (dd/mm/yyyy hh24:mi:ss)</fhc>
+				<nmcrt>(String) Nombre Característica</nmcrt>
+				<cfe>(String) Codigo Funcional del elemento</cfe>
+			</d>
+		</vlr_cts>
+    </global>
+</CenBdiImportEquipments>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiMeasureReading>
+   <QueryResult>
+      <ROW COD_MEDIDA="(Long)" DESC_MEDIDA="(String)" FECHA_MEDICION="(String)" DESP_CALEN="(Long)" VALOR_MED="(Double)" VALOR_CONTADOR="(Long)" COD_VALOR_ENUM="(Long)" DESC_VALOR_ENUM="(String)" FLAG_MED="(Long)" COD_FLAG_VALID_MED="(String)" DESC_FLAG_VALID_MED="(String)" COD_FLAG_PDTE_CALCULAR_MED="(String)" DESC_FLAG_PDTE_CALCULAR_MED="(String)" OPTIMIST_LOCK="(Long)" COD_FLAG_BLOQUEO_MED="(String)" DESC_FLAG_BLOQUEO_MED="(String)" USER="(Long)" FECHA_MODIFICACION="(DateTimeI18n)" READING="(Long)" TURN_NUMBER="(Long)" MEASURE_TYPE="(Long)" PROTECTED="(String)" MODIFIABLE="(String)" COD_UNIDAD="(String)" COD_IMPORT_MEDIDA="(String)"  USERDES="(String)">(seq)</ROW>
+   </QueryResult>
+   <Error>
+	 <Message>(String)</Message>
+	 <Description>(String)</Description>
+   </Error>
+</CenBdiMeasureReading>

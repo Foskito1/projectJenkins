@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- Method: CenBdiGetDbDecimalSeparator -->
+<CenBdiGetsDbDecimalSep>
+   <Gets_Db_Decimal_Sep>(man)
+	   <Absolute_Nothing>No contiene nada.</Absolute_Nothing> 
+   </Gets_Db_Decimal_Sep>
+</CenBdiGetsDbDecimalSep> 

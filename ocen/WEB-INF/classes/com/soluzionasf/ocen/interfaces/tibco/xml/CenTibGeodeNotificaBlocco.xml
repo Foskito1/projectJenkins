@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibGeodeNotificaBlocco>
+	<GeodeNotificaBlocco>
+		<UserName>(String)(man)</UserName>
+		<TipOperacion>(String)(man)</TipOperacion>
+		<FecOperacion>(DateTimeI18n) (man)</FecOperacion>
+		<FecTransaccion>(DateTimeI18n) (man)</FecTransaccion>
+		<ListGrup> (sequence_item)(man)
+			<GrupProd>(String) (man)</GrupProd>	
+		</ListGrup>
+		<IdMsg>(String)</IdMsg>
+	</GeodeNotificaBlocco>
+</CenTibGeodeNotificaBlocco>

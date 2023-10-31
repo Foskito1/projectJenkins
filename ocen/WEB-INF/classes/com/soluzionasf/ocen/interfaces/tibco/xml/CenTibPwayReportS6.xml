@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibPwayReportS6>
+	<PwayReportS6>
+		<DateReport>(Date)(man)</DateReport>
+		<IdModS6>(long)(man)</IdModS6>
+		<LoginUser>(String)(man)</LoginUser>
+		<NameUser>(String)(man)</NameUser>
+		<ListValueCheck> 
+			(sequence_item)(man)
+			<IdCheck>(String)(man)</IdCheck>
+			<CodCheck>(String)(man)</CodCheck>
+			<ValueCheck>(String)(man)</ValueCheck>
+			<CodMeasure>(long)(man)</CodMeasure>
+			<NoteCheck>(String)</NoteCheck>
+		</ListValueCheck>
+	</PwayReportS6>
+</CenTibPwayReportS6>

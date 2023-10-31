@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<STYLE type="text/css">
+			 .scabeceraDatos{font-size=11pt; font-family=Arial; text-align: center; color=white; background-color= #011460;}     
+			 .sceldaTabla{font-size=9pt; font-family=Arial; text-align: left; background-color= #F9FCE9;}    
+			 .sceldaTablaC{font-size=9pt; font-family=Arial; text-align: center; background-color= #F9FCE9;}    
+		</STYLE>	
+	</head>	
+	<body>
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;line-height:115%'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;line-height:115%'>INFORMES GENERANDOSE
+ACTUALMENTE<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+			<TABLE width="1500px" align=center border = 1 cellspacing=2 cellpadding=1  >	    
+				<TR>
+					<TD width=6% class="scabeceraDatos"><b>Direcci&oacute;n Ip</b></TD>
+					<TD width=15% class="scabeceraDatos"><b>Nombre del usuario</b></TD>
+					<TD width=3% class="scabeceraDatos"><b>Id del informe</b></TD>	
+					<TD width=25% class="scabeceraDatos"><b>Descripci&oacute;n del informe</b></TD>
+					<TD width=15% class="scabeceraDatos"><b>Fecha comienzo de generaci&oacute;n</b></TD>
+					<TD width=13% class="scabeceraDatos"><b>Parametros de generaci&oacute;n</b></TD>
+					<TD width=5% class="scabeceraDatos"><b>Memoria libre</b></TD>
+				</TR>				
+				$$DATASET dataList$$ 
+				<tr>
+					<td  class="sceldaTabla">$$direccion_ip$$</td>
+					<td  class="sceldaTabla">$$nombre_usuario$$</td>
+					<td  class="sceldaTabla">$$id_informe$$</td>
+					<td  class="sceldaTabla">$$descripcion_informe$$</td>
+					<td  class="sceldaTabla">$$fecha_generacion$$</td>
+					<td  class="sceldaTabla">$$parametros_generacion$$</td>
+					<td  class="sceldaTabla">$$memoria_libre$$</td>
+				</tr>	
+				$$/DATASET$$	
+			</table>		
+	</body>
+</html>

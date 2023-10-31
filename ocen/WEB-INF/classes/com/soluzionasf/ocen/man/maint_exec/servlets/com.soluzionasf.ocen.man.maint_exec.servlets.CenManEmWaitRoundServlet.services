@@ -1,0 +1,1 @@
+CENMAN.updateRoundStateWait;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmWaitRoundService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmOtStateUpdateRequestDOMImpl

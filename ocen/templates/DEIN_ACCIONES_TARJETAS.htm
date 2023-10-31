@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Impresión de Acciones y Tarjetas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+.table {  text-align: center; vertical-align: super; width: 100%; border-collapse: collapse;}
+.headertable 	{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ;  }
+.row1 		{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; horizontal-align: center; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ; }
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="100%" border="0">
+<tr> 
+	<td> 
+		<table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+			<tr> 
+          <td rowspan="3" width="12%"><img src="/images/UFGN3.jpg"></td>
+          <td colspan="3" align="center" > <b>Listado de Acciones y Tarjetas de un Descargo Interno</b> </td>	
+			</tr>
+		      <tr> 
+	    <td  width="30%" align="center">Instalación: <BR>|root.CENOPE_QRY_DEIN_IDENTIF_DESCARGO.Row@DES_INSTALACION| &nbsp;</td>
+     	    <td  width="30%" align="center">Código del Descargo:<BR>|root.CENOPE_QRY_DEIN_IDENTIF_DESCARGO.Row@COD_DEIN_DESCARGO_USU|&nbsp;</td>
+     	    <td  width="30%" align="center">Tipo de Descargo:<BR>|root.CENOPE_QRY_DEIN_IDENTIF_DESCARGO.Row@COD_TIPO_DESC_USU|&nbsp;</td>
+     	    		</tr>
+     	    		<tr>
+     	    <td colspan="3"  align="center">Elemento: <BR>|root.CENOPE_QRY_DEIN_IDENTIF_DESCARGO.Row@DES_ELEMENTO|&nbsp;</td>
+			</tr>
+		</table>
+		<table width="100%" border="1" bordercolor="#000000" cellspacing="2">
+			<tr> 
+				
+          <td align="center"> &nbsp;</td>	
+			</tr>
+		</table>
+	<table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+	  <tr> 
+	    <td align="center"  class="headertable"> 
+	      <b>ACCIONES ASOCIADAS</b>
+	    </td>
+	  </tr>
+	  <tr> 
+	    	    <td>|GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1}{column:name=Nº Orden ,type=number, block=CENOPE_QRY_LIST_GRP_ACTIONS_DESCR,label=NUM_ORDEN, class=headertable}{column:name=C&oacute;digo Elemento ,type=string, block=CENOPE_QRY_LIST_GRP_ACTIONS_DESCR, label=COD_FUNC_EQUIPO, class=headertable}{column:name=Elemento Afectado ,type=string,block=CENOPE_QRY_LIST_GRP_ACTIONS_DESCR,label=DES_EQUIPO_AFECTADO, class=headertable}{column:name=Acci&oacute;n ,type=string, block=CENOPE_QRY_LIST_GRP_ACTIONS_DESCR,label=DES_ACCION, class=headertable}&QUOT;)|</td>	    
+	  </tr>
+	</table>
+	<table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+	  <tr> 
+	    <td align="center"  class="headertable"> 
+	      <b>TARJETAS DE PRECAUCI&Oacute;N</b>
+	    </td>
+	  </tr>
+	  <tr> 
+	    	    <td>|GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1}{column:name=Nº Orden,type=number, block=CENOPE_QRY_DEIN_TARJ_PREC,label=NUM_ORDEN, class=headertable}{column:name=Instrucci&oacute;n ,type=string, block=CENOPE_QRY_DEIN_TARJ_PREC, label=DES_ETIQUETA, class=headertable}&QUOT;)|</td>
+	  </tr>
+	</table>
+
+	<table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+	  <tr> 
+	    <td align="center"  class="headertable"> 
+	      <b>TARJETAS DE PELIGRO</b>
+	    </td>
+	  </tr>
+	  <tr> 
+	    	    <td>|GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1}{column:name=Nº Orden,type=number, block=CENOPE_QRY_TARJETAS_DE_PELIGRO,label=NUM_ORDEN, class=headertable}{column:name=C&oacute;digo Elemento ,type=string, block=CENOPE_QRY_TARJETAS_DE_PELIGRO, label=COD_FUNC_EQUIPO, class=headertable}{column:name=Elemento Afectado,type=string,block=CENOPE_QRY_TARJETAS_DE_PELIGRO,label=DES_ACTIVO_FISICO, class=headertable}{column:name=Posici&oacute;n Descargo ,type=string, block=CENOPE_QRY_TARJETAS_DE_PELIGRO,label=DES_POS_DESCARGO, class=headertable}{column:name=Posici&oacute;n Marcha, type=string, block=CENOPE_QRY_TARJETAS_DE_PELIGRO, label=DES_POS_MARCHA, class=headertable}{column:name=Situaci&oacute;n Tarjeta, type=string, block=CENOPE_QRY_TARJETAS_DE_PELIGRO, label=DES_SITUACION, class=headertable}&QUOT;)|</td>
+	  </tr>
+	</table>
+</td>
+</tr>
+      
+</table>
+</body>
+</html>

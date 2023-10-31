@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibPwayAnagraficaMeasureNE>
+	<PwayAnagraficaMeasureNE>
+		<IdMsg>(String)</IdMsg>
+		<CodExito>(String)</CodExito>
+		<DesExito>(String)</DesExito>
+		<CodInventory>(String)</CodInventory>
+		<Inventory>(String)</Inventory>
+	  <Timestamp>(DateTimeI18n)</Timestamp>
+		<SapSystem>(String)</SapSystem>
+		<SapClient>(String)</SapClient>
+	</PwayAnagraficaMeasureNE>
+</CenTibPwayAnagraficaMeasureNE>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<CenBdiMeasurements>
+   <medida>
+      <cod_medida>(man)(long)Codigo de la medida que hay que grabar</cod_medida>
+      <fecha_medida>(man)(String)Fecha de la medida que hay que grabar</fecha_medida>
+      <valor_medida>(Double)Valor de la medida que hay que grabar</valor_medida>
+      <valor_cadena_medida>(String)Valor de la medida, si es de tipo cadena, que hay que grabar</valor_cadena_medida>
+      <desplazamiento_cal>(Long)Desplazamiento del calendario</desplazamiento_cal>
+      <optimist_lock>(Long)OptimistLock de la medida</optimist_lock>
+      <flag_calidad>(Long)Flag PI</flag_calidad>
+      <lectura>(Long)valor de la lectura</lectura>	
+      <num_vueltas>(Long)numero de vueltas</num_vueltas>
+      <observaciones>(String)Observaciones para poner en el historico de mediciones</observaciones>
+   </medida>
+	<modeMTZ>(Long) Cambiar el modo MTZ por defecto en el entorno: 0, desactivado. 1, conversiones bioxo. 2, conversion por usuario. 3, conversion por medida.</modeMTZ> 
+</CenBdiMeasurements>

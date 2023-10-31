@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiFavouriteDashboard>
+	<url>(String) url del dashboard por defecto. vacío para eliminar</url>
+	<action>(String) 
+				check - indica que se va a comprobar la url, respecto a la guardarda como favorito en CENBDT_CONFIG_USU.
+				build - indica que se va a generar la url comprobando seguridad por nodo.
+				otro valor - indica que se va a actualizar la url de favorito en CENBDT_CONFIG_USU.
+	</action>
+</CenBdiFavouriteDashboard>

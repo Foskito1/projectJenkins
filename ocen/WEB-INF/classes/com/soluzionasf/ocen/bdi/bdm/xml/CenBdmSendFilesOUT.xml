@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdiSendFiles -->
+<CenBdiSendFiles>
+	<Notifications>
+		<notif_estimated_time>(String) Notificacion del tiempo estimado para calculo de consumos previstos.</notif_estimated_time>
+	</Notifications>
+</CenBdiSendFiles>

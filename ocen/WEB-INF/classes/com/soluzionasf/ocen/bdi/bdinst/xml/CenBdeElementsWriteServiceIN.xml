@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><CenBdeElementsWrite>
+  <elements>
+  <element>(sequence_item)
+  <code_element>(man)(String)Código univoco que identifica a el Elemento (code_element de la bbdd).</code_element>
+  <value_quality_status>(Long) DATA_QUALITY_KPI.</value_quality_status>
+  <frequency_kpi_valore>(Double) FREQUENCY_KPI_VALORE. </frequency_kpi_valore>
+  <behavior_kpi_valore>(Double) BEHAVIOR_KPI_VALORE. </behavior_kpi_valore>
+  </element>
+  </elements>
+</CenBdeElementsWrite>

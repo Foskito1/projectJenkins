@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<TITLE>$$ReportName$$</TITLE>
+<STYLE type="text/css">
+     .stitulo{font-size=12pt; font-family=Arial; text-align: center; color=white; }
+     .stitulo2{font-size=12pt; font-family=Arial; text-align: center; color=white; }
+     .scabeceraDatos{font-size=11pt; font-family=Arial; text-align: left; color=white;}
+     .sceldaDatos{font-size=10pt; font-family=Arial; text-align: center;}          
+     .sceldaDatosLeft{font-size=10pt; font-family=Arial; text-align: left;}
+     .scabeceraTabla{font-size=11pt; font-family=Arial; text-align: center; color=white;}
+     .sceldaTabla{font-size=9pt; font-family=Arial; text-align: center;}
+     .sceldaTablaLeft{font-size=9pt; font-family=Arial; text-align: left;}
+     .sceldaTablaRight{font-size=9pt; font-family=Arial; text-align: right;}
+     .sceldaTotal{font-size=10pt; font-family=Arial; text-align: center;}
+</STYLE>
+</HEAD>		
+<body bgcolor=#F0F0F8> 
+
+<TABLE bgcolor=#011460 width="100%"  border=0 cellspacing=0 cellpadding=0 >	    
+<TR>
+	<TD colspan=3 class="stitulo"><b>$$ReportName$$</b><font class="stitulo2">&nbsp;</font></TD>
+</TR>
+<TABLE>
+
+
+
+<TABLE bgcolor=#7C8EB2 width="100%" border=0 cellspacing=1 cellpadding=5 >	    
+<TR>
+	<TD colspan=3 class="scabeceraDatos"><b>$$GeneralDataName$$</b></TD>
+</TR>
+<TABLE>
+
+<TABLE bgcolor=#F0F0F8 width="726"  border=0 cellspacing=0 cellpadding=0>
+	$$DATASET headerList$$ 
+	<TR width="242" class="sceldaDatosLeft">
+		<TD colspan=3><b>$$headerNames$$</b> : $$headerValues$$</TD>
+	</TR>
+	$$/DATASET$$
+	<TR width="242" class="sceldaDatosLeft">
+		<TD><b>$$PeriodsDetailName$$</b> : $$PeriodsDetailValue$$</TD>
+		<TD><b>$$PeriodsIncludeName$$</b> : $$PeriodsIncludeValue$$</TD>
+		<TD><b>$$PeriodsNIncludeName$$</b> : $$PeriodsNIncludeValue$$</TD>
+	</TR>
+	<TR width="242" class="sceldaDatosLeft">
+		<TD><b>$$DateBeginName$$</b> : $$DateBeginValue$$</TD>
+		<TD><b>$$DateEndName$$</b> : $$DateEndValue$$</TD>
+	</TR>
+	<TR width="242" class="sceldaDatosLeft">
+		<TD colspan=3><b>$$headerNamesObservations$$</b>$$headerValuesObservations$$</TD>
+	</TR>	
+</TABLE>
+
+<br>
+
+<TABLE width="97%" align="center" border="1" cellspacing="1" cellpadding="5">	    
+<TR bgcolor=#7C8EB2>
+	<TD width=7% class="scabeceraTabla"><b>$$dateName$$</b></TD>
+	<TD width=3% class="scabeceraTabla"><b>$$hourName$$</b></TD>	 
+	<TD width=20% class="scabeceraTabla"><b>$$energyNameConverted$$&nbsp;($$unitEnergyValueConverted$$)</b></TD>
+	<TD width=20% class="scabeceraTabla"><b>$$energyName$$&nbsp;($$unitEnergyValue$$)</b></TD>
+</TR>
+$$DATASET dataList$$ 
+<TR bgcolor=#F9FCE9>
+	<TD class="sceldaTabla">&nbsp;$$dateValue$$</TD>
+	<TD class="sceldaTabla">&nbsp;$$hourValue$$</TD>
+	<TD class="sceldaTablaRight">$$energyValueConverted$$</TD>  
+	<TD class="sceldaTablaRight">$$energyValue$$</TD>   
+</TR>
+$$/DATASET$$	
+<TR bgcolor=#F9FCE9>
+	<TD class="sceldaTotal">$$totalName$$</TD>
+	<TD class="sceldaTotal">&nbsp;</TD>
+	<TD class="sceldaTablaRight">$$totalEnergyValueConverted$$</TD>
+	<TD class="sceldaTablaRight">$$totalEnergyValue$$</TD>   
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

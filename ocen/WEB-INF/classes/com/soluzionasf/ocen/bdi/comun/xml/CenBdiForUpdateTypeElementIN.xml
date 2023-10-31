@@ -1,0 +1,21 @@
+<CenBdiForUpdateTypeElement>
+	<ForTypeElement>(man)
+		<Cod_Type_Element>(man)(long) Contiene el Código de Tipo de Elemento de Formulacion.</Cod_Type_Element>
+		<Cod_For_Module>(man)(long) Contiene el Codigo de Modulo de Formulacion al que pertenece el tipo de elemento.</Cod_For_Module>
+		<Des_Type_Element>(man) Contiene la Descripcion de Tipo de Elemento.</Des_Type_Element>
+		<Te_Color>(man) Contiene un string con el color de la fuente con la que se dibujara en pantalla los elementos de dicho tipo de elemento.</Te_Color>
+		<Es_Comparador>(man) Flag que indica si el Tipo del elemento es un comparador.</Es_Comparador>
+		<Es_Operador>(man) Flag que indica si el Tipo del elemento es un operador.</Es_Operador>
+		<Es_Elemento>(man) Flag que indica si el Tipo del elemento es un Elemento.</Es_Elemento>
+		<Es_Deliminador>(man) Flag que indica si el Tipo del elemento es un Delimitador.</Es_Deliminador>
+		<Es_Numero>(man) Flag que indica si el Tipo del elemento es un Numero.</Es_Numero>		
+		<Es_Fecha>(man) Flag que indica si el Tipo del elemento es una Fecha.</Es_Fecha>
+		<Es_Funcion>(man) Flag que indica si el Tipo del elemento es una Funcion.</Es_Funcion>
+		<Recurivo>(man) Flag que indica si el Tipo del elemento es una funcion recursiva.</Recurivo>
+		<Recurivo_Func> Contiene el nombre de la Funcion Recursiva.</Recurivo_Func>
+		<Es_Externo>(man) Flag que indica si el Tipo del elemento es Externo.</Es_Externo>
+		<Ext_Panel> Nombre del panel a partir del cual se obtiene el elemento externo.</Ext_Panel>
+		<Ext_Vista> nombre de la vista utilizada para obtener el elemento externo.</Ext_Vista>		
+		<Optimist_Lock>(Long) Contiene un numero de control de acturalizacion.</Optimist_Lock>
+	</ForTypeElement>	
+</CenBdiForUpdateTypeElement>

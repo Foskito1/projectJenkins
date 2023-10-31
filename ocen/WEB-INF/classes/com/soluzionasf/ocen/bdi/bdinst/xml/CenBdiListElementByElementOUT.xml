@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiListElementByElement>
+	<elementos>
+		<elemento> (seq)
+			<cod_funcional_padre> (String) (man) Codigo funcional del padre </cod_funcional_padre>
+			<cod_funcional> (String) (man) Codigo funcional funcional </cod_funcional>
+			<nombre_funcional> (String) (man) Nombre funcional del elemento </nombre_funcional>		
+			<tipo_elemento> (String) (man) Codigo del tipo de elemento </tipo_elemento>
+			<codigo_inventario> (String) (man)Codigo inventario del elemento </codigo_inventario>
+			<id_inventario> (Long) (man)Id Inventario </id_inventario>
+			<nombre_fisico> (String) (man)Id Inventario </nombre_fisico>
+			<nivel_arbol> (Long) (man)Nivel arbol </nivel_arbol>
+			<estado> (Long) (man)Estado </estado>
+			<numero_hijos> (Long) (man)Numero de hijos en el siguiente nivel, por debajo del elemento </numero_hijos>
+			<caracteristicas>
+				<caracteristica> (seq)
+					<nombre_caracteristica> (String) (man) Nombre caracteristica </nombre_caracteristica> 
+					<descripcion_caracteristica> (String) (man) Descripcion caracteristica </descripcion_caracteristica>
+					<tipo_valor> (String) (man) Tipo valor caracteristica </tipo_valor>
+					<valor> (String) (man) Valor caracteristica </valor>				
+				</caracteristica>
+			</caracteristicas>
+		</elemento>		
+	</elementos>	
+</CenBdiListElementByElement>

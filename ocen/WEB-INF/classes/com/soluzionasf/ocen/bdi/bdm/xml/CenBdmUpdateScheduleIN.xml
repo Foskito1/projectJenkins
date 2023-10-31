@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdmUpdateSchedule -->
+<CenBdiUpdateSchedule>
+	<Schedule>(man)(sequence_item)
+		<Id_Batch>(String)Código de planificacion</Id_Batch>
+		<Cod_Medida>(String)(man)Código de la medida a la que se va ha asignar la planificacion</Cod_Medida>
+		<F_Activo>(String)(man)Flag que indica si la planificacion esta activa o no</F_Activo>
+		<Despl_Fecha_Ini>(DateTime)Desplazamiento Fecha Inicial</Despl_Fecha_Ini>
+		<Despl_Fecha_Fin>(DateTime)Desplazamiento Fecha Inicial</Despl_Fecha_Fin>
+		<Num_Periodos>(Long)Numero de periodos</Num_Periodos>
+		<Perioricidad>(long)(man)Perioricidad de la planificacion</Perioricidad>
+		<Optimist_Lock>(long)(man)Optimist Lock del registro</Optimist_Lock>
+		<id_zona_horaria>(long)Zona horaria de la planificación a ejecutar</id_zona_horaria>
+		<hora_base_ejec>(long)Hora de cuando se ejecuta el proceso en la zona de referencia</hora_base_ejec>
+		<minuto_base_ejec>(long)Minuto de cuando se ejecuta el proceso en la zona de referencia</minuto_base_ejec>
+	</Schedule>
+</CenBdiUpdateSchedule>

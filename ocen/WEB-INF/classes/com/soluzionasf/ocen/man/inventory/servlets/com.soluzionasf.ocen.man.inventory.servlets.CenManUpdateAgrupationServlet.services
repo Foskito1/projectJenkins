@@ -1,0 +1,2 @@
+CENMAN.updateAgrupation;com.soluzionasf.ocen.man.inventory.domain.CenmanUpdateAgrupationService;com.soluzionasf.ocen.man.inventory.servlets.CenManInvAgrupacionUpdateRequestDOMImpl
+															

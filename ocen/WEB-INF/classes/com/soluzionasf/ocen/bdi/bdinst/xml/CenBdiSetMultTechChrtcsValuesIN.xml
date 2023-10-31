@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiSetMultTechChrtcsValues>
+	<MultTechCharData>(seq)
+		<MultTechCharHeader>(man)
+		   <InventoryCode>(man)Code for the inventory Charact Values belong</InventoryCode>
+		   <TechCharactValueId>(Long)Id for the register to be modified, null if a new one</TechCharactValueId>
+		   <InventoryId>(long)(man)Id for the inventory Charact Values belong</InventoryId>
+		   <RestTypeId>(long)(man)Id for the Element Type and Tech Charact. association</RestTypeId>
+		   <OptimistLock>(long)(man)0 if a new register, CENBDE_VALOR_CARACTERISTICA_TIPO.OPTIMIST_LOCK in modification case</OptimistLock>
+		   <CenCharactNumber>(Long)CEN_NUM_CARACTERISTICA Field</CenCharactNumber>
+		   <FecHorIni>(DateTimeI18n)(man)Date when indicated values are valid from</FecHorIni>
+		</MultTechCharHeader>
+		<MultTechCharValuesList>(man)(seq)
+			<TechCharValueData>(man)
+				<TechCharValueOrder>(long)(man)Value Order in the values list</TechCharValueOrder>
+				<TechCharValue>(man)Value for the Tech Charact.</TechCharValue>
+			</TechCharValueData>
+		</MultTechCharValuesList>
+	</MultTechCharData>
+</CenBdiSetMultTechChrtcsValues>
+

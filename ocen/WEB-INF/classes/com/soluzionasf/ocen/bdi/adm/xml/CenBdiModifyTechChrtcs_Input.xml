@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!--CenBdiModifyTechChrtcs-->
+<content>
+	<TechCharData>
+		<Cod_Tech_Char>(Number[3]) Contiene el código de la característica</Cod_Tech_Char>
+		<Tech_Char_Name>(String[25]) Contiene el nombre o descripción corta de la característica.</Tech_Char_Name>
+		<Obligatory>(String[1]) Contiene 'S' si la ctca es de caracter obligatorio o 'N' en caso contrario.</Obligatory>
+		<Decod_Against>(String[60]) Contiene la tabla contra la que decodificador el valor de la ctca.</Decod_Against>
+		<Cod_Data_Type>(String[3]) Contiene el código del tipo de dato que puede tomar la ctca.</Cod_Data_Type>
+		<Size>(Number[10]) Contiene el tamaño en nº de caracteres que puede alcanzar el dato.</Size>
+		<Num_Dec>(Number[2]) Contiene el número de decimales que puede tomar la .</Num_Dec>
+		<V_Max>(Float) Contiene el valor máximo que puede alcanzar la característica.</V_Max>
+		<V_Min>(Float) Contiene el valor mínimo que puede tener la característica.</V_Min>
+		<Optimist_Lock>(Number[2]) Contiene un numero de control de actualización</Optimist_Lock>
+	</TechCharData>
+</content>
+<!--/CenBdiModifyTechChrtcs-->

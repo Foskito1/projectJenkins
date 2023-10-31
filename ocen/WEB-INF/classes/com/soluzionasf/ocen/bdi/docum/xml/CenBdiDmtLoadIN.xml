@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiDmtLoad>
+	<req_reg_doc>(man) (Long) Requiere registro documental</req_reg_doc>
+	<id_tipo_dmt>(man) (Long) Id tipo documental (from CENBDT_DMT_TIPO_DOC)</id_tipo_dmt>
+	<id_campo_busq>(Long) Id campo busqueda (from CENBDT_DMT_CAMPO_BUSQUEDA)</id_campo_busq>
+	<carpeta>(String) Carpeta en documentum</carpeta>
+	<f_tipo_acceso>(man) (String) Tipo acceso (from CENBDT_V_MED_TIPO_ACC_FICH)</f_tipo_acceso>
+	<f_conexion_ftp>(Long) Servidor ftp (from CENBDT_SERVIDORES_EXTERNOS)</f_conexion_ftp>
+	<f_ruta>(man) (String) Ruta local o ftp </f_ruta>
+	<f_borrar>(Long) Flag borrar fichero</f_borrar>
+	<f_renombrar>(Long) Flag renombrar fichero</f_renombrar>
+	<f_prefijo>(String) Prefijo renombrar fichero</f_prefijo>
+	<doc_id_nodo>(man) (Long) Nodo de asociadion de documento</doc_id_nodo>
+	<doc_cod_realiz>(String) Codigo realizacion (from CENBDT_V_REALIZ_DOCUM)</doc_cod_realiz>
+	<doc_cod_responsable>(String) Codigo responsable </doc_cod_responsable>
+	<doc_cod_fabricante>(String) Codigo fabricante</doc_cod_fabricante>
+	<doc_estado>(man) (String) Codigo estado (from CENBDT_V_ESTADO_DOCUM)</doc_estado>
+	<doc_observaciones>(String) Observaciones</doc_observaciones>
+	<email_list>(String) Lista emails notificacion</email_list>
+</CenBdiDmtLoad>

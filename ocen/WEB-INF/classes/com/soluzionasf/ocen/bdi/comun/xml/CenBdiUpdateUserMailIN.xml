@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdiUpdateUserMail -->
+<CenBdiUpdateUserMail>
+	<UpdateUserMail> (man) (sequence_item)
+		<Id_Correo_Electronico>(man)(long) Contiene el Id del Usuario</Id_Correo_Electronico>
+		<Optimist_Lock>(man)(long) Contiene un numero de control de actualización</Optimist_Lock>
+		<Cod_Usuario>(man)(String)  Contiene el login_name del usuario, si es un usuario del sistema, o un secuencial, si es externo.</Cod_Usuario>
+		<Nombre_Usuario>(man)(String) Contiene el Nombre del Usuario</Nombre_Usuario>
+		<Direccion_Correo>(man)(String) Contiene la Dirección de Correo del Usuario</Direccion_Correo>
+		<Privado>(man)(String) Indica si el Usuario es Privado</Privado>
+		<User_Id>(man)(long) Contiene el usuario dueño del Usuario.</User_Id>
+		<Tipo>(Long) Tipo de ámbito publico/privado al que pertenece el Correo</Tipo>
+		<Num_Telefono>(String) Numero de telefono del usuario en la tabla de Correo</Num_Telefono>
+	</UpdateUserMail>
+</CenBdiUpdateUserMail>

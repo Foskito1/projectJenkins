@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- MethodName: CenBdmUpdateTags -->
+<CenBdiUpdateTagsOut>
+   <Id_Tag>(Long)Identificador del tag.</Id_Tag>
+</CenBdiUpdateTagsOut>

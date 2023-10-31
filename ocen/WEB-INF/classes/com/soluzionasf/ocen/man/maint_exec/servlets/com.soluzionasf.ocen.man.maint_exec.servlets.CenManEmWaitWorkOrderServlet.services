@@ -1,0 +1,1 @@
+CENMAN.updateOtStateWait;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmWaitWorkOrderService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmOtStateUpdateRequestDOMImpl

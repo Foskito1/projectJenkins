@@ -1,0 +1,4 @@
+CenBdiDocumManagement;com.soluzionasf.ocen.bdi.docum.domain.CenBdiDocumManagement;com.soluzionasf.ocen.bdi.docum.servlets.CenBdiDocumManagementRequestDOMImpl
+CenBdiDocumManagMail;com.soluzionasf.ocen.bdi.docum.domain.CenBdiDocumManagMail;com.soluzionasf.ocen.bdi.docum.servlets.CenBdiDocumMailRequestDOMImpl
+CenBdiValidationNeptunoService;com.soluzionasf.ocen.bdi.docum.domain.CenBdiValidationNeptunoService;com.soluzionasf.ocen.bdi.docum.servlets.CenBdiValidationNeptunoRequestDOMImpl
+CenBdiDocActualizacionDocsFormDinamicos;com.soluzionasf.ocen.bdi.docum.domain.CenBdiDocActualizacionDocsFormDinamicos;com.soluzionasf.ocen.bdi.docum.servlets.ActualizacionDocsFormDinamicosRequestDOMImpl

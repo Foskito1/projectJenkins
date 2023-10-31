@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiMeasurementsList>
+	<Global>
+		<Tipo> (Integer)1/0 para tipo de insercion atendida/desatendida respectivamente</Tipo>
+		<Email> (String) Si Tipo = 0, email para comunicar la finalizacion del proceso. Si vacio, no se notificara.</Email>
+		<Files>
+			<file>(sequence_item)(String) Si Tipo = 0, lista de ficheros de mediciones que se han utilizado en importacion.</file>
+		</Files>
+		<Notes>
+			<count>(String) Si Tipo = 0, mensaje extra a añadir en la seccion de conteo de la notificacion enviada.</count>
+			<errors>(String) Si Tipo = 0, mensaje extra a añadir en la seccion de errores de la notificacion enviada.</errors>
+		</Notes>
+		<calc_online> (Integer)1/0 para recálculos online/batch respectivamente.</calc_online>
+		<calc_type_pending> (Integer) 0 - Calcular todos los periodos, 1 - Calcular NO todos los periodos, 2 - Calcular ignorando bloqueos.</calc_type_pending>
+		<calc_at_end> (Integer)1/0 para recálculos al final / en cada insercion respectivamente.</calc_at_end>
+		<allow_future_date> (Integer)1/0 para permitir o prohibir fechas futuras.</allow_future_date>
+		<check_cv_exist> (Integer)1/0 para checkear o no codigos de validacion.</check_cv_exist>
+		<Medida>(sequence_item)
+			<cod_medida>(Long)Codigo de la medida. Obligatorio si existe Medida. </cod_medida>        
+			<Medicion> (sequence_item) Obligatorio si existe Medida.
+				<fecha>(String) Fecha de la medición. Obligatorio si existe Medicion. </fecha>
+				<valor>(Double)Valor de la medición. </valor>
+				<valor_cadena>(String)Valor de la medición, si la medida es de tipo cadena.</valor_cadena>
+				<lectura>(Long) Valor de la lectura del contador. </lectura>
+				<num_vueltas>(Long) Número de vueltas del contador. </num_vueltas>
+				<calen_despl>(Long) Desplazamiento del calendario. </calen_despl>
+				<flag_calidad>(Long) Flag de calidad de la medición.Obligatorio si existe Medicion. </flag_calidad>
+				<modifica_flag>(Long) Indica si se ha de modificar el flag de calidad</modifica_flag>
+				<optimist_lock>(Long) OptimistLock de la medición. </optimist_lock>
+				<observaciones>(String) Observaciones para poner en el histórico de mediciones</observaciones>
+		    </Medicion> 
+		</Medida> 
+	</Global>
+	<modeMTZ>(Long) Cambiar el modo MTZ por defecto en el entorno: 0, desactivado. 1, conversiones bioxo. 2, conversion por usuario. 3, conversion por medida.</modeMTZ> 
+</CenBdiMeasurementsList> 
+

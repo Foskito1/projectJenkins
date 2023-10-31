@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibIppSbloccoPianoDisp>
+	<SbloccoPianoDisp>	
+		<CodCentral>(String)(man)</CodCentral>
+		<Plan>(Long)(man)</Plan>
+		<FecHorAct>(DateTimeI18n)(man)</FecHorAct>
+	</SbloccoPianoDisp>
+</CenTibIppSbloccoPianoDisp>

@@ -1,0 +1,6 @@
+<CenBdiChangeUsrDefCompany>
+	<LoginCompany>
+		<Login>(man)Login Name introducido por el usuario</Login>
+		<Company>(man)(long)Id de la empresa la que cambia</Company>
+	</LoginCompany>
+</CenBdiChangeUsrDefCompany>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content>
+	<ocen>
+		<general>
+			<!--Localisation of properties files common to all sub-modules-->
+			<propertyPath>./properties/</propertyPath>
+			<!--Controls if Operation module has to be loaded or not.-->
+			<loadOpe>true</loadOpe>
+			<!--Controls if Mantenimiento module has to be loaded or not.-->
+			<loadMan>true</loadMan>
+			<!--Controls if Combustible module has to be loaded or not.-->
+			<loadCom>true</loadCom>
+		</general>
+		<bundle>
+			<!--Package where are defined the bundle classes.-->
+			<bundlePackage>com.soluzionasf.ocen.util.bundle</bundlePackage>
+			<!--Base name bundle class-->
+			<baseNameBundle>CenResourceBundle</baseNameBundle>
+			<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+			<deviceType>file</deviceType>
+			<!--Locales defined, list of locales separated by blank(s), the first element of the list must be the default language. Example: es en-->
+			<locales>es en it pt</locales>
+		</bundle>
+		<mail>
+			<!-- Servidor de correo -->
+			<mailserver>jacop.adm.uef.es</mailserver>
+			<!-- Path para el fichero temporal de envío -->
+			<filetemp>./informe.html</filetemp>
+			<!-- Dirección:Debe conincidir su dominio con el del servidor de correo -->
+			<from>Ocen-Operacion@uf-isf.es</from>
+			<mail_bdi>
+				<!-- Servidor de correo -->
+				<mailserver>buzon.uf-isf.es</mailserver>
+				<!-- Dirección:Debe conincidir su dominio con el del servidor de correo -->
+				<from>Ocen-BDI@uf-isf.es</from>
+			</mail_bdi>
+		</mail>
+		<operacion>
+			<general>
+				<!--Localisation of Operacion properties files-->
+				<propertyPath>./properties/operacion/</propertyPath>
+				<!--Panel refresh rate in seconds (Timer), this value should coincide with that defined in the table CENBDT_GLOBAL_CTE -->
+				<refreshRate>120</refreshRate>
+				<!--
+				Database profile name variable. We define this variable to allow different
+				database configuration on the isf.db node. The value associated
+				with this node will be used for looking on the corresponding parent node
+				ifs.db. So it is possible to define different possible database
+				configurations, and the value of this variable is the
+				current database profile in use. Changing this value you could
+				run the application on test database environment.
+				-->
+				<dbProfileName>dbcenope</dbProfileName>
+			</general>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenOpeResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+				<!--Locales defined, list of locales separated by blank(s), the first element of the list must be the default language. Example: es en-->
+				<locales>es en it pt</locales>
+			</bundle>
+		</operacion>
+		<bdi>
+			<general>
+				<!--Localisation of BDI properties files-->
+				<propertyPath>./properties/bdi/</propertyPath>
+				<!--Panel refresh rate in seconds (Timer), this value should coincide with that defined in the table CENBDT_GLOBAL_CTE -->
+				<refreshRate>120</refreshRate>
+				<!--
+				Database profile name variable. We define this variable to allow different
+				database configuration on the isf.db node. The value associated
+				with this node will be used for looking on the corresponding parent node
+				ifs.db. So it is possible to define different possible database
+				configurations, and the value of this variable is the
+				current database profile in use. Changing this value you could
+				run the application on test database environment.
+				-->
+				<dbProfileName>dbcenbdi</dbProfileName>
+			</general>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenBdiResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+				<!--Locales defined, list of locales separated by blank(s), the first element of the list must be the default language. Example: es en-->
+				<locales>es en it pt</locales>
+			</bundle>
+			<bdm>
+				<CenBdiMeasureReadingsHelper>
+					<!--Time, in millis, main Thread will wait at most for Data Acquisition Threads to die-->
+					<joinTime>90000</joinTime>
+				</CenBdiMeasureReadingsHelper>
+			</bdm>
+		</bdi>
+		<combustible>
+			<general>
+				<!--Localisation of Combustible properties files-->
+				<propertyPath>./properties/combustibles/</propertyPath>
+				<propertyCommonPath>./properties/</propertyCommonPath>
+				<!--Panel refresh rate in seconds (Timer), this value should coincide with that defined in the table CENBDT_GLOBAL_CTE -->
+				<refreshRate>120</refreshRate>
+				<!--
+				Database profile name variable. We define this variable to allow different
+				database configuration on the isf.db node. The value associated
+				with this node will be used for looking on the corresponding parent node
+				ifs.db. So it is possible to define different possible database
+				configurations, and the value of this variable is the
+				current database profile in use. Changing this value you could
+				run the application on test database environment.
+				-->
+				<dbProfileName>dbcencom</dbProfileName>
+			</general>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenComResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+				<!--Locales defined, list of locales separated by blank(s), the first element of the list must be the default language. Example: es en-->
+				<locales>es en it pt</locales>
+			</bundle>
+		</combustible>
+		<mantenimiento>
+			<general>
+				<!--Localisation of Mantenimiento properties files-->
+				<propertyPath>./properties/mantenimiento/</propertyPath>
+				<!--Panel refresh rate in seconds (Timer), this value should coincide with that defined in the table CENBDT_GLOBAL_CTE -->
+				<refreshRate>120</refreshRate>
+				<!--
+				Database profile name variable. We define this variable to allow different
+				database configuration on the isf.db node. The value associated
+				with this node will be used for looking on the corresponding parent node
+				ifs.db. So it is possible to define different possible database
+				configurations, and the value of this variable is the
+				current database profile in use. Changing this value you could
+				run the application on test database environment.
+				-->
+				<dbProfileName>dbcenman</dbProfileName>
+			</general>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenManResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+				<!--Locales defined, list of locales separated by blank(s), the first element of the list must be the default language. Example: es en-->
+				<locales>es en it pt</locales>
+			</bundle>
+			<interfases>
+				<language_code>it</language_code>
+				<country_code>IT</country_code>
+				<user_LMS>interfase_LMS</user_LMS>
+			</interfases>
+			<query_system_call>
+				<user_name>man</user_name>
+				<user_id>21</user_id>
+				<profile_id>2</profile_id>
+				<language_code>it</language_code>
+				<country_code>IT</country_code>
+			</query_system_call>
+		</mantenimiento>
+		<medioambiente>
+			<general>
+				<!--Localisation of Mantenimiento properties files-->
+				<propertyPath>./properties/medioambiente/</propertyPath>
+				<!--Panel refresh rate in seconds (Timer), this value should coincide with that defined in the table CENBDT_GLOBAL_CTE -->
+				<refreshRate>120</refreshRate>
+				<!--
+				Database profile name variable. We define this variable to allow different
+				database configuration on the isf.db node. The value associated
+				with this node will be used for looking on the corresponding parent node
+				ifs.db. So it is possible to define different possible database
+				configurations, and the value of this variable is the
+				current database profile in use. Changing this value you could
+				run the application on test database environment.
+				-->
+				<dbProfileName>dbcenmam</dbProfileName>
+			</general>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenMamResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+				<!--Locales defined, list of locales separated by blank(s), the first element of the list must be the default language. Example: es en-->
+				<locales>es en it pt</locales>
+			</bundle>
+		</medioambiente>
+		<sap>
+			<general>
+				<!--Localisation of SAP properties files-->
+				<propertyPath>./properties/sap/</propertyPath>
+				<!--Panel refresh rate in seconds (Timer), this value should coincide with that defined in the table CENBDT_GLOBAL_CTE -->
+				<refreshRate>120</refreshRate>
+				<!--
+				Database profile name variable. We define this variable to allow different
+				database configuration on the isf.db node. The value associated
+				with this node will be used for looking on the corresponding parent node
+				ifs.db. So it is possible to define different possible database
+				configurations, and the value of this variable is the
+				current database profile in use. Changing this value you could
+				run the application on test database environment.
+				-->
+				<dbProfileName>dbcensap</dbProfileName>
+			</general>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenSapResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+				<!--Locales defined, list of locales separated by blank(s), the first element of the list must be the default language. Example: es en-->
+				<locales>es en it pt</locales>
+			</bundle>
+		</sap>
+		<util>
+			<DynamicQueryObject>
+				<!--Maximum Time, in millis, for DynamicQueryObject to operate-->
+				<maxTimeOut>900000</maxTimeOut>
+				<!--Maximum Number of Rows a sentence can return-->
+				<maxRowNumber>30000</maxRowNumber>
+			</DynamicQueryObject>
+			<CenDBPoolStatusPollerDaemon>
+				<countryCode>IT</countryCode>
+				<languageCode>it</languageCode>
+				<!--true to activate polling process-->
+				<pollingActive>false</pollingActive>
+				<!--Time between every poll in millis-->
+				<pollTime>1800000</pollTime>
+				<!--Level of polls results (as in Log class)-->
+				<logLevel>6</logLevel>
+			</CenDBPoolStatusPollerDaemon>
+		</util>
+	</ocen>
+</content>

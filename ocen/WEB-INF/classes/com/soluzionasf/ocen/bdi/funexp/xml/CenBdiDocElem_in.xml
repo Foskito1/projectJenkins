@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiDocElem>
+   <ID_ELEM>(Long)</ID_ELEM>
+   <DOCUM_LIST>
+      <DOCUM_PHOTO>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         (sequence_item)
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         <ID_DOCUM>(Long)</ID_DOCUM>
+         <PATH_DOCUM>(String)Path del documento</PATH_DOCUM>
+         <FLAG_COMPANY>(Long)</FLAG_COMPANY>
+         <FLAG_FOTO_INI>(Long)</FLAG_FOTO_INI>
+         <TIPO_DOCUM>(String)Si se trata de un documento o una foto</TIPO_DOCUM>
+         <NAME_FILE>(String) Nombre del fichero.</NAME_FILE>
+         <CONTENT_FILE>(String) Contenido del fichero.</CONTENT_FILE>
+      </DOCUM_PHOTO>
+   </DOCUM_LIST>
+   <DOCUM_LIST_DELETE>
+      <DOCUM_PHOTO>
+         
+         
+         
+         
+	(sequence_item)
+         
+         
+         
+         
+         <ID_DOCUM>(Long)Id. documento.</ID_DOCUM>
+      </DOCUM_PHOTO>
+   </DOCUM_LIST_DELETE>
+   <MAIL_SUPPORT>(String)</MAIL_SUPPORT>
+</CenBdiDocElem>

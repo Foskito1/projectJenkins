@@ -1,0 +1,1 @@
+CENMAN.insertPersonal;com.soluzionasf.ocen.man.maint_exec.domain.CenmanPersonalInsertService;com.soluzionasf.ocen.man.maint_exec.servlets.CenmanPersonalInsertRequestDOMImpl

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiRelaCalendarTurnos>
+	<tipo_turno> (seq)
+		<id_tipo_turno> (long) (man) Identificador del tipo de turno </id_tipo_turno>
+		<desc_tipo_turno> (String) (man) Descripcion del tipo de turno </desc_tipo_turno>
+		<color_tipo_turno> (long) (man) Color del tipo de turno </color_tipo_turno>
+		<turnos>
+			<turno> (seq)
+				<id_rela_config_turnos> (long) (man) Identificador de configuración </id_rela_config_turnos> 
+				<desc_turno> (String) (man) Descripcion del turno </desc_turno>
+				<color_turno> (long) (man) Color del turno </color_turno>
+				<hora_inicio> (String) Hora de inicio del turno </hora_inicio>
+				<hora_fin> (String) Hora de fin del turno </hora_fin>
+			</turno>
+		</turnos>
+	</tipo_turno>
+	<desglose>
+		<tipo_turno> (seq)
+			<id_tipo_turno> (long) Identificador del tipo de turno </id_tipo_turno>
+			<desc_tipo_turno> (String) Descripcion del tipo de turno </desc_tipo_turno>
+			<color_tipo_turno> (long) Color del tipo de turno </color_tipo_turno>
+			<turno_por_defecto> (long) 1 si es turno por defecto </turno_por_defecto>
+		</tipo_turno>
+		<turno> (seq)
+			<id_turno> (long) Identificador de turno </id_turno> 
+			<id_tipo_turno> (long) Identificador del tipo de turno </id_tipo_turno>
+			<fecha_turno> (String) Fecha turno</fecha_turno>
+			<color_turno> (long) Color del turno </color_turno>
+		</turno>
+	</desglose>
+	<descripcionTurnos>
+		<turno>(seq)
+			<idTurno>(long) id_rela_config_turno</idTurno>
+			<desTurno>(String) descripcion del turno anterior</desTurno>
+		</turno>
+	</descripcionTurnos>
+</CenBdiRelaCalendarTurnos>

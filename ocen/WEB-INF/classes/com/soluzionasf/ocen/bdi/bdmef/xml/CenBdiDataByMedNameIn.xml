@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<DatosConsultas>
+<Peticiones>
+<Peticion>(seq)
+  <DesMedida>(man) (String) Descripción medida</DesMedida>
+  <FechaIni>(String) Fecha inicio formato yyyy-mm-dd hh24:mm:ss</FechaIni>
+  <FechaFin>(String) Fecha inicio formato yyyy-mm-dd hh24:mm:ss</FechaFin> 
+</Peticion>
+</Peticiones>
+</DatosConsultas>
+

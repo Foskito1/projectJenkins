@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<QueryResult>
+  <row MD_CODE="Codigo de la medida" 
+     MD_DESC="Descripcion de la medida"
+	 MD_FORMULA="Codigo de la Formula asociada a la Medida"
+	 MD_USO="Codigo de Utilizacion asociada a la Medida"
+     MD_MEASURE_TYPE="Codigo del Tipo de Medida" 
+     MD_MEASURE_TYPE_DESC="Descripcion del Tipo de Medida" 
+     MD_MEASURE_DEVICE="Código del Equipo de Medida asociado a la medida" 
+     MD_MEASURE_DEVICE_DESC="Descripcion del Equipo de Medida asociado a la medida" 
+     MD_ORIGIN="Código del origen" 
+     MD_ORIGIN_DESC="Descripcion del origen" 
+     MD_PARAMETER="Codigo del parametro asociado a la medida" 
+     MD_PARAMETER_DESC="Descripcion del parametro asociado a la medida" 
+     MD_PERIODICITY="Codigo de la perioricidad asociado a la medida" 
+     MD_PERIODICITY_DESC="Descripcion de la perioricidad asociado a la medida" 
+     MD_POSITION="Id de la Ubicaciob asociada a la medida" 
+     MD_POSITION_COD="Codigo de la Ubicaciob asociada a la medida(id del elemento correspondiente con la ubicacion)" 
+     MD_POSITION_DESC="de la Ubicaciob asociada a la medida" 
+     MD_PTO_ADQ="Flag que indica si la medida esta asociado a un punto de adquisicion" 
+     MD_UNIT="Codigo de la unidad asociada a la medida" 
+     MD_UNIT_DESC="Descripcion de la unidad asociada a la medida" 
+     MD_VALUE_TYPE="Codigo del tipo de valor asociado a la medida" 
+     MD_VALUE_TYPE_DESC="Descripcion del tipo de valor asociado a la medida"
+     MD_UPDATEABLE_FLAG="Flag que indica si la medida es modificable o no"
+     MD_PROTECTED_FLAG="Flag que indica si la medida es protegida o no"
+     MD_MEASUREMENT_FLAG="Flag que indica si la medida tiene mediciones"
+     MD_CALENDAR_FLAG="Flag que indica si se contempla el cambio de hora en el calendario"
+	 COD_PART_AGR="Codigo de la particion de la medida"
+	 MD_COD_IMPORT="Codigo de importación de la medida"
+  ></row>
+</QueryResult>
+

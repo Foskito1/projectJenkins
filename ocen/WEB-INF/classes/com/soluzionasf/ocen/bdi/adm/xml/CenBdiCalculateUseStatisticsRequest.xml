@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiCalculateUseStatistics>
+	<Fecha_Inicio>(String) Fecha inicial del cálculo</Fecha_Inicio>
+	<Fecha_Fin>(String) Fecha final del cálculo</Fecha_Fin>
+</CenBdiCalculateUseStatistics>

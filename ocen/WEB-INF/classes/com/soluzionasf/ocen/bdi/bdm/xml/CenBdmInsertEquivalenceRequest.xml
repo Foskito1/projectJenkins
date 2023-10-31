@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmInsertEquivalence>
+	<Equivalence>
+		<cod_medida>(Long)(man)</cod_medida>			
+		<cod_equivalence>(String)(man)</cod_equivalence>			
+	</Equivalence>	
+</CenBdmInsertEquivalence>

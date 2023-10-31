@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiGetPAgrReal>
+	<PAgr_Real>(man)
+		<Num_Month>(man)Mes del que se recuperán las agrupaciones</Num_Month>
+	</PAgr_Real>
+</CenBdiGetPAgrReal>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<CenBdiExternalDocument>
+	<documentos>
+		<header>
+			<id_docum>(Long)(man) Id del documento</id_docum>
+			<optimist_lock>(Long)(man) Optimist lock del documento </optimist_lock>
+			<cod_docum>(String)(man)C?digo del documento </cod_docum>
+			<cod_tipo_docum>(String)(man)Tipo del documento </cod_tipo_docum>
+			<titulo_docum>(String)(man)T?tulo del documento</titulo_docum>
+			<version_docum>(Long)(man)N?mero de versi?n del documento</version_docum>
+			<nodo>(Long)(man)Nodo al que aplica el documento </nodo>
+			<cod_estado_docum>(String)(man)Estado de documento </cod_estado_docum>
+			<cod_externo>(String)C?digo externo asociado al documento</cod_externo>
+			<fabr_docum>(String)Fabricante del documento</fabr_docum>
+			<resp_docum>(String)Responsable del documento </resp_docum>
+			<cod_realiz_docum>(String)Tipo de realizaci?n del documento </cod_realiz_docum>
+			<observaciones>(String) Observaciones </observaciones>
+			<doc_flag>(Boolean)Indica si hay documento en soporte electr?nico </doc_flag>
+			<ubica_docum>(String)Indica la ubicaci?n del documento </ubica_docum>
+			<path_docum>(String)Indica el path del documento en el servidor </path_docum>
+			<tipo_almacenamiento>(String)Indica la forma en que se almacena el documento </tipo_almacenamiento>
+			<id_docum_original>(Long)Si se est? duplicando o realizando una nueva versi?n indica el documento del que hay que copiar el campo doc_bytes </id_docum_original>
+			<flag_consolidado>(Boolean)Indica si el documento esta consolidado y no puede modificarse </flag_consolidado>
+			<flag_template>(Boolean) indica si el documento es una plantilla o no</flag_template>
+			<nombre_fichero>(String) nombre del fichero si aplica</nombre_fichero>
+			<id_external_server_paths>(Long) id del servidor externo de tipo paths</id_external_server_paths>
+			(sequence_item)
+		</header>
+	</documentos>
+	<clavesGlobal> Listado de claves asociadas al documento. Solo se utiliza
+				para el caso en que la inserci?n/modificaci?n la haya realizado el usuario 
+				desde la pantalla de detalle de documento.
+		<clave>
+			<id_claves_docum>(Long)Id de la tabla CENBDT_DOC_CLAVES </id_claves_docum>
+			<clave_des>(String)Texto de la clave </clave_des>
+			<optimist_lock>(Long)Optimist Lock de la tabla CENBDT_DOC_CLAVES </optimist_lock>
+			(sequence_item)
+		</clave>
+	</clavesGlobal>
+	<usuarios> Listado de usuarios asociados al documento.
+		<usuario>
+			<id_user> (Long)Id del usuario asociado al documento</id_user>
+			<is_group>(Long)1 is user group, 0 is user</is_group>
+		    (sequence_item)
+		</usuario>
+	</usuarios>
+	
+</CenBdiExternalDocument>

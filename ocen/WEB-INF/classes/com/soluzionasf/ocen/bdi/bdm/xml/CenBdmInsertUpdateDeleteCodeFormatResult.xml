@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBDM_Code_Format>
+   <Format_List> 
+	   <Format>
+	   		(seq)
+			<action>(String) (man) La accion a realizar (I, U, D) </action>
+			<id_formato>(Long) (man) Id del formato</id_formato>
+	   </Format>
+	</Format_List>
+</CenBDM_Code_Format>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmSetMeasurementAttrMedList>
+	<Global>
+        <Medida>(man)(sequence_item)
+            <cod_medida>(long)(man)Codigo de la medida. </cod_medida>        
+			<Medicion> (man)(sequence_item)
+		    		<fecha_desde>(DateTimeI18n)Fecha desde</fecha_desde>
+				    <fecha_hasta>(DateTimeI18n)Fecha hasta</fecha_hasta>
+				    <cod_atributo>(man)(long)Codigo del atributo</cod_atributo>  
+				    <valor_atributo>(String)Valor del atributo</valor_atributo>
+		    </Medicion> 
+		</Medida> 
+	</Global>
+</CenBdmSetMeasurementAttrMedList> 

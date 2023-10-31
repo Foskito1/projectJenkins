@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiInsertFilterAsoc>
+	<filtro>
+		<id_filtro>(Long)(man)</id_filtro>
+	</filtro>
+	<seccion>
+		<nodo>(seq)
+			<id_seccion>(Long)(man)</id_seccion>
+			<cod_caracteristica>(Long)(man)</cod_caracteristica>
+		</nodo>
+	</seccion>
+</CenBdiInsertFilterAsoc>

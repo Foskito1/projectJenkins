@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- Method: CenBdiGetMeasureDataAsString -->
+<CenBdiMeasureInfoAsString>
+	<medida>
+	   <cod_medida>(man)(long)Codigo de la medida que hay que grabar</cod_medida>
+	   <fecha_medida>(man)(DateTimeI18n)Fecha de la medida que hay que grabar</fecha_medida>
+	   <valor_medida>(man)(double)Valor de la medida que hay que grabar</valor_medida>
+	   <desplazamiento_cal>(long)Desplazamiento del calendario</desplazamiento_cal>
+	   <optimist_lock>(long)OptimistLock de la medida</optimist_lock>
+	   <flag_calidad>(long)Flag PI</flag_calidad>
+	</medida>
+</CenBdiMeasureInfoAsString>

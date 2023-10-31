@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><CenBdeElementsWrite>
+	<updateOK>(Long)Indica si se actualizo correctamente elemento: 0 NOK,1 ok</updateOK>
+    <elementNOK>
+  			<code_element>(sequence_item)(String)Código univoco que identifica a el Elemento (code_element de la bbdd).</code_element>
+	</elementNOK>
+</CenBdeElementsWrite>

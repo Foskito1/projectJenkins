@@ -1,0 +1,9 @@
+<CenBdiInsertNavGrItems>
+	<Item>(man) (seq)
+		<IdNavGrImg>(man)(long) Id. de la tabla de imagenes de planos.</IdNavGrImg>
+		<TipoItem>(man)(long) Tipo del item a insertar.</TipoItem>
+		<IdItem>(man)(long) Id. del item a insertar</IdItem>
+		<PosX>(man)(long) Posicion X del Item</PosX>
+		<PosY>(man)(long) Posicion X del Item</PosY>
+	</Item>	
+</CenBdiInsertNavGrItems>

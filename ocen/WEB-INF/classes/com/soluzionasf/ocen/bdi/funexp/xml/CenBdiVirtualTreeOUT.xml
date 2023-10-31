@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiVirtualTreeOUT>
+  <id_tree>(man)(Long)</id_tree>
+  <iderror>(man)(Long)</iderror>
+  <errormessage>(String)</errormessage>
+	<list_tree_items_errors>
+		<tree_item>(seq)
+			<id_elemento>(man)(Long)</id_elemento>
+		</tree_item>
+	</list_tree_items_errors>
+</CenBdiVirtualTreeOUT>

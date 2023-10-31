@@ -1,0 +1,50 @@
+#**************************
+#Listado de solicitudes
+#**************************
+CenManListadoSolicitudes;com.soluzionasf.ocen.man.common.domain.CenManListadoSolicitudes;com.soluzionasf.ocen.man.common.servlets.CenManListadoSolicitudesRequestDOMImpl
+
+#**************************
+#Listado de acciones
+#**************************
+CenManListadoAcciones;com.soluzionasf.ocen.man.common.domain.CenManListadoAcciones;com.soluzionasf.ocen.man.common.servlets.CenManListadoAccionesRequestDOMImpl
+
+#**************************
+#Listado de OTs
+#**************************
+CenManListadoOrdnTrabj;com.soluzionasf.ocen.man.common.domain.CenManListadoOrdnTrabj;com.soluzionasf.ocen.man.common.servlets.CenManListadoOrdnTrabjRequestDOMImpl
+
+#**************************
+#Listado de Proyectos
+#**************************
+CenManListadoProyectos;com.soluzionasf.ocen.man.common.domain.CenManListadoProyectos;com.soluzionasf.ocen.man.common.servlets.CenManListadoProyectosRequestDOMImpl
+
+#**************************
+#Crear OT
+#**************************
+CenManCrearNuevaOT;com.soluzionasf.ocen.man.common.domain.CenManCrearNuevaOT;com.soluzionasf.ocen.man.common.servlets.CenManCrearNuevaOtRequestDOMImpl
+
+#**************************
+#Listado de Cargas de Trabajo
+#**************************
+CenManListadoCargas;com.soluzionasf.ocen.man.common.domain.CenManListadoCargas;com.soluzionasf.ocen.man.common.servlets.CenManListadoCargasRequestDOMImpl
+
+#**************************
+#Listado de Técnicos de un grupo
+#**************************
+CenManListadoTecnicos;com.soluzionasf.ocen.man.common.domain.CenManListadoTecnicos;com.soluzionasf.ocen.man.common.servlets.CenManListadoTecnicosRequestDOMImpl
+CenManListadoTecnicos2;com.soluzionasf.ocen.man.common.domain.CenManListadoTecnicos2;com.soluzionasf.ocen.man.common.servlets.CenManListadoTecnicosRequestDOMImpl
+
+#**************************
+#Asignar OT a un técnico
+#**************************
+CenManAsignarOT;com.soluzionasf.ocen.man.common.domain.CenManAsignarOT;com.soluzionasf.ocen.man.common.servlets.CenManAsignarOTRequestDOMImpl
+
+#**************************
+#Listado de Almacenes
+#**************************
+CenManListadoAlmacenes;com.soluzionasf.ocen.man.common.domain.CenManListadoAlmacenes;com.soluzionasf.ocen.man.common.servlets.CenManListadoAlmacenesRequestDOMImpl
+
+#**************************
+#Listado de Materiales
+#**************************
+CenManListadoMateriales;com.soluzionasf.ocen.man.common.domain.CenManListadoMateriales;com.soluzionasf.ocen.man.common.servlets.CenManListadoMaterialesRequestDOMImpl

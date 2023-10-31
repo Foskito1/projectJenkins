@@ -1,0 +1,3 @@
+CENMAN.deleteIncidenceRequest;com.soluzionasf.ocen.man.maint_exec.domain.CenManDeleteRequestIncidenceService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManDeleteRequestIncidenceRequestDOMImpl
+CENMAN.modifyRequestIncidence;com.soluzionasf.ocen.man.maint_exec.domain.CenManModifyRequestIncidenceService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManModifyRequestIncidenceRequestDOMImpl
+

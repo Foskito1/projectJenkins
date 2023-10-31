@@ -1,0 +1,1 @@
+CenMan.insertEmWorkOrderAndPart;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmWOAndPartInsertService;com.soluzionasf.ocen.man.maint_exec.servlets.CenmanEmWOAndPartInsertRequestDOMImpl

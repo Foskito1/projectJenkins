@@ -1,0 +1,1 @@
+CENMAN.DeleteIniciativas;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmDeleteIniciativeService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmIniciativasDeleteRequestDOMImpl

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibSirapMeeteringNE>
+	<SirapMeeteringNE>
+		<FecHorAct>(DateTimeI18n)(man) Data-Ora Caricamento</FecHorAct>
+		<ListaElementos> (sequence_item)(man)
+			<CodElem>(String)(man) Elemento Impianto</CodElem>
+			<Fecha>(DateTimeI18n)(man) Data-Ora Variazione (gg/mm/aaaa hh:mm)</Fecha>
+			<DesExito>(String)(man) Stringa con descrizione esito OK/KO</DesExito>
+		</ListaElementos>
+	</SirapMeeteringNE>
+</CenTibSirapMeeteringNE>

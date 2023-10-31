@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiChangeDateToSrvDateOUT>
+	<DateOperations>
+		<elemento>(seq)
+			<fecha_original>(DateTime)(man) Fecha original</fecha_original>
+			<fecha_convertida>(DateTime)(man) Fecha a convertir</fecha_convertida>
+		</elemento>	
+	</DateOperations>
+</CenBdiChangeDateToSrvDateOUT>

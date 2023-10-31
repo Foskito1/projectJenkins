@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<STYLE type="text/css">
+			 .scabeceraDatos{font-size=11pt; font-family=Arial; text-align: center; color=white; background-color= #011460;}     
+			 .sceldaTabla{font-size=9pt; font-family=Arial; text-align: left; background-color= #F9FCE9;}    
+			 .sceldaTablaC{font-size=9pt; font-family=Arial; text-align: center; background-color= #F9FCE9;}    
+		</STYLE>	
+	</head>	
+	<body>
+			<TABLE width="1500px" align=center border = 1 cellspacing=2 cellpadding=1  >	    
+				<TR>
+					<TD width=30% class="scabeceraDatos"><b>Fecha Error</b></TD>
+					<TD width=30% class="scabeceraDatos"><b>Descripci&oacute;n Error</b></TD>
+					<TD width=4% class="scabeceraDatos"><b>Tipo Error</b></TD>	
+					<TD width=15% class="scabeceraDatos"><b>Ubicaci&oacute;n</b></TD>
+					<TD width=4% class="scabeceraDatos"><b>Tipo Proceso</b></TD>
+					<TD width=4% class="scabeceraDatos"><b>Nombre</b></TD>
+					<TD width=12% class="scabeceraDatos"><b>Descripci&oacute;n</b></TD>					
+					<TD width=6% class="scabeceraDatos"><b>Fecha Inicio</b></TD>
+					<TD width=6% class="scabeceraDatos"><b>Fecha Fin</b></TD>			
+					<TD width=2% class="scabeceraDatos"><b>Estado</b></TD>					
+					<TD width=2% class="scabeceraDatos"><b>M&oacute;dulo</b></TD>
+				</TR>				
+				$$DATASET dataList$$ 
+				<tr>
+					<td  class="sceldaTabla">$$fecha_error$$</td>
+					<td  class="sceldaTabla">$$des_error$$</td>
+					<td  class="sceldaTabla">$$tipo_error$$</td>
+					<td  class="sceldaTabla">$$ubicacion$$</td>
+					<td  class="sceldaTabla">$$tipo_proceso$$</td>
+					<td  class="sceldaTabla">$$nom_proceso$$</td>
+					<td  class="sceldaTablaC">$$des_proceso$$</td>					
+					<td  class="sceldaTablaC">$$fecha_ini$$</td>
+					<td  class="sceldaTablaC">$$fecha_fin$$</td>
+					<td  class="sceldaTablaC">$$estado_error$$</td>
+					<td  class="sceldaTablaC">$$modulo$$</td>
+				</tr>	
+				$$/DATASET$$	
+			</table>		
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiUpdateValidationConfig>
+	<Validation>
+		<Optimist_Lock>(Long)</Optimist_Lock>
+		<Cod_Val>(Long)</Cod_Val>
+		<Des_Val>(man)(String)</Des_Val>
+		<Val_For_Mod>(man)(Long)</Val_For_Mod>
+		<Val_For>(man)(Long)</Val_For>
+		<Y_Val_Reject>(man)(String)</Y_Val_Reject>
+		<Y_Val_Flag>(man)(String)</Y_Val_Flag>
+		<Y_Val_Calc_Flag>(String)</Y_Val_Calc_Flag>
+		<Y_Val_Flag_For_Mod>(Long)</Y_Val_Flag_For_Mod>
+		<Y_Val_Flag_For>(Long)</Y_Val_Flag_For>
+		<N_Val_Reject>(String)</N_Val_Reject>
+		<N_Val_Flag>(String)</N_Val_Flag>
+		<N_Val_Calc_Flag>(String)</N_Val_Calc_Flag>
+		<N_Val_Flag_For_Mod>(Long)</N_Val_Flag_For_Mod>
+		<N_Val_Flag_For>(Long)</N_Val_Flag_For>
+	</Validation>
+</CenBdiUpdateValidationConfig>

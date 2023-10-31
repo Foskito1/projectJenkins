@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Package Comment for com.soluzionasf.ocen.domain</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p>Common classes for all modules, associated with the specific business.</p>
+
+<p>Some classes common to all modules, for example: 
+{@link com.soluzionasf.ocen.domain.StandardService StandardService}, 
+assumes the existence of an
+application XML properties file. Such file can be loaded using
+the class {@link isf.util.PropertiesLoader PropertiesLoader}, that assumes the existence
+of a properties manager file: <code>PropertiesManager.properties</code>. This
+file should define which files are loaded by 
+{@link isf.util.PropertiesLoader PropertiesLoader}. For more information see 
+the class 
+{@link com.soluzionasf.ocen.util.Properties_helper Properties_helper} 
+which is used for getting the properties values and node from the XML 
+application properties files.</p>
+
+<p>We have assumed there a application file that defines nodes in the way are defined on
+some the node classes used on the package.</p>
+
+<p> The module classes and <code>CenModStandardService</code>, 
+  where <code>Mod={Bdi, Cmb, Man, Ope}</code>, are identical unless <code>MOD, 
+  Mod</code>, where replaced on source files by the corresponding acronym. This 
+  substitution was done using the following 
+  <a href="http://www.perl.com">perl</a> script: 
+  <a href="file://///Isfnt04/Desarrollo/OCEN/desar/BDI/com/soluzionasf/ocen/domain/generateModClasses.pl"> 
+  generateModClass.pl</a>. The design of the classes tries to simplify the differences 
+  on the module classes, in the way that they delegates on parent classes or internal 
+  classes for getting the specific information for the given module class. </p>
+
+<p>On the class
+{@link com.soluzionasf.ocen.domain.StandardService StandardService}
+there is documented how to proceed for creating the services using the
+framework of this package.</p>
+
+<p><b>Package History:</b></p>
+
+<p><it>12/02/2003</it></p> 
+
+<ul>
+<li>Creation. This version assumes the bundle classes of the project where
+generated using the <b>GenBundle</b> v1.01</li>
+</ul>
+
+@author <a href="mailto:dleal@soluziona.com">David Leal Valmaña (DLE) </a>
+
+</body>
+</html>

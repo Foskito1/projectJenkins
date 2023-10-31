@@ -1,0 +1,1 @@
+CENMAN.modifyWorkUnit;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmModifyWorkUnitService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmModifyWorkUnitRequestDOMImpl

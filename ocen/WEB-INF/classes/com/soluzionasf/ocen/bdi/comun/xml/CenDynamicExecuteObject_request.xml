@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenDynamicExecuteObject>
+<Datos>
+	<DB>(String)(man) perfil bbdd. </DB>
+	<active_old_connect> (int) si valor 1 activa el parametro de oracle _old_connect_by_enabled  a nivel de sesion antes de ejecutar la query y lo desactiva despues, si 2 lo desactiva inicialmente y despues lo activa, el resto de valores se ignoran</active_old_connect>
+	<sentencia>(seq)    (man)
+       <posicion>(int)(man)</posicion>
+       <tipo>(int)(man)</tipo>
+      <background>(int)(man)</background>
+      <sentence>(String)(man)</sentence>  
+      <tipoReturn>(String) java.sql.Type: VARCHAR, NUMERIC, DATE, ...</tipoReturn>      
+  </sentencia>
+</Datos>
+</CenDynamicExecuteObject>
+
+
+

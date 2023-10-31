@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiUpdateImageDashboard>
+	<Dashboard>
+		<id>(String)(man) id del dashboard </id>
+		<params>(String) parámetros para guardar la imagen </params>
+	</Dashboard>
+	<SessionData> (man)
+		<token>(String) Token de acceso</token>
+		<refresh_token>(String) token de refresco</refresh_token>
+		<login_name>(String) (man) login name del usuario</login_name>
+	</SessionData>
+</CenBdiUpdateImageDashboard>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiUpdateTreeDisplay>
+   <ConfigUsu>
+      <UserId>(Long)Código del usuario.</UserId>
+      <TreeDisplay>(String)Visualización del arbol: Forma en la que se visualizarán los árboles jerárquico y virtual</TreeDisplay>
+   </ConfigUsu>
+</CenBdiUpdateTreeDisplay>

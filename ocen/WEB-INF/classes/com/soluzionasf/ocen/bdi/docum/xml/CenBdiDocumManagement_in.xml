@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiDocumManagement>
+   <docum>
+      <id_docum>(Long) Identificador del documento.</id_docum>
+      <cod_docum>(String)Código del documento.</cod_docum>
+      <des_docum>(String)Desscripción del documento.</des_docum>
+      <cod_external_docum>(String) Código externo del documento.</cod_external_docum>
+      <type_doc>(String) Tipo de documento.</type_doc>
+      <version>(Integer) Versión del documento.</version>
+      <date_version>(DateTimeI18n) Fecha de la versión.</date_version>
+      <generation>(Integer) Generación propia o externa.</generation>
+      <responsible_docum>(String) Responsable del documento</responsible_docum>
+      <path>(String) Path y nombre del documento.</path>
+      <physical_location>(String) Ubicación física del documento</physical_location>
+      <manufacturer_docum>(String) Fabricante del documento.</manufacturer_docum>
+      <observations>(String) Observaciones.</observations>
+      <last_version>(Integer) Última versión.</last_version>
+      <optimist_lock>(Long) Optimist lock.</optimist_lock>
+      <action>(String) A- Alta, B-Baja, M-Modificación.</action>
+      <search_criterion>
+         <row search_key="Clave para la búsqueda.">(sequence_item)</row>
+      </search_criterion>
+      <entity>
+         <row id_entity="Identificador de la entidad que se va a asociar." type_entity="Tipo de la entidad que se va a asociar." action_entity="A- Alta de entidad, B- Baja de entidad.">(sequence_item)</row>
+      </entity>
+      <mail_support>(String)</mail_support>
+      <name_file>(String) Nombre del fichero.</name_file>
+      <content_file>(String) Contenido del fichero.</content_file>
+   </docum>
+</CenBdiDocumManagement>

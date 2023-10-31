@@ -1,0 +1,1 @@
+CENMAN.insertSparePartGroup;com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmWareSpareGroupInsertService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmWarehouseSparePartGroupInsertRequestDOMImpl

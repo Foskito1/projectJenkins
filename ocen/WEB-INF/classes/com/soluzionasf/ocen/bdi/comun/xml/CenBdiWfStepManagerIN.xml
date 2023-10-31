@@ -1,0 +1,9 @@
+<CenBdiWfStepManager>
+	<id_entity>(Long)WorkFlow object identification</id_entity>
+	<cod_module>(String)WorkFlow Module Code</cod_module>
+	<cod_step>(String)WorkFlow object current step</cod_step>
+	<cod_next_step>(String) WorkFlow object next step</cod_next_step>
+	<comments>(String) Change Step Comments</comments>
+	<id_graph>(Long) WorkFlow graph identification</id_graph>
+	<operation>(String)(man)Operation type</operation>
+</CenBdiWfStepManager>

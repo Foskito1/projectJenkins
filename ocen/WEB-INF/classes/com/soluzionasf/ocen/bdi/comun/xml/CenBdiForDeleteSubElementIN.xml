@@ -1,0 +1,6 @@
+<CenBdiForDeleteSubElement>
+	<ForSubElement>(man)
+		<Cod_Sub_Element>(man)(long) Contiene el Código de Subelemento del modulo de Formulacion.</Cod_Sub_Element>
+		<Optimist_Lock>(man)(long) Contiene un numero de control de acturalizacion.</Optimist_Lock>
+	</ForSubElement>	
+</CenBdiForDeleteSubElement>

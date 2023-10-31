@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<DatosConsultasResp>
+<Datos>
+  <Dato>(seq)
+    <DesMedida>(man) (String) Descripción medida</DesMedida>
+    <Fecha>(String) Fecha inicio formato yyyy-mm-dd hh24:mm:ss</Fecha>
+    <Valor>(String) Valor pasado como string, valor numerico con separador decimales caracter .</Valor>  
+  </Dato>
+</Datos>
+<Errores>
+<Error>(seq)
+  <DescError> (String) Descripcion del Error</DescError>
+  <DesMedida>(String) Descripción de medida asociada al error, si aplica</DesMedida>
+</Error>
+</Errores>
+</DatosConsultasResp>  
+
+ 

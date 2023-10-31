@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <CenTibGeodeInvioConsumo>
+		<GeodeInvioConsumo>
+		  <IdMsg>(String)</IdMsg>
+			<Id1>(Long)</Id1>
+			<DataConsumption>(DateTimeI18n)</DataConsumption>
+			<Group>(String)</Group>
+			<Classes> (sequence_item)
+					<ClassFuel>(String) </ClassFuel>
+					<Fuels> (sequence_item)
+						<Id2>(Long)</Id2>
+						<Cod>(String)</Cod>
+						<AmountConsumption>(Double)</AmountConsumption>
+						<AccumulationCoal>(Double)</AccumulationCoal>
+						<IsPercentage>(Integer)</IsPercentage>
+						<IsInactive>(Integer)</IsInactive>
+						<PCI>(Double)</PCI>
+						<Sulfur>(Double)</Sulfur>
+					</Fuels>						
+			</Classes>							
+	  </GeodeInvioConsumo>	
+	</CenTibGeodeInvioConsumo>

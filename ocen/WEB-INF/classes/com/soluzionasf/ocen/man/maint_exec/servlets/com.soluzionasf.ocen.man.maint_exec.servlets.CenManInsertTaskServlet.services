@@ -1,0 +1,1 @@
+CENMAN.insertEmTareas;com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmTareasInsertService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmTareasInsertRequestDOMImpl

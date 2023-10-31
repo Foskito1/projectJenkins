@@ -1,0 +1,97 @@
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+.table {  text-align: center; vertical-align: super; width: 100%; border-collapse: collapse;}
+.headertable 	{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; font-style: normal; line-height: normal; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ;  }
+.row1 		{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; font-style: normal; line-height: normal; horizontal-align: center; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ; }
+</style>
+</head>
+
+<body bgcolor="#E6E6FF">
+<table width="100%" border="1" height="35">
+  <tr> 
+    <td height="30"> 
+      <div align="center"> 
+        <p><font size="3"><b><font size="3">|root.CENSHP_NOM_DETAIL_GENERAL_DESC.Row@TITLE|</font></b></font></p>
+        <p><font size="3"><b><font size="4">INFORME DE NOMINACIONES</font></b></font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="1">
+  <tr> 
+    <td width="50%"><b><font size="2">C&oacute;digo: </font></b><font size="2">|root.CENSHP_NOM_DETAIL_GENERAL_DESC.Row@COD_NOM| 
+      &nbsp;</font></td>
+    <td width="25%"> 
+      <p><b><font size="2"> Fecha de Generaci&oacute;n: </font></b><font size="2">|TO_DATE(root.CENSHP_NOM_DETAIL_GENERAL_DESC.Row@FECHA_GENERACION,&quot;dd/MM/yyyy&quot;)| 
+        &nbsp;</font></p>
+    </td>
+    <td width="25%"><font size="2"><b><font size="2">Fecha Inicial: </font></b><font size="2"> 
+      |TO_DATE(root.CENSHP_NOM_DETAIL_GENERAL_DESC.Row@FECHA_INICIAL,&quot;dd/MM/yyyy&quot;)| 
+      </font><font size="2">&nbsp;|root.CENSHP_NOM_DETAIL_GENERAL_DESC.Row@HORA_INICIAL| 
+      </font> </font></td>
+  </tr>
+  <tr> 
+    <td width="50%"><b><font size="2">Tipo: </font></b><font size="2">|root.CENSHP_NOM_DETAIL_GENERAL_DESC.Row@DESC_TIPO_NOM|&nbsp;</font> 
+    </td>
+    <td width="25%"><b><font size="2">Estado: </font></b><font size="2">|root.CENSHP_NOM_DETAIL_GENERAL_DESC.Row@DES_ESTADO|</font></td>
+    <td width="25%"><b><font size="2">Fecha Final: </font></b><font size="2">|TO_DATE(root.CENSHP_NOM_DETAIL_GENERAL_DESC.Row@FECHA_FINAL,&quot;dd/MM/yyyy&quot;)| 
+      &nbsp;|root.CENSHP_NOM_DETAIL_GENERAL_DESC.Row@HORA_FINAL|</font></td>
+  </tr>
+  <tr> 
+    <td width="50%"><b><font size="2">ADP|TO_DATE(root.CENSHP_NOM_DETAIL_GENERAL_DESC.Row@FECHA_INICIAL,&quot;yy&quot;)| 
+      </font></b></td>
+    <td width="25%"><b><font size="2">Cliente: </font></b><font size="2">|root.CENSHP_NOM_DETAIL_GENERAL_DESC.Row@CLIENTE_DESC|</font></td>
+    <td width="25%"><b><font size="2"> </font></b></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="100%" border="1">
+  <tr> 
+    <td width="50%"><b><font size="3">Cantidades Diarias de Gas de Entrada - Cond.Ref.: 
+      &Eacute;standar Brit&aacute;nico</font></b></td>
+  </tr>
+  <tr> 
+    <td width="50%"> 
+      <p><font size="2" class="table">|GRID(root,&quot;{table:class=table,row1=row1,row2=row1}{column:name=Fecha,type=datetime,block=CENSHP_NOM_90DAYS_FEEDGAS,label=MONTH,class=headertable}{column:name=m3,type=string,block=CENSHP_NOM_90DAYS_FEEDGAS,label=VOLUMEN,class=headertable}{column:name=MMBTU,type=string,block=CENSHP_NOM_90DAYS_FEEDGAS,label=ENERGIA_MMBTU,class=headertable}{column:name=kWh,type=string,block=CENSHP_NOM_90DAYS_FEEDGAS,label=ENERGIA_KWH,class=headertable}&quot;)|</font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td width="50%"> 
+      <table width="100%" border="1" cellpadding="1">
+        <tr> 
+          <td width="25%"><b><font size="2">TOTAL</font></b></td>
+          <td width="25%"> 
+            <div align="center"><font size="2">|root.CENSHP_NOM_90DAYS_FEEDGAS_TOTAL.Row@VOLUMEN|</font></div>
+          </td>
+          <td width="25%"> 
+            <div align="center"><font size="2">|root.CENSHP_NOM_90DAYS_FEEDGAS_TOTAL.Row@ENERGIA_MMBTU|</font></div>
+          </td>
+          <td width="25%"> 
+            <div align="center"><font size="2">|root.CENSHP_NOM_90DAYS_FEEDGAS_TOTAL.Row@ENERGIA_KWH|</font></div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p><table width="100%" border="1" cellpadding="1">
+  <tr> 
+    <td><b><font size="3">Programa 90 d&iacute;as</font></b></td>
+  </tr>
+  <tr>
+    <td><font size="2" class="table">|GRID(root,&quot;{table:class=table,row1=row1,row2=row1}{column:name=Fecha de Carga, type=datetime, block=CENSHP_NOM_90DAYS_DELIVERY, label=FECHA_HORA,class=headertable}{column:name=Buque,type=string, block=CENSHP_NOM_90DAYS_DELIVERY, label=BUQUE_DESC,class=headertable}{column:name=%, type=string, block=CENSHP_NOM_90DAYS_DELIVERY,label=PORCENTAJE_CARGA,class=headertable}{column:name=Energ&iacute;a CoolDown (kWh), type=string,block=CENSHP_NOM_90DAYS_DELIVERY, label=COOLDOWN,class=headertable}{column:name=Tiempo Permitido (h),type=string, block=CENSHP_NOM_90DAYS_DELIVERY,label=TIEMPO_CARGA,class=headertable}{column:name=Fecha Inicial Llegada,type=datetime, block=CENSHP_NOM_90DAYS_DELIVERY,label=FECHA_48_INICIO,class=headertable}{column:name=Fecha Final Llegada,type=datetime, block=CENSHP_NOM_90DAYS_DELIVERY,label=FECHA_48_FIN,class=headertable}{column:name=Volumen GNL(m3), type=string,block=CENSHP_NOM_90DAYS_DELIVERY,label=LNG_VOLUMEN, class=headertable}{column:name=Energ&iacute;a GNL (MMBTU), type=string,block=CENSHP_NOM_90DAYS_DELIVERY, label=LNG_ENERGIA_MMBTU,class=headertable}{column:name=Energ&iacute;a GNL (kWh),type=string, block=CENSHP_NOM_90DAYS_DELIVERY,label=LNG_ENERGIA_KWH,class=headertable}&quot;)|</font></td>
+ </tr>
+</table>
+<p>&nbsp;</p><table width="100%" border="1" cellpadding="1">
+  <tr> 
+    <td><b><font size="3">Programa de Mantenimiento Programado</font></b></td>
+  </tr>
+  <tr>
+    <td><font size="2" class="table">|GRID(root,&quot;{table:class=table,row1=row1,row2=row1}{column:name=Fecha Inicial, type=datetime, block=CENSHP_NOM_90DAYS_MAINTENANCE_PROGRAM, label=FECHA_INI,class=headertable}{column:name=Fecha Final, type=datetime, block=CENSHP_NOM_90DAYS_MAINTENANCE_PROGRAM, label=FECHA_FINAL,class=headertable}{column:name=Elemento,type=string,block=CENSHP_NOM_90DAYS_MAINTENANCE_PROGRAM, label=ELEMENTO, class=headertable}{column:name=Descripci&oacute;n, type=string, block=CENSHP_NOM_90DAYS_MAINTENANCE_PROGRAM,label=DESCRIPCION, class=headertable}&quot;)|</font></td>
+ </tr>
+</table>
+</body>
+</html>

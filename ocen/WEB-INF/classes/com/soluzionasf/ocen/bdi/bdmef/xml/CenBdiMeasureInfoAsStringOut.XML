@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Method: CenBdiGetMeasureDataAsString -->
+<CenBdiMeasureInfoAsString>
+	<medida>
+	   <cod_medida>(man)(long)Codigo de la medida que hay que grabar</cod_medida>
+	   <fecha_medida>(man)(DateTimeI18n)Fecha de la medida que hay que grabar</fecha_medida>
+	   <valor>(man)Valor de la medida</valor>
+	</medida>
+</CenBdiMeasureInfoAsString>

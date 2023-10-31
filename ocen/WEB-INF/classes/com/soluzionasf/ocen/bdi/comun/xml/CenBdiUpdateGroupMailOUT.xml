@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdiUpdateGroupMail -->
+<CenBdiUpdateGroupMail>
+	<UpdateGroupMail> (sequence_item)
+		<Id_Correo_Grupo>(man)(long) Contiene el Id del Grupo</Id_Correo_Grupo>
+		<Optimist_Lock>(man)(long) Contiene un numero de control de actualización</Optimist_Lock>
+		<Nombre_Grupo>(man)(String) Contiene el Nombre del Grupo</Nombre_Grupo>
+		<Privado>(man)(String) Indica si el Grupo es Privado</Privado>
+		<User_Id>(man)(long) Contiene el usuario dueño del grupo.</User_Id>
+	</UpdateGroupMail>
+</CenBdiUpdateGroupMail>

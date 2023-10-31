@@ -1,0 +1,13 @@
+<CenBdiForUpdateModule>
+	<ForModule>(man)
+		<Cod_Modulo>(man)(long) Contiene el Codigo de Modulo de Formulacion.</Cod_Modulo>
+		<Des_Modulo>(man) Contiene la Descripcion de Modulo de Formulacion.</Des_Modulo>
+		<Coment_Obligatorio>(Long) Flag que indica es obligatorio el comentario al modificar formulas de este Modulo.</Coment_Obligatorio>
+		<Optimist_Lock>(Long) Contiene un numero de control de acturalizacion.</Optimist_Lock>
+		<Profiles_Not_Access_List>
+			<Perfil>(seq)
+				<Id_Perfil>(man) (Long)Contiene el identificador del perfil que no tiene</Id_Perfil>				
+			</Perfil>
+		</Profiles_Not_Access_List>	
+	</ForModule>	
+</CenBdiForUpdateModule>

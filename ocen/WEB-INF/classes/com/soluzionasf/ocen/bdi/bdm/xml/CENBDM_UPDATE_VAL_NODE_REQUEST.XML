@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmCVNodeUpdate>
+	<Global>
+		<CenBdm_validation_code_node>
+		    <VCNode>(seq)	
+			    <id_code_node> (Long) VALIDATION CODE NODE ID </id_code_node>
+			    <id_code> (Long) (man) VALIDATION CODE ID </id_code>
+			    <id_secuencial_elementos> (String) (man) VALIDATION CODE ID </id_secuencial_elementos>
+			    <code_node>(String)(man)CODE </code_node>
+			    <description>(String)(man)DESCRIPTION</description>
+			    <optimist_lock> (Long) OPTIMIST_LOCK </optimist_lock>
+			    <delete_flag> (Long) delete flag </delete_flag>
+			    <id_formato> (Long) id formato </id_formato>
+		    </VCNode>
+		</CenBdm_validation_code_node>
+	</Global>
+</CenBdmCVNodeUpdate>

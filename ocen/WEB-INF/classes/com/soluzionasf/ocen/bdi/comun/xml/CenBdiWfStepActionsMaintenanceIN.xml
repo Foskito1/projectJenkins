@@ -1,0 +1,23 @@
+<CenBdiStepActionsMaintenance>
+	<stepActionList>
+		<stepAction>(seq)
+			<idGraph>(Long)</idGraph>
+			<codStep>(String)</codStep>
+			<codAction>(String)</codAction>
+			<indOrder>(Long)</indOrder>
+			<indMandatory>(Long)</indMandatory>
+			<indAutomatic>(Long)</indAutomatic>
+			<indEnable>(Long)</indEnable>
+			<indVisible>(Long)</indVisible>
+			<indShow>(Long)</indShow>
+			<indReexecutable>(Long)</indReexecutable>
+		</stepAction>
+	</stepActionList>
+	<deleteStepActionList>
+		<stepAction>(seq)
+			<idGraph>(Long)</idGraph>
+			<codStep>(String)</codStep>
+			<codAction>(String)</codAction>
+		</stepAction>
+	</deleteStepActionList>
+</CenBdiStepActionsMaintenance>

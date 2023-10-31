@@ -1,0 +1,98 @@
+#**********************************************************
+# Mantenimiento de acciones
+#**********************************************************
+CenBdiWfCreateModifyAction;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfCreateModifyAction;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfCreateModifyActionRequestDOMImpl;
+CenBdiNewAction;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionMaintenance;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionMaintenanceRequestDOMImpl;
+CenBdiModifyAction;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionMaintenance;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionMaintenanceRequestDOMImpl;
+CenBdiWfActionDelete;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionDelete;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfDeleteActionRequestDOMImpl;
+
+#**********************************************************
+# Asociacion de acciones
+#**********************************************************
+CenBdiWfInsertActionAsoc;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionAsocMaintenance;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionAsocMaintenanceRequestDOMImpl;
+CenBdiWfUpdateActionAsoc;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionAsocMaintenance;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionAsocMaintenanceRequestDOMImpl;
+CenBdiWfDeleteActionAsoc;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionAsocMaintenance;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionAsocMaintenanceRequestDOMImpl;
+
+#**********************************************************
+# Asociacion de acciones de tiempo
+#**********************************************************
+CenBdiWfInsertActionAsocTime;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionAsocTimeMaintenance;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionAsocTimeMaintenanceRequestDOMImpl;
+CenBdiWfUpdateActionAsocTime;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionAsocTimeMaintenance;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionAsocTimeMaintenanceRequestDOMImpl;
+CenBdiWfDeleteActionAsocTime;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionAsocTimeMaintenance;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionAsocTimeMaintenanceRequestDOMImpl;
+
+#**********************************************************
+# Nuevo asociacion de criterio de seleccion a un workflow
+#**********************************************************
+CenBdiWfNewModelAsoc;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfNewModelAsoc;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfNewModelAsocRequestDOMImpl;
+
+#**********************************************************
+# Workflow Parameterizacion de Plazos 
+#**********************************************************
+CenBdiWfInsertWorkflowPeriod;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfCreateModifyWorkflowPeriod;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfCreateModifyWorkflowPeriodRequestDOMImpl;
+CenBdiWfUpdateModifyWorkflowPeriod;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfCreateModifyWorkflowPeriod;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfCreateModifyWorkflowPeriodRequestDOMImpl;
+CenBdiWfDeleteWorkflowPeriod;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfDeleteWorkflowPeriod;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfDeleteWorkflowPeriodRequestDOMImpl;
+
+#**********************************************************
+# Gestión de acciones 
+#**********************************************************
+CenBdiWfActionPermission;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionManager;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionManagerRequestDOMImpl;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionManagerResultDOMImpl;
+CenBdiWfActionAutomatic;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionManager;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionManagerRequestDOMImpl;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionManagerResultDOMImpl;
+CenBdiWfActionMandatory;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionManager;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionManagerRequestDOMImpl;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionManagerResultDOMImpl;
+CenBdiWfActionRestart;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionManager;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionManagerRequestDOMImpl;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionManagerResultDOMImpl;
+CenBdiWfInsertComment;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfActionManager;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionManagerRequestDOMImpl;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionManagerResultDOMImpl;
+
+#**********************************************************
+# Finalización genérica de tarea
+#**********************************************************
+CenBdiWfFinishGenericalAction;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfGenericalAction;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionGenericalRequestDOMImpl;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfActionGenericalResultDOMImpl;
+
+#**************************
+#Ejecucion de tarea java
+#**************************
+CenBdiWfLaunchAction;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfLaunchAction;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfLaunchActionInputRequestDOMImpl;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfLaunchActionInputResultDOMImpl;
+
+#**************************
+#Mantenimiento de workflow
+#**************************
+CenBdiWfStepActionMaintenance;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfStepActionMaintenance;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfStepActionMaintenanceRequestDOMImpl;
+CenBdiWfWorkflowMaintenance;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfWorkflowMaintenance;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfWorkflowMaintenanceRequestDOMImpl;
+
+#**********************************************************
+#WFModule and ActionProcess Maintenance
+#**********************************************************
+CenBdiWfCreateModifyModule;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfCreateModifyModule;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfCreateModifyModuleRequestDOMImpl;
+
+#**********************************************************
+#Busqueda generica de modulos y entidades asociadas
+#**********************************************************
+CenBdiWfSearchModuleEntities;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfSearchModuleEntities;com.soluzionasf.ocen.bdi.comun.servlets.SearchModuleEntitiesRequestDOMImpl;
+
+#**************************
+#Mantenimiento de pasos
+#**************************
+CenBdiWfStepMaintenance;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfStepMaintenance;com.soluzionasf.ocen.bdi.comun.servlets.StepWFMaintenanceRequestDOMImpl;
+
+#**************************
+#Gestion de pasos
+#**************************
+CenBdiWfStepManager;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfStepManager;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfStepManagerRequestDOMImpl;
+
+#**************************
+#Administración de Entidades
+#**************************
+CenBdiWfEntitiesAdministration;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfEntitiesAdministration;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfEntitiesAdministrationRequestDOMImpl;
+#**************************
+
+#Asociacion de acciones a pasos
+#**************************
+CenBdiWfStepActionMaintenance;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfStepActionMaintenance;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiStepActionsMaintenanceRequestDOMImpl;
+CenBdiWfUpdateEntityTypeEntity;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfUpdateEntityTypeEntity;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfUpdateEntityTypeEntityRequestDOMImpl;
+CenBdiWfUpdateEntityStatus;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfUpdateEntityStatus;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfUpdateEntityStatusRequestDOMImpl;
+
+#INI MEJINGEN-1429 Migrar Configuración de pasos
+#**************************
+CenBdiWfStepModelMaintenance;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfStepModelMaintenance;com.soluzionasf.ocen.bdi.comun.servlets.CenBdiWfStepModelMaintenanceRequestDOMImpl;
+
+# Parametrización de acciones (módulos, entidades, estados)
+#**************************
+CenBdiWfSearchModuleEntities;com.soluzionasf.ocen.bdi.comun.domain.CenBdiWfSearchModuleEntities;com.soluzionasf.ocen.bdi.comun.servlets.SearchModuleEntitiesRequestDOMImpl;

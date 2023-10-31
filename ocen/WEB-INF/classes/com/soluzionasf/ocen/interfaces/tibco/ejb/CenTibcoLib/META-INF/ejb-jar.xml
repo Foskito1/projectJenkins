@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+
+<ejb-jar>
+  <description />
+  <display-name>OCEN EJB for subscription Tibco interfaces</display-name>
+  <small-icon />
+  <large-icon />
+  <enterprise-beans>
+    <session>
+      <description>OCEN EJB for subscription Tibco interfaces</description>
+      <display-name>ocen.interfases.tibco.ejb.CenTibcoLibEjb</display-name>
+      <small-icon></small-icon>
+      <large-icon></large-icon>
+      <ejb-name>ocen.interfases.tibco.ejb.CenTibcoLibEjb</ejb-name>
+      <home>com.soluzionasf.ocen.interfaces.tibco.ejb.CenTibcoLibEjbHome</home>
+      <remote>com.soluzionasf.ocen.interfaces.tibco.ejb.CenTibcoLibEjb</remote>
+      <ejb-class>com.soluzionasf.ocen.interfaces.tibco.ejb.CenTibcoLibEjbBean</ejb-class>
+      <session-type>Stateless</session-type>
+      <transaction-type>Bean</transaction-type>
+      <resource-ref>
+				<res-ref-name> wm/work-manager</res-ref-name>
+				<res-type>commonj.work.WorkManager</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+    </session>
+  </enterprise-beans>
+	<ejb-client-jar />
+</ejb-jar>

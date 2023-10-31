@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiDeleteStrDwExport>
+   <StructureDefinition>
+      <User_Id>(long)(man)Contiene el ID del usuario de la configuracion.</User_Id>
+      <Cod_Dw_Export>(long)(man)Contiene el codigo de la estructura de exportación.</Cod_Dw_Export>
+   </StructureDefinition>
+</CenBdiDeleteStrDwExport>

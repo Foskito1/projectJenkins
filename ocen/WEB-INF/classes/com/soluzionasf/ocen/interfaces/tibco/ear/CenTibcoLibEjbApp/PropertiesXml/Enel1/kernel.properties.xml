@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content>
+	<isf>
+		<db>
+			<!--Perfil por defecto de acceso a datos (del pool)-->
+			<db>
+				<!-- Clase del driver JDBC -->
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<!-- URL de provisión de conexiones -->
+				<url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</url>
+				<!-- Usuario de la conexión JDBC -->
+				<user>CENBDT_USR</user>
+				<!-- Password de la conexión JDBC -->
+				<password>CENBDT_ROMA</password>
+				<!-- Nº máximo de conexiones mantenibles -->
+				<max>40</max>
+				<!-- Tiempo máximo de inactividad de cada conexión asignada (ms) -->
+				<max_unused_interval> 9000000</max_unused_interval>
+				<!-- Tiempo máximo de concesión de cada conexión (ms) -->
+				<max_granted_time> 9000000</max_granted_time>
+				<!-- Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito) -->
+				<max_availabiliy_timeout>-1</max_availabiliy_timeout>
+				<!-- Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas) -->
+				<max_per_user>-1</max_per_user>
+			</db>
+     		<dbarq>
+				<!-- Clase del driver JDBC -->
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<!-- URL de provisión de conexiones -->
+				<url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</url>
+				<!-- Usuario de la conexión JDBC -->
+				<user>CENBDT_USR</user>
+				<!-- Password de la conexión JDBC -->
+				<password>CENBDT_CON</password>
+				<!-- Nº máximo de conexiones mantenibles -->
+				<max>30</max>
+				<!-- Tiempo máximo de inactividad de cada conexión asignada (ms) -->
+				<max_unused_interval> 900000</max_unused_interval>
+				<!-- Tiempo máximo de concesión de cada conexión (ms) -->
+				<max_granted_time> 900000</max_granted_time>
+				<!--Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito)-->
+				<max_availabiliy_timeout>-1</max_availabiliy_timeout>
+				<!--Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas)-->
+				<max_per_user>-1</max_per_user>
+			</dbarq>
+			<dbcenbat>
+				<!--Clase del driver JDBC-->
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<!--URL de provisión de conexiones-->
+				<url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</url>
+				<!--Usuario de la conexión JDBC-->
+				<user>CENBDT_USR</user>
+				<!--Password de la conexión JDBC-->
+				<password>CENBDT_ROMA</password>
+				<!--Nº máximo de conexiones mantenibles-->
+				<max>20</max>
+				<!-- Tiempo máximo de inactividad de cada conexión asignada (ms) -->
+				<max_unused_interval> 9000000</max_unused_interval>
+				<!-- Tiempo máximo de concesión de cada conexión (ms) -->
+				<max_granted_time> 9000000</max_granted_time>
+				<!-- Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito) -->
+				<max_availabiliy_timeout>-1</max_availabiliy_timeout>
+				<!-- Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas) -->
+				<max_per_user>-1</max_per_user>
+			</dbcenbat>
+			<dbcenbdi>
+				<!--Clase del driver JDBC-->
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<!--URL de provisión de conexiones-->
+				<url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</url>
+				<!--Usuario de la conexión JDBC-->
+				<user>CENBDM_USR</user>
+				<!--Password de la conexión JDBC-->
+				<password>CENBDM_ROMA</password>
+				<!--Nº máximo de conexiones mantenibles-->
+				<max>30</max>
+				<!-- Tiempo máximo de inactividad de cada conexión asignada (ms) -->
+				<max_unused_interval> 9000000</max_unused_interval>
+				<!-- Tiempo máximo de concesión de cada conexión (ms) -->
+				<max_granted_time> 9000000</max_granted_time>
+				<!-- Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito) -->
+				<max_availabiliy_timeout>-1</max_availabiliy_timeout>
+				<!-- Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas) -->
+				<max_per_user>-1</max_per_user>
+			</dbcenbdi>
+			<dbcencom>
+				<!--Clase del driver JDBC-->
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<!--URL de provisión de conexiones-->
+				<url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</url>
+				<!--Usuario de la conexión JDBC-->
+				<user>CENCMB_USR</user>
+				<!--Password de la conexión JDBC-->
+				<password>CENCMB_ROMA</password>
+				<!--Nº máximo de conexiones mantenibles-->
+				<max>15</max>
+				<!-- Tiempo máximo de inactividad de cada conexión asignada (ms) -->
+				<max_unused_interval> 9000000</max_unused_interval>
+				<!-- Tiempo máximo de concesión de cada conexión (ms) -->
+				<max_granted_time> 9000000</max_granted_time>
+				<!-- Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito) -->
+				<max_availabiliy_timeout>-1</max_availabiliy_timeout>
+				<!-- Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas) -->
+				<max_per_user>-1</max_per_user>
+			</dbcencom>
+			<dbcenman>
+				<!--Clase del driver JDBC-->
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<!--URL de provisión de conexiones-->
+				<url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</url>
+				<!--Usuario de la conexión JDBC-->
+				<user>CENMAN_USR</user>
+				<!--Password de la conexión JDBC-->
+				<password>CENMAN_ROMA</password>
+				<!--Nº máximo de conexiones mantenibles-->
+				<max>25</max>
+				<!-- Tiempo máximo de inactividad de cada conexión asignada (ms) -->
+				<max_unused_interval> 9000000</max_unused_interval>
+				<!-- Tiempo máximo de concesión de cada conexión (ms) -->
+				<max_granted_time> 9000000</max_granted_time>
+				<!-- Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito) -->
+				<max_availabiliy_timeout>-1</max_availabiliy_timeout>
+				<!-- Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas) -->
+				<max_per_user>-1</max_per_user>
+			</dbcenman>
+			<dbcenmam>
+				<!--Clase del driver JDBC-->
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<!--URL de provisión de conexiones-->
+				<url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</url>
+				<!--Usuario de la conexión JDBC-->
+				<user>CENMAM_USR</user>
+				<!--Password de la conexión JDBC-->
+				<password>CENMAM_ROMA</password>
+				<!--Nº máximo de conexiones mantenibles-->
+				<max>25</max>
+				<!-- Tiempo máximo de inactividad de cada conexión asignada (ms) -->
+				<max_unused_interval> 9000000</max_unused_interval>
+				<!-- Tiempo máximo de concesión de cada conexión (ms) -->
+				<max_granted_time> 9000000</max_granted_time>
+				<!-- Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito) -->
+				<max_availabiliy_timeout>-1</max_availabiliy_timeout>
+				<!-- Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas) -->
+				<max_per_user>-1</max_per_user>
+			</dbcenmam>
+			<dbcenope>
+				<!-- Clase del driver JDBC -->
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<!-- URL de provisión de conexiones -->
+				<url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</url>
+				<!-- Usuario de la conexión JDBC -->
+				<user>CENOPE_USR</user>
+				<!-- Password de la conexión JDBC -->
+				<password>CENOPE_ROMA</password>
+				<!-- Nº máximo de conexiones mantenibles -->
+				<max>15</max>
+				<!-- Tiempo máximo de inactividad de cada conexión asignada (ms) -->
+				<max_unused_interval> 9000000</max_unused_interval>
+				<!-- Tiempo máximo de concesión de cada conexión (ms) -->
+				<max_granted_time> 9000000</max_granted_time>
+				<!-- Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito) -->
+				<max_availabiliy_timeout>-1</max_availabiliy_timeout>
+				<!-- Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas) -->
+				<max_per_user>-1</max_per_user>
+			</dbcenope>
+			<dbcensap>
+				<!--Clase del driver JDBC-->
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<!--URL de provisión de conexiones-->
+				<url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</url>
+				<!--Usuario de la conexión JDBC-->
+				<user>CENSAP_USR</user>
+				<!--Password de la conexión JDBC-->
+				<password>CENSAP_ROMA</password>
+				<!--Nº máximo de conexiones mantenibles-->
+				<max>10</max>
+				<!-- Tiempo máximo de inactividad de cada conexión asignada (ms) -->
+				<max_unused_interval> 9000000</max_unused_interval>
+				<!-- Tiempo máximo de concesión de cada conexión (ms) -->
+				<max_granted_time> 9000000</max_granted_time>
+				<!-- Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito) -->
+				<max_availabiliy_timeout>-1</max_availabiliy_timeout>
+				<!-- Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas) -->
+				<max_per_user>-1</max_per_user>
+			</dbcensap>
+			<dbgcsm>
+				<!--Clase del driver JDBC-->
+				<driver>oracle.jdbc.driver.OracleDriver</driver>
+				<!--URL de provisión de conexiones-->
+				<url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</url>
+				<!--Usuario de la conexión JDBC-->
+				<user>CENBDT_USR</user>
+				<!--Password de la conexión JDBC-->
+				<password>CENBDT_ROMA</password>
+				<!--Nº máximo de conexiones mantenibles-->
+				<max>10</max>
+				<!-- Tiempo máximo de inactividad de cada conexión asignada (ms) -->
+				<max_unused_interval> 9000000</max_unused_interval>
+				<!-- Tiempo máximo de concesión de cada conexión (ms) -->
+				<max_granted_time> 9000000</max_granted_time>
+				<!-- Tiempo máximo de espera por disponibilidad (ms) (por defecto infinito) -->
+				<max_availabiliy_timeout>-1</max_availabiliy_timeout>
+				<!-- Nº máximo de conexiones asignables al mismo usuario (por defecto infinitas) -->
+				<max_per_user>-1</max_per_user>
+			</dbgcsm>
+			<!-- Declaración de nº de conexiones por perfil creadas automáticamente al inicio -->
+			<InitialConnections>
+				<db>1</db>
+			</InitialConnections>
+			<!-- Propiedades del Pool de conexiones JDBC -->
+			<Pool>
+				<!-- Clase de implementación del pool: isf.db.BasicPool (primitivo) o isf.db.AdvancedPool (revisado) -->
+				<implementation_class>isf.db.AdvancedPool</implementation_class>
+				<!-- Indicador de comportamiento al liberar abruptamente: (0:ninguno | 1:liberar & abortar thread usuario | 2: liberar y destruir conexión) -->
+				<abrupt_behaviour>2</abrupt_behaviour>
+				<!-- Tiempo de recuperación ante errores JDBC (ms) -->
+				<error_recovery_time>2000</error_recovery_time>
+				<!-- Clase de generación de secuencias -->
+				<sequence_generator>isf.db.SequenceGeneratorTableBased</sequence_generator>
+				<!--Mínimo lapso de tiempo admisible entre instantes de aviso de inactividade (en ms)-->				
+				<min_inactivity_time_step>1000</min_inactivity_time_step>				
+				<!--Indicador de comportamiento al finalizar la JVM: false: no hacer nada; true: liberar todas las conexiones por la fuerza-->				
+				<release_on_shutdown>true</release_on_shutdown>
+				<!--Indicador de forma de cierre de las conexiones: true: asíncrono; false: síncrono-->				
+				<asynchronous_close>true</asynchronous_close>				
+				<!-- Listeners asociados a los drivers -->
+				<driver_listeners>
+					<oracle.jdbc.driver.OracleDriver>isf.db.OracleConnectionTracer</oracle.jdbc.driver.OracleDriver>
+				</driver_listeners>
+				<!-- Listeners globales -->
+				<global_listeners>
+					<listener.1>isf.db.ConnectionMonitor</listener.1>
+				</global_listeners>
+				<!-- Obligación de envío de información de traceo al motor BD Oracle -->
+				<WRITE_CLIENT_INFO>true</WRITE_CLIENT_INFO>
+				<!-- Período de sondeo del estado de cada conexión -->
+				<connection_verification_interval>18000000</connection_verification_interval>
+				<!--Perfil para las tablas del kernel (generador de secuenciales)-->
+				<kernel_profile>db</kernel_profile>
+			</Pool>
+			<SequenceGeneratorManager>
+				<default_generator>isf.db.SequenceGeneratorOracleBased</default_generator>
+			</SequenceGeneratorManager>
+		</db>
+		<util>
+			<!-- Gestor de sockets TCP para un intervalo de puertos -->
+			<ftp>
+				<!-- Fábrica de clientes de FTP -->
+				<FTPClientFactory>
+					<!-- Implementación por defecto -->
+					<default>.</default>
+				</FTPClientFactory>
+				<!-- Manejador ABSTRACTO de transmisión de DATOS para una conexión FTP -->
+				<FTPClientDataTransfer>
+					<!-- Tiempo máximo de espera para las operaciones I/O (milisegundos) -->
+					<so_timeout>-1</so_timeout>
+					<!-- Tiempo máximo de espera para el cierre de sockets (milisegundos) -->
+					<so_linger>-1</so_linger>
+				</FTPClientDataTransfer>
+				<!-- Intérprete de protocolo de control para una conexión FTP -->
+				<FTPClientProtocolInterpreter>
+					<!-- Tiempo máximo de espera para las operaciones I/O (milisegundos) -->
+					<so_timeout>-1</so_timeout>
+					<!-- Tiempo máximo de espera para el cierre de sockets (milisegundos) -->
+					<so_linger>-1</so_linger>
+				</FTPClientProtocolInterpreter>
+				<!-- Implementación básica de un cliente FTP -->
+				<FTPClientImpl>
+					<!-- Charset para la conversión bytes -> chars -->
+					<charset_encoding>ISO-8859-1</charset_encoding>
+					<!-- Deserializador por defecto para los listados completos de ficheros -->
+					<deserializer_default>.</deserializer_default>
+				</FTPClientImpl>
+				<!-- Deserializador de información-ficheros para FileSystems estilo Unix -->
+				<FileInfoDeserializer_Unix>
+					<!-- Formato por defecto de cada línea serializada -->
+					<format_default>{attrs}{ignore}{ignore}{ignore}{size}{last_date}{name}</format_default>
+					<!-- Idioma por defecto para los formatos de fecha admitidos -->
+					<locale_language>it</locale_language>
+					<!-- Formatos de fecha admitidos -->
+					<date_formats>
+						<date_format1>MMM dd hh:mm</date_format1>
+						<date_format2>MMM dd  yyyy</date_format2>
+					</date_formats>
+				</FileInfoDeserializer_Unix>
+			</ftp>
+			<!-- Cliente de servicios remotos ARQv10 con parámetros por defecto -->
+			<sc>
+				<!--Cliente de servicios remotos ARQv10 con parámetros por defecto-->
+				<ServiceClientImpl_Default>
+					<!--URL del servicio se sesión (para login y logoff)-->
+					<url_session>.</url_session>
+					<!--Idioma origen-->
+					<language>it</language>
+					<!--País origen-->
+					<country>IT</country>
+					<!--Nombre del método remoto para login-->
+					<method_login>.</method_login>
+					<!--Nombre del método remoto para logoff-->
+					<method_logoff>.</method_logoff>
+					<!--Algoritmo de compresión-->
+					<compression>.</compression>
+					<!--Nombre del canal de log (err/out)-->
+					<log>.</log>
+					<!--Booleano que indica si la ejecucion es en local o no-->
+					<local>false</local>
+				</ServiceClientImpl_Default>
+				<ServiceClientFactory>
+					<!--Puerto donde se ejecuta el webserver local-->
+					<webserver_port>.</webserver_port>
+				</ServiceClientFactory>
+			</sc>
+			<!-- Encriptacion -->
+			<!-- Logs. -->
+			<log>
+				<providers>
+					<!-- Proveedores registrados. -->
+					<console>isf.util.log.ConsoleLog</console>
+				</providers>
+				<Log>
+					<!-- Se han definido 6 niveles de trazas : -->
+					<!-- INFO_LEVEL(1) Solo trazas sobre la ejecución -->
+					<!-- CRITICAL_ERROR_LEVEL (2) Sólo errores críticos y trazas de información. -->
+					<!-- ERROR_LEVEL(3). Errores normales y todos los anteriores niveles. -->
+					<!-- WARNING_LEVEL(4). Avisos y todos los anteriores niveles. -->
+					<!-- DETAIL_LEVEL(5). Trazas de detalle de la ejecucion y todos los anteriores. -->
+					<!-- TRACE_LEVEL(6). Trazas de desarrollo y todos los anteriores. -->
+					<!-- DEACTIVATE_LEVEL (0) Trazas desactivadas. -->
+					<!-- Máscara de niveles reportables (criterio más prioritario) -->
+					<reportable_level_codes>1,2,3,4,5,6</reportable_level_codes>
+					<!-- Máximo nivel reportable (criterio menos prioritario) -->
+					<max_trace_level>6</max_trace_level>
+				</Log>
+				<LogActivityResolver>
+					<!-- Numero de hilos que se encargan de dejar las trazas. -->
+					<num_threads>10</num_threads>
+					<!-- Tiempo de muestreo de actividades pendientes (en milisegundos) -->
+					<poll_time>1000</poll_time>
+				</LogActivityResolver>
+			</log>
+			<!-- Monitoring Threads entries factory -->
+			<tms>
+				<ThreadMonitoringService>
+					<!-- Monitoring entries factory -->
+					<entry_factory>.</entry_factory>
+					<!-- Monitoring device -->
+					<monitoring_device>.</monitoring_device>
+					<!-- Max number of concurrent entries -->
+					<max_entries>-1</max_entries>
+					<!-- Parameters for servelt call monitoring -->
+					<monitorize_servlets>false</monitorize_servlets>
+					<call_connections_info>false</call_connections_info>
+					<call_servlet_name>false</call_servlet_name>
+					<call_service_name>false</call_service_name>
+					<call_session>false</call_session>
+					<call_begin_date>false</call_begin_date>
+					<call_end_date>false</call_end_date>
+					<call_input>false</call_input>
+					<call_output>false</call_output>
+					<call_is_authorized>false</call_is_authorized>
+					<call_client_IP_address>false</call_client_IP_address>
+					<call_extra_info>false</call_extra_info>
+					<!-- Parameters for connection monitoring -->
+					<conn_profile_id>false</conn_profile_id>
+					<conn_assigned_to>false</conn_assigned_to>
+					<conn_open_date>false</conn_open_date>
+					<conn_close_date>false</conn_close_date>
+					<conn_extra_info>false</conn_extra_info>
+					<conn_open_date_ms>false</conn_open_date_ms>
+					<conn_close_date_ms>false</conn_close_date_ms>
+				</ThreadMonitoringService>
+			</tms>
+			<Tracer>
+				<log_active>false</log_active>
+			</Tracer>
+		</util>
+		<domain>
+			<gcdb>
+				<InitializePool>
+					<development_server>.</development_server>
+				</InitializePool>
+			</gcdb>
+			<gces>
+				<GcesEventSystemServerImp>
+					<!-- Nombre del subsistema actuall -->
+					<subsystem>OCEN</subsystem>
+					<!-- Puerto del RMIRegistry -->
+					<port>1299</port>
+				</GcesEventSystemServerImp>
+				<system_event>
+					<host_server>roma</host_server>
+					<!--Puerto del RMIRegistry-->
+					<port>1299</port>
+					<!--Perfil de acceso al pool-->
+					<db_profile>db</db_profile>
+				</system_event>
+			</gces>
+			<gcls>
+				<!--Propiedades del Sistema de Bloqueos-->
+				<GclsProperties>
+					<!--Perfil de acceso a datos-->
+					<db_profile>db</db_profile>
+				</GclsProperties>
+			</gcls>
+			<gcns>
+				<!--Propiedades del Sistema de Navegación-->
+				<GCNSProperties>
+					<!--Perfil de acceso a datos-->
+					<db_profile>db</db_profile>
+				</GCNSProperties>
+			</gcns>
+			<gcoms>
+				<!--Propiedades del Sistema de Directorios-->
+				<GcomsProperties>
+					<!--Perfil de acceso a datos-->
+					<db_profile>db</db_profile>
+				</GcomsProperties>
+			</gcoms>
+			<gcps>
+				<ProcessService>
+					<!-- db -->
+					<db.driver>oracle.jdbc.driver.OracleDriver</db.driver>
+					<db.url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</db.url>
+					<db.user>CENBDT_USR</db.user>
+					<db.password>CENBDT_ROMA</db.password>
+					<db.encrypted>off</db.encrypted>
+					<!-- dbcb -->
+				</ProcessService>
+				<QueryService>
+					<!-- db -->
+					<db.driver>oracle.jdbc.driver.OracleDriver</db.driver>
+					<db.url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</db.url>
+					<db.user>CENBDT_USR</db.user>
+					<db.password>CENBDT_ROMA</db.password>
+					<db.encrypted>off</db.encrypted>
+					<!-- dbcenbdi -->
+					<dbcenbdi.driver>oracle.jdbc.driver.OracleDriver</dbcenbdi.driver>
+					<dbcenbdi.url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</dbcenbdi.url>
+					<dbcenbdi.user>CENBDI_USR</dbcenbdi.user>
+					<dbcenbdi.password>CENBDI_ROMA</dbcenbdi.password>
+					<dbcenbdi.encrypted>off</dbcenbdi.encrypted>
+					<!-- dbcencom -->
+					<dbcencom.driver>oracle.jdbc.driver.OracleDriver</dbcencom.driver>
+					<dbcencom.url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</dbcencom.url>
+					<dbcencom.user>CENCOM_USR</dbcencom.user>
+					<dbcencom.password>CENCOM_ROMA</dbcencom.password>
+					<dbcencom.encrypted>off</dbcencom.encrypted>
+					<!-- dbcenope -->
+					<dbcenope.driver>oracle.jdbc.driver.OracleDriver</dbcenope.driver>
+					<dbcenope.url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</dbcenope.url>
+					<dbcenope.user>CENOPE_USR</dbcenope.user>
+					<dbcenope.password>CENOPE_ROMA</dbcenope.password>
+					<dbcenope.encrypted>off</dbcenope.encrypted>
+					<!-- dbcensap -->
+					<dbcensap.driver>oracle.jdbc.driver.OracleDriver</dbcensap.driver>
+					<dbcensap.url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</dbcensap.url>
+					<dbcensap.user>CENSAP_USR</dbcensap.user>
+					<dbcensap.password>CENSAP_ROMA</dbcensap.password>
+					<dbcensap.encrypted>off</dbcensap.encrypted>
+					<!-- dbcenbat -->
+					<dbcenbat.driver>oracle.jdbc.driver.OracleDriver</dbcenbat.driver>
+					<dbcenbat.url>jdbc:oracle:thin:@10.98.11.3:1523:enel1</dbcenbat.url>
+					<dbcenbat.user>CENBDM_USR</dbcenbat.user>
+					<dbcenbat.password>CENBDM_ROMA</dbcenbat.password>
+					<dbcenbat.encrypted>off</dbcenbat.encrypted>
+				</QueryService>
+			</gcps>
+			<gcqs>
+				<GcqsQuerySystem>
+					<default_profile>db</default_profile>
+					<!-- Production/Developement flag -->
+					<production>false</production>
+					<!-- Package for query classes -->
+					<package>com.soluzionasf.ocen.util.qs</package>
+				</GcqsQuerySystem>
+				<!--Gestor de consultas paginadas-->
+				<GcqsPagingQuerySystem>
+					<!--Indica si la cache del qs esta activa o no-->
+					<cache_enabled>false</cache_enabled>
+					<!--Timeout de almacenamiento de las ejecuciones paginadas caducadas (ms)-->
+					<cleanup_timeout>3000000</cleanup_timeout>
+					<!--Timeouts de almacenamiento de las ejecuciones paginadas (ms)-->
+					<cache_timeouts>
+						<!--Timeout de almacenamiento de las ejecuciones paginadas sin caché (ms)-->
+						<none>6000000</none>
+						<!--Timeout de almacenamiento de las ejecuciones paginadas con caché para la query actual (ms)-->
+						<current>9000000</current>
+						<!--Timeout de almacenamiento de las ejecuciones paginadas con caché para todas las queries (ms)-->
+						<all>3000000</all>
+					</cache_timeouts>
+				</GcqsPagingQuerySystem>				
+			</gcqs>
+			<gcrs>
+				<ConfigurationManager>
+					<!-- URL para indicar un directorio en un .jar: jar:file:/y:/jar/templates.jar!/isf/domain/gcrs/templates/ -->
+					<url_path>.</url_path>
+					<!--Timeout de ejecución de la query en el QuerySystem-->
+					<query_timeout>1000000</query_timeout>
+					<!--URL del servicio QuerySystem remoto-->
+					<query_system_url>.</query_system_url>
+					<!--Nombre del servicio QuerySystem remoto.-->
+					<query_system_method>execute</query_system_method>
+					<!--Formato de fecha standard retornado por el servicio QuerySystem remoto.-->
+					<query_system_date_time_format>yyyy-MM-dd HH:mm:ss.S</query_system_date_time_format>
+					<!--Formato de fecha alternativo retornado por el servicio QuerySystem remoto.-->
+					<alternate_date_time_format>yyyy-MM-dd</alternate_date_time_format>
+					<!--Formato de numéricos retornado por el servicio QuerySystem remoto.-->
+					<query_system_number_format>#,###.#;-#,###.#</query_system_number_format>
+					<query_system_currency_format>$0.0</query_system_currency_format>
+					<!--Formato de booleanos true retornado por el servicio QuerySystem remoto.-->
+					<query_system_true_format>1</query_system_true_format>
+					<!--Formato de booleanos false retornado por el servicio QuerySystem remoto.-->
+					<query_system_false_format>0</query_system_false_format>
+					<!--Formato de fecha por defecto generado por este servicio.-->
+					<date_time_format_out>dd-MM-yyyy</date_time_format_out>
+					<!--Formato de número por defecto generado por este servicio.-->
+					<number_format_out>#,###.#</number_format_out>	
+					<!--Formato de moneda por defecto generado por este servicio.-->
+					<currency_format_out>###,###,###,###</currency_format_out>
+					<!--Número de decimales presentados en la salida (redondeo)-->
+					<curency_decimal_digits_out>4</curency_decimal_digits_out>					
+					<!--Encoding para la lectura de las plantillas-->
+					<input_encoding>ISO-8859-1</input_encoding>
+				</ConfigurationManager>
+				<!--Clases de formato de datos simples-->
+				<FunctionFactory>
+					<!--Formateo a fecha-->
+					<TO_DATE>isf.domain.gcrs.DateFormater</TO_DATE>
+					<!--Formateo a numérico-->
+					<TO_NUMBER>isf.domain.gcrs.NumberFormater</TO_NUMBER>
+					<!--Formateo a booleano-->
+					<TO_BOOLEAN>isf.domain.gcrs.BooleanFormater</TO_BOOLEAN>
+					<DECODE>isf.domain.gcrs.DecodeFormater</DECODE>
+					<!--Formateo a tabla-->
+					<GRID>isf.domain.gcrs.GridFormatter</GRID>
+					<!--Formateo a tabla multilínea-->
+					<MULTILINE_GRID>isf.domain.gcrs.MultilineGridFormatter</MULTILINE_GRID>
+					<!--Formateo a multilínea-->
+					<MULTILINE>isf.domain.gcrs.Multiline</MULTILINE>
+					<GENERIC_HEADER>com.soluzionasf.ocen.man.common.domain.GenericHeader</GENERIC_HEADER>
+					<GRID_BOLD>com.soluzionasf.ocen.man.common.domain.GridFormatterBoldRow</GRID_BOLD>
+				</FunctionFactory>
+				<!--Clases de formateo de columnas en un grid (por tipo de dato)-->
+				<GridColumnFormattersFactory>
+					<!--Formateador por defecto-->
+					<default>isf.domain.gcrs.StringFormater</default>
+					<!--Formateador de strings-->
+					<STRING>isf.domain.gcrs.StringFormater</STRING>
+					<!--Formateador de fechas-->
+					<DATE>isf.domain.gcrs.DateFormater</DATE>
+					<!--Formateador de numéricos reales-->
+					<DECIMAL>isf.domain.gcrs.NumberFormater</DECIMAL>
+					<!--Formateador de booleanos-->
+					<BOOLEAN>isf.domain.gcrs.BooleanFormaterGrid</BOOLEAN>
+					<!--Formateador de moneda euro-->
+					<EURO>isf.domain.gcrs.EurosToCentsFormater</EURO>
+					<!--Formateador de celda multilínea-->
+					<MULTILINE>isf.domain.gcrs.Multiline</MULTILINE>
+					<!--Alineación por tipo (left|right|center)-->
+					<aligns>
+						<STRING>left</STRING>
+						<DATE>right</DATE>
+						<DECIMAL>right</DECIMAL>
+						<BOOLEAN>center</BOOLEAN>
+						<EURO>right</EURO>
+					</aligns>
+				</GridColumnFormattersFactory>				
+				<MethodTemplateResolver>
+					<!-- Dirección en la que se encuentran los ficheros .services en los que se indica el nombre de los métodos de cada Servlet -->
+					<!-- y el nombre de la clase de dominio y de su request -->
+					<path>.</path>
+				</MethodTemplateResolver>
+			</gcrs>
+			<gcsm>
+				<InternalDBProfileHolder>
+					<!--Perfil de acceso a datos-->
+					<db_profile_id>db</db_profile_id>
+				</InternalDBProfileHolder>
+				<config>
+					<historic_provider_impl>isf.domain.gcsm.CompleteHistoricGeneratorImpl</historic_provider_impl>
+				</config>
+			</gcsm>
+			<gcss>
+				<InactiveSessionsRemover>
+					<!-- Propiedades del proceso de eliminacion automatica de sesiones inactivas -->
+					<!-- Tiempos expresados en SEGUNDOS -->
+					<programmed_removing_delay>5</programmed_removing_delay>
+					<max_inactivity_time>60</max_inactivity_time>
+				</InactiveSessionsRemover>
+				<LoginServiceImpl_UF>
+					<!-- Propiedades del proceso de login de FENOSA -->
+					<openlinksb_racf_directory>.</openlinksb_racf_directory>
+					<project_racf>.</project_racf>
+					<server_racf>.</server_racf>
+				</LoginServiceImpl_UF>
+				<SecurityAgent>
+					<!-- Sistema de Segurida de activado -->
+					<security_enabled>true</security_enabled>
+					<security_method_enabled>false</security_method_enabled>
+					<penalty_time_login>300</penalty_time_login>
+					<max_autentication_attempts>3</max_autentication_attempts>
+				</SecurityAgent>
+				<SecurityContextRMI>
+					<security_user_id>1</security_user_id>
+					<security_user_name>SEC_USER</security_user_name>
+					<security_profile_id>1</security_profile_id>
+					<!-- Periodo de actualizacion de BD sobre las tablas locales (en segundos) -->
+					<db_load_lapse>10</db_load_lapse>
+				</SecurityContextRMI>
+				<SessionAuthorityManager>
+					<!-- Perfil de acceso a la BD -->
+					<security_profile>db</security_profile>
+					<!-- Periodo de actualizacion de las tablas locales sobre la BD (en segundos) -->
+					<db_save_lapse>60</db_save_lapse>
+					<!-- Nombre del subsistema actuall -->
+					<subsystem>OCEN</subsystem>
+					<!-- Puerto del RMIRegistry -->
+					<port>1299</port>
+					<!-- checkCredentials. Comprueba o no la autenticación de usuario y password -->
+					<checkCredentials>true</checkCredentials>
+				</SessionAuthorityManager>
+				<SessionAuthorityRMI>
+					<!-- Periodo de carga actualizacion de las tablas locales desde la BD (en segundos) -->
+					<db_load_lapse>10</db_load_lapse>
+				</SessionAuthorityRMI>
+				<LogDestinationPath>
+					<!--Ruta en el servidor donde se dejaran los ficheros de log generados por las funciones de procesamiento masivo del sistema de seguridad -->
+					<path./GCSSLogs</path>
+				</LogDestinationPath>
+			</gcss>
+			<gcws>
+				<workflow>
+					<!-- # FILE:isf/domain/gcws/workflow.properties -->
+					<!-- # AUTHOR: ALA 27/10/2000 -->
+					<!-- # PROPERTIES FILE FOR WORKFLOW SYSTEM'S SERVERS -->
+					<!-- # servers start mode: check_restart=true load and continue with current execution (if exists), check_restart=false ignore current execution -->
+					<check_restart>false</check_restart>
+					<!-- # registered system user and profile for db updates -->
+					<user_id>0</user_id>
+					<user_name>ALA</user_name>
+					<profile_id>0</profile_id>
+					<!-- # country and language codes for messages -->
+					<language_code>es</language_code>
+					<country_code>ES</country_code>
+					<!-- # directory for log and error files. Needs \\ to separate directories and at the end of the path. ie: c:\\wf\\tmp\\ -->
+					<log_dir>.</log_dir>
+					<error_extension>err</error_extension>
+					<log_extension>log</log_extension>
+					<!-- # trace level: trace_level=0 only errors, trace_level=1 0 level + main information, trace_level&amp;amp;amp;amp;gt;=2 1 level + verbose -->
+					<trace_level>0</trace_level>
+					<!-- # ACTIVITY MANAGER RMI SERVERS -->
+					<activity_manager_object_name>activityManager</activity_manager_object_name>
+					<!-- # time in milliseconds to sleep threads if there are not workitems -->
+					<activity_manager_sleep_time>1000</activity_manager_sleep_time>
+					<activity_manager_files_name>am</activity_manager_files_name>
+					<!-- # WORKFLOW ENGINE RMI SERVERS (WORKFLOW SYSTEM) -->
+					<workflow_system_object_name>workflowSystem</workflow_system_object_name>
+					<!-- # time in milliseconds without any change in diagram to notify end of execution. 10000 minimun -->
+					<workflow_system_time_out>3600000</workflow_system_time_out>
+					<workflow_system_hanged_time_out>2500000</workflow_system_hanged_time_out>
+					<workflow_system_delete_workitems_time_out>30000</workflow_system_delete_workitems_time_out>
+					<workflow_system_files_name>ws</workflow_system_files_name>
+					<!-- #WORKFLOW MANAGER RMI SERVER (SCHEDULER) -->
+					<workflow_manager_object_name>workflowManager</workflow_manager_object_name>
+					<workflow_manager_host_name>.</workflow_manager_host_name>
+					<workflow_manager_files_name>wm</workflow_manager_files_name>
+					<!-- # RMIRegistry port -->
+					<port>.</port>
+					<!--Pool profile-->
+					<db_profile>db</db_profile>
+				</workflow>
+			</gcws>
+		</domain>
+		<servlets>
+			<DTDContainer>
+				<dtd>&lt;!DOCTYPE GCcom_DocType [&lt;!ENTITY aacute 'á'&gt;&lt;!ENTITY Aacute 'Á'&gt;&lt;!ENTITY Ccedil 'Ç' &gt;&lt;!ENTITY ccedil 'ç'&gt;&lt;!ENTITY eacute 'é'&gt;&lt;!ENTITY Eacute 'É'&gt;&lt;!ENTITY iacute 'í'&gt;&lt;!ENTITY Iacute 'Í' &gt;&lt;!ENTITY ntilde 'ñ'&gt;&lt;!ENTITY Ntilde 'Ñ'&gt;&lt;!ENTITY oacute 'ó'&gt;&lt;!ENTITY Oacute 'Ó'&gt;&lt;!ENTITY Uacute 'Ú'&gt;&lt;!ENTITY uacute 'ú'&gt;&lt;!ENTITY uuml 'ü'&gt;&lt;!ENTITY Uuml 'Ü'&gt;]&gt; </dtd>
+			</DTDContainer>
+			<ExchangeVariable_Date>
+				<!--Patrón para lectura de fechas (parseo) de los documentos exchange (usar el convenio de java.text.SimpleDateFormat)-->
+				<format_in>yyyy-MM-dd</format_in>
+				<!--Patrón para escritura de fechas (formateo) de los documentos exchange (usar el convenio de java.text.SimpleDateFormat)-->
+				<format_out>yyyy-MM-dd</format_out>
+			</ExchangeVariable_Date>
+			<InternationalizationManager>
+				<version>1.0</version>
+				<encoding>ISO-8859-1</encoding>
+				<language>it</language>
+				<country>IT</country>
+			</InternationalizationManager>
+			<EncodingImplFactory>
+				<compress>isf.servlets.CompressCoderImpl</compress>
+				<gzip>isf.servlets.GZipCoderImpl</gzip>
+			</EncodingImplFactory>
+			<CompressCoderImpl>
+				<!-- Charset usado en la conversión byte[]-String -->
+				<encoding>ISO-8859-1</encoding>
+			</CompressCoderImpl>
+ 			<GZipCoderImpl>
+				<!--Charset usado en la conversión byte[]-String-->
+				<encoding>ISO-8859-1</encoding>
+			</GZipCoderImpl>			
+			<!--Manager de índices de servicios-->
+			<ServiceManager>
+				<!--Implementación del lector de catálogos usable-->
+				<catalog>isf.servlets.ServiceCatalogTreeImpl</catalog>
+			</ServiceManager>			
+			<!--Helper para la gestión de llamadas actuales-->
+			<gcvs>
+				<VersionManager>
+					<!-- Productos instalados -->
+					<kernel>
+						<product>KERNEL ARQV10</product>
+						<date>10 Noviembre 2005</date>
+						<version>v10.07.03</version>
+					</kernel>
+					<OCEN>
+						<product>OCEN (ESIM-Desarrollo-EJB)</product>
+						<date>27 Nobiembre 2005</date>
+						<version>2005.02</version>
+						<Upgrade> Version Enel </Upgrade>
+					</OCEN>
+				</VersionManager>
+			</gcvs>
+			<CallManagerHelper>
+				<!--Indicador de servicio activado (true) o desactivado (false).-->
+				<enabled>false</enabled>
+			</CallManagerHelper>			
+		</servlets>
+	</isf>
+</content>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <CenTibSapPsIpNetDegeAdd>
+	<SapPsIpNetDegeAdd>
+	  <CodNetwork>(String)(man)</CodNetwork>
+	  <NetworkOperation>(String)(man)</NetworkOperation>
+	  <CodRdl>(String)(man)</CodRdl>
+	  <FecHorIniIndisp>(DateTimeI18n)(man)</FecHorIniIndisp>
+	  <FecHorFinIndisp>(DateTimeI18n)(man)</FecHorFinIndisp>
+	  <CodIndisp>(String)(man)</CodIndisp>
+	  <EstadoIndisp>(String)(man)</EstadoIndisp>
+	  <IdMsg>(String)(man)</IdMsg>
+	</SapPsIpNetDegeAdd>	
+  </CenTibSapPsIpNetDegeAdd>
+

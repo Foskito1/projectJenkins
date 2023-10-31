@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibGeodeNotificaBloccoNE>
+	<GeodeNotificaBloccoNE>
+		<TipOperacion>(String)</TipOperacion>
+		<FecOperacion>(DateTimeI18n)</FecOperacion>
+		<FecTransaccion>(DateTimeI18n)</FecTransaccion>
+		<IdMsg>(String)</IdMsg>
+		<CodExito>(String)</CodExito>
+	</GeodeNotificaBloccoNE>
+</CenTibGeodeNotificaBloccoNE>

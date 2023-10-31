@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiIgUpdateManageSortCriteria>
+<Global>
+	<InsertUpdate> 
+		<SortCriteria>(seq)
+			<id_sort_criteria>(man)(Long) Negativo para insertar o id de CENBDT_SORT_CRITERIA </id_sort_criteria>
+			<id_manage_criteria>(man)(Long) id del management criteria de CENBDT_MANAGEMENT_CRITERIA </id_manage_criteria>
+			<id_sort_type>(man)(Long) id del tipo de criterio de CENBDT_SORT_TYPE </id_sort_type>
+			<description>(man)(String) Descripción del criterio </description>
+			<id_parent_sort_criteria> (Long) Id del id_sort_criteria del que cuelga este criterio </id_parent_sort_criteria>
+			<sort_order>(man)(Long) Order dentro del tipo de criterio </sort_order>
+			<optimist_lock> (man) (Long) Control de registro corrupto </optimist_lock>
+			<format>(Long) Referencia a la tabla CENBDT_INFORME_ESTILO</format>
+		</SortCriteria>
+	 </InsertUpdate>
+	 <Delete>
+		<SortCriteria>(seq)
+			<id_sort_criteria>(man)(Long) id del criterio a eliminar de CENBDT_SORT_CRITERIA</id_sort_criteria>
+			<optimist_lock> (man) (Long) Control de registro corrupto </optimist_lock>
+		</SortCriteria>
+	 </Delete>
+</Global>
+</CenBdiIgUpdateManageSortCriteria>

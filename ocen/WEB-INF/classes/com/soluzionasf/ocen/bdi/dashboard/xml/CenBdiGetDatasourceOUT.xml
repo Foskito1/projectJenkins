@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiGetDatasource>
+	<Datasource>(seq)
+		<identification>(String) Identificador del Data Source</identification>
+		<description>(String) Corresponde al nombre del Datasource </description>
+		<accessMode>(String) Indicara la forma que tiene la ontologia para acceder a la informacion</accessMode>
+		<database>(String) Indicará de donde obtiene la ontología la información</database>
+		<query>(String) Mostrará la informacion de la ontologia en la que se basa el Datasource </query>
+		<ontology>(String) Ontoligia</ontology>
+		<createdAt>(DateTimeI18n) Mostrará la fecha de creacion del datasource </createdAt>
+		<updatedAt>(DateTimeI18n) Mostrará la fecha de modificacion del datasource </updatedAt>
+		<user>(String) Usuario propietario del datasource </user>
+		<refresh>(int) refresh </refresh>
+		<maxvalues>(int) maxvalues </maxvalues>
+	</Datasource>
+	<SessionData>
+		<token>(String) Token de acceso</token>
+		<refresh_token>(String) token de refresco</refresh_token>
+	</SessionData>
+</CenBdiGetDatasource>

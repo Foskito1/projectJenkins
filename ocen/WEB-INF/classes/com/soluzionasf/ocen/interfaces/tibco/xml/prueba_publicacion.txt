@@ -1,0 +1,399 @@
+
+-- Realizacion de pruebas de publicacion con las sigueintes interfases:
+-------------------------------------------------------------------------
+
+		-- Notify Methods --
+		17.2) CenIntRupDinamicoNE	1
+		19.2) CenIntSirapMeeteringNE	1
+		20.2) CenIntSirapPVMCNE	1
+		21.2) CenIntExt15PVNE	1
+		27.2) CenIntSapPmAnagraficaNE	1
+		29.2) CenIntSapPmModifAdmNE	1
+		31.2) CenIntSapPmCatAdmNE	1
+		
+		-- Business Rule Methods --
+		11.1) CenIntIppPianoGiornaliero	
+		38.1) CenIntRupPianoGiorDeca	
+		16.1) CenIntRupVariazioniPiano	
+		28.1) CenIntSapPmCreaAdm	
+
+  Para la realizacion de las pruebas se debe acceder a una utilidad de desarrollo de test de XML.
+  Esta utilidad se llama XMLTEST. Para utilizarla solo hay que introducir el servlet en el campo "URL" y
+  el xml en la solapa "Input Param". A continuacion solo hay que pulsar el boton "Browse Call" para realizar 
+  la llamada.
+  
+  El proceso de pruebas es el siguiente:
+  
+   1) Obtener una sesion del servidor Web.
+      Toda comunicacion con el servidor Web necesita un identificador de sesion y de autorizacion. Para obtenerlo basta 
+      con invocar al metodo login desde un explorador de Windows con un usuario y password:
+      http://10.98.11.3:7001/ocen/isf.servlets.gcss.SessionServlet?<?xml%20version="1.0"%20encoding="ISO-8859-1"?><content%20method="login"%20sessionId=""%20authorityId=""%20user="-1"%20userName="-1"%20language="it"%20country="IT"><credentials%20newPassword=""%20password="UF900140"%20login="UF900140"></credentials></content>
+      Esta llamada devuelve un xml con el identificador de sesion y de autorizacion:
+			  <?xml version="1.0" encoding="ISO-8859-1" ?> 
+			- <content country="IT" errormessage="" iderror="0" language="it" method="login">
+			  <userId>541</userId> 
+			  <userName>Alejandro Martinez Ramirez</userName> 
+			  <sessionId>roma-2f1f41e5:107fd8ea975:a56</sessionId> 
+			  <authorityId>roma.OCEN.ssn-2</authorityId> 
+			  </content>
+
+   2) Preparar los XML a enviar.
+      Es necesario sustituir los identificadores de sesion y de autorizacion en los XML a enviar. Tambien es conveniente 
+      campiar parametros para la publicacion de mensajes diferentes.
+   
+   3) Utilizar el XMLTEST.
+      Es necesario abrir un cliente del XMLTEST, introducir la direccion URL y el XML y pulsar el boton de llamada.
+      Una vez realizada la llamada es muy probable que se deba cerrar el cliente para realizar otras publicaciones
+      
+   4) Para finalizar la utilizacion del XMLTEST, es necesario cerrar la sesion y la autorizacion
+      Para eliminar la idencificacion, es necesario invocar al metodo de logoff. Ejemplo:
+      http://10.98.11.3:7001/ocen/isf.servlets.gcss.SessionServlet?<?xml version="1.0" encoding="ISO-8859-1"?><content method="logoff" sessionId="roma-2f1f41e5:107fd8ea975:249" authorityId="roma.OCEN.ssn-2" user="541" userName="Alejandro Martinez Ramirez" language="it" country="IT" profileId="-1"></content>
+
+
+  Nota: Es necesaria la configuracion previa del ocen para la realizacion de las pruebas
+
+
+Ejemplos:
+
+// Detalle 
+HTTP://10.98.11.3:7001/ocen/com.soluzionasf.ocen.interfaces.tibco.servlets.CenIntTibServlet
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content method="CenIntRupDinamicoNE" 
+	sessionId="roma-2f1f41e5:107fd8ea975:a56" 
+	authorityId="roma.OCEN.ssn-2" user="541" userName="Alejandro Martinez Ramirez" language="it" country="IT" profileId="-1">
+	<RupDinamicoNE>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<ListaValores>
+			<CodElem>COD_FUNCIONAL_001</CodElem>
+			<Fecha>06-12-2005 00:00:00</Fecha>
+			<DesExito>OK</DesExito>
+		</ListaValores>
+		<ListaValores>
+			<CodElem>COD_FUNCIONAL_002</CodElem>
+			<Fecha>07-12-2005 00:00:00</Fecha>
+			<DesExito>KO Se ha producido un error en la recepción</DesExito>
+		</ListaValores>
+		<ListaValores>
+			<CodElem>COD_FUNCIONAL_003</CodElem>
+			<Fecha>08-12-2005 00:00:00</Fecha>
+			<DesExito>KO El valor supera los limites</DesExito>
+		</ListaValores>
+	</RupDinamicoNE>
+</content>
+
+HTTP://10.98.11.3:7001/ocen/com.soluzionasf.ocen.interfaces.tibco.servlets.CenIntTibServlet
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content method="CenIntSirapMeeteringNE" 
+	sessionId="roma-2f1f41e5:107fd8ea975:a56" 
+	authorityId="roma.OCEN.ssn-2" user="541" userName="Alejandro Martinez Ramirez" language="it" country="IT" profileId="-1">
+	<SirapMeeteringNE>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_001</CodElem>
+			<Fecha>06-12-2005 00:00:00</Fecha>
+			<DesExito>OK</DesExito>
+		</ListaElementos>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_002</CodElem>
+			<Fecha>07-12-2005 00:00:00</Fecha>
+			<DesExito>KO Se ha producido un error en la recepción</DesExito>
+		</ListaElementos>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_003</CodElem>
+			<Fecha>08-12-2005 00:00:00</Fecha>
+			<DesExito>KO El valor supera los limites</DesExito>
+		</ListaElementos>
+	</SirapMeeteringNE>
+</content>
+
+HTTP://10.98.11.3:7001/ocen/com.soluzionasf.ocen.interfaces.tibco.servlets.CenIntTibServlet
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content method="CenIntSirapPVMCNE" 
+	sessionId="roma-2f1f41e5:107fd8ea975:a56" 
+	authorityId="roma.OCEN.ssn-2" user="541" userName="Alejandro Martinez Ramirez" language="it" country="IT" profileId="-1">
+	<SirapPVMCNE>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_001</CodElem>
+			<Fecha>06-12-2005 00:00:00</Fecha>
+			<DesExito>OK</DesExito>
+		</ListaElementos>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_002</CodElem>
+			<Fecha>07-12-2005 00:00:00</Fecha>
+			<DesExito>KO Se ha producido un error en la recepción</DesExito>
+		</ListaElementos>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_003</CodElem>
+			<Fecha>08-12-2005 00:00:00</Fecha>
+			<DesExito>KO El valor supera los limites</DesExito>
+		</ListaElementos>
+	</SirapPVMCNE>
+</content>
+
+
+HTTP://10.98.11.3:7001/ocen/com.soluzionasf.ocen.interfaces.tibco.servlets.CenIntTibServlet
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content method="CenIntExt15PVNE" 
+	sessionId="roma-2f1f41e5:107fd8ea975:a56" 
+	authorityId="roma.OCEN.ssn-2" user="541" userName="Alejandro Martinez Ramirez" language="it" country="IT" profileId="-1">
+	<Ext15PVNE>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_001</CodElem>
+			<Fecha>06-12-2005 00:00:00</Fecha>
+			<DesExito>OK</DesExito>
+		</ListaElementos>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_002</CodElem>
+			<Fecha>07-12-2005 00:00:00</Fecha>
+			<DesExito>KO Se ha producido un error en la recepción</DesExito>
+		</ListaElementos>
+		<ListaElementos>
+			<CodElem>COD_FUNCIONAL_003</CodElem>
+			<Fecha>08-12-2005 00:00:00</Fecha>
+			<DesExito>KO El valor supera los limites</DesExito>
+		</ListaElementos>
+	</Ext15PVNE>
+</content>
+
+
+HTTP://10.98.11.3:7001/ocen/com.soluzionasf.ocen.interfaces.tibco.servlets.CenIntTibServlet
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content method="CenIntSapPmAnagraficaNE" 
+	sessionId="roma-2f1f41e5:107fd8ea975:a56" 
+	authorityId="roma.OCEN.ssn-2" user="541" userName="Alejandro Martinez Ramirez" language="it" country="IT" profileId="-1">
+	<SapPmAnagraficaNE>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<ListSedeTecnica>
+			<CodST>COD_FUNCIONAL_001</CodST>
+			<CodExito>KO</CodExito>
+			<DesExito>KO Se ha producido un error en la recepción</DesExito>
+		</ListSedeTecnica>
+		<ListSedeTecnica>
+			<CodST>COD_FUNCIONAL_002</CodST>
+			<CodExito>KO</CodExito>
+			<DesExito>KO Sistema no disponible</DesExito>
+		</ListSedeTecnica>
+		<ListSedeTecnica>
+			<CodST>COD_FUNCIONAL_003</CodST>
+			<CodExito>OK</CodExito>
+			<DesExito>OK</DesExito>
+		</ListSedeTecnica>
+	</SapPmAnagraficaNE>
+</content>
+
+
+HTTP://10.98.11.3:7001/ocen/com.soluzionasf.ocen.interfaces.tibco.servlets.CenIntTibServlet
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content method="CenIntSapPmModifAdmNE" 
+	sessionId="roma-2f1f41e5:107fd8ea975:a56" 
+	authorityId="roma.OCEN.ssn-2" user="541" userName="Alejandro Martinez Ramirez" language="it" country="IT" profileId="-1">
+	<SapPmModifAdmNE>
+		<CodAnomaliaSAP>ESIM234532</CodAnomaliaSAP>
+		<TipoAccion>F</TipoAccion>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<CodExito>OK</CodExito>
+		<DesExito>OK</DesExito>
+	</SapPmModifAdmNE>
+</content>
+
+
+HTTP://10.98.11.3:7001/ocen/com.soluzionasf.ocen.interfaces.tibco.servlets.CenIntTibServlet
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content method="CenIntSapPmCatAdmNE" 
+	sessionId="roma-2f1f41e5:107fd8ea975:a56" 
+	authorityId="roma.OCEN.ssn-2" user="541" userName="Alejandro Martinez Ramirez" language="it" country="IT" profileId="-1">
+	<SapPmCatAdmNE>
+		<FecHorAct>05-12-2005 09:47:16</FecHorAct>
+		<ListaCatalogo>
+			<TipoCatalogo>1</TipoCatalogo>
+			<CodGrupo>GR01</CodGrupo>
+			<CodCatalogo>CAT01</CodCatalogo>
+			<CodExito>KO</CodExito>
+			<DesExito>KO Se ha producido un error en la recepción</DesExito>
+		</ListaCatalogo>
+		<ListaCatalogo>
+			<TipoCatalogo>2</TipoCatalogo>
+			<CodGrupo>GR02</CodGrupo>
+			<CodCatalogo>CAT02</CodCatalogo>
+			<CodExito>OK</CodExito>
+			<DesExito>OK</DesExito>
+		</ListaCatalogo>
+		<ListaCatalogo>
+			<TipoCatalogo>2</TipoCatalogo>
+			<CodGrupo>GR02</CodGrupo>
+			<CodCatalogo>CAT03</CodCatalogo>
+			<CodExito>KO</CodExito>
+			<DesExito>KO Sistema no disponible</DesExito>
+		</ListaCatalogo>
+	</SapPmCatAdmNE>
+</content>
+
+HTTP://10.98.11.3:7001/ocen/com.soluzionasf.ocen.interfaces.tibco.servlets.CenIntTibServlet
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content method="CenIntIppPianoGiornaliero" 
+	sessionId="roma-2f1f41e5:107fd8ea975:a56" 
+	authorityId="roma.OCEN.ssn-2" user="541" userName="Alejandro Martinez Ramirez" language="it" country="IT" profileId="-1">
+	<IppPianoGiornaliero>
+		<TipoComunicacion>G</TipoComunicacion>
+		<DatosGenerales>
+			(sequence_item)(man)
+			<CodCentral>(String)(man)</CodCentral>
+			<DatosPlan>
+				(sequence_item)(man)
+				<FechaPlan>(DateTime)(man)</FechaPlan>
+				<DatosElemProduccion>
+					(sequence_item)(man)
+					<CodElem>(String)(man)</CodElem>
+					<DatosElemFecha>
+						(sequence_item)(man)
+						<Fecha>(DateTime)(man)</Fecha>
+			    		<PotMax>(Double)(man)</PotMax>
+			    		<PotMin>(Double)(man)</PotMin>
+			    		<PotBruta>(Double)(man)</PotBruta>
+			    		<Semibanda>(Double)(man)</Semibanda>
+						<Disponibilidad>(String)(man)</Disponibilidad>
+						<FecHorAct>(DateTime)(man)</FecHorAct>
+						<Nota>(String)(man)</Nota>
+					</DatosElemFecha>
+				</DatosElemProduccion>
+				<DatosSesionProduccion>
+					(sequence_item)(man)
+					<CodSesion>(String)(man)</CodSesion>
+					<DatosSesionFecha>
+						(sequence_item)(man)
+						<CodAseto>(String)(man)</CodAseto>
+			    		<GVR>(Double)(man)</GVR>
+						<FecHorAct>(DateTime)(man)</FecHorAct>
+						<Nota>(String)(man)</Nota>
+					</DatosSesionFecha>
+				</DatosSesionProduccion>
+				<DatosMixCombustible>
+					(sequence_item)(man)
+					<CodElemento>(String)(man)</CodElemento>
+					<DatosCombusFecha>
+						(sequence_item)(man)
+						<Fecha>(DateTime)(man)</Fecha>
+						<DatosCombusFechaPor>
+							(sequence_item)(man)
+							<CodCombustible>(String)(man)</CodCombustible>
+							<CombustiblePor>(String)(man)</CombustiblePor>
+							<Fecha>(DateTime)(man)</Fecha>
+							<Nota>(String)(man)</Nota>
+						</DatosCombusFechaPor>
+					</DatosCombusFecha>
+				</DatosMixCombustible>
+			</DatosPlan>
+		</DatosGenerales>
+	</IppPianoGiornaliero>
+</content>
+
+
+// Falta por desarrollar
+CenIntRupPianoGiorDeca	
+	<RupPianoGiorDeca>
+		<TipoConvalidacion>(String)(man)</TipoConvalidacion>
+		<TipoComunicacion>(String)(man)</TipoComunicacion>
+		<ListaCentrales>
+			(sequence_item)(man)
+			<CodigoCentral>(String)(man)</CodigoCentral>
+			<ListaPlanFecha>
+				(sequence_item)(man)
+				<Fecha>(DateTime)(man)</Fecha>
+				<DatosFechaHoraVariacion>
+					(sequence_item)(man)
+					<FechaHoraVariacion>(DateTime)(man)</FechaHoraVariacion>
+					<DisponibilidadUp>(Integer)(man)</DisponibilidadUp>
+					<DatosElemProduccion>
+						(sequence_item)(man)
+						<CodAseto>(String)(man)</CodAseto>
+						<DisponibilidadAseto>(Integer)(man)</DisponibilidadAseto>
+			    		<PotMax>(Double)(man)</PotMax>
+			    		<PotMin>(Double)(man)</PotMin>
+			    		<PotBruta>(Double)(man)</PotBruta>
+			    		<Semibanda>(Double)(man)</Semibanda>
+						<GradienteDown>(Double)(man)</GradienteDown>
+						<GradienteUp>(Double)(man)</GradienteUp>
+						<IdMotivacion>(String)(man)</IdMotivacion>
+						<DesMotivacion>(String)(man)</DesMotivacion>
+						<TcaDown>(DateTime)(man)</TcaDown>
+						<TcaUp>(DateTime)(man)</TcaUp>
+						<TiempoArresto>(DateTime)(man)</TiempoArresto>
+						<TiempoAviamiento>(DateTime)(man)</TiempoAviamiento>
+						<FecHorAct>(DateTime)(man)</FecHorAct>
+						<Note>(String)(man)</Note>
+					</DatosElemProduccion>
+				</DatosFechaHoraVariacion>
+			</ListaPlanFecha>
+		</ListaCentrales>
+	</RupPianoGiorDeca>
+</content>
+
+// Falta por desarrollar
+CenIntRupVariazioniPiano	
+	<RupVariazioniPiano>
+		<ListaCentrales>
+			(sequence_item)(man)
+			<CodigoCentral>(String)(man)</CodigoCentral>
+			<ListaPlanFecha>
+				(sequence_item)(man)
+				<Fecha>(DateTime)(man)</Fecha>
+				<DatosFechaHoraVariacion>
+					(sequence_item)(man)
+					<FechaHoraVariacion>(DateTime)(man)</FechaHoraVariacion>
+					<DisponibilidadUp>(Integer)(man)</DisponibilidadUp>
+					<DatosElemProduccion>
+						(sequence_item)(man)
+						<CodAseto>(String)(man)</CodAseto>
+						<DisponibilidadAseto>(Integer)(man)</DisponibilidadAseto>
+			    		<PotMax>(Double)(man)</PotMax>
+			    		<PotMin>(Double)(man)</PotMin>
+			    		<PotBruta>(Double)(man)</PotBruta>
+			    		<Semibanda>(Double)(man)</Semibanda>
+						<GradienteDown>(Double)(man)</GradienteDown>
+						<GradienteUp>(Double)(man)</GradienteUp>
+						<IdMotivacion>(String)(man)</IdMotivacion>
+						<DesMotivacion>(String)(man)</DesMotivacion>
+						<TcaDown>(DateTime)(man)</TcaDown>
+						<TcaUp>(DateTime)(man)</TcaUp>
+						<TiempoArresto>(DateTime)(man)</TiempoArresto>
+						<TiempoAviamiento>(DateTime)(man)</TiempoAviamiento>
+						<FecHorAct>(DateTime)(man)</FecHorAct>
+						<Note>(String)(man)</Note>
+					</DatosElemProduccion>
+				</DatosFechaHoraVariacion>
+			</ListaPlanFecha>
+		</ListaCentrales>
+	</RupVariazioniPiano>
+</content>
+
+
+HTTP://10.98.11.3:7001/ocen/com.soluzionasf.ocen.interfaces.tibco.servlets.CenIntTibServlet
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content method="CenIntSapPmCreaAdm" 
+	sessionId="roma-2f1f41e5:107fd8ea975:a56" 
+	authorityId="roma.OCEN.ssn-2" user="541" userName="Alejandro Martinez Ramirez" language="it" country="IT" profileId="-1">
+	<SapPmCreaAdm>
+		<TipoAviso>P</TipoAviso>
+		<CodSedeTecnica>COD_FUNCIONAL_001</CodSedeTecnica>
+		<CodAnomaliaOCEN>8273219</CodAnomaliaOCEN>
+		<CodUsuarioAct>Pepe Fernandez Rosa</CodUsuarioAct>
+		<FecHorVerif>05-12-2005 09:47:16</FecHorVerif>
+		<Prioridad>PR01</Prioridad>
+		<CodGrupoCondiciones>GRO02</CodGrupoCondiciones>
+		<CodCondiciones>O02</CodCondiciones>
+		<CodGrupoCausa>GRC02</CodGrupoCausa>
+		<CodCausa>C02</CodCausa>
+		<CodGrupoDesc>GRD02</CodGrupoDesc>
+		<CodDesc>D02</CodDesc>
+		<CodGrupoTipoOt>GRT02</CodGrupoTipoOt>
+		<CodTipoOt>T02</CodTipoOt>
+		<DesTipoOt>Pepito Perez</DesTipoOt>
+		<DesAnomaliaOCEN>Pepito Perez y Perez</DesAnomaliaOCEN>
+		<FechaIni>02-12-2005 16:27:00</FechaIni>
+		<FechaFin>08-12-2005 09:12:00</FechaFin>
+		<ParametrosTecnicos>ParametrosTecnicos</ParametrosTecnicos>
+	</SapPmCreaAdm>
+</content>
+

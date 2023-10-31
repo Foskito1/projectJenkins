@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<content method="CENBDI_BDI_TIPOS_ENUMERADOS" iderror="0" errormessage="" >
+	<CENBDI_BDI_TIPOS_ENUMERADOS>
+		<Row ID_ENUMERADO="(DECIMAL(0))" DES_ENUMERADO="(CHAR(60))" ></Row>
+	</CENBDI_BDI_TIPOS_ENUMERADOS>
+</content>

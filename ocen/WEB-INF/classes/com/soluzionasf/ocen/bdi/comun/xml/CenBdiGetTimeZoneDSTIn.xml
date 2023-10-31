@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiGetTimeZoneDST>
+	<id_zona_horaria> (Long) Id Zona Horaria. </id_zona_horaria>
+	<year_from> (Long) Año desde que se pide. </year_from>
+	<year_to> (Long) Año hasta que se pide. </year_to>	
+</CenBdiGetTimeZoneDST>

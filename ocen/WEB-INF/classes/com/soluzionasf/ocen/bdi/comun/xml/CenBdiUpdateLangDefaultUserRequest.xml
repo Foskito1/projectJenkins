@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiUpdateLangDefaultUser>
+      <user_id>(Long)(man) USER_ID</user_id> 
+      <language_usr>(String)(man) LOCALE</language_usr> 
+</CenBdiUpdateLangDefaultUser>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiCaracTDependFiltroIN>
+	<common_data>(man)
+	  <nom_tabla>(man)(String)Código de la tabla en la que buscar</nom_tabla>
+	  <id_tipo_resto>(man)(Long)Id_tipo_resto de la característica que se busca</id_tipo_resto>
+      	  <order_by_desc>(Long)1 si se desea el resultado ordenado por descripción.</order_by_desc>
+	</common_data>
+    <filters>
+	  	<filter>(seq)
+		  <nom_filtro>(man)(String)campo por el que se filtrará</nom_filtro>
+		  <value>(man)(String)valor por el que filtrar</value>
+		  <id_tipo_resto>(man)(Long)Id tipo resto de la característica por la que filtrar</id_tipo_resto>
+		</filter>
+    </filters>
+</CenBdiCaracTDependFiltroIN> 

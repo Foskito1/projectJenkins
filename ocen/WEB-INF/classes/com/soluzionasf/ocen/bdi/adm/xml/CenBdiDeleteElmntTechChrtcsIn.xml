@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiDeleteElmntTechChrtcsIn> 
+<Cod_Error>(man)(long)codigo de error, que es 0 si no hay error y 1 si lo hay</Cod_Error> 
+<TechCharDataSet>
+  <Id_Rest_Type>(String)Contiene el id de la característica para el tipo de elemento</Id_Rest_Type> 
+  <Tech_Char_Name>(String)Contiene el nombre o descripción corta de la característica.</Tech_Char_Name> 
+  (seq)</TechCharDataSet>
+</CenBdiDeleteElmntTechChrtcsIn>

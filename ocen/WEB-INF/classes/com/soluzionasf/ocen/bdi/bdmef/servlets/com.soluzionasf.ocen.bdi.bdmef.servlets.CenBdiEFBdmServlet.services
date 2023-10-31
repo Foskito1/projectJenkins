@@ -1,0 +1,3 @@
+CenBdiGetDbDecimalSeparator;com.soluzionasf.ocen.bdi.bdmef.domain.CenBdiExpFuncBdm;com.soluzionasf.ocen.bdi.bdmef.servlets.CenBdiGetsDbDecimalSepRequestDOMImpl
+CenBdiGetMeasureInfoAsString;com.soluzionasf.ocen.bdi.bdmef.domain.CenBdiExpFuncBdm;com.soluzionasf.ocen.bdi.bdmef.servlets.CenBdiMeasureInfoAsStringRequestDOMImpl
+CenBdiGetMeasureInfoAsStringSDS;com.soluzionasf.ocen.bdi.bdmef.domain.CenBdiExpFuncBdm;com.soluzionasf.ocen.bdi.bdmef.servlets.CenBdiMeasureInfoAsStringRequestDOMImpl

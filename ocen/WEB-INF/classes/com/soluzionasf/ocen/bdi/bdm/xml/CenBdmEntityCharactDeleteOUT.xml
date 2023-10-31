@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmEntityCharactDeleteOUT>
+	<list_charact>
+		<charact>(seq)
+			<id_caracteristica>(man)(Long)</id_caracteristica>
+			<iderror>(man)(Long)</iderror>
+			<errormessage>(String)</errormessage>
+		</charact>
+	</list_charact>
+</CenBdmEntityCharactDeleteOUT>

@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+.table {  text-align: center; vertical-align: super; width: 100%; border-collapse: collapse;}
+.headertable 	{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ;  }
+.row1 		{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; horizontal-align: center; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ; }
+.textarea
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.4;
+	text-align: left;
+	border-style: none;
+	vertical-align: top;
+	scrollbar-track-color: White;
+	scrollbar-shadow-color: White;
+	scrollbar-highlight-color: White;
+	scrollbar-face-color: White;
+	scrollbar-darkshadow-color: White;
+	scrollbar-base-color: White;
+	scrollbar-arrow-color: White;
+}
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+<table width="100%" border="0">
+	<tr> 
+		<td> 
+			<table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+				<tr> 
+	          		<td align="center" > <b>DETERMINACIÓN DEL COSTE DE GENERACIÓN (POR COMBUSTIBLES) EN EURO/KWh</b> </td>	
+				</tr>
+			</table>
+			<table width="100%" border="1" bordercolor="#000000" cellspacing="2">
+				<tr> 
+          			<td align="center"> <b>C = [A<sub>1</sub>[P(1+S/100]<sup>2</sup>+A<sub>2</sub>P(1+S/100)+A3]/1000]*[(F/100)T<sub>F</sub>+(100-F)/100*((N<sub>1</sub>T<sub>1</sub>P<sub>C1</sub>+N<sub>2</sub>T<sub>2</sub>P<sub>C2</sub>+N<sub>3</sub>T<sub>3</sub>P<sub>C3</sub>)/(N<sub>1</sub>P<sub>C1</sub>+N<sub>2</sub>P<sub>C2</sub>+N<sub>3</sub>P<sub>C3</sub>)]</b></td>	
+				</tr>
+			</table>
+			<table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+	  			<tr> 
+	    			<td>&nbsp;</td>
+	    			<td align="center"  class="headertable"> 
+	      				<b>BANDAS DE CARGA MWh netos</b>
+	    			</td>
+	    			<td align="center"  class="headertable"> 
+	      				<b>CONSTANTES</b>
+	    			</td>
+	  			</tr>
+	  			<tr> 
+	    			<td>|GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1}{column:name=  ,type=number, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE,label=NOM_FUNCIONAL, class=headertable}&QUOT;)|</td>
+	    			<td>|GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1}{column:name=Nº ,type=number, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE,label=NUM_ORDEN, class=headertable}{column:name=Desde ,type=number, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE, label=NUM_POT_DESDE, class=headertable}{column:name=Hasta ,type=number,block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE,label=NUM_POT_HASTA, class=headertable}{column:name=Prefer. ,type=number, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE,label=NUM_CARGA_PREFER, class=headertable}{column:name=Nº.Mol., type=string, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE, label=NUM_MOLINOS, class=headertable}&QUOT;)|</td>
+	    			<td>|GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1}{column:name=A1 ,type=number, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE,label=NUM_A1, class=headertable}{column:name=A2 ,type=number, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE,label=NUM_A2, class=headertable}{column:name=A3 ,type=number, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE,label=NUM_A3, class=headertable}{column:name=F ,type=number, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE, label=NUM_F, class=headertable}{column:name=N1 ,type=number,block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE,label=NUM_N1, class=headertable}{column:name=T1 ,type=number, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE,label=NUM_T1, class=headertable}{column:name=PC1, type=string, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE, label=NUM_PC1, class=headertable}{column:name=N2 ,type=number,block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE,label=NUM_N2, class=headertable}{column:name=T2 ,type=number, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE,label=NUM_T2, class=headertable}{column:name=PC2, type=string, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE, label=NUM_PC2, class=headertable}{column:name=N3 ,type=number,block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE,label=NUM_N3, class=headertable}{column:name=T3 ,type=number, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE,label=NUM_T3, class=headertable}{column:name=PC3, type=string, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE, label=NUM_PC3, class=headertable}{column:name=S, type=string, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE, label=NUM_S, class=headertable}{column:name=TF, type=string, block=CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE, label=NUM_TF, class=headertable}&QUOT;)|</td>
+	  			</tr>
+			</table>
+      		<table  width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        		<tr>
+          			<td width="47%"><b>Fecha Edici&oacute;n:</b> |TO_DATE(root.CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE.Row@FEC_EDICION, &quot;dd/MM/yyyy&quot;)|</td>
+          			<td width="53%"><b>Revisi&oacute;n:</b> |root.CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE.Row@NUM_REVISION|</td>
+        		</tr>
+      		</table>  
+	      	<table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+    		    <tr>
+          			<td><b>Observaciones:</b></td>
+        		</tr>
+        		<tr>
+        			<td>
+        				<TEXTAREA class=textarea cols=100 rows=20>|root.CENOPE_QRY_PAFU_OBT_DATOS_COSTE_INFORME_VIGENTE.Row@DES_OBSERVACIONES|</TEXTAREA>
+        			</td>
+        		</tr>
+      		</table>  
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+

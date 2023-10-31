@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiWsPIEscrituras>
+<DatosEscrituras>
+<General>
+	<CodServidor>(man) (String) Codigo Servidor PI</CodServidor>
+	<CodFuncion>(man) (String) Codigo Funcion PI</CodFuncion>
+	<CodPeriodoInterfase>(String) Cod Periodo Interfase</CodPeriodoInterfase>
+</General>
+<Peticiones>
+<Peticion>(seq)
+  <CodMedida>(man) (String) Codigo medida</CodMedida>
+  <Tag>(man) (String) tag medida</Tag>
+  <Fecha>(String) Fecha inicio formato yyyy-mm-dd hh24:mm:ss</Fecha>
+  <Valor>(String) Valor pasado como string, podra ser cadena o numerico con separador .</Valor>  
+  </Peticion>
+  </Peticiones>
+  </DatosEscrituras>
+</CenBdiWsPIEscrituras>
+
+ 

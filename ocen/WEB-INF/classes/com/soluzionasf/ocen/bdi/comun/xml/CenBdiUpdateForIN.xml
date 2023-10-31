@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiUpdateFor>
+	<Formula>
+		<CodFormula>(Long)</CodFormula>
+		<OptimistLock>(Long)</OptimistLock>
+		<DesFormula>(String)</DesFormula>
+		<CodModulo>(Long)</CodModulo>
+		<Finalizada>(String)</Finalizada>
+		<Validada>(String)</Validada>
+		<Comprobada>(String)</Comprobada>
+		<DescripcionSql>(String)</DescripcionSql>
+		<DescripcionStr>(String)</DescripcionStr>
+		<Comentario>(String)</Comentario>
+		<DesTecnica>(String)</DesTecnica>
+		<IgnoraNulos>(Long)</IgnoraNulos>
+	</Formula>
+	<FormulaDetalle>
+		<Row COD_FOR="(Long)" ORDEN="(man)(long)" NIVEL="(man)(long)" LL_ID_SUB_ELEM_FOR="(man)(long)" COD_SUB_ELEM="(man)(long)" LL_ID_SUB_ELEM_PADRE_FOR="(String)" COD_SUB_ELEM_PADRE="(String)" NEW_COD_SUB_ELEM="(String)" NEW_DES_SUB_ELEM="(String)" DES_IDI_SQL="(String)" DES_IDI_STR="(String)">(seq)</Row>
+	</FormulaDetalle>
+</CenBdiUpdateFor>

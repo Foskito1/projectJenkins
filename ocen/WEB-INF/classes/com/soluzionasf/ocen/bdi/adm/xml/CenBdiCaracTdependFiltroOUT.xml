@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiCaracTDependFiltroOUT>
+	<value_list>(seq)Lista de valores obtenidos
+	  <cod>(man)(String) Código </cod>
+	  <desc>(man)(String) Descripción </desc>	
+	</value_list>
+</CenBdiCaracTDependFiltroOUT> 

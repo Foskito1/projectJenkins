@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibPIMeasurementAuto>
+	<PIMeasurementAuto>		
+		<IdMsg>(String) </IdMsg>
+		<ListMeaAuto> (sequence_item)
+			<TagPI>(String) </TagPI>
+			<DateMeasurement>(Date) </DateMeasurement>
+			<ValueType>(String) </ValueType>
+			<ValueMeasurement>(String) </ValueMeasurement>
+			<Flag>(String) </Flag>
+		</ListMeaAuto>
+	</PIMeasurementAuto>	
+</CenTibPIMeasurementAuto>
+  

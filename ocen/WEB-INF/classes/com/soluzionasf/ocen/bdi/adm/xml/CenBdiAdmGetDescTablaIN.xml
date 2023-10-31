@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiAdmGetDescTabla>
+	<nombre_tabla>(man)(String)</nombre_tabla>
+	<modulo_propietario>(man)(String)</modulo_propietario>
+</CenBdiAdmGetDescTabla>

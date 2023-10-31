@@ -1,0 +1,29 @@
+   OpenLink(TM) TCP/IP Server for Java
+   ===================================
+
+   Version .........: 2.001 Release 1 (26/01/2001) for Java
+
+   Copyright .......: Soluziona Outsourcing
+
+
+JSD001CC ...........: Configuracion Actual del Servidor
+   Descripcion .....: "Servidor Maestro de OCEN"
+   Servidores ......: 8
+   Puerto ..........: 3205
+   Buffer Size .....: 2008
+   Seguridad .......: 0
+   Log (Level) .....: 1
+   Debug (Level) ...: 1
+   OPENLINK_TMP ....: C:\projects_new\server\openlink\v2000\tmp
+   Log File ........: c:\projects_new\server\openlink\v2000\tmp
+   Debug File ......: c:\projects_new\server\openlink\v2000\tmp
+   CLASSPATH .......: C:\win32app\jakarta-tomcat-3.2.4\webapps\desar\WEB-INF\classes;C:\win32app\jakarta-tomcat-3.2.4\classes\properties_desar;.;c:\projects_new\server\properties;c:\projects_new\server\properties;c:\projects_new\server\jarv10;c:\projects_new\server\jarv10\activation.jar;c:\projects_new\server\jarv10\jndi.jar;c:\projects_new\server\jarv10\isfv10.jar;c:\projects_new\server\jarv10\isfv10-owf.jar;c:\projects_new\server\jarv10\mail.jar;c:\projects_new\server\jarv10\metakernel.jar;c:\projects_new\server\jarv10\v10PoolMon.jar;c:\projects_new\server\jarv10\classes12.zip;c:\projects_new\server\openlink\v2000\clases;c:\projects_new\server\rojuef\servlet;c:\projects_new\server\rojuef;c:\projects_new\server\classes\jar\ocenbdi.jar;c:\projects_new\server\classes\jar\ocencmb.jar;c:\projects_new\server\classes\jar\ocendomain.jar;c:\projects_new\server\classes\jar\ocenman.jar;c:\projects_new\server\classes\jar\ocenope.jar;c:\projects_new\server\classes\jar\ocensap.jar;c:\projects_new\server\classes\jar\ocenutil.jar;C:\win32app\jakarta-tomcat-3.2.4\lib\crimson.jar;C:\win32app\jakarta-tomcat-3.2.4\lib\jasper.jar;C:\win32app\jakarta-tomcat-3.2.4\lib\jaxp.jar;C:\win32app\jakarta-tomcat-3.2.4\lib\servlet.jar;C:\win32app\jakarta-tomcat-3.2.4\lib\webserver.jar;C:\jdk1.3.1_04\lib\tools.jar;c:\jdk1.3.1_04\jre\lib\rt.jar;c:\jdk1.3.1_04\jre\lib\i18n.jar
+   Import (Libs.) ..: com.soluzionasf.ocen.interfaces
+   Recarga Libs. ...: false
+   Librerias .......: [CenOplLib]
+                    : Thu Feb 05 16:52:24 CET 2004
+
+OPLINKSE ...........: Aceptar Conexion
+   Puerto ..........: 3205
+                    : Thu Feb 05 16:52:24 CET 2004
+

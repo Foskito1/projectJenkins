@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibPwayMeasurement>
+	<PwayMeasurement>
+		<IdMsg>(String)</IdMsg>
+		<CodMeasure>(Long)</CodMeasure>
+		<CodMeasurePway>(Long)</CodMeasurePway>
+		<TypeMeasure>(String)</TypeMeasure>
+		<Periodicity>(String)</Periodicity>
+		<DateMeasurement>(DateTimeI18n)</DateMeasurement>
+		<ValueMeasurement>(String)</ValueMeasurement>
+	</PwayMeasurement>
+</CenTibPwayMeasurement>

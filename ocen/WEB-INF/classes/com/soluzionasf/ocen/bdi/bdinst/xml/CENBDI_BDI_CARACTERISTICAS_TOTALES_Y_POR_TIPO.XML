@@ -1,0 +1,5 @@
+
+<?xml version="1.0" encoding="ISO-8859-1" ?> <content method="CENBDI_BDI_CARACTERISTICAS_TOTALES_Y_POR_TIPO" iderror="0" errormessage="" > 
+<cenbdi_bdi_caracteristicas> <row cod_caracteristica="(DECIMAL(0))" nom_caracteristica="(CHAR(25))" des_caracteristica="(CHAR(60))" cod_tipo_dato="(CHAR(3))" valor_maximo="(NUMBER)" valor_minimo="(NUMBER)" obligatorio="(CHAR(1))" decod_contra="(CHAR(60))" param_conf="(CHAR(1))" fec_hor_creacion="(DATETIME)" fec_hor_act="(DATETIME)" cod_usuario_act="(CHAR(25))" programa_act="(CHAR(100))" optimist_lock="(DECIMAL(0))" ></row> 
+</cenbdi_bdi_caracteristicas> <cenbdi_bdi_caracteristica_tipo_elemento> <row cod_caracteristica="(DECIMAL(0))" nom_caracteristica="(CHAR(25))" des_caracteristica="(CHAR(60))" ></row> 
+</cenbdi_bdi_caracteristica_tipo_elemento> </content>

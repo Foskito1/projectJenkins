@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiDateTimeUser>
+	<id_zona_horaria>(Long) Zona horaria origen destino</id_zona_horaria>
+	<id_usuario>(Long) Id Usuario para obtener la zona horaria</id_usuario>
+</CenBdiDateTimeUser>

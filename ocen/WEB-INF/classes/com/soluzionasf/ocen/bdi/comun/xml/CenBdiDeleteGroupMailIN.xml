@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdiDeleteGroupMail -->
+<CenBdiDeleteGroupMail>
+	<DeleteGroupMail>  (man) (sequence_item)
+		<Id_Correo_Grupo>(man)(long) Contiene el Id del Grupo</Id_Correo_Grupo>
+		<Optimist_Lock>(man)(long) Contiene un numero de control de actualización</Optimist_Lock>
+	</DeleteGroupMail>
+</CenBdiDeleteGroupMail>

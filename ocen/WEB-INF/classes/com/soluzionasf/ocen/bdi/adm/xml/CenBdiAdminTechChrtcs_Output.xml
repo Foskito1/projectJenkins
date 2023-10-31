@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!--CenBdiAdminTechChrtcs-->
+<content>
+	<TechCharData>
+		<Cod_Tech_Char>(Number[3]) Contiene el código de la característica</Cod_Tech_Char>
+		<Tech_Char_Name>(String[25]) Contiene el nombre o descripción corta de la característica.</Tech_Char_Name>
+		<Error_Description>(String[???]) Contiene la razón de qué no se haya insertado o modificado la característica.</Error_Description>
+	</TechCharData>
+</content>
+<!--/CenBdiAdminTechChrtcs-->

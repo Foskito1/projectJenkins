@@ -1,0 +1,80 @@
+
+-- Realizacion de pruebas de subscripcion con las sigueintes interfases:
+-------------------------------------------------------------------------
+
+		-- Business Rule Methods --
+		11.1) CenIntIppPianoGiornalieroNE	
+		38.1) CenIntRupPianoGiorDecaNE	
+		16.1) CenIntRupVariazioniPianoNE	
+		28.1) CenIntSapPmCreaAdmNE	
+
+		-- Notify Methods --
+		17.2) CenIntRupDinamico	1
+		19.2) CenIntSirapMeetering	1
+		20.2) CenIntSirapPVMC	1
+		21.2) CenIntExt15PV	1
+		27.2) CenIntSapPmAnagrafica	1
+		29.2) CenIntSapPmModifAdm	1
+		31.2) CenIntSapPmCatAdm	1
+		
+  Para la realizacion de las pruebas se debe acceder a una utilidad de desarrollo de test de XML.
+  Esta utilidad se llama XMLTEST. Para utilizarla solo hay que introducir el servlet en el campo "URL" y
+  el xml en la solapa "Input Param". A continuacion solo hay que pulsar el boton "Browse Call" para realizar 
+  la llamada.
+  
+  El proceso de pruebas es el siguiente:
+  
+   1) Obtener una sesion del servidor Web.
+      Toda comunicacion con el servidor Web necesita un identificador de sesion y de autorizacion. Para obtenerlo basta 
+      con invocar al metodo login desde un explorador de Windows con un usuario y password:
+      http://10.98.11.3:7001/ocen/isf.servlets.gcss.SessionServlet?<?xml%20version="1.0"%20encoding="ISO-8859-1"?><content%20method="login"%20sessionId=""%20authorityId=""%20user="-1"%20userName="-1"%20language="it"%20country="IT"><credentials%20newPassword=""%20password="UF900140"%20login="UF900140"></credentials></content>
+      Esta llamada devuelve un xml con el identificador de sesion y de autorizacion:
+			  <?xml version="1.0" encoding="ISO-8859-1" ?> 
+			- <content country="IT" errormessage="" iderror="0" language="it" method="login">
+			  <userId>541</userId> 
+			  <userName>Alejandro Martinez Ramirez</userName> 
+			  <sessionId>roma-2f1f41e5:107fd8ea975:a56</sessionId> 
+			  <authorityId>roma.OCEN.ssn-2</authorityId> 
+			  </content>
+
+   2) Preparar los XML a enviar.
+      Es necesario sustituir los identificadores de sesion y de autorizacion en los XML a enviar. Tambien es conveniente 
+      campiar parametros para la publicacion de mensajes diferentes.
+   
+   3) Utilizar el XMLTEST.
+      Es necesario abrir un cliente del XMLTEST, introducir la direccion URL y el XML y pulsar el boton de llamada.
+      Una vez realizada la llamada es muy probable que se deba cerrar el cliente para realizar otras publicaciones
+      
+   4) Para finalizar la utilizacion del XMLTEST, es necesario cerrar la sesion y la autorizacion
+      Para eliminar la idencificacion, es necesario invocar al metodo de logoff. Ejemplo:
+      http://10.98.11.3:7001/ocen/isf.servlets.gcss.SessionServlet?<?xml version="1.0" encoding="ISO-8859-1"?><content method="logoff" sessionId="roma-2f1f41e5:107fd8ea975:249" authorityId="roma.OCEN.ssn-2" user="541" userName="Alejandro Martinez Ramirez" language="it" country="IT" profileId="-1"></content>
+
+
+  Nota: Es necesaria la configuracion previa del ocen para la realizacion de las pruebas
+
+
+Ejemplos:
+
+// Detalle 
+HTTP://10.98.11.3:7001/ocen/com.soluzionasf.ocen.interfaces.tibco.servlets.CenIntTibServlet
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content method="CenIntIppPianoGiornalieroNE" 
+	sessionId="roma-2f1f41e5:107fd8ea975:a56" 
+	authorityId="roma.OCEN.ssn-2" user="541" userName="Alejandro Martinez Ramirez" language="it" country="IT" profileId="-1">
+	<IppPianoGiornalieroNE>
+	   <DatosGenerales>
+	   	<CodCentral>COD_FUNCIONAL_001</CodCentral>
+	   	<TipoComunicacion>A</TipoComunicacion>
+	   	<FechaPlan>06-12-2005 00:00:00</FechaPlan>
+	   	<DesExito>OK</DesExito>
+	   </DatosGenerales>
+	   <DatosGenerales>
+	   	<CodCentral>COD_FUNCIONAL_002</CodCentral>
+	   	<TipoComunicacion>A</TipoComunicacion>
+	   	<FechaPlan>06-12-2005 00:00:00</FechaPlan>
+	   	<DesExito>OK</DesExito>
+	   </DatosGenerales>
+	   <FecHorAct>05-12-2005 09:47:16</FecHorAct>
+	 </IppPianoGiornalieroNE>
+</content>
+

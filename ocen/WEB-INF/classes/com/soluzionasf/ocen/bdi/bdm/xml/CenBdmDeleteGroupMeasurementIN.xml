@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiDeleteGroupMeasure>
+	<Delete_Group>(man)
+		<Cod_Group>(String)(man)Código del grupo de medidas que hay que eliminar</Cod_Group>
+	</Delete_Group>
+</CenBdiDeleteGroupMeasure>

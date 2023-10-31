@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<content method="CENBDI_BDI_RELACIONES_ESTADOS" iderror="0" errormessage="" > 
+<cenbdi_bdi_relaciones_estados> <row valor_borrado="(DECIMAL(0))" valor_levantado_disponible="(DECIMAL(0))" valor_activo="(DECIMAL(0))" ></row> 
+</cenbdi_bdi_relaciones_estados> </content>

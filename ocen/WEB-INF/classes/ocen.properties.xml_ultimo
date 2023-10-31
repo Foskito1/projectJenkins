@@ -1,0 +1,1305 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content>
+	<ocen>
+		<general>
+			<!--Localisation of propierties files common to all sub-modules-->
+			<propertyPath>D:\Tomcatv6.0\webapps\ocen\properties\</propertyPath>
+			<!--Controls if Operation module has to be loaded or not.-->
+			<loadOpe>true</loadOpe>
+			<!--Controls if Mantenimiento module has to be loaded or not.-->
+			<loadMan>true</loadMan>
+			<!--Controls if Combustible module has to be loaded or not.-->
+			<loadCom>true</loadCom>
+			<!--Path del log del servidor web para uso con LeeClasspath-->
+			<logWebserver>D:\Tomcatv6.0\temp\</logWebserver>			
+			<!--Controls if multitimezone is enabled-->
+			<aplicarCambiosHusoHorario>true</aplicarCambiosHusoHorario>
+		</general>
+		<bundle>
+			<!--Package where are defined the bundle classes.-->
+			<bundlePackage>com.soluzionasf.ocen.util.bundle</bundlePackage>
+			<!--Base name bundle class-->
+			<baseNameBundle>CenResourceBundle</baseNameBundle>
+			<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+			<deviceType>file</deviceType>
+			<!--Locales defined, list of locales separated by blank(s), the first element of the list must be the default language. Example: es en-->
+			<locales>es en</locales>
+		</bundle>
+		<mail>
+			<!--Servidor de correo-->
+			<mailserver>smtp.indra.es</mailserver>
+			<mailport>25</mailport>
+			<mailauth>true</mailauth>
+			<mailuser>ocen</mailuser>
+			<mailpwd>Desarrollo01.</mailpwd>
+			<!--Path para el fichero temporal de envio-->
+			<!--<filetemp>/soflib00/user/ocenevo0/tmp/informe.html</filetemp>-->
+			<!--<filetemp>/soflib00/user/ocenevo0/tmp/</filetemp>-->
+			<filetemp>/soflib00/user/ocenevo0/tmp/</filetemp>
+			<!--Direccion:Debe conincidir su dominio con el del servidor de correo-->
+			<from>ocen@indra.es</from>
+			<!--[JCP]: añadidas nuevas entradas para recoger tanto los destinatarios de correo separados por comas, como la cuenta desde la que se envia un correo 
+			con la traza de pila cuando se intenta setear una cantidad negativa de la cantidad de consumo de una existencia.-->
+			<!--mailrecipients>pdjdamas@indra.es,jmdiazr@indra.es</mailrecipients-->
+			<mailfrom>ocen@indra.es</mailfrom>
+			<mail_bdi>
+				<!--Servidor de correo-->
+				<mailserver>smtp.indra.es</mailserver>
+				<!--Puerto en servidor de correo-->
+				<mailport>25</mailport>
+				<!-- Autentificación de correo -->
+				<mailauth>true</mailauth>
+				<!-- Usuario de correo -->
+				<mailuser>ocen</mailuser> 
+				<mailpwd>Desarrollo01.</mailpwd> 
+				<!--Direccion:Debe conincidir su dominio con el del servidor de correo-->
+				<from>ocen@indra.es</from>
+				<mailfrom>ocen@indra.es</mailfrom>
+			</mail_bdi>
+			<!-- Configuración usada para el envío de informes -->
+			<mail_report>
+				<!--Servidor de correo-->
+				<mailserver>smtp.indra.es</mailserver>
+				<!-- true o false, indica si se necesita enviar el correo con autentificación -->
+				<mailauth>true</mailauth>
+				<!--Puerto en servidor de correo-->
+				<mailport>25</mailport>
+				<mailuser>ocen</mailuser>
+				<mailpwd>Desarrollo01.</mailpwd>
+				<!--Direccion:Debe conincidir con la dirección del usuario de correo.-->
+				<from>ocen@indra.es</from>
+			</mail_report>
+		</mail>
+		<openlink>
+			<!--Propiedades para interfases con Openlink-->
+			<dbpool_logs>
+				<root_string>D:\Tomcatv6.0\webapps\ocen\log</root_string>
+			</dbpool_logs>
+			<operacion>
+				<!--Para elmodulo de Operacion-->
+				<profile_id>2</profile_id>
+				<language_code>es</language_code>
+				<country_code>ES</country_code>
+				<dbProfileName>dbcenbdi</dbProfileName>
+			</operacion>
+			<mantenimiento>
+				<!--Para elmodulo de Mantenimiento-->
+				<profile_id>2</profile_id>
+				<language_code>es</language_code>
+				<country_code>ES</country_code>
+				<dbProfileName>dbcenbdi</dbProfileName>
+			</mantenimiento>
+			<combustible>
+				<old>
+					<!--Para el modulo de Combustibles-->
+					<profile_id>2</profile_id>
+					<language_code>es</language_code>
+					<country_code>ES</country_code>
+					<user_id>850</user_id>
+					<file_log>D:\Tomcatv6.0\webapps\ocen\log\basculas.log</file_log>
+					<company>1</company>
+					<dbProfileName>dbcenbdi</dbProfileName>
+				</old>
+				<!--Para el modulo de Combustibles-->
+				<profile_id>2</profile_id>
+				<language_code>es</language_code>
+				<country_code>ES</country_code>
+				<user_id>850</user_id>
+				<file_log>D:\Tomcatv6.0\webapps\ocen\log\basculas.log</file_log>
+				<company>1</company>
+				<dbProfileName>dbcenbdi</dbProfileName>
+				<InterfaceCodes>ALTAFAC001,CCCENCOM02</InterfaceCodes>
+			</combustible>
+			<bdi>
+				<!--Para elmodulo de BDI-BDM-->
+				<profile_id>2</profile_id>
+				<language_code>es</language_code>
+				<country_code>ES</country_code>
+				<dbProfileName>dbcenbdi</dbProfileName>
+			</bdi>
+			<shp>
+				<!-- Para elmodulo de SHP-->
+				<profile_id>2</profile_id>
+				<language_code>es</language_code>
+				<country_code>ES</country_code>
+				<dbProfileName>dbcenbdi</dbProfileName>
+			</shp>
+		</openlink>
+		<operacion>
+			<general>
+				<!--Localisation of Operacion propierties files-->
+				<propertyPath>D:\Tomcatv6.0\webapps\ocen\properties\operacion/</propertyPath>
+				<!--Panel refresh rate in seconds (Timer), this value should coincide with that defined in the table CENBDT_GLOBAL_CTE-->
+				<refreshRate>120</refreshRate>
+				<dbProfileName>dbcenope</dbProfileName>
+			</general>
+			<processBG>
+				<!--Propiedades para el proceso demonio-->
+				<user_name>cenopeBG</user_name>
+				<user_id>21</user_id>
+				<profile_id>2</profile_id>
+				<language_code>es</language_code>
+				<country_code>ES</country_code>
+				<root_string>/soflib00/user/ocenc/ope/tmp/</root_string>
+				<!--<root_log_indisp>/soflib00/user/ocenc/ope/tmp/</root_log_indisp>-->
+				<root_log_indisp>/soflib00/user/ocenevo0/ope/logs/</root_log_indisp>
+				<file_log_indisp>indisplog</file_log_indisp>
+				<!--Se anaden tantos nodos como procesos se ejecuten-->
+				<proceso_1>com.soluzionasf.ocen.operacion.domain.CenOpeBackgroundProcess</proceso_1>
+				<!--Tiempo en milisegundos-->
+				<tiempo_1>1800000</tiempo_1>
+				<proceso_2>com.soluzionasf.ocen.operacion.domain.CenOpeBackgroundRelevParam</proceso_2>
+				<!--Tiempo en milisegundos-->
+				<tiempo_2>600000</tiempo_2>
+				<proceso_3>com.soluzionasf.ocen.operacion.domain.CenOpeBackgroundSeco</proceso_3>
+				<!--Tiempo en milisegundos-->
+				<tiempo_3>600000</tiempo_3>
+				<proceso_4>com.soluzionasf.ocen.operacion.domain.CenOpeBackgroundSege</proceso_4>
+				<!--Tiempo en milisegundos-->
+				<tiempo_4>300000</tiempo_4>
+			</processBG>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenOpeResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+			</bundle>
+					<batchProcessList>
+				<PetrResetActivo>
+					<user_name>cenopeBG</user_name>
+					<user_id>2333</user_id>
+					<language_code>es</language_code>
+					<country_code>ES</country_code>
+					<baseNameBundle>CenResourceBundle</baseNameBundle>
+					<profile_id>2</profile_id>
+				</PetrResetActivo>
+				<PadiHorasFuncionamiento>
+					<user_id>2335</user_id>
+					<language_code>es</language_code>
+					<country_code>ES</country_code>
+					<profile_id>2</profile_id>
+				</PadiHorasFuncionamiento>
+				<InterfaceEMS>
+					<dbProfile>dbcenbdi</dbProfile>
+					<language_code>es</language_code>
+					<country_code>ES</country_code>
+					<profile_id>2</profile_id>
+					<user_id>1873</user_id>
+				</InterfaceEMS>
+				<InterfaceSCADA>
+					<language_code>es</language_code>
+					<country_code>ES</country_code>
+					<profile_id>2</profile_id>
+					<user_id>2335</user_id>
+				</InterfaceSCADA>
+				<CenOpeAlarIndispBatch>
+					<userName>OPEALA2</userName>
+					<userId>2223</userId>
+					<dbProfile>dbcenope</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<profileId>2</profileId>
+				</CenOpeAlarIndispBatch>
+			</batchProcessList>
+			<ContTensInterf>
+				<user_id>21</user_id>
+				<profile_id>2</profile_id>
+				<language_code>es</language_code>
+				<country_code>ES</country_code>
+			</ContTensInterf>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenOpeResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+				<locales>es en</locales>
+			</bundle>
+			<desvios>
+				<dirFile>/soflib00/user/ocenevo0/tmp</dirFile>
+			</desvios>
+			<CenOpeRelaApunteInterface>
+				<userName>OPERELAI</userName>
+				<userId>2222</userId>
+				<dbProfile>dbcenope</dbProfile>
+				<profileId>2</profileId>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</CenOpeRelaApunteInterface>
+			<CenOpeReportPDF>
+				<reportsPath>/com/soluzionasf/ocen/operacion/reports/</reportsPath>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+				<dateFormat>dd/MM/yyyy</dateFormat>
+				<hourFormat>HH:mm</hourFormat>
+				<userName>cenopeBG</userName>
+				<userId>5555</userId>
+				<profileId>2</profileId>
+				<dbProfile>dbcenope</dbProfile>
+			</CenOpeReportPDF>
+		</operacion>
+		<bdi>
+			<general>
+				<!--Localisation of BDI propierties files-->
+				<!-- <propertyPath>/soflib00/evoluef/ocen/webapps/WEB-INF/classes/properties/bdi/</propertyPath>-->
+				<propertyPath>D:\Tomcatv6.0\webapps\ocen\properties\bdi/</propertyPath>
+				<!--dbProfileName>dbcenbdi</dbProfileName-->
+				<dbProfileName>dbcenbdi</dbProfileName>
+			</general>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenBdiResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+			</bundle>
+			<bdm>
+				<graph>
+					<CenBdiGraph>
+						<loginName>BCHBOM01</loginName>
+						<dbProfile>dbcenbdi</dbProfile>
+						<languageCode>es</languageCode>
+						<countryCode>ES</countryCode>
+					</CenBdiGraph>
+				</graph>
+				<CenBdiMeasureReadingsHelper>
+					<!--Time, in millis, main Thread will wait at most for Data Acquisition Threads to die-->
+					<joinTime>90000</joinTime>
+				</CenBdiMeasureReadingsHelper>
+				<CenBdiMeasureReadingsAcquisitionBatch>
+					<userName>BCHMRA01</userName>
+					<dbProfile>dbcenbat</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+				</CenBdiMeasureReadingsAcquisitionBatch>
+				<RecalcularMedidasBatch>
+					<loginName>BCHRCM01</loginName>
+					<dbProfile>dbcenbat</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<profileQS>2</profileQS>
+					<days_timeout>3</days_timeout>
+				</RecalcularMedidasBatch>
+				<PendienteCalcularMedidasBatch>
+					<loginName>BCHPCM01</loginName>
+					<dbProfile>dbcenbat</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+				</PendienteCalcularMedidasBatch>
+				<CenBdiDirectiveDispacherInterfazBatch>
+					<loginName>BCHDDM01</loginName>
+					<dbProfile>dbcenbat</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<profileQS>2</profileQS>
+				</CenBdiDirectiveDispacherInterfazBatch>
+				<CenBdiBusinessObjectInterfazBatch>
+					<loginName>BCHBOM01</loginName>
+					<dbProfile>dbcenbat</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<profileQS>2</profileQS>
+				</CenBdiBusinessObjectInterfazBatch>
+				<CenBdiExternalFilesAcquisitionBatch>
+					<userName>BCHEFA01</userName>
+					<dbProfile>dbcenbat</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+				</CenBdiExternalFilesAcquisitionBatch>
+				<CenBdmDownloadMeasurement>
+					<loginName>UF283251</loginName>
+					<dbProfile>dbcenbdi</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<profileQS>2</profileQS>
+					<path>C:\temp</path>
+				</CenBdmDownloadMeasurement>
+				<CenBdmValidationCodeManagement>
+					<userName>BCHMAM01</userName>
+					<userId>2222</userId>
+					<dbProfile>dbcenbdi</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+				</CenBdmValidationCodeManagement>
+			</bdm>
+			<comun>
+				<CenBdiLNGCalculationHelper>
+					<loginName>BCHBOM01</loginName>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+				</CenBdiLNGCalculationHelper>
+				<CenBdiManageCenbdtTablaHelper>
+					<loginName>BCHBOM01</loginName>
+					<dbProfile>dbcenbdi</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+				</CenBdiManageCenbdtTablaHelper>
+				<CenBdiGenericReports>
+					<UserName>GENREPORT</UserName>
+					<dbProfile>dbcenbdi</dbProfile>
+					<UserId>2223</UserId>
+					<ProfileId>-1</ProfileId>
+					<LanguageCode>es</LanguageCode>
+					<CountryCode>ES</CountryCode>
+				</CenBdiGenericReports>
+				<CenBdiLogin>
+					<sizePasswordAct>1</sizePasswordAct>
+					<alphaNumCharAct>1</alphaNumCharAct>
+					<passwordSize>4</passwordSize>
+					<alphaNumChar>1</alphaNumChar>
+					<upperLowerAct>1</upperLowerAct>
+				</CenBdiLogin>				
+				<CenBdiPlantillaCargaBatch>
+					<dbProfile>dbcenbdi</dbProfile>
+					<loginName>BPLANTCARGA</loginName>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<path>C:\\temp</path>
+				</CenBdiPlantillaCargaBatch>
+				<CenBdiMonitorBatch>
+					<loginName>BCHBOM01</loginName>
+					<userId>890</userId>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<dbProfile>dbcenbdi</dbProfile>
+					<ProfileId>2</ProfileId>
+				</CenBdiMonitorBatch>
+			</comun>
+			<docum>
+				<CenBdiDocDeleteAssociationHelper>
+					<loginName>BCHBOM01</loginName>
+					<dbProfile>dbcenbdi</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+				</CenBdiDocDeleteAssociationHelper>
+				<CenBdiDocInsertAssociationHelper>
+					<loginName>BCHBOM01</loginName>
+					<dbProfile>dbcenbdi</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+				</CenBdiDocInsertAssociationHelper>
+				<CenBdiDocFiles>
+					<loginName>BCHBOM01</loginName>
+					<dbProfile>db</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+				</CenBdiDocFiles>
+				<CenBdiDocumentumBatch>
+					<userName>BCHBOM01</userName>
+					<userId>890</userId>
+					<profile_id>2</profile_id>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+				</CenBdiDocumentumBatch>
+				<CenBdiOutputFileInterfaceDocumentumBatch>
+					<loginName>BCHBOM01</loginName>
+					<dbProfile>dbcenbdi</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<profileQS>2</profileQS>
+				</CenBdiOutputFileInterfaceDocumentumBatch>
+				<CenBdiWsDocumentum>
+      				<URLtarget>http://localhost/DocServices/services/DocumentoService.DocumentoServiceSOAP/</URLtarget>
+      				<user>admindesa</user>
+      				<password>admindesa</password>
+      				<repository>GNRENOVABLES</repository>
+      				<DefaultFolder>HIDRAULICA/Prueba1</DefaultFolder>
+      				<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+      				<Folders>
+						<WDMT>HIDRAULICA/Prueba1</WDMT>
+      				</Folders>      				
+				</CenBdiWsDocumentum>				
+			</docum>
+			<funexp>
+				<CenBdiSearchUserInfoHelper>
+					<loginName>BCHBOM01</loginName>
+					<dbProfile>dbcenbdi</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<profileQS>2</profileQS>
+				</CenBdiSearchUserInfoHelper>
+			</funexp>
+			<interfaces>
+				<webServicesListener>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<profile_id>2</profile_id>
+				</webServicesListener>
+				<httpInterfaceListener>
+					<dbProfile>dbcenbdi</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<profile_id>2</profile_id>
+				</httpInterfaceListener>
+				<CenBdiInterfaceFilesLaunchHelper>
+					<path>C:\jakarta-tomcat-3.3.1\webapps\ocen\log/</path>
+				</CenBdiInterfaceFilesLaunchHelper>
+				<CenBdiInterfaceOutputFilesLaunchHelper>
+					<path>C:\jakarta-tomcat-3.3.1\webapps\ocen\log/</path>
+				</CenBdiInterfaceOutputFilesLaunchHelper>
+				<gc>
+					<baseProperties>
+						<dbProfile>dbcenshp</dbProfile>
+						<languageCode>es</languageCode>
+						<countryCode>ES</countryCode>
+						<profile_id>2</profile_id>
+						<userName>CENSHPGC</userName>
+						<userId>21</userId>
+					</baseProperties>
+				</gc>
+				<InterfaceOpenBDI>
+					<language_code>es</language_code>
+					<country_code>ES</country_code>
+					<user_login>admin001</user_login> 
+					<user_id>21</user_id>
+					<profile_id>2</profile_id>
+					<company>1</company>
+				</InterfaceOpenBDI>
+				<CenBdiInterfasesOpenBdi>
+					<path>C:\temp</path>
+					<errorsFileName>OpenBdiErrors_</errorsFileName>
+					<errorsFileDateFormat>yyyyMMdd</errorsFileDateFormat>
+					<infoFileName>OpenBdiInfo_</infoFileName>
+					<infoFileDateFormat>yyyyMMdd</infoFileDateFormat>
+				</CenBdiInterfasesOpenBdi>
+
+			</interfaces>
+			<adm>
+				<CenBdiUseStatistics>
+					<loginName>UF283251</loginName>
+					<dbProfile>dbcenbdi</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<profileQS>2</profileQS>
+				</CenBdiUseStatistics>
+				<CenBdiAdmMaintSystemTables>
+					<BDI>
+						<persistence0>com.soluzionasf.ocen.bdi.persistence.</persistence0>
+					</BDI>
+					<ADM>
+						<persistence0>com.soluzionasf.ocen.bdi.persistence.</persistence0>
+					</ADM>
+					<AYO>
+						<persistence0>com.soluzionasf.ocen.bdi.persistence.</persistence0>
+					</AYO>
+					<DOC>
+						<persistence0>com.soluzionasf.ocen.bdi.persistence.</persistence0>
+					</DOC>
+					<OPE>
+						<persistence0>com.soluzionasf.ocen.bdi.persistence.</persistence0>
+						<persistence1>com.soluzionasf.ocen.operacion.persistence.</persistence1>
+					</OPE>
+					<CMB>
+						<persistence0>com.soluzionasf.ocen.bdi.persistence.</persistence0>
+						<persistence1>com.soluzionasf.ocen.combustibles.persistence.</persistence1>
+						<persistence2>com.soluzionasf.ocen.combustibles.persistence.adm.</persistence2>
+						<persistence3>com.soluzionasf.ocen.combustibles.persistence.bill.</persistence3>
+						<persistence4>com.soluzionasf.ocen.combustibles.persistence.budgets.</persistence4>
+						<persistence5>com.soluzionasf.ocen.combustibles.persistence.common.</persistence5>
+						<persistence6>com.soluzionasf.ocen.combustibles.persistence.consume.</persistence6>
+						<persistence7>com.soluzionasf.ocen.combustibles.persistence.cont_comb.</persistence7>
+						<persistence8>com.soluzionasf.ocen.combustibles.persistence.cont_comb.top</persistence8>
+						<persistence9>com.soluzionasf.ocen.combustibles.persistence.cont_serv</persistence9>
+						<persistence10>com.soluzionasf.ocen.combustibles.persistence.delivery.</persistence10>
+						<persistence11>com.soluzionasf.ocen.combustibles.persistence.existences.</persistence11>
+						<persistence12>com.soluzionasf.ocen.combustibles.persistence.inmarket.</persistence12>
+						<persistence13>com.soluzionasf.ocen.combustibles.persistence.mixcomb.</persistence13>
+						<persistence14>com.soluzionasf.ocen.combustibles.persistence.pet_comb.</persistence14>
+						<persistence15>com.soluzionasf.ocen.combustibles.persistence.ratios.</persistence15>
+						<persistence16>com.soluzionasf.ocen.combustibles.persistence.sap.</persistence16>
+						<persistence17>com.soluzionasf.ocen.combustibles.persistence.sie.</persistence17>
+						<persistence18>com.soluzionasf.ocen.combustibles.persistence.us.</persistence18>
+					</CMB>
+					<MAN>
+						<persistence0>com.soluzionasf.ocen.bdi.persistence.</persistence0>
+						<persistence1>com.soluzionasf.ocen.man.budgeting.persistence.</persistence1>
+						<persistence2>com.soluzionasf.ocen.man.common.persistence.</persistence2>
+						<persistence3>com.soluzionasf.ocen.man.inventory.persistence.</persistence3>
+						<persistence4>com.soluzionasf.ocen.man.maint_exec.persistence.</persistence4>
+						<persistence5>com.soluzionasf.ocen.man.maint_legal.persistence.</persistence5>
+						<persistence6>com.soluzionasf.ocen.man.maint_predic.persistence.</persistence6>
+					</MAN>
+					<MAM>
+						<persistence0>com.soluzionasf.ocen.bdi.persistence.</persistence0>
+						<persistence1>com.soluzionasf.ocen.mam.alarms.persistence.</persistence1>
+						<persistence2>com.soluzionasf.ocen.mam.common.persistence.</persistence2>
+						<persistence3>com.soluzionasf.ocen.mam.config.persistence.</persistence3>
+						<persistence4>com.soluzionasf.ocen.mam.fuels.persistence.</persistence4>
+						<persistence5>com.soluzionasf.ocen.mam.measures.persistence.</persistence5>
+						<persistence6>com.soluzionasf.ocen.mam.reports.persistence.</persistence6>
+						<persistence7>com.soluzionasf.ocen.mam.validationcodes.persistence.</persistence7>
+						<persistence8>com.soluzionasf.ocen.mam.warnings.persistence.</persistence8>
+						<persistence9>com.soluzionasf.ocen.mam.waste.persistence.</persistence9>
+						<persistence10>com.soluzionasf.ocen.mam.xunta.persistence.</persistence10>
+					</MAM>
+					<SAP>
+						<persistence0>com.soluzionasf.ocen.bdi.persistence.</persistence0>
+						<persistence1>com.soluzionasf.ocen.sap.persistence.</persistence1>
+					</SAP>
+					<SHP>
+						<persistence0>com.soluzionasf.ocen.bdi.persistence.</persistence0>
+						<persistence1>com.soluzionasf.ocen.shp.persistence.</persistence1>
+						<persistence2>com.soluzionasf.ocen.shp.persistence.gc</persistence2>
+					</SHP>
+				</CenBdiAdmMaintSystemTables>
+			</adm>
+		</bdi>
+		<shp>
+         <general>
+            <!--Localisation of SHP propierties files-->
+            <propertyPath>D:\Tomcatv6.0\webapps\ocen\properties/shp/</propertyPath>
+            <!-- dbProfileName>dbcenbdi</dbProfileName -->
+            <dbProfileName>dbcenshp</dbProfileName>
+         </general>
+         <bundle>
+            <!--Base name of the bundle class-->
+            <baseNameBundle>CenShpResourceBundle</baseNameBundle>
+            <!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+            <deviceType>file</deviceType>
+            <locales>es en</locales>
+         </bundle>
+         <CenShpGcInterfacesXML>
+            <loginName>CENSHPGC</loginName>
+            <userId>21</userId>
+            <profile_id>2</profile_id>
+            <languageCode>es</languageCode>
+            <countryCode>ES</countryCode>
+         </CenShpGcInterfacesXML>
+		 
+         <CenShpLNGCalculationHelper>
+            <loginName>BCHBOM01</loginName>
+            <languageCode>es</languageCode>
+            <countryCode>ES</countryCode>
+         </CenShpLNGCalculationHelper>
+		 
+         <CenShpDownloadReportPDF>
+		    <reportsPath>/com/soluzionasf/ocen/shp/reports/</reportsPath>
+		    <languageCode>es</languageCode>
+			<countryCode>ES</countryCode>
+			<dateFormat>dd/MM/yyyy</dateFormat>
+			<hourFormat>HH:mm</hourFormat>
+			<reportName>ReportDescarga.pdf</reportName>
+		 </CenShpDownloadReportPDF>
+		 
+		 <CenShpGcLoadFilesMLI>
+				<userName>CENSHPGC</userName>
+				<userId>21</userId>
+				<profile_id>2</profile_id>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+		 </CenShpGcLoadFilesMLI>				 
+		 <CenShpReportSendMail>
+				<userName>CENSHPGC</userName>
+				<userId>21</userId>
+				<profile_id>2</profile_id>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+		 </CenShpReportSendMail>	
+		 <CenShpWsFicherosSLATR>
+				<pathPfx>C:\temp\certificado.pfx</pathPfx>
+				<passPfx>saggas2015</passPfx>
+				<pathStore></pathStore>
+				<passStore></passStore>
+				<loginName>CENSHPGC</loginName>
+				<userId>21</userId>
+				<profile_id>2</profile_id>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+         </CenShpWsFicherosSLATR>
+		</shp>
+		<combustible>
+			<nodeInterfaceSAP>
+				<path>ocen.combustible.interfaceSAP</path>
+			</nodeInterfaceSAP>
+			<interfaceSAP>
+				<interface>XGCOP01E</interface>
+				<header_code_company>V</header_code_company>
+				<code_company>0567</code_company>
+				<sufix_acks>_ACK</sufix_acks>
+				<path_acks>/soflib00/user/ocenevo0/tmp/</path_acks>
+				<path_local_data>/soflib00/user/ocenevo0/tmp/</path_local_data>
+				<path_ftp_data>ruta</path_ftp_data>
+				<area>area</area>
+			</interfaceSAP>
+			<general>
+				<!--Localisation of Combustible propierties files-->
+				<propertyPath>D:\Tomcatv6.0\webapps\ocen\properties\combustibles\</propertyPath>
+				<propertyCommonPath>D:\Tomcatv6.0\webapps\ocen\properties\</propertyCommonPath>
+				<dbProfileName>dbcencom</dbProfileName>
+			</general>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenComResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+			</bundle>
+			<bdiInterface>
+				<urlLogin/>
+				<urlSearch/>
+				<login/>
+				<password/>
+				<language>ES</language>
+				<country>ES</country>
+				<company>1</company>
+			</bdiInterface>
+			<basculas>
+				<pathFileLog>/soflib00/user/ocenevo0/tmp/basculas.log</pathFileLog>
+				<company>1</company>
+				<user>OPLCMB01</user>
+			</basculas>
+			<batchProcessList>
+				<CenCmbInterfazOfficeControl>
+					<description>Formación despacho de control</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.common.CenCmbInterfazOfficeControl</className>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<pathFileOutputEmpty>/soflib00/evoluef/ocen/tmpbatchfich/interfazDespacho.ok</pathFileOutputEmpty>
+					<pathFileOutput>/soflib00/evoluef/ocen/tmpbatchfich/interfazDespacho.txt</pathFileOutput>
+				</CenCmbInterfazOfficeControl>
+				<CenCmbAutoRenovationRequestFuelBatch>
+					<description>Autorenovación de solicitudes de combustible</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbAutoRenovationRequestFuelBatch</className>
+					<loginName>BCHCAR01</loginName>
+					<dbProfile>dbcenbat</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<companyCode>1</companyCode>
+				</CenCmbAutoRenovationRequestFuelBatch>
+				<CenCmbEndDeliveriesFuelContractsBatch>
+					<description>Fin de entregas de contratos de combustible</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbEndDeliveriesFuelContractsBatch</className>
+					<loginName>BCHCED01</loginName>
+					<dbProfile>dbcenbat</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<companyCode>1</companyCode>
+				</CenCmbEndDeliveriesFuelContractsBatch>
+				<CenCmbStartValidityFuelContractsBatch>
+					<description>Inicio de vigencia de contratos de combustible</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbStartValidityFuelContractsBatch</className>
+					<loginName>BCHCSV01</loginName>
+					<dbProfile>dbcenbat</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<companyCode>1</companyCode>
+				</CenCmbStartValidityFuelContractsBatch>
+				<CenCmbStartValidityServContractsBatch>
+					<description>Inicio de vigencia de contratos de servicios</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbStartValidityServContractsBatch</className>
+					<loginName>BCHCSV02</loginName>
+					<dbProfile>dbcenbat</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<companyCode>1</companyCode>
+				</CenCmbStartValidityServContractsBatch>
+				<CenCmbSendSAPDataBatch>
+					<description>Envio de informacion economica a SAP(VIESGO)</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbSendSAPDataBatch</className>
+					<loginName>BCHCAR01</loginName>
+					<dbProfile>dbcenbat</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<companyCode>1</companyCode>
+					<runAsDaemon>1</runAsDaemon>
+					<sleepPeriod>10</sleepPeriod>
+					<deleteDataFile>0</deleteDataFile>
+					<split_file>1</split_file>
+				</CenCmbSendSAPDataBatch>
+				<CenCmbUpdateExistencesBatch>
+					<description>Actualización de existencias</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbUpdateExistencesBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BCHCUE01</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbUpdateExistencesBatch>
+				<CenCmbUpdateGroupProductionBatch>
+					<description>Actualización de producciones por grupo generador</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbUpdateGroupProductionBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BCHCGR01</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbUpdateGroupProductionBatch>
+				<CenCmbChangeStateNominationsBatch>
+					<description>Aceptación de nominaciones de combustibles</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbChangeStateNominationsBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BCHCEN01</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbChangeStateNominationsBatch>
+				<CenCmbDownloadReportsCGEBatch>
+					<description>Descarga de informes CGE</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbDownloadReportsCGEBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BCHCDE01</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbDownloadReportsCGEBatch>
+				<CenCmbAuthorizeDeliveryNoCentralBatch>
+					<description>Autorización de entregas en Origen o Intermedio</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbAuthorizeDeliveryNoCentralBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BCHCAE01</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbAuthorizeDeliveryNoCentralBatch>
+				<CenCmbSendMeaOmegaBatch>
+					<description>Envío de medidas horarias a OMEGA</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbSendMeaOmegaBatch</className>
+					<loginName>BCHCOM01</loginName>
+					<dbProfile>dbcenbat</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<companyCode>1</companyCode>
+				</CenCmbSendMeaOmegaBatch>
+				<CenCmbLoadConsumesBatch>
+					<description>Carga y autorizacion de consumos de EDP</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbLoadConsumesBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BCHCAR01</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbLoadConsumesBatch>
+				<CenCmbLoadConsumesHCBatch>
+					<description>Carga y autorizacion de consumos de HC</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbLoadConsumesHCBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BCHCAR01</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbLoadConsumesHCBatch>
+				<CenCmbDailyAccountingSieBatch>
+					<description>Proceso de Contabilización Diaria para SIE</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbDailyAccountingSieBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BCHCIE01</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbDailyAccountingSieBatch>
+				<CenCmbConsumesExistencesSimmerBatch>
+					<description>Envío de consumos y existencias al sistema SIMMER</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbConsumesExistencesSimmerBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BCHCSI01</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbConsumesExistencesSimmerBatch>
+				<CenCmbMeterfoInterfaceBatch>
+					<description>Lectura de medidas de la producción de TER</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbMeterfoInterfaceBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BCHCMET01</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbMeterfoInterfaceBatch>
+				<CenCmbCastejonInterfaceBatch>
+					<description>Lectura de medidas de la producción de la C.C.C. de Castejón</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbCastejonInterfaceBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BCHCCTJ01</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbCastejonInterfaceBatch>
+				<CenCmbDealsToFileBatch>
+					<description>Envío contratos de combustibles a Trading</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbDealsToFileBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BTRDCOB001</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbDealsToFileBatch>
+				<CenCmbDataToPiWebPortalBatch>
+					<description>Generación fichero interfase PI Web Portal</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbDataToPiWebPortalBatch</className>
+					<loginName>BCHCOM01</loginName>
+					<dbProfile>dbcenbat</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+					<companyCode>1</companyCode>
+					<pathinterfase>/soflib00/user/ocenevo0/tmp</pathinterfase>
+				</CenCmbDataToPiWebPortalBatch>
+				<CenCmbFacturasDealsBatch>
+					<description>Carga de facturas de trading en combustibles</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbFacturasDealsBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BTRDCOB001</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbFacturasDealsBatch>
+				<CenCmbGomeInterfaceBatch>
+					<description>Proceso de Ejecución Diaria para Envio de Precios a GOME</description>
+					<className>com.soluzionasf.ocen.combustibles.domain.batch.CenCmbGomeInterfaceBatch</className>
+					<UsersBatch>
+						<userBatch_UFG>
+							<loginName>BCHCIE01</loginName>
+							<dbProfile>dbcenbat</dbProfile>
+							<languageCode>es</languageCode>
+							<countryCode>ES</countryCode>
+							<companyCode>1</companyCode>
+						</userBatch_UFG>
+					</UsersBatch>
+				</CenCmbGomeInterfaceBatch>
+			</batchProcessList>
+			<query_system_call>
+				<user_name/>
+				<user_id>0</user_id>
+				<profile_id>0</profile_id>
+				<language_code>es</language_code>
+				<country_code>ES</country_code>
+			</query_system_call>
+			<CenCmbInterfaceMam>
+				<login>BCHMAM01</login>
+				<password>BCHMAM01</password>
+				<language>ES</language>
+				<country>ES</country>
+				<company>1</company>
+				<userId>2222</userId>
+			</CenCmbInterfaceMam>
+		</combustible>
+		<mantenimiento>
+			<general>
+				<!--Localisation of Mantenimiento propierties files-->
+				<propertyPath>D:\Tomcatv6.0\webapps\ocen\properties\mantenimiento/</propertyPath>
+				<dbProfileName>dbcenman</dbProfileName>
+			</general>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenManResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+				<locales>es en</locales>
+			</bundle>
+			<mail_offer_cont>
+				<!--The mail server used for send mails to the contractor-->
+				<mailserver>relay.adm.uef.es</mailserver>
+				<!--The content of the message-->
+				<message>Cambios en la Oferta</message>
+				<!--The default subject-->
+				<default_subject>Oferta</default_subject>
+				<!--The default origin of the mail-->
+				<default_from>ocen@soluziona.com</default_from>
+				<!--The content of the message when there is a change in the offer-->
+				<modifyOfferMessage>Se ha modificado la oferta</modifyOfferMessage>
+				<modifyStatePendingRequest>Envio de la oferta</modifyStatePendingRequest>
+				<modifyListExternalDocument>Se han modificado los documentos asociados a la oferta. Se pueden consultar en</modifyListExternalDocument>
+				<wwwpage>http://ocen.unionfenosa.es</wwwpage>
+				<web>
+					<url_v10_server>http://localhost/servlet/</url_v10_server>
+					<language_code>es</language_code>
+					<country_code>ES</country_code>
+					<generic_user>UF768301</generic_user>
+					<generic_pass>UF768301</generic_pass>
+					<version>1.0</version>
+					<encoding>ISO-8859-1</encoding>
+					<racf>0</racf>
+					<domain>uef.es</domain>
+					<language_code_default>es</language_code_default>
+				</web>
+			</mail_offer_cont>
+			<interfases>
+				<language_code>es</language_code>
+				<country_code>ES</country_code>
+				<user_LMS>interfase_LMS</user_LMS>
+			</interfases>
+			<CenManBatchRequest>
+				<userName>BCHMAP01</userName>
+				<userId>921</userId>
+				<dbProfile>dbcenman</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</CenManBatchRequest>
+			<CenManBatchAlarms>
+					<userName>BCHMAP01</userName>
+					<userId>921</userId>
+					<dbProfile>dbcenman</dbProfile>
+					<languageCode>es</languageCode>
+					<countryCode>ES</countryCode>
+	         </CenManBatchAlarms>
+	         <CenManPrdAlarmsChangeStatusBatch>
+	            <userName>BCHMAP01</userName>
+	            <dbProfile>dbcenman</dbProfile>
+	            <languageCode>es</languageCode>
+	            <countryCode>ES</countryCode>
+	         </CenManPrdAlarmsChangeStatusBatch>
+	         <CenManPrdAlarmsCalculationBatch>
+	            <userName>BCHMAP02</userName>
+	            <dbProfile>dbcenman</dbProfile>
+	            <languageCode>es</languageCode>
+	            <countryCode>ES</countryCode>
+	         </CenManPrdAlarmsCalculationBatch>
+			<CenManMaintExecWorkOrderGeneration>
+				<userName>BCHMAP01</userName>
+				<userId>921</userId>
+				<dbProfile>dbcenman</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</CenManMaintExecWorkOrderGeneration> 
+			<CenManJasperReportCaracServlet>
+				<reportsPath>D:\Proyectos\ocen\ocen_mnto\fuentes\com\soluzionasf\ocen\man\reports\servlets\</reportsPath>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+				<userName>BCHMAP01</userName>
+				<userId>921</userId>
+				<profileId>2</profileId>
+				<loginName>BCHMAP01</loginName>
+			</CenManJasperReportCaracServlet>
+			<CenManJasperReportActServlet>
+				<reportsPath>D:\Proyectos\ocen\ocen_mnto\fuentes\com\soluzionasf\ocen\man\reports\servlets\</reportsPath>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+				<userName>BCHMAP01</userName>
+				<userId>921</userId>
+				<profileId>2</profileId>
+				<loginName>BCHMAP01</loginName>
+			</CenManJasperReportActServlet>
+			<CenManGraph>
+				<loginName>GRMAN01</loginName>
+				<dbProfile>dbcenman</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</CenManGraph> 	
+			<query_system_call>
+				<user_name>man</user_name>
+				<user_id>21</user_id>
+				<profile_id>2</profile_id>
+				<language_code>es</language_code>
+				<country_code>ES</country_code>
+			</query_system_call>
+		</mantenimiento>
+		<medioambiente>
+			<general>
+				<!--Localisation of Mantenimiento propierties files-->
+				<!--<propertyPath>/soflib00/evoluef/ocen/webapps/WEB-INF/classes/properties/medioambiente/</propertyPath>-->
+				<propertyPath>D:\Tomcatv6.0\webapps\ocen\properties\medioambiente/</propertyPath>
+				<dbProfileName>dbcenmam</dbProfileName>
+			</general>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenMamResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+				<locales>es en</locales>
+			</bundle>
+			<CenMamMeasurementsAdquisition>
+				<userName>BCHMAM01</userName>
+				<userId>2222</userId>
+				<dbProfile>dbcenmam</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+				<rootString>C:\\temp\\</rootString>
+				<poolLogName>CenMamDaemonPoolLog</poolLogName>
+				<poolLogTrace>printTraze</poolLogTrace>
+			</CenMamMeasurementsAdquisition>
+			<CenMamMeasurementsRecalculations>
+				<userName>BCHMAM02</userName>
+				<userId>2223</userId>
+				<dbProfile>dbcenmam</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</CenMamMeasurementsRecalculations>
+			<DocQuerySystemCall>
+				<UserName>INTMAM01</UserName>
+				<UserId>2223</UserId>
+				<ProfileId>-1</ProfileId>
+				<LanguageCode>es</LanguageCode>
+				<CountryCode>ES</CountryCode>
+			</DocQuerySystemCall>
+			<CenMamReportMeasurement>
+				<userName>INTMAM02</userName>
+				<userId>2224</userId>
+				<dbProfile>dbcenmam</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+				<decimalSep>,</decimalSep>
+				<groupSep>.</groupSep>
+			</CenMamReportMeasurement>
+			<CenMamGraph>
+				<loginName>BCHMAM01</loginName>
+				<userId>2222</userId>
+				<profileId>-1</profileId>
+				<dbProfile>dbcenmam</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</CenMamGraph>
+			<CenMamInterfaceCmb>
+				<userName>BCHMAM01</userName>
+				<userId>2222</userId>
+				<dbProfile>dbcenmam</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</CenMamInterfaceCmb>
+			<CenMamJasperReportServlet>
+				<reportsPath>D:\ocen\ocen\ocen_mam\fuentes\com\soluzionasf\ocen\mam\reports\servlets\</reportsPath>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+				<userName>BCHMAM01</userName>
+				<userId>2000</userId>
+				<profileId>2</profileId>
+				<loginName>BCHMAM01</loginName>
+			</CenMamJasperReportServlet>
+			<CenMamBatchMeasurementsCGE>
+			  <userName>BCHMAM01</userName>
+				<userId>2000</userId>
+				<profileId>2</profileId>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</CenMamBatchMeasurementsCGE>
+		</medioambiente>
+		<lab>
+			<general>
+				<!--Localisation of Mantenimiento propierties files-->
+				<propertyPath>D:\Tomcatv6.0\webapps\ocen\properties\lab/</propertyPath>
+				<dbProfileName>dbcenlab</dbProfileName>
+			</general>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenLabResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+				<locales>es en</locales>
+			</bundle>
+			<CenLabRecalculationsResult>
+				<userName>BCHLAB01</userName>
+				<userId>2308</userId>
+				<dbProfile>dbcenlab</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+				<rootString>C:\\temp\\</rootString>
+				<poolLogName>CenLabDaemonPoolLog</poolLogName>
+				<poolLogTrace>printTraze</poolLogTrace>
+			</CenLabRecalculationsResult>
+			<CenLabFtpComunicate>
+				<userName>BCHLAB01</userName>
+				<userId>2308</userId>
+				<dbProfile>dbcenlab</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+				<rootString>C:\\temp\\</rootString>
+				<comunicateDirectory>C:\\temp\\</comunicateDirectory>
+			</CenLabFtpComunicate>
+			<DocQuerySystemCall>
+				<userName>BCHLAB01</userName>
+				<userId>2308</userId>
+				<profileId>-1</profileId>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</DocQuerySystemCall>
+		</lab>
+		<emi>
+			<general>
+				<!-- Location of EMISSIONS MODULE propierties files -->
+				<propertyPath>D:\Tomcatv6.0\webapps\ocen\properties\emi/</propertyPath>
+				<dbProfileName>dbcenemi</dbProfileName>
+			</general>
+			<bundle>
+				<!-- Base name of bundle class -->
+				<baseNameBundle>CenEmiResourceBundle</baseNameBundle>
+				<!-- Device where is stored the local bundle resources, it could be "file" or "database" -->
+				<deviceType>file</deviceType>
+				<locales>es en</locales>
+			</bundle>
+			<CenEmiGenerateHistData>
+				<loginName>BCHMAM01</loginName>
+				<userId>5555</userId>
+				<profileId>-1</profileId>
+				<dbProfile>dbcenemi</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</CenEmiGenerateHistData>
+			<CenEmiJasperReportServlet>
+				<reportsPath>D:\ocen\ocen\ocen_mam\fuentes\com\soluzionasf\ocen\mam\reports\servlets\</reportsPath>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+				<userName>BCHMAM01</userName>
+				<userId>5555</userId>
+				<profileId>2</profileId>
+				<dbProfile>dbcenemi</dbProfile>
+				<loginName>BCHMAM01</loginName>
+			</CenEmiJasperReportServlet>
+			<CenEmiInterfaceTrading>
+				<userName>BCHMAM01</userName>
+				<userId>5555</userId>
+				<profileId>-1</profileId>
+				<dbProfile>dbcenemi</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</CenEmiInterfaceTrading>
+			<CenEmiBatchOfficeDirectiveDispatcher>
+				<userName>BCHMAM01</userName>
+				<userId>5555</userId>
+				<profileId>-1</profileId>
+				<dbProfile>dbcenemi</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</CenEmiBatchOfficeDirectiveDispatcher>
+			<DocQuerySystemCall>
+				<userName>BCHMAM01</userName>
+				<userId>5555</userId>
+				<profileId>-1</profileId>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</DocQuerySystemCall>
+			<CenEmiPeriodificationDaemon>
+				<userName>BCHMAM01</userName>
+				<userId>2222</userId>
+				<dbProfile>dbcenemi</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+				<rootString>C:\\temp\\</rootString>
+				<poolLogName>CenEmiDaemonPoolLog</poolLogName>
+				<poolLogTrace>printTraze</poolLogTrace>
+			</CenEmiPeriodificationDaemon>
+			<CenEmiBatchGetFiles>
+				<userName>BCHMAM01</userName>
+				<userId>2222</userId>
+				<profileId>-1</profileId>
+				<dbProfile>dbcenemi</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+				<rootString>C:\\temp\\</rootString>
+				<poolLogName>CenEmiDaemonPoolLog</poolLogName>
+				<poolLogTrace>printTraze</poolLogTrace>
+				<pbdcDir>C:\\temp\\</pbdcDir>
+			</CenEmiBatchGetFiles>
+		</emi>
+		<sap>
+			<general>
+				<!--Localisation of SAP propierties files-->
+				<propertyPath>D:\Tomcatv6.0\webapps\ocen\properties\sap/</propertyPath>
+				<!--Panel refresh rate in seconds (Timer), this value should coincide with that defined in the table CENBDT_GLOBAL_CTE-->
+				<refreshRate>120</refreshRate>
+				<!--
+				Database profile name variable. We define this variable to allow different
+				database configuration on the isf.db node. The value associated
+				with this node will be used for looking on the corresponding parent node
+				ifs.db. So it is possible to define different possible database
+				configurations, and the value of this variable is the
+				current database profile in use. Changing this value you could
+				run the application on test database environment.
+				-->
+				<dbProfileName>dbcensap</dbProfileName>
+			</general>
+			<bundle>
+				<!--Base name of the bundle class-->
+				<baseNameBundle>CenSapResourceBundle</baseNameBundle>
+				<!--Device where is stored the local bundle resources, it could be a "file" or "database"-->
+				<deviceType>file</deviceType>
+			</bundle>
+			<CenSapAlarmsCalculationBatch>
+				<userName>BCHACP01</userName>
+				<dbProfile>dbcenbat</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+				<profileQS>2</profileQS>
+			</CenSapAlarmsCalculationBatch>
+			<query_system_call>
+				<user_name>sap</user_name>
+				<user_id>21</user_id>
+				<profile_id>2</profile_id>
+				<language_code>es</language_code>
+				<country_code>ES</country_code>
+			</query_system_call>
+			<CenSapReportBatch>
+
+                <loginName>BCHACP01</loginName>
+                <dbProfile>dbcensap</dbProfile>
+                <languageCode>it</languageCode>
+                <countryCode>IT</countryCode>
+                <path>c:\files\</path>
+            </CenSapReportBatch>
+			<CenSapCreateS6Pdf>
+				<userName>sap</userName>
+				<user_id>21</user_id>
+				<dbProfile>dbcensap</dbProfile>
+				<languageCode>es</languageCode>
+				<countryCode>ES</countryCode>
+			</CenSapCreateS6Pdf>
+
+		</sap>
+		<util>
+			<DynamicQueryObject>
+				<!--Maximum Time, in millis, for DynamicQueryObject to operate-->
+				<maxTimeOut>900000</maxTimeOut>
+				<!--Maximum Number of Rows a sentence can return-->
+				<maxRowNumber>30000</maxRowNumber>
+			</DynamicQueryObject>
+			<CenDBPoolStatusPollerDaemon>
+				<countryCode>ES</countryCode>
+				<languageCode>es</languageCode>
+				<!--true to activate polling process-->
+				<pollingActive>false</pollingActive>
+				<!--Time between every poll in millis-->
+				<pollTime>900000</pollTime>
+				<!--Level of polls results (as in Log class)-->
+				<logLevel>6</logLevel>
+			</CenDBPoolStatusPollerDaemon>
+		</util>
+	</ocen>
+</content>
+

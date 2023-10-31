@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <CenTibGeodeInvioAnagrafica>
+		<GeodeInvioAnagrafica>
+			<ClassComb>(String) </ClassComb>
+			<DesClassComb>(String) </DesClassComb>
+			<IdMsg>(String) </IdMsg>
+			<Lista_Combustibles> (sequence_item)
+				<CodComb>(String) </CodComb>
+				<DesCodComb>(String) </DesCodComb>
+				<FecIniVal>(DateTimeI18n) </FecIniVal>
+				<FecFinVal>(DateTimeI18n)</FecFinVal>
+			</Lista_Combustibles>
+	  </GeodeInvioAnagrafica>	
+	</CenTibGeodeInvioAnagrafica>

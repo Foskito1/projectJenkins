@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<content method="CenBdiModifyConfigUsu" user="1" userName="FRU" profileId="4" language="es" country = "ES" sessionId="sfpc1102-e3e60:e61f0056f9:-7ec0" authorityId="sfpc1102.GCCOM.ssn-1">
+	<UserConfigData>
+		<User_Id>1</User_Id>
+		<Optimist_Lock>1</Optimist_Lock>
+		<Modulo_Ini>COM</Modulo_Ini>
+	</UserConfigData>
+	<IniConfigData>
+		<User_Id>1</User_Id>
+		<Modulo_Bdi_Ini>BDM</Modulo_Bdi_Ini>
+		<Optimist_Lock>1</Optimist_Lock>
+		<Elemento_Bdi_Ini>ELEMENTO</Elemento_Bdi_Ini>
+	</IniConfigData>
+</content>

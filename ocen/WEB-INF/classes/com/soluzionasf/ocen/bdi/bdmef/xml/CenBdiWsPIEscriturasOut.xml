@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiWsPIEscriturasOut>
+
+<ResulEscrituras>
+
+<ResulEscritura>
+	<ValoresInsertados> (long) numero de valores insertados</ValoresInsertados>	
+</ResulEscritura>
+
+<Errores>
+<Error>(seq)
+  <Desc> (String) Descripcion del Error</Desc>
+  <Cat> (String) Categoria del Error</Cat>
+  <CodMedida>(String) Codigo de medida asociado al error</CodMedida>
+  </Error>
+  </Errores>
+
+  </ResulEscrituras>  
+
+</CenBdiWsPIEscriturasOut>
+
+ 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<cenBdi_reset_shared>
+	<salida>
+		<mensaje>(String) (man)  message</mensaje>
+	</salida>
+</cenBdi_reset_shared>

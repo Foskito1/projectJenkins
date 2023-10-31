@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibGeodeModCanCon>
+	<GeodeModCanCon>
+		<Id1>(Long) </Id1>
+		<FecCons>(DateTimeI18n) </FecCons>
+		<GrupProd>(String) </GrupProd>
+		<IdMsg>(String) </IdMsg>
+		<ClassComb> (sequence_item)
+			<ClassComb>(String) </ClassComb>
+			<List_Comb> (sequence_item)
+				<Id2>(Long) </Id2>
+				<CodComb>(String) </CodComb>
+				<QtaCons>(Double) </QtaCons>
+				<PotCal> (Double) </PotCal>
+				<FlagInat>(Boolean)</FlagInat>
+			</List_Comb>
+		</ClassComb>
+	</GeodeModCanCon>
+</CenTibGeodeModCanCon>

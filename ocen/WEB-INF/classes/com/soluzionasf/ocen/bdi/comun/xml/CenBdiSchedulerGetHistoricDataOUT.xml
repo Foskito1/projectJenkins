@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiSchedulerGetHistoricData>
+    <List>(seq)
+    <tipo_entidad>(String)ID DEL TIPO DE ENTIDAD</tipo_entidad>
+    <id_entidad>(long)ID DE LA ENTIDAD</id_entidad>
+    <fec_generacion_ts>(DateTimeI18n)FECHA DE GENERACION</fec_generacion_ts>
+    <cod_estado>(String)COD DEL ESTADO</cod_estado>
+    <cod_entidad>(long)CÓDIGO DE LA ENTIDAD</cod_entidad>
+    <des_entidad>(String)DESCRIPCION DEL TRABAJO</des_entidad>
+    <id_rela_config_turno>(long)ID DEL TURNO</id_rela_config_turno>
+  </List>
+</CenBdiSchedulerGetHistoricData>

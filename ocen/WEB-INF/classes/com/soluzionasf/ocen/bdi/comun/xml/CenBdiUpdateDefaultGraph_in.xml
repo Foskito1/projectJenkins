@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiUpdateDefaultGraph>
+   <ConfigUsu>
+      <UserId>(Long)Código del usuario.</UserId>
+      <DefaultGraph>(Long)Gráfico por defecto asociado al usuario.</DefaultGraph>
+   </ConfigUsu>
+</CenBdiUpdateDefaultGraph>

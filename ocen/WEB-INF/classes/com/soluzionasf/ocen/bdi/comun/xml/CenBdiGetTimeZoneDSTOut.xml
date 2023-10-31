@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<content authorityId="MADPPXSWL01.OCEN.local-0" country="ES" errormessage="" iderror="0" language="es" method="CenBdiGetTimeZoneDST" profileId="-1" sessionId="MADPPXSWL01--2ba5052c:14df6eddf05:-7f9b" user="1344" userName="Jimenez Losa, Angela">
+	<QueryResult>
+		<ROW ID_ZONA_HORARIA="1" YEAR="2005" DST="1" DAY="18/10/2015" HOUR="00:00:00" OFFSET="3600" NUM_HOURS="23"/>
+		<ROW ID_ZONA_HORARIA="1" YEAR="2005" DST="0" DAY="22/02/2015" HOUR="00:00:00" OFFSET="-3600" NUM_HOURS="25"/>
+	</QueryResult>
+</content>

@@ -1,0 +1,1 @@
+CENMAN.CheckWoAlive;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmCheckWoAliveService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmCheckWoAliveInRequestDOMImpl

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<activate>
+	<code id_funtional="id secuencial del hueco" id_inventory="id secuencial del inventario" optimist_funtional="optimist lock del hueco" optimist_inventory="optimist lock del inventario" reason="causa o motivo de la desactivacion" cascade="si se van a activar en cascada los hijos del elemento" comment="comentario sobre la activacion"/>
+</activate>	  

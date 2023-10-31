@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!--CenBdiSetElmntTypesRelations-->
+<content>
+	<TechCharData>
+		<Cod_Child_Elmnt>(String[3]) Contiene el código del tipo de elemento hijo</Cod_Child_Elmnt>
+		<Child_Elmnt_Name>(String[60]) Contiene el nombre del tipo de elemento hijo</Child_Elmnt_Name>
+		<Error_Description>(String[???]) Contiene la razón de qué no se haya añadido o eliminado el hijo de la lista de hijos.</Error_Description>
+	</TechCharData>
+</content>
+<!--/CenBdiSetElmntTypesRelations-->

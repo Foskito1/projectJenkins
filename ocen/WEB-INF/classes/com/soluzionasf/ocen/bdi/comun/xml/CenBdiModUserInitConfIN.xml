@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiModifyConfigUsu>
+	<UserConfigData>(man)
+		<User_Id>(man)(long)Id del usuario al que se modifica la configuración</User_Id>
+		<Optimist_Lock>(man)(long)</Optimist_Lock>
+		<Modulo_Ini>(man) Contiene el modulo inicial del menu principal.</Modulo_Ini>
+		<Nivel_Expandido>(man)(long) Contiene el nivel expandido.</Nivel_Expandido>
+	</UserConfigData>
+	<IniConfigData>(man)(sequence_item)
+		<User_Id>(man)(long)Id del usuario al que se modifica la configuración</User_Id>
+		<Modulo_Bdi_Ini>(man) Contiene el modulo al que se va a aplicar el ELEMENTO_BDI inicial</Modulo_Bdi_Ini>
+		<Optimist_Lock>(man)(long)</Optimist_Lock>
+		<Elemento_Bdi_Ini>(man) Contiene el elemento de la BDI inicial.</Elemento_Bdi_Ini>
+		<Tipo_Elemento_Bdi_Ini>(man) Contiene el tipo del elemento de la BDI inicial.</Tipo_Elemento_Bdi_Ini>
+	</IniConfigData>
+</CenBdiModifyConfigUsu>

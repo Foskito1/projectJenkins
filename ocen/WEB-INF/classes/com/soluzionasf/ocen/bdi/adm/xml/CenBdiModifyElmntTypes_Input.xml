@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiModifyElmntTypes>
+   <ElmntTypeDataModif>
+      <Cod_Elmnt_Type>(man)(String)Contiene el código del tipo de elemento</Cod_Elmnt_Type>
+      <Elmnt_Type_Name>(man)(String)Contiene el nombre del tipo de elemento</Elmnt_Type_Name>
+      <Elmnt_Type_Desc>(String)Contiene la descripción del tipo de elemento</Elmnt_Type_Desc>
+      <Elmnt_Table>(String)Contiene la tabla asociada al tipo de elemento en caso de que sea parametrizable</Elmnt_Table>
+      <Elmnt_Icon>(String)Contiene el nombre del archivo con el icono que se mostrará para el elemento</Elmnt_Icon>
+      <Riseable>(man)(Long)Contiene 1 si es levantable o 0 en caso contrario.</Riseable>
+      <Optimist_Lock>(man)(Long)Contiene un numero de control de actualización</Optimist_Lock>
+      <Subtype_Of>(String)Contiene el código del supertipo de elemento</Subtype_Of>
+      <Subtype_Of_Name>(String)Contiene el nombre del supertipo de elemento</Subtype_Of_Name>
+	  <G_Externo>(Long)Contiene 1 si es de gestion externa y 0 en caso contrario</G_Externo>
+      <Action>(man)(String)Contiene la accion que se va a realizar "A" si es insertar y "M" si es modificar</Action>
+   </ElmntTypeDataModif>
+</CenBdiModifyElmntTypes>

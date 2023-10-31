@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> <content method="CENBDI_BDI_TABLA_TIPO_ELEMENTOS" iderror="0" errormessage="" > 
+<cenbdi_bdi_tabla_tipo_elementos> <row tabla_elemento="(CHAR(30))" ></row> </cenbdi_bdi_tabla_tipo_elementos> 
+</content>

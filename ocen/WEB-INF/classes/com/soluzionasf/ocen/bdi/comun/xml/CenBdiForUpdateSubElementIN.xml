@@ -1,0 +1,19 @@
+<CenBdiForUpdateSubElement>
+	<ForSubElement>(man)
+		<Cod_Sub_Element>(man)(long) Contiene el Código de Subelemento del sistema de Formulacion.</Cod_Sub_Element>
+		<Cod_Element>(man)(long) Contiene el Código de Elemento del sistema de Formulacion.</Cod_Element>
+		<Des_Sub_Element>(man) Contiene la descripcion del Subelemento del sistema de Formulacion.</Des_Sub_Element>
+		<Orden>(man)(long) Contiene la Descripcion de Elemento de Formulacion.</Orden>
+		<Nivel>(man)(long) Contiene el nivel del subelemento.</Nivel>
+		<Cod_Sub_Elem_Ini>(Long) Contiene el orden del subelemento.</Cod_Sub_Elem_Ini>
+		<Per_Eliminar>(man) Flag que indica si el elemento se permite eliminar.</Per_Eliminar>
+		<Se_Anade>(man) Flag que indica si el elemento se añade.</Se_Anade>
+		<Se_Inserta>(man) Flag que indica si el elemento se inserta.</Se_Inserta>
+		<Se_Sustituye>(man) Flag que indica si el elemento se sustituye.</Se_Sustituye>
+		<Se_Sust_Ext>(man) Flag que indica si el elemento se sustituye por un elemento externo.</Se_Sust_Ext>
+		<Se_Elimina>(man) Flag que indica si el elemento se elimina.</Se_Elimina>
+		<Des_Idi_Sql>(man) Contiene la descripcion SQL del subelemento.</Des_Idi_Sql>
+		<Des_Idi_Str>(man) Contiene la descricpcion que aparece en el formulador para este sublemento.</Des_Idi_Str>
+		<Optimist_Lock>(Long) Contiene un numero de control de acturalizacion.</Optimist_Lock>
+	</ForSubElement>	
+</CenBdiForUpdateSubElement>

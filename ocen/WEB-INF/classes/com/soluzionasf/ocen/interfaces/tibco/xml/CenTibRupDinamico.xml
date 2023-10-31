@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibRupDinamico>
+	<RupDinamico>
+		<ListaCentrales>
+			(sequence_item)(man)
+			<CodigoCentral>(String)(man)</CodigoCentral>
+			<IdUnidadProduccion>(String)</IdUnidadProduccion>
+			<ListaPlanFecha>
+				(sequence_item)(man)
+				<Fecha>(DateTimeI18n)(man)</Fecha>
+				<DatosFechaHoraVariacion>
+					(sequence_item)(man)
+					<FechaHoraVariacion>(DateTimeI18n)(man)</FechaHoraVariacion>
+					<DisponibilidadUp>(Integer)(man)</DisponibilidadUp>
+					<IdMotivacion>(String)(man)</IdMotivacion>
+					<DesMotivacion>(String)(man)</DesMotivacion>
+					<DatosElemProduccion>
+						(sequence_item)(man)
+						<IdAsetoRup>(String)</IdAsetoRup>
+						<CodAseto>(String)(man)</CodAseto>
+						<DisponibilidadAseto>(Integer)(man)</DisponibilidadAseto>
+			    		<PotMax>(Double)(man)</PotMax>
+			    		<PotMin>(Double)(man)</PotMin>
+			    		<PotBruta>(Double)(man)</PotBruta>
+			    		<Semibanda>(Double)(man)</Semibanda>
+			    		<GradienteDown>(Double)(man)</GradienteDown>
+			    		<GradienteUp>(Double)(man)</GradienteUp>
+						<TcaDown>(Double)(man)</TcaDown>
+						<TcaUp>(Double)(man)</TcaUp>
+						<TiempoArresto>(Double)(man)</TiempoArresto>
+						<TiempoAviamiento>(Double)(man)</TiempoAviamiento>
+						<FecHorAct>(DateTimeI18n)(man)</FecHorAct>
+						<Note>(String)(man)</Note>
+					</DatosElemProduccion>
+				</DatosFechaHoraVariacion>
+			</ListaPlanFecha>
+		</ListaCentrales>
+	</RupDinamico>
+</CenTibRupDinamico>

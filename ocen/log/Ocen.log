@@ -1,0 +1,91 @@
+-------------------------------------------------------
+CenStandard error log initialized: 24-10-13 16:20:59
+-------------------------------------------------------
+24-10-13 16:21:00	main	TRAC	com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch	main	752	Comienzo
+24-10-13 16:21:00	main	WARN	isf.util.PropertiesHelper	getAllValues	167	Missing value or unrecognized format for property "min_inactivity_time_step"; Using default value "1000"
+24-10-13 16:21:00	main	WARN	isf.util.PropertiesHelper	getAllValues	167	Missing value or unrecognized format for property "rollback_before_abrupt_close"; Using default value "false"
+24-10-13 16:21:00	main	WARN	isf.util.PropertiesHelper	getAllValues	167	Missing value or unrecognized format for property "kernel_profile"; Using default value "dbarq"
+24-10-13 16:21:00	main	WARN	isf.util.PropertiesHelper	getAllValues	167	Missing value or unrecognized format for property "max_profile_connection_tries"; Using default value "10"
+24-10-13 16:21:00	main	WARN	isf.db.AdvancedPool	getPropertyLong	614	Missing property max_availabiliy_timeout. Using default value (-1)
+24-10-13 16:21:00	main	WARN	isf.db.AdvancedPool	getPropertyLong	614	Missing property max_per_user. Using default value (-1)
+24-10-13 16:21:00	main	DETA	isf.util.tms.ThreadMonitoringService	showProperties	590	Thread monitoring service parameters.   entry_factory=isf.util.tms.ServletCallInfoFactory,   monitoring_device=isf.util.tms.LogDevice,   max_entries=2000, enabled attributes=[call_service_name, call_input, call_begin_date, call_client_IP_address, call_servlet_name, call_session, call_extra_info, call_end_date]
+24-10-13 16:21:00	main	WARN	isf.db.AdvancedPool	getPropertyInt	643	Missing property transaction_isolation. Using default value (-1)
+24-10-13 16:21:00	main	INFO	isf.db.AdvancedPool$ListenerTracer	created	1567	Created connection 1668655 from profile db
+24-10-13 16:21:01	main	WARN	isf.db.AdvancedPool	getPropertyLong	614	Missing property max_availabiliy_timeout. Using default value (-1)
+24-10-13 16:21:01	main	WARN	isf.db.AdvancedPool	getPropertyLong	614	Missing property max_per_user. Using default value (-1)
+24-10-13 16:21:01	main	WARN	isf.db.AdvancedPool	getPropertyInt	643	Missing property transaction_isolation. Using default value (-1)
+24-10-13 16:21:01	main	INFO	isf.db.AdvancedPool$ListenerTracer	created	1567	Created connection 14434757 from profile dbcenbdi
+24-10-13 16:21:01	main	TRAC	com.soluzionasf.ocen.bdi.comun.helper.CenBdiPlantillaCargaHelper	getReports	557	Leemos los informes a lanzar...
+24-10-13 16:21:01	main	WARN	isf.db.AdvancedPool	getPropertyInt	643	Missing property transaction_isolation. Using default value (-1)
+24-10-13 16:21:01	main	INFO	isf.db.AdvancedPool$ListenerTracer	created	1567	Created connection 9744175 from profile dbcenbdi
+24-10-13 16:21:02	main	WARN	isf.util.PropertiesHelper	getAllValues	167	Missing value or unrecognized format for property "development_class"; Using default value "isf.domain.gcqs.ExecutorMethodForDevelopment"
+24-10-13 16:21:02	main	DETA	isf.domain.gcqs.GcqsQuerySystemConstants	showProperties	462	Query system parameters.   default_profile=db,   production=false,   package=com.soluzionasf.ocen.util.qs
+24-10-13 16:21:02	main	WARN	isf.domain.gcqs.ExecutorMethodForDevelopment	getQueryString	1369	Error reading query 151188 from table GCQS_QUERY_isf.servlets.Language@46d228 (SQL error code=933, message=ORA-00933: comando SQL no terminado correctamente
+): using default query
+24-10-13 16:21:02	main	TRAC	com.soluzionasf.ocen.bdi.comun.helper.CenBdiPlantillaCargaHelper	callQSCarga	616	Se recupera el informe con id: 541
+24-10-13 16:21:02	main	TRAC	com.soluzionasf.ocen.bdi.comun.helper.CenBdiPlantillaCargaHelper	getReports	562	Leemos los campos de los a lanzar...
+24-10-13 16:21:02	main	WARN	isf.domain.gcqs.ExecutorMethodForDevelopment	getQueryString	1369	Error reading query 151187 from table GCQS_QUERY_isf.servlets.Language@46d228 (SQL error code=933, message=ORA-00933: comando SQL no terminado correctamente
+): using default query
+24-10-13 16:21:03	main	TRAC	com.soluzionasf.ocen.util.DynamicQueryObject	executeTempSentence	626	Query [SELECT * FROM CENBDT_V_PLANTILLA_TIPO_DATO]
+24-10-13 16:21:03	main	TRAC	com.soluzionasf.ocen.util.DynamicQueryObject	executeTempSentence	627	[2013-10-24 16:21:03.021]: Max Number of Rows: [30000] Max Time: [900000]
+24-10-13 16:21:03	main	TRAC	com.soluzionasf.ocen.util.DynamicQueryObject	executeTempSentence	765	[2013-10-24 16:21:03.074]: Fin de la extracción: [7] registros.
+24-10-13 16:21:03	main	TRAC	com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch	loadFiles	669	Procesamos el informe con id: 541
+24-10-13 16:21:03	main	TRAC	com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch	loadFiles	673	Descripcion: Plantilla de carga de ots para renovables 2013
+24-10-13 16:21:03	main	TRAC	com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch	loadFiles	680	Ficheros encontrados: 1
+24-10-13 16:21:03	main	TRAC	com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch	loadFiles	682	Fichero: OT_RNV_2013_1.xls
+24-10-13 16:21:03	main	TRAC	com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch	processFiles	350	Procesando fichero: OT_RNV_2013_1.xls
+24-10-13 16:21:05	main	DETA	com.soluzionasf.ocen.bdi.comun.helper.CenBdiInterfaceLaunchHelper	launchInterface	348	[2013-10-24 16:21:05.516]: Inicio de launchInterface Id:[111664]
+24-10-13 16:21:05	main	DETA	com.soluzionasf.ocen.bdi.comun.helper.CenBdiInterfaceJavaLaunchHelper	callServletInterface	226	[2013-10-24 16:21:05.955]: Inicio de callServletInterface. Clase : com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmInterfInsertWorkOrder   Método :insertOt
+24-10-13 16:21:05	main	INFO	com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmInterfInsertWorkOrder	insertOt	72	Inicio de interfaz que inserta datos en la tabla cenman_em_orden_trabajo
+24-10-13 16:21:06	main	WARN	isf.db.AdvancedPool	getPropertyLong	614	Missing property max_availabiliy_timeout. Using default value (-1)
+24-10-13 16:21:06	main	WARN	isf.db.AdvancedPool	getPropertyLong	614	Missing property max_per_user. Using default value (-1)
+24-10-13 16:21:06	main	WARN	isf.db.AdvancedPool	getPropertyInt	643	Missing property transaction_isolation. Using default value (-1)
+24-10-13 16:21:06	main	INFO	isf.db.AdvancedPool$ListenerTracer	created	1567	Created connection 22908277 from profile dbcenman
+24-10-13 16:21:06	main	WARN	isf.db.AdvancedPool	getPropertyInt	643	Missing property transaction_isolation. Using default value (-1)
+24-10-13 16:21:06	main	INFO	isf.db.AdvancedPool$ListenerTracer	created	1567	Created connection 20890333 from profile dbcenman
+24-10-13 16:21:18	main	ERRO	com.soluzionasf.ocen.bdi.comun.domain.CenBdiLogMonitor	error	605	BUSINESS [2013-10-24 16:21:18][CenBdiInterfaceJavaLaunchHelper.callServletInterface(290)]: Error en capsulado en llamada interfase servlet: java.lang.String at CenmanEmInterfInsertOtsPlantilla.processColumns(282)
+24-10-13 16:21:18	main	ERRO	com.soluzionasf.ocen.util.CenBusinessRuleException	<init>	236	java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.soluzionasf.ocen.bdi.comun.helper.CenBdiInterfaceJavaLaunchHelper.callServletInterface(CenBdiInterfaceJavaLaunchHelper.java:262)
+	at com.soluzionasf.ocen.bdi.comun.helper.CenBdiInterfaceJavaLaunchHelper.launchServletInterface(CenBdiInterfaceJavaLaunchHelper.java:155)
+	at com.soluzionasf.ocen.bdi.comun.helper.CenBdiInterfaceLaunchHelper.launchInterface(CenBdiInterfaceLaunchHelper.java:377)
+	at com.soluzionasf.ocen.bdi.comun.helper.CenBdiInterfaceLaunchHelper.launchInterface(CenBdiInterfaceLaunchHelper.java:616)
+	at com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch.sendFile(CenBdiPlantillaCargaBatch.java:557)
+	at com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch.processReports(CenBdiPlantillaCargaBatch.java:236)
+	at com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch.execute(CenBdiPlantillaCargaBatch.java:89)
+	at com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch.main(CenBdiPlantillaCargaBatch.java:754)
+Caused by: java.lang.ClassCastException: java.lang.String
+	at com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmInterfInsertOtsPlantilla.processColumns(CenmanEmInterfInsertOtsPlantilla.java:282)
+	at com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmInterfInsertOtsPlantilla.buildBeanObject(CenmanEmInterfInsertOtsPlantilla.java:123)
+	at com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmInterfInsertOtsPlantilla.manageOts(CenmanEmInterfInsertOtsPlantilla.java:75)
+	at com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmInterfInsertWorkOrder.insertOt(CenmanEmInterfInsertWorkOrder.java:88)
+	... 12 more
+
+24-10-13 16:21:18	main	ERRO	com.soluzionasf.ocen.bdi.comun.domain.CenBdiLogMonitor	error	605	BUSINESS [2013-10-24 16:21:18][CenBdiPlantillaCargaBatch.sendFile(567)]: La interfaz ha dado un error PLANCBDIOT: El método "insertOt" de la clase "com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmInterfInsertWorkOrder" asociado a la interfase ha terminado con un error. at Exception_helper.convertToCenBusinessRuleException(171)
+24-10-13 16:21:18	main	ERRO	com.soluzionasf.ocen.bdi.comun.domain.CenBdiLogMonitor	error	605	BUSINESS [2013-10-24 16:21:18][CenBdiPlantillaCargaBatch.sendFile(570)]: com.soluzionasf.ocen.util.CenBusinessRuleException[InterfaceFailedExecutionError]: El método "insertOt" de la clase "com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmInterfInsertWorkOrder" asociado a la interfase ha terminado con un error.
+	at com.soluzionasf.ocen.util.Exception_helper.convertToCenBusinessRuleException(Exception_helper.java:171)
+	at com.soluzionasf.ocen.bdi.comun.helper.CenBdiInterfaceJavaLaunchHelper.callServletInterface(CenBdiInterfaceJavaLaunchHelper.java:292)
+	at com.soluzionasf.ocen.bdi.comun.helper.CenBdiInterfaceJavaLaunchHelper.launchServletInterface(CenBdiInterfaceJavaLaunchHelper.java:155)
+	at com.soluzionasf.ocen.bdi.comun.helper.CenBdiInterfaceLaunchHelper.launchInterface(CenBdiInterfaceLaunchHelper.java:377)
+	at com.soluzionasf.ocen.bdi.comun.helper.CenBdiInterfaceLaunchHelper.launchInterface(CenBdiInterfaceLaunchHelper.java:616)
+	at com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch.sendFile(CenBdiPlantillaCargaBatch.java:557)
+	at com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch.processReports(CenBdiPlantillaCargaBatch.java:236)
+	at com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch.execute(CenBdiPlantillaCargaBatch.java:89)
+	at com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch.main(CenBdiPlantillaCargaBatch.java:754)
+
+24-10-13 16:21:18	main	ERRO	com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch	sendError	598	*** ERRORES ENCONTRADOS ***
+24-10-13 16:21:18	main	ERRO	com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch	sendError	599	INFORME: Plantilla de carga de ots para renovables 2013
+24-10-13 16:21:18	main	ERRO	com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch	sendError	601	Archivo: OT_RNV_2013_1.xls
+24-10-13 16:21:18	main	ERRO	com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch	sendError	605	La interfaz ha dado un error: El método "insertOt" de la clase "com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmInterfInsertWorkOrder" asociado a la interfase ha terminado con un error.
+24-10-13 16:21:18	main	ERRO	com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch	sendError	606	
+24-10-13 16:21:18	main	ERRO	com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch	sendError	616	**FIN ERRORES ENCONTRADOS**
+24-10-13 16:21:18	main	DETA	com.soluzionasf.ocen.util.CenMailHelper	sendMailAttachment	228	Puerto: 525
+24-10-13 16:21:19	main	INFO	com.soluzionasf.ocen.bdi.comun.helper.CenBdiPlantillaCargaHelper	sendError	1780	Notificacion enviada:[impalomino@indra.es]
+24-10-13 16:21:19	main	TRAC	com.soluzionasf.ocen.bdi.comun.helper.CenBdiPlantillaCargaLoadFileHelper	renameFiles	288	Renombramos el Fichero: d:\Temp\OT_RNV_2013_1.xls
+24-10-13 16:21:19	main	TRAC	com.soluzionasf.ocen.bdi.comun.helper.CenBdiPlantillaCargaLoadFileHelper	renameFilesDirect	328	Fichero renombrado como: d:\Temp\Error_OT_RNV_2013_1.xls
+24-10-13 16:21:19	main	TRAC	com.soluzionasf.ocen.bdi.comun.domain.CenBdiPlantillaCargaBatch	main	756	Terminó Ok
+24-10-13 16:21:19	Thread-1	INFO	isf.db.AdvancedPool$ListenerTracer	abruptReleased	1624	Connection number 22908277 abruptly released, userName=com.soluzionasf.ocen.man.maint_exec.domain.CenManBatchIntSapABMRptoHelper
+24-10-13 16:21:19	Thread-1	INFO	isf.db.AdvancedPool$ListenerTracer	destroyed	1580	Connection 22908277 destroyed from profile dbcenman

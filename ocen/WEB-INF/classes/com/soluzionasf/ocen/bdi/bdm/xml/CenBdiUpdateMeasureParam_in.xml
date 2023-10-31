@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiUpdateMeasureParam>
+   <COD_PARAM>(Long) Código del parámetro.</COD_PARAM>
+   <DES_PARAM>(String) Descripción del parámetro.</DES_PARAM>
+   <COD_TIPO_PARAM>(Long) Código del tipo de parámetro.</COD_TIPO_PARAM>
+   <OPTIMIST_LOCK>(Long)</OPTIMIST_LOCK>
+   <ACTION>(String) A- Alta, B- Baja, M- Modificación</ACTION>
+</CenBdiUpdateMeasureParam>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmUpdateEquivalence>
+	<Equivalence>
+		<id_mea_equivalence_codes>(Long)(man)</id_mea_equivalence_codes>		 
+		<optimist_lock>(Long)(man)</optimist_lock>   
+	</Equivalence>	
+</CenBdmUpdateEquivalence>

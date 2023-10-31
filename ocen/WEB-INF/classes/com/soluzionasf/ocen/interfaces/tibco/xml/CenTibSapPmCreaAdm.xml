@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibSapPmCreaAdm>
+	<SapPmCreaAdm>
+		<TipoAviso>(String)(man)</TipoAviso>
+		<CodSedeTecnica>(String)(man)</CodSedeTecnica>
+		<CodAnomaliaOCEN>(String)(man)</CodAnomaliaOCEN>
+		<CodUsuarioAct>(String)(man)</CodUsuarioAct>
+		<FecHorVerif>(DateTimeI18n)(man)</FecHorVerif>
+		<Prioridad>(String)(man)</Prioridad>
+		<CodGrupoCondiciones>(String)(man)</CodGrupoCondiciones>
+		<CodCondiciones>(String)(man)</CodCondiciones>
+		<CodGrupoCausa>(String)(man)</CodGrupoCausa>
+		<CodCausa>(String)(man)</CodCausa>
+		<CodGrupoDesc>(String)(man)</CodGrupoDesc>
+		<CodDesc>(String)(man)</CodDesc>
+		<CodGrupoTipoOt>(String)(man)</CodGrupoTipoOt>
+		<CodTipoOt>(String)(man)</CodTipoOt>
+		<DesTipoOt>(String)(man)</DesTipoOt>
+		<DesAnomaliaOCEN>(String)(man)</DesAnomaliaOCEN>
+		<FechaIni>(DateTimeI18n)(man)</FechaIni>
+		<FechaFin>(DateTimeI18n)(man)</FechaFin>
+		<ParametrosTecnicos>(String)(man)</ParametrosTecnicos>
+		<DetenerMaquina>(String)(man)</DetenerMaquina>
+		<SedeTecnicaCons>(String)(man)</SedeTecnicaCons>
+		<EfectoSobrePlanta>(String)(man)</EfectoSobrePlanta>
+		<CodIntCentroTrabajo>(String)(man)</CodIntCentroTrabajo>
+		<CodExtCentroTrabajo>(String)(man)</CodExtCentroTrabajo>
+		<DivisionCentroTrabajo>(String)(man)</DivisionCentroTrabajo>
+		<IntervencionDisponible>(String)(man)</IntervencionDisponible>
+		<SapSystem>(String)(man)</SapSystem>
+		<SapClient>(String)(man)</SapClient>
+		<SistemaMittente>(String)(man)</SistemaMittente>
+		<SistemaDestinatario>(String)</SistemaDestinatario>
+	</SapPmCreaAdm>
+</CenTibSapPmCreaAdm>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibSapPmAnagrafica>
+	<SapPmAnagrafica>
+	  <SapSorgente>(String) (man)</SapSorgente>
+    <IdDocSap>(String) (man) </IdDocSap>
+		<AnagraficaElem>
+			(sequence_item)(man)
+			<SapSystem>(String) (man)</SapSystem>
+			<SapClient>(String) (man)</SapClient>
+			<CodTipoAnagrafica>(String)(man)</CodTipoAnagrafica>
+			<FlagStato>(String)(man)</FlagStato>
+			<CodSedeTecnica>(String)(man)</CodSedeTecnica>
+			<CodStructura>(String)(man)</CodStructura>
+			<CodFiliera>(String)(man)</CodFiliera>
+			<CodSedeTecnicaPadre>(String)(man)</CodSedeTecnicaPadre>
+			<CodSedeTecnicaExt>(String)(man)</CodSedeTecnicaExt>
+			<CodCategoria>(String)(man)</CodCategoria>
+			<DesSedeTecnica>(String)(man)</DesSedeTecnica>
+			<CodCentroTrabajo>(String)(man)</CodCentroTrabajo>
+			<CodMacroSistema>(String)(man)</CodMacroSistema>
+			<CodIndisponibilidad>(String)(man)</CodIndisponibilidad>
+			<CentroCoste>(String)(man)</CentroCoste>
+			<TipoElemento>(String)(man)</TipoElemento>
+			<TipoFuncion>(String)(man)</TipoFuncion>
+			<CodPerfil>(String)(man)</CodPerfil>
+			<CodUB>(String)</CodUB>
+			<FecHorValCodUB>(DateTimeI18n)</FecHorValCodUB>
+			<Rela_G_D>
+				(sequence_item)
+				<CodNodoDestino>(String)</CodNodoDestino>
+			</Rela_G_D>
+			<Rela_D_G>
+				(sequence_item)
+				<CodNodoDestino>(String)</CodNodoDestino>
+			</Rela_D_G>
+			<Rela_D_DM>
+				(sequence_item)
+				<CodNodoDestino>(String)</CodNodoDestino>
+			</Rela_D_DM>
+			<Rela_D_NM>
+				(sequence_item)
+				<CodNodoDestino>(String)</CodNodoDestino>
+			</Rela_D_NM>
+			<Rela_D_DV>
+				(sequence_item)
+				<CodNodoDestino>(String)</CodNodoDestino>
+			</Rela_D_DV>
+			<Rela_D_NV>
+				(sequence_item)
+				<CodNodoDestino>(String)</CodNodoDestino>
+			</Rela_D_NV>
+			<Rela_NM_DV>
+				(sequence_item)
+				<CodNodoDestino>(String)</CodNodoDestino>
+			</Rela_NM_DV>
+			<Rela_G_G>
+				(sequence_item)
+				<CodNodoDestino>(String)</CodNodoDestino>
+			</Rela_G_G>
+		</AnagraficaElem>
+	</SapPmAnagrafica>
+</CenTibSapPmAnagrafica>

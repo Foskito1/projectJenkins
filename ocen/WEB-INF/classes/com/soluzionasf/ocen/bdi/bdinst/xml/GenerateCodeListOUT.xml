@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiGenerateCodeList>
+   <Code>(seq)
+      <Camp>(man)(String) Campo de donde procede el codigo (0 - Funcional / 1 - Inventario / 2 - Caracteristica)</Camp>
+      <Value>(man)(String) Valor del campo </Value>
+      <Code>(man)(String) Codigo generado </Code>
+   </Code>
+</CenBdiGenerateCodeList>

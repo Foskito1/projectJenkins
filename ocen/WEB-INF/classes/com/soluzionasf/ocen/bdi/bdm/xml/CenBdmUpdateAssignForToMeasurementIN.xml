@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdmUpdateAssignForToMeasurement -->
+<CenBdmUpdateAssignForToMeasurement>
+	<Assign_For_Measurement>(man)(sequence_item)
+		<Cod_Measurement>(Long)(man)Código de la medida a la que se va ha actualizar la asignacion</Cod_Measurement>
+		<Cod_Formula>(Long)Código de la formula</Cod_Formula>
+		<Fecha_Desde>(DateTime)Fecha desde la que es válida la asignacion</Fecha_Desde>
+		<Fecha_Hasta>(DateTime)Fecha hasta la que es válida la asignacion</Fecha_Hasta>
+	</Assign_For_Measurement>
+</CenBdmUpdateAssignForToMeasurement>

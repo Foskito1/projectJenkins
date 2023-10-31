@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- Method: CenBdmUpdateMeasurement -->
+<Cen_Bdi_Update_Measurement>
+  <Cod_Medida>(long)</Cod_Medida> 
+  <Optimist_Lock>(long)</Optimist_Lock>
+  <cod_barras>(String)</cod_barras>
+</Cen_Bdi_Update_Measurement>  

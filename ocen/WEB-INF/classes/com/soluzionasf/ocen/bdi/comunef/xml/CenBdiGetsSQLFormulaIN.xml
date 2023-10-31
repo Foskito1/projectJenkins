@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- Method: CenBdiGetsSQLFormula -->
+<CenBdiGetsSQLFormula>
+   <Gets_Sql_Formula>(man)
+	   <Cod_Formula>(sequence_item)(long)Contiene el codigo de la formula de la que se necesita extraer su descripcion SQL.</Cod_Formula> 
+   </Gets_Sql_Formula>
+</CenBdiGetsSQLFormula> 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibPwayReportS6NE>
+	<PwayReportS6NE>
+		<CodSuccess>(String)(man)</CodSuccess>
+		<DesSuccess>(String)(man)</DesSuccess>
+		<DateReport>(Date)(man)</DateReport>
+		<IdModS6>(long)(man)</IdModS6>
+		<CodMeasure>(long)(man)</CodMeasure>
+	</PwayReportS6NE>
+</CenTibPwayReportS6NE>

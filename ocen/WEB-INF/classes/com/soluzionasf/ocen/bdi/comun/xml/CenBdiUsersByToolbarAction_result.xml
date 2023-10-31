@@ -1,0 +1,12 @@
+<CenBdiUsersByToolbarAction>
+ <lista_usuarios>
+	<Row ID="(long)" 
+		  NAME="(String)" 
+		  LOGIN="(String)" 
+		  TELEFONO="(String)" 
+		  EMPRESA= "(String)" 
+		  USERID="(long)" 
+		  USERNAME="(String)">(seq)
+		</Row>
+ </lista_usuarios>
+</CenBdiUsersByToolbarAction>

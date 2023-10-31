@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdmMeasurementsRelative>
+	<Measure>(sequence_item)
+		<Cod_Measure>(Long) El código único de la medida (cod_medida).</Cod_Measure>
+		<Des_Measure>(String) Texto que define a la medida (des_medida).</Des_Measure>
+		<Measurements>(sequence_item) 
+			<Date_start>(DateTime) La fecha y hora de inicio de la medición.</Date_start>
+			<Val_Measurement>(Double) El valor registrado de la medición.</Val_Measurement>
+			<Date_update>(DateTime) Fecha y hora de actualización de la medición.</Date_update>
+		</Measurements>
+	</Measure>
+	<Pagination>
+		<Flag_complete>(Long) Flag (0/1) que indica si se han devuelto todas las mediciones de la consulta</Flag_complete>
+		<Last_processed>(String) Úšltimos datos procesados e incluídos en la respuesta</Last_processed>
+		<Id_Query_In_Progress>(Long) Id de la consulta</Id_Query_In_Progress>
+	</Pagination>
+</CenBdmMeasurementsRelative>

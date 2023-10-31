@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiGetInterfaceReadings>
+   <Interface_List>
+      <Process_Date>(DateTimeI18n)(man)</Process_Date>
+      <Interface_Id>(sequence_item)(man)</Interface_Id>
+   </Interface_List>
+</CenBdiGetInterfaceReadings>

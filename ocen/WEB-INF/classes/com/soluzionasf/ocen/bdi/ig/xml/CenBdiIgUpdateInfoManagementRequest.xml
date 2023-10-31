@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiIgUpdateInfoManagement>
+	<id_info_management>(Long)(man) id de la tabla CENBDT_INFO_MANAGEMENT </id_info_management>
+	<IgColumns>
+		<Column> (seq)
+			<id_manage_criteria>(Long)(man)</id_manage_criteria>
+			<visible>(Long)(man)</visible>
+		</Column>
+	</IgColumns>
+	<IgRows>
+		<Row> (seq)
+			<id_manage_criteria>(Long)(man)</id_manage_criteria>
+			<id_manage_criteria_col>(Long)(man)</id_manage_criteria_col>
+			<id_measure>(Long)</id_measure>
+			<visible>(Long)(man)</visible>
+			<optimist_lock>(Long)(man)</optimist_lock>
+		</Row>
+	</IgRows>
+</CenBdiIgUpdateInfoManagement>

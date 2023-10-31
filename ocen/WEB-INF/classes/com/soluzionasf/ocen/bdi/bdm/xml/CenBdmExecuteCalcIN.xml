@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdmExecuteCalc -->
+<CenBdiExecuteCalc>
+	<Email>(String)Email para enviar notificacion de finalizacion de calculos en caso de ejecucion batch.</Email>
+	<NotifNullCalc>(Integer)1/0 para notificar si se han producido calculos nulos.</NotifNullCalc>
+	<Execute>(man)(sequence_item)
+		<Exec_Mode>(String)Modo de Ejecucion 1.- Batch, 2.- On-line, 3.- On-line con Dependientes</Exec_Mode>
+		<Cod_Measure>(Long)codigo de la medida</Cod_Measure>
+		<Fecha_Ini>(DateTime)Fecha Inicial</Fecha_Ini>
+		<Fecha_Fin>(DateTime)Fecha Final</Fecha_Fin>
+		<TodasFechas>(String)Para tener en cuenta los valores null a la hora del calculo o no: 0.- Se calculan todos los periodos 1.- Se calculan solo los periodos con valor (se ignoran los null)	2.- Se calculan solo los periodos con valor y se ignora el bloqueo de la medicion 3.- Se calculan todos los periodos y se ignora el bloqueo de la medicion		</TodasFechas>
+		<OverlapType>(String)Tipo de solapamiento a utilizar al poner pendiente de calculo: 0.- Solapar, 1.- Solapar solo en caso de tener la misma fecha+PTE</OverlapType>
+	</Execute>
+</CenBdiExecuteCalc>

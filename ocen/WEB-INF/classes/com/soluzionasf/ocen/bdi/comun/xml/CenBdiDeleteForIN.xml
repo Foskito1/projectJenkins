@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiDeleteFor>
+	<For_Delete>
+		<For_Code>Código de interfase que se pretende borrar</For_Code>
+	</For_Delete>
+</CenBdiDeleteFor>

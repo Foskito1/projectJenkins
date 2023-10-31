@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmMeasurementsGraphList>
+	<Global>
+  	<Measure>(man)(sequence_item)
+  		<cod_measure>(Long)(man)Codigo de la medida.</cod_measure>
+    	<des_measure>(String)(man)Descripción de la medida. </des_measure>
+			<Measurement> (man)(sequence_item)
+				<measurement_date>(DateTime)(man) Fecha de la medición. </measurement_date>
+		    <value>(Double)Valor de la medición. </value>
+			</Measurement> 
+		</Measure> 
+	</Global>
+</CenBdmMeasurementsGraphList> 

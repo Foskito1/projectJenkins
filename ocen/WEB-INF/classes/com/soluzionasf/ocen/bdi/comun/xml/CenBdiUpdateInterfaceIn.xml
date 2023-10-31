@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiUpdateInterface>
+   <Interface>
+      <Interface_Id>(man)(Long)</Interface_Id>
+      <Optimist_Lock>(Long)</Optimist_Lock>
+      <Interface_Cod>(man)(String)</Interface_Cod>
+      <Interface_Des>(String)</Interface_Des>
+      <Interface_Mod_Id>(man)(Long)</Interface_Mod_Id>
+      <Interface_Class_Id>(man)(Long)</Interface_Class_Id>
+      <Initial_Date>(DateTimeI18n)</Initial_Date>
+      <End_Date>(DateTimeI18n)</End_Date>
+      <Offset_Fin_Segs>(Long)</Offset_Fin_Segs>
+      <Offset_Fin_Mins>(Long)</Offset_Fin_Mins>
+      <Offset_Fin_Horas>(Long)</Offset_Fin_Horas>
+      <Offset_Fin_Dias>(Long)</Offset_Fin_Dias>
+      <Offset_Fin_Meses>(Long)</Offset_Fin_Meses>
+      <Offset_Ini_Segs>(Long)</Offset_Ini_Segs>
+      <Offset_Ini_Mins>(Long)</Offset_Ini_Mins>
+      <Offset_Ini_Horas>(Long)</Offset_Ini_Horas>
+      <Offset_Ini_Dias>(Long)</Offset_Ini_Dias>
+      <Offset_Ini_Meses>(Long)</Offset_Ini_Meses>
+      <Trunc_Ini>(String)</Trunc_Ini>
+      <Trunc_Fin>(String)</Trunc_Fin>
+      <Periode_Num>(Long)</Periode_Num>
+      <Periode>(Long)</Periode>
+      <Periode_Hour>(Long)</Periode_Hour>
+      <Active>(man)(String)</Active>
+      <LogActive>(man) (String) </LogActive>
+      <Batch>(man)(String)</Batch>
+      <Online>(man)(String)</Online>
+      <Directo>(String)</Directo>
+      <Formato_Fecha>(String)</Formato_Fecha>
+      <Separador_Decimales>(String)</Separador_Decimales>
+	  <id_zona_horaria>(Long)</id_zona_horaria>
+	  <flg_conv_fec_ret>(Long)</flg_conv_fec_ret>
+   </Interface>
+   <Servlet empty="(man)(Long)">
+      <Interface_Id>(Long)</Interface_Id>
+      <Nom_Method>(String)</Nom_Method>
+      <Nom_Class>(String)</Nom_Class>
+      <Field_In>(Long)</Field_In>
+      <Class_In>(Long)</Class_In>
+      <Field_Out>(Long)</Field_Out>
+      <Class_Out>(Long)</Class_Out>
+	  <Nom_Servidor>(String)</Nom_Servidor>
+	  <Nom_Funcion>(String)</Nom_Funcion>
+   </Servlet>
+   <View empty="(man)(Long)">
+       <Interface_Id>(Long)</Interface_Id> 
+       <View_Name>(String)</View_Name>
+       <BD_Remote>(String)</BD_Remote> 
+       <Field_In>(Long)</Field_In>
+       <Field_Out>(Long)</Field_Out>
+   </View>
+   <Oplink empty="(man)(Long)">
+       <Interface_Id>(Long)</Interface_Id>
+       <Business_Function>(String)</Business_Function>
+       <Server_Id>(String)</Server_Id>
+       <Server_Name>(String)</Server_Name>
+       <User>(String)</User>
+       <Password>(String)</Password>
+       <Field_In>(Long)</Field_In>
+       <Field_Separator_In>(Long)</Field_Separator_In>
+       <Field_Length_In>(Long)</Field_Length_In>
+       <Field_Out>(Long)</Field_Out>
+       <Field_Separator_Out>(Long)</Field_Separator_Out>
+       <Field_Length_Out>(Long)</Field_Length_Out>
+       <Varias_Tramas>(String)</Varias_Tramas>
+       <Partir_Registro>(String)flag que indica si se tiene que partir el registro entre trama y trama [S/N]</Partir_Registro>
+       <Completar_Trama>(String)flag que indica si se tiene que completar la trama al final [S/N]</Completar_Trama>
+       <Tamano_Trama>(Long)Tamaño de la trama</Tamano_Trama>
+       <Enviar_Recibir_Tramas>(String)flag que indica si se envia y/o recibe [S/N/A]</Enviar_Recibir_Tramas>
+   </Oplink>
+   <File empty="(man)(int)">
+       <Interface_Id>(Long)</Interface_Id>
+       <Access_Type>(String)</Access_Type>
+       <Path>(String)</Path>
+       <Host>(String)</Host>
+       <File_Name>(String)</File_Name>
+       <File_User>(String)</File_User>
+       <File_Password>(String)</File_Password>
+       <Port>(Long)</Port>
+       <Field_Out>(Long)</Field_Out>
+       <Field_Separator_Out>(Long)</Field_Separator_Out>
+       <Field_Length_Out>(Long)</Field_Length_Out>
+       <Delete_File>(Long)</Delete_File>
+       <Rename_File>(Long)</Rename_File>
+       <Prefix_Rename>(String)</Prefix_Rename>
+       <Ultima_Version>(String)</Ultima_Version>
+       <Line_Feed>(String)</Line_Feed>
+   </File>
+   <OutputFile empty="(man)(int)">
+       <Interface_Id>(Long)</Interface_Id>
+       <Access_Type>(String)</Access_Type>
+       <Path>(String)</Path>
+       <Host>(String)</Host>
+       <File_Name>(String)</File_Name>
+       <File_User>(String)</File_User>
+       <File_Password>(String)</File_Password>
+       <Port>(Long)</Port>
+       <Field_In>(Long)</Field_In>
+       <Field_Separator_In>(Long)</Field_Separator_In>
+       <Field_Length_In>(Long)</Field_Length_In>
+       <Send_Confirm_File>(Long)</Send_Confirm_File>
+       <Confirm_File_Extension>(String)</Confirm_File_Extension>
+       <Line_Feed>(String)</Line_Feed>
+   </OutputFile>
+   <HTTP empty="(man)(Long)">
+      <Interface_Id>(Long)</Interface_Id>
+      <URL>(String) url de la peticion web</URL>
+      <Request_Method>(String) metodo get o post</Request_Method>
+      <Atributo_Url>(String) si 1 los parametros en url</Atributo_Url>
+      <Field_In>(Long) parametros de ida</Field_In>
+      <Class_In>(Long)clase parametros de ida </Class_In>
+      <Field_Out>(Long)parametros de vuelta</Field_Out>
+      <Class_Out>(Long)clase parametros de vuelta</Class_Out>
+      <Atr_Nom>(Long) nombre de atributos</Atr_Nom>
+      <Atr_Val>(Long) valores de atributos</Atr_Val>
+   </HTTP>
+   <WEBSERVICE empty="(man)(Long)">
+      <Interface_Id>(Long)</Interface_Id>
+      <URL>(String) url de la peticion web</URL>
+      <NAME>(String) nombre del webservice</NAME>
+      <OPERATION>(String) nombre de la operacion</OPERATION>
+      <Get_Attch>(Long) flag de obtencion de adjunto</Get_Attch>
+      <Field_In>(Long) parametros de ida</Field_In>
+      <Class_In>(Long)clase parametros de ida </Class_In>
+      <Field_Out>(Long)parametros de vuelta</Field_Out>
+      <Class_Out>(Long)clase parametros de vuelta</Class_Out>
+      <Tipe_Class_Name>(Long)nombre de la clase del tipo compuesto</Tipe_Class_Name>
+      <Namespace_Uri>(Long) NameSpace URI</Namespace_Uri>
+      <Localpart_Qname>(Long)LocalPart QName</Localpart_Qname>  
+   </WEBSERVICE>
+   <Format>
+       <Fields Id_Data="(Long)" Order="(Long)" Data="(String)" Type="(String)" >(seq)</Fields>
+   </Format>
+   <Modules>
+        <Destine_Module>(man)(String)</Destine_Module>
+        <Source_Module>(man)(String)</Source_Module>  
+        <Id_Module>(man)(Long)</Id_Module>
+   </Modules>
+</CenBdiUpdateInterface>

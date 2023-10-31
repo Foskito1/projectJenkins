@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiSyPChangeUserTimeZone>
+    <user_data>
+		<user_id>(Long)Id Usuario</user_id>
+		<zona_horaria_windows>(String)Zona horaria Windows</zona_horaria_windows>
+    </user_data>
+</CenBdiSyPChangeUserTimeZone>

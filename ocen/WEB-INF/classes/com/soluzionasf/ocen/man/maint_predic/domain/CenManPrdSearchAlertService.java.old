@@ -1,0 +1,281 @@
+/**
+$Log: not supported by cvs2svn $
+*/
+
+/**
+Copyright
+////////////////////////////////////////////////////////////////////////////////
+//
+// Copyright (c) 2000 Unión Fenosa - Soluziona - S.A. All Rights Reserved.
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+// This software is the confidential and proprietary information of
+// Union Fenosa - Soluziona S.A.. You shall not disclose such confidential 
+// information and shall not accordance with the terms of the license 
+// agreements you entered into with Union Fenosa - Soluziona S.A..
+//
+////////////////////////////////////////////////////////////////////////////////
+ */
+
+package com.soluzionasf.ocen.man.maint_predic.domain;
+
+
+import java.util.Vector;
+import java.util.Hashtable;
+import java.sql.Connection;
+import java.sql.SQLException;
+import isf.servlets.Request;
+import isf.servlets.Result;
+import isf.servlets.InvalidRequest;
+import isf.servlets.InvalidResult;
+import isf.servlets.MissingMandatoryFieldException;
+import isf.servlets.InvalidValueFormatException;
+import isf.persistence.GcgcCorruptedRegisterException;
+import isf.util.GcqsQuerySystemException;
+import com.soluzionasf.ocen.domain.CenManStandardService;
+import com.soluzionasf.ocen.domain.ExecuteObject;
+import com.soluzionasf.ocen.man.maint_predic.servlets.ICenManPrdSearchAlertRequest;
+import com.soluzionasf.ocen.man.maint_predic.servlets.CenManPrdSearchAlertRequestDOMImpl;
+import com.soluzionasf.ocen.util.CenBusinessRuleException;
+import com.soluzionasf.ocen.util.Exception_helper;
+import com.soluzionasf.ocen.util.String_helper;
+import com.soluzionasf.ocen.man.common.domain.CenManShared;
+import com.soluzionasf.ocen.util.ObjectAnalyzer;
+
+
+/** class that implements the service to update a Characteristic with its values
+	associated
+@author $
+@version $
+@since 2003.1
+@invariant $none
+*/
+
+public class CenManPrdSearchAlertService extends 
+	CenManStandardService {
+	
+	/**
+	Convert to string format the instance of the class. This method respect
+	the Sun Java Convention for this type of methods.
+	@return Instance of the class converted into string format, it informs
+	about parent information, service and table name.
+	@pre $none
+	@post $none
+	*/
+	public String toString() {
+		return ObjectAnalyzer.toString(this, false, true);
+	}
+	
+	
+	/**
+	{@inheritDoc}
+	It implements the retrieve of the alerts.
+	@pre $none
+	@post $none
+	@param object Object associated with the service execution.
+	@throws com.soluzionasf.ocen.domain.CenBusinessRuleException If any business
+	rule is violated. It is also used for rethrowing any other type of
+	exception.
+	*/
+	protected void executeBusiness(ExecuteObject object) 
+		throws CenBusinessRuleException {
+		executeBusinessImpl(object);
+	}
+	
+	/**
+	Implements the method 
+	{@link #executeBusiness(ExecuteObject object) 
+	executeBusiness(ExecuteObject)}. In case of fail a exception
+	will be thrown.
+	@pre $none
+	@post $none
+	@param object Object associated with the service execution.
+	@throws CenBusinessRuleException If any business
+	rule is violated. It is also used for rethrowing any other type of
+	exception, for example: {@link InvalidRequest InvalidRequest},
+	{@link SQLException SQLException}.
+	*/
+	private void executeBusinessImpl(ExecuteObject object) 
+		throws CenBusinessRuleException {
+		
+		// Input Data Variable
+		final ICenManPrdSearchAlertRequest REQUEST = 
+			(ICenManPrdSearchAlertRequest) (Object.getRequest());
+		ICenManPrdSearchAlertRequest.SearchAlert rqSearchAlert = null;
+		
+		// Output Data Variable
+		ResultDBQueryDOMImpl result = null;
+		
+		// Local Data Variable
+		CenManPrdSearchAlertData wSearchAlert = null;
+		
+		// Get Log instance
+		logInstance = Log.getInstance();
+		
+		/////////////////////////////
+		// Main process
+		////////////////////////////
+		
+		logInstance.trace("[" + (new Timestamp(System.currentTimeMillis())).toString() + "]: Comienzo del método <executeBusinessImpl> del servicio <CenManPrdSearchAlertService> " );
+		
+		// Execute
+		try {
+			
+			// Initialize the Output data
+			result = new ResultDBQueryDOMImpl();
+			
+			// Initialize the Local data
+			wSearchAlert = new CenManPrdSearchAlertData();
+			
+			// Gets the Input data
+			rqSearchAlert = REQUEST.getSearchAlert();
+			
+			// Store the data in the Work Class
+			getsSearchAlert (rqSearchAlert,wSearchAlert);
+			
+			// Call the Helper method
+			result = CenManPrdAlertsHelper.SearchAlert(wSearchAlert,object);
+			
+			// Assign the Output Data
+			object.setBusinessObject(result);
+			
+			// Commit the session
+			object.commit();
+			
+			logInstance.trace("[" + (new Timestamp(System.currentTimeMillis())).toString() + "]: Fin del método <executeBusinessImpl> del servicio <CenManPrdSearchAlertService> " );
+			
+		// Catch,s of the method,s
+		} catch (CenBusinessRuleException irException) {
+			throw irException;
+		} catch (InvalidRequest irException) {
+			final String KEY = _INVALID_XML_FORMAT;
+			final String MESSAGE = String_helper.format(
+				object.getBundleValue(Key), new Integer(_INPUT));
+			object.rollback();
+			Exception_helper.convertToCenBusinessRuleException(
+				irException,_ERROR_BUSSINES_CODE, KEY, MESSAGE);
+		} catch (InvalidResult irException) {
+			final String KEY = _INVALID_XML_FORMAT;
+			final String MESSAGE = object.getBundleValue(KEY);
+			object.rollback();
+			Exception_helper.convertToCenBusinessRuleException(
+				irException, _ERROR_BUSSINES_CODE, KEY, MESSAGE);
+		}
+	}
+	
+	
+	 /**
+	 Implements the method that extract from the request and store in work 
+	 class the information of the select criteria of alerts
+	 @pre $none
+	 @post $none
+	 @param ICenManPrdSearchAlertRequest.SearchAlert rqSearchAlert as Request.
+	 @param CenManPrdSearchAlertData wSearchAlert as Work Class
+	 @throws CenBusinessRuleException If any business rule is violated. 
+	 It is also used for rethrowing any other type of exception, 
+	 for example: {@link InvalidRequest InvalidRequest},
+	 @throws InvalidRequest
+	 */
+	private static void getsSearchAlert(
+		ICenManPrdSearchAlertRequest.SearchAlert rqSearchAlert,
+		CenManPrdSearchAlertData wSearchAlert) 
+		throws CenBusinessRuleException {
+		
+		// Get Log instance
+		logInstance = Log.getInstance();
+		
+		/////////////////////////////
+		// Main process
+		////////////////////////////
+		
+		logInstance.trace("[" + (new Timestamp(System.currentTimeMillis())).toString() + "]: Comienzo del método <getsSearchAlert> del servicio <CenManPrdSearchAlertService> " );
+		
+		// Execute
+		try {
+			
+			if (rqSearchAlert.getCodInstrumentType() != null){
+				wSearchAlert.setCodInstrumentType(rqSearchAlert.getCodInstrumentType());
+			}
+			if (rqSearchAlert.getCodInstrument() != null){
+				wSearchAlert.setCodInstrument(rqSearchAlert.getCodInstrument());
+			}
+			if (rqSearchAlert.getCodParam() != null){
+				wSearchAlert.setCodParam(rqSearchAlert.getCodParam());
+			}
+			if (rqSearchAlert.getStateAlert() != null){
+				wSearchAlert.setStateAlert(rqSearchAlert.getStateAlert());
+			}
+			if (rqSearchAlert.getCriticidad() != null){
+				wSearchAlert.setCriticidad(rqSearchAlert.getCriticidad());
+			}
+			if (rqSearchAlert.getFlagSolGenerada() != null){
+				wSearchAlert.setFlagSolGenerada(rqSearchAlert.getFlagSolGenerada());
+			}
+			if (rqSearchAlert.getDateIniDetection() != null){
+				wSearchAlert.setDateIniDetection(new java.sql.Timestamp(rqSearchAlert.getDateIniDetection().getTime()));
+			}
+			if (rqSearchAlert.getDateFinDetection() != null){
+				wSearchAlert.setDateFinDetection(new java.sql.Timestamp(rqSearchAlert.getDateFinDetection().getTime()));
+			}
+			if (rqSearchAlert.getDateIniRecognize() != null){
+				wSearchAlert.setDateIniRecognize(new java.sql.Timestamp(rqSearchAlert.getDateIniRecognize().getTime()));
+			}
+			if (rqSearchAlert.getDateFinRecognize() != null){
+				wSearchAlert.setDateFinRecognize(new java.sql.Timestamp(rqSearchAlert.getDateFinRecognize().getTime()));
+			}
+			
+			logInstance.trace("[" + (new Timestamp(System.currentTimeMillis())).toString() + "]: Fin del método <getsSearchAlert> del servicio <CenManPrdSearchAlertService> " );
+			
+		// Catch,s of the method,s
+		} catch (CenBusinessRuleException irException) {
+			throw irException;
+		} catch (InvalidRequest irException) {
+			final String KEY = _INVALID_XML_FORMAT;
+			final String MESSAGE = String_helper.format(
+				object.getBundleValue(Key), new Integer(_INPUT));
+			object.rollback();
+			Exception_helper.convertToCenBusinessRuleException(
+				irException,_ERROR_BUSSINES_CODE, KEY, MESSAGE);
+		} catch (InvalidResult irException) {
+	}
+	
+	/**
+	{@inheritDoc}
+	@param object
+	Return the result of selection criteria of alerts.
+	@return The result of selection criteria of alerts.
+	@throws CenBusinessRuleException If the request/result is not valid. It
+	simply re throws the corresponding exceptions:
+	{@link InvalidRequest InvalidRequest}, {@link InvalidResult InvalidResult}.
+	@pre $none
+	@post $result != null
+	*/
+	protected Result getResult(ExecuteObject object) 
+		throws CenBusinessRuleException {
+		ResultDBQueryDOMImpl result = null;
+		result = (ResultDBQueryDOMImpl) object.getBusinessObject();
+		return result;
+	}
+	
+	/**
+	Represents the choise format (input), for the bundle key
+	{@link BundleKey#_INVALID_XML_FORMAT BundleKey#_INVALID_XML_FORMAT}. 
+	Value
+	{@value}.
+	@see MessageFormat
+	*/
+	private static final int _INPUT = 0;
+	
+	/**
+	Key that represents the bussines error code.
+	*/
+	private final static int _ERROR_BUSSINES_CODE = 
+		CenManShared.ERROR_BUSSINES_CODE;
+	
+	/**
+	Key that represents the event: The xml format is invalid.
+	*/
+	private final static String _INVALID_XML_FORMAT = "InvalidXMLFormat";
+	
+}

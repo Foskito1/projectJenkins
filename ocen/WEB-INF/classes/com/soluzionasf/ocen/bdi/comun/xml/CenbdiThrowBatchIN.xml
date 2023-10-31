@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<CenbdiThrowBatch>
+	<DatosBatch>
+		<id_batch_list>(Long) Identificador del proceso</id_batch_list>
+		<param>(String) Parámetros para el batch</param>
+		<nodo>(String) Nodo seleccionado</nodo>
+		<correo>(String) Correo introducido</correo>
+		<user>(String) Usuario</user>
+		<hora>(String) Hora seleccionada</hora>
+		<prog_tipo>(String) Tipo de programacion: PUNTUAL, FECHA, PERIODICO</prog_tipo>
+		<prog_fecha>(DateTime) Fecha de programación (No aplica MTZ. Hora de referencia) </prog_fecha>
+		<prog_mins>(String) Minutos en los que debe ejecutarse un proceso periódico.</prog_mins>
+		<prog_horas>(String) Horas en las que debe ejecutarse un proceso periódico.</prog_horas>
+		<prog_dias_mes>(String) Dias del mes en los que debe ejecutarse un proceso periódico.</prog_dias_mes>
+		<prog_dias_sem>(String) Dias de la semana en los que debe ejecutarse un proceso periódico.</prog_dias_sem>
+		<prog_meses>(String) Meses en los que debe ejecutarse un proceso periódico.</prog_meses>
+	</DatosBatch>
+</CenbdiThrowBatch>

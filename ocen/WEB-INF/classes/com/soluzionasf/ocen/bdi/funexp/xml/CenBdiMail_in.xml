@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiMail>
+   <TO>(man)(String)</TO>
+   <SUBJECT>(String)</SUBJECT>
+   <MESSAGE>(man)(String)</MESSAGE>
+</CenBdiMail>

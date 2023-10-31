@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<inventory>
+   <DataGeneral type_element="(String)" cod_funtional="(String)" funtional_parent="(String)" sequential_company="(String)" name_funtional="(String)" cod_element_type="(String)" num_level="(String)" cod_inventory="(String)" name_inventory="(String)" item="(String)" item_f="(String)" sequential_inventory="(String)" maker="(String)" mark="(String)" model="(String)" num_serial="(String)" class_element="(String)" cod_bar="(String)" situation="(String)" observations="(String)" cod_special_location="(String)" sequential_elements="(String)" functional_st="(String)" inventory_st="(String)" active_st="(String)" deleted_st="(String)" element_table="(String)" indentif_type="(String)" indentif="(String)" company="(String)" type_info_retornada="(String)"/>
+   <DataTechnical id_rest="(String)" characterist_name="(String)" characterist_value="(String)" value_from="(String)" value_to="(String)">(seq)</DataTechnical>
+</inventory>

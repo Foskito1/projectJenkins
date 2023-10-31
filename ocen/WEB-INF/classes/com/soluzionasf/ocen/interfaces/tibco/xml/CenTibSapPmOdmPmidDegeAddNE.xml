@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibSapPmOdmPmidDegeAddNE>
+	<SapPmOdmPmidDegeAddNE>
+		<CodOdm>(String)(man)</CodOdm>
+		<OperacionOdm>(String)(man)</OperacionOdm>
+		<CodRdl>(String)(man)</CodRdl>
+		<TipoActividad>(String)(man)</TipoActividad>
+		<FecActualizacion>(DateTimeI18n)(man)</FecActualizacion>
+		<HorActualizacion>(DateTimeI18n)(man)</HorActualizacion>
+		<DesExito>(String)(man)</DesExito>
+		<CodExito>(String)(man)</CodExito>
+	    <IdMsg>(String)(man)</IdMsg>		
+	</SapPmOdmPmidDegeAddNE>
+</CenTibSapPmOdmPmidDegeAddNE>

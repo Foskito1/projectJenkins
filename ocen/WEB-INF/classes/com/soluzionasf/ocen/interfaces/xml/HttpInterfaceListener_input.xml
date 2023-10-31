@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<HttpInterfaceListener>
+   <IdInterface>(String) Interface Id</IdInterface>
+   <CodInterface>(String) Interface Code</CodInterface>
+   <UserName>(String)(man) User Name For Validation</UserName>
+   <Password>(String)(man) User Name For Validation</Password>
+   <XmlOut>(String)if 1 the output format is xml, otherwise text plain </XmlOut>
+   <ParamList>
+      <Param>(sequence_item)             
+         <Name>(String) parameter name no mandatory</Name>
+         <Value>(String)(man) parameter value</Value>      
+      </Param>
+   </ParamList>
+</HttpInterfaceListener>

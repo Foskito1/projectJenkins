@@ -1,0 +1,16 @@
+<weblogic-ejb-jar xmlns="http://www.bea.com/ns/weblogic/10.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <weblogic-enterprise-bean>
+    <ejb-name>ocen.interfases.tibco.mdb.CenTibcoLibPwayAnagraficaMeasureMdb</ejb-name>
+    <message-driven-descriptor>
+      <pool>
+        <max-beans-in-free-pool>200</max-beans-in-free-pool>
+        <initial-beans-in-free-pool>5</initial-beans-in-free-pool>
+      </pool>
+      <destination-jndi-name>OCEN.INTERFASES.TIBCO.JMS.60.2</destination-jndi-name>
+    </message-driven-descriptor>
+    <jndi-name>ocen.interfases.tibco.mdb.CenTibcoLibPwayAnagraficaMeasureMdb</jndi-name>
+  </weblogic-enterprise-bean>
+  <weblogic-compatibility>
+    <entity-always-uses-transaction>true</entity-always-uses-transaction>
+  </weblogic-compatibility>
+</weblogic-ejb-jar>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibSapPmCatPerfilAddNE>
+	<SapPmCatPerfilAddNE>
+		<CodPerfil>(String)(man)</CodPerfil>
+		<IdMsg>(String)(man)</IdMsg>
+		<FecAct>(DateTimeI18n)(man)</FecAct>
+		<HorAct>(DateTimeI18n)(man)</HorAct>
+		<DesExito>(String)(man)</DesExito>
+		<CodExito>(String)(man)</CodExito>
+		<SapSystem>(String)(man)</SapSystem>
+		<SapClient>(String)(man)</SapClient>
+		<DesSystem>(String)(man)</DesSystem>
+	</SapPmCatPerfilAddNE>
+</CenTibSapPmCatPerfilAddNE>

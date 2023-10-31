@@ -1,0 +1,309 @@
+<html>
+<head>
+<title>Impresión de los datos de un apunte</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+/* Título del informe  */
+.bigtitle
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center ;
+	border-collapse: collapse;
+	border-color:black ;
+	border-width:1px ;
+	border-style:solid;
+	line-height: 1.4;
+}
+/* Campo con borde oscuro a la izquierda */
+.leftnormal
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.4;
+	text-align: left;
+	border-style: solid;
+	vertical-align: top
+}
+
+/* Campo con borde claro a la izquierda */
+.leftnormalclaro
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.4;
+	text-align: left;
+	border-width: 1px;
+	border-color: white;
+	border-style: none;
+	vertical-align: top
+}
+
+/* Campo en negrita con borde claro a la izquierda */
+.leftnormalbold
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1.4;
+	text-align: left;
+	border-style: none;
+	vertical-align: top
+	border-collapse: collapse;
+}
+/* Campo con borde, negrita y centrado */
+.centerbold
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1.4;
+	text-align: center;
+	border-style: solid;
+	vertical-align: top
+}
+.textarea
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+	border-style: none;
+	scrollbar-track-color: White;
+	scrollbar-shadow-color: White;
+	scrollbar-highlight-color: White;
+	scrollbar-face-color: White;
+	scrollbar-darkshadow-color: White;
+	scrollbar-base-color: White;
+	scrollbar-arrow-color: White;
+}
+.table {  text-align: center; vertical-align: super; width: 100%; border-collapse: collapse;}
+.headertable 	{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ;  }
+.row1 		{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; horizontal-align: center; text-align: left ; border-color:black ; border-width:1px ; border-style:solid ; }
+</style>
+
+
+<script language="JavaScript">
+
+//Función para saber si mostramos un evento/actividad o una anomalía
+function esEvAct() {
+	var res = '|root.CENOPE_QRY_RELA_IMPR_DET_APUNTE.Row@IND_EV_ACT|';
+	return res;
+};
+
+function showIncGen() {
+	var res = '|root.CENOPE_QRY_RELA_PERM_IMPR_INC_GEN.Row@VALOR|';
+	return res;
+};
+
+function showVert() {
+	var res = '|root.CENOPE_QRY_RELA_PERM_IMPR_VERT.Row@VALOR|';
+	return res.toUpperCase();
+};
+
+function showParam() {
+	var res = '|root.CENOPE_QRY_RELA_PERM_IMPR_PARAM.Row@VALOR|';
+	return res;
+};
+
+</script>
+
+<script language="JavaScript">
+function replaceAll( text, busca, reemplaza ){  
+  while (text.toString().indexOf(busca) != -1){      
+    text = text.toString().replace(busca,reemplaza);  
+  }  
+  return text;
+}
+</script>
+
+
+</head>
+
+<body bgcolor="#ffffff">
+
+<table width="100%" border="0">
+<tr> 
+	<td> 
+		<table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+		<tr> 	<!-- Título general del informe y logo -->
+	          	<td rowspan="7" width="12%"><IMG src="\images\UFGN3.jpg"></td>
+      	    	<td colspan="3" class = 'bigtitle'> <b>Detalle del Apunte 						|root.CENOPE_QRY_RELA_IMPR_DET_APUNTE.Row@DES_RELA_EV_ACT| &nbsp;</b> </td>	
+		</tr>
+		<tr> 	<!-- Datos Generales del apunte -->
+			<td>
+				<tr>
+		 	    	<td  class = 'centerbold' width = "20%" bgcolor="#c0c0c0">Fecha de Inicio</td>
+					<td  class = 'centerbold' width="20%" bgcolor="#c0c0c0">Fecha de Fin</td>
+				</tr>
+				<tr>
+					<td class = 'leftnormal'>|root.CENOPE_QRY_RELA_IMPR_DET_APUNTE.Row@FEC_HOR_INI |&nbsp;</td>
+		 	    	<td class = 'leftnormal'>|root.CENOPE_QRY_RELA_IMPR_DET_APUNTE.Row@FEC_HOR_FIN |&nbsp;</td>
+				</tr>
+			</td>
+        <TR>
+			<td>
+				<tr>
+	   	 		<td  class = 'centerbold' width="20%" bgcolor="#c0c0c0">Instalación</td>
+					<td  class = 'centerbold' width="20%" bgcolor="#c0c0c0">Elemento</td>
+				</tr>
+        <TR>
+					<td class = 'leftnormal'>|root.CENOPE_QRY_RELA_IMPR_DET_APUNTE.Row@DES_INSTALACION| &nbsp;</td>
+     	    		<td class = 'leftnormal'>|root.CENOPE_QRY_RELA_IMPR_DET_APUNTE.Row@DES_EQUIPO_AFECTADO|&nbsp;</td></TR></TR></table>
+		<table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+		<tr> 
+			<tr>
+				<td class = 'leftnormalbold'> Comentario:</td>				
+			</tr>
+			<tr>
+				<td class = 'leftnormalclaro'>|SOFT_BLANKS(root.CENOPE_QRY_RELA_IMPR_DET_APUNTE.Row@DES_DESCRIPCION)|&nbsp;</td>
+			</tr>	
+		</tr>
+		</table>
+<BR>
+<BR>
+
+<script language="JavaScript">
+<!--Mostramos los datos adicionales si se trata de un evento/actividad -->
+var evAct;
+var datos;
+evAct = esEvAct();
+//Si evAct = 1 quiere decir que se trata de un evento/Actividad y hay que mostrar los datos adicionales
+if (evAct == 1)
+	 {datos= '|GRID(root,&QUOT;{table:class=table,row1=row1,row2= row1}{column:	name=Nº 		Orden,type=  		number,block=CENOPE_QRY_RELA_IMPR_DAT_PROP_APUNTE,label=NUM_ORDEN, class=headertable}{column:name=Descripci&oacute;n 		,type=string, block= 		CENOPE_QRY_RELA_IMPR_DAT_PROP_APUNTE,label=DES_CAMPO_PROPIO, 		class=headertable}{column:name=Valor,type=string,block=CENOPE_QRY_RELA_IMPR_DAT_PROP_APUNTE,label= 		DES_VALOR,class=headertable}{column:name=Unidad ,type= 		string,block=CENOPE_QRY_RELA_IMPR_DAT_PROP_APUNTE,label=DES_UNIDAD, class=headertable}&QUOT;)|'
+
+	document.writeln("	<table width='100%' border='1' bordercolor='#000000' cellspacing='0'> ");
+	document.writeln("	  <tr> ");
+	document.writeln("	    <td class='headertable' bgcolor='#c0c0c0'> ");
+	document.writeln("	      <b>DATOS ADICIONALES</b> ");
+	document.writeln("	    </td> ");
+	document.writeln("	  </tr> ");
+	document.writeln("	  <tr>  ");
+	document.writeln("	    	    <td>" + datos + "  </td>  ");	    
+	document.writeln("	  </tr>  "); 
+	document.writeln("	</table>  ");
+
+}
+
+// end hide -->
+</script>
+
+<script language="JavaScript">
+<!--Mostramos los datos de los parametros  -->
+var evParam;
+var datosParam;
+evParam = showParam();
+//Si evParam = 1 quiere decir que hay que mostrar los datos de los parametros?
+if (evParam == 1)
+	 {datosParam= '|GRID(root,&QUOT;{table:class=table,row1=row1,row2= row1}{column:name=ORDEN,type=string,block=CENOPE_QRY_RELA_IMPR_PARAM,label=NUM_ORDEN, class=headertable}{column:name=NOMBRE DEL CAMPO,type=string,block=CENOPE_QRY_RELA_IMPR_PARAM,label=DES_MEDIDA, class=headertable}{column:name=FECHA HORA,type=string,block=CENOPE_QRY_RELA_IMPR_PARAM,label=FECHA, class=headertable}{column:name=MEDICIÓN,type=string,block=CENOPE_QRY_RELA_IMPR_PARAM,label=MEDICION, class=headertable}&QUOT;)|'
+    document.writeln(" <br> ");
+    document.writeln(" <br> ");
+    document.writeln("	<table width='100%' border='1' bordercolor='#000000' cellspacing='0'> ");
+	document.writeln("	  <tr> ");
+	document.writeln("	    <td class='headertable' bgcolor='#c0c0c0'> ");
+	document.writeln("	      <b>PARÁMETROS/MEDIDAS</b> ");
+	document.writeln("	    </td> ");
+	document.writeln("	  </tr> ");
+	document.writeln("	  <tr>  ");
+	document.writeln("	    	    <td>" + datosParam + "  </td>  ");	    
+	document.writeln("	  </tr>  "); 
+	document.writeln("	</table>  "); 
+}
+
+// end hide -->
+</script>
+<BR>
+<BR>
+<script>
+  var datosParam;
+  datosParam = '|GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1,escape_js=true}{column:name=Fecha Comentario,type= datetime,block=CENOPE_QRY_RELA_IMPR_OBT_COMENTARIOS,label= FEC_HOR_COMENTARIO,class=headertable}{column:name=Usuario ,type=string, block=CENOPE_QRY_RELA_IMPR_OBT_COMENTARIOS, label= DES_USUARIO,class=headertable}{column:name=Comentario ,type=string, block=CENOPE_QRY_RELA_IMPR_OBT_COMENTARIOS, label=DES_COMENTARIO, class=headertable, formatter=MULTILINE}&QUOT;)|';
+  datosParam = replaceAll(datosParam, "&nbsp;", " ");
+	document.writeln("	<!-- Tabla de comentarios --> ");
+	document.writeln("	<table width='100%' border='1' bordercolor='#000000' cellspacing='0'>");
+	  document.writeln("	<tr> ");
+	    document.writeln("	<td class='headertable' bgcolor='#c0c0c0'>"); 
+	      document.writeln("	<b>COMENTARIOS RELACIONADOS</b>");
+	    document.writeln("	</td>");
+	  document.writeln("	</tr>");
+document.writeln("	  	  <tr>");
+document.writeln("<td> " + datosParam	+ "</td>");
+document.writeln("	    	</tr>");
+	  document.writeln("	</table>");
+	  document.writeln("	</tr>");
+	document.writeln("	</table>");
+</script>
+
+<BR>
+<BR>
+	<!-- Tabla de Incidencias relacionadas con el apunte-->
+	<table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+	<tr> 
+	    <td class="headertable" bgcolor="#c0c0c0"> 
+	      <b>INCIDENCIAS RELACIONADAS</b>
+	    </td>
+	</tr>
+	<tr> 
+		<td> |GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1}{column:name=Cód.Incidencia,type=string,block=CENOPE_QRY_RELA_IMPR_OBT_ININ,label= COD_ININ_INCIDENCIAS_USU,class=headertable}{column:name=Estado,type=string,block=CENOPE_QRY_RELA_IMPR_OBT_ININ,label= DES_ESTADO, class=headertable}{column:name=Fecha Inicio,type= datetime,block=CENOPE_QRY_RELA_IMPR_OBT_ININ,label= FEC_HOR_INI, class=headertable}{column:name=Fecha Fin,type=datetime, block=CENOPE_QRY_RELA_IMPR_OBT_ININ,label=FEC_HOR_FIN,class=headertable}{column:name=Elemento,type= string,block=CENOPE_QRY_RELA_IMPR_OBT_ININ,label= NOM_FUNCIONAL,class=headertable}{column:name=Tipo, type=string, block=CENOPE_QRY_RELA_IMPR_OBT_ININ, label= DES_CORT_TIPOS,class=headertable}{column:name=Fallo, type=string, block=CENOPE_QRY_RELA_IMPR_OBT_ININ, label= DES_CORT_FALLOS,class=headertable}{column:name=Origen, type=string, block=CENOPE_QRY_RELA_IMPR_OBT_ININ, label=DES_CORT_ORIGENES, class=headertable}&QUOT;)|</td>
+	</tr>	
+	</table>
+
+<script language="JavaScript">
+<!--Mostramos los datos de incidencias de generacion  -->
+var evIncGen;
+var datosInGen;
+evIncGen = showIncGen();
+//Si evAct = 1 quiere decir que hay que mostrar los datos de las incidencias de generacion
+if (evIncGen == 1)
+	 {datosInGen= '|GRID(root,&QUOT;{table:class=table,row1=row1,row2= row1}{column:name=CODIGO,type=string,block=CENOPE_QRY_RELA_IMPR_INC_GEN,label=COD_INGE_DETALLE_USU, class=headertable}{column:name=NODO ASOCIADO,type=string,block=CENOPE_QRY_RELA_IMPR_INC_GEN,label=DES_NODO, class=headertable}{column:name=ESTADO,type=string,block=CENOPE_QRY_RELA_IMPR_INC_GEN,label=DES_ESTADO, class=headertable}{column:name=FECHA/HORA INICIO,type=string,block=CENOPE_QRY_RELA_IMPR_INC_GEN,label=FEC_HOR_INI_TS, class=headertable}{column:name=FECHA/HORA FIN,type=string,block=CENOPE_QRY_RELA_IMPR_INC_GEN,label=FEC_HOR_FIN_TS, class=headertable}{column:name=FUNCIÓN,type=string,block=CENOPE_QRY_RELA_IMPR_INC_GEN,label=DES_FUNCION, class=headertable}{column:name=CAUSA,type=string,block=CENOPE_QRY_RELA_IMPR_INC_GEN,label=DES_CAUSA, class=headertable}&QUOT;)|'
+    document.writeln(" <br> ");
+    document.writeln(" <br> ");
+    document.writeln("	<table width='100%' border='1' bordercolor='#000000' cellspacing='0'> ");
+	document.writeln("	  <tr> ");
+	document.writeln("	    <td class='headertable' bgcolor='#c0c0c0'> ");
+	document.writeln("	      <b>INCIDENCIAS GENERACION</b> ");
+	document.writeln("	    </td> ");
+	document.writeln("	  </tr> ");
+	document.writeln("	  <tr>  ");
+	document.writeln("	    	    <td>" + datosInGen + "  </td>  ");	    
+	document.writeln("	  </tr>  "); 
+	document.writeln("	</table>  "); 
+}
+
+// end hide -->
+</script>
+
+<script language="JavaScript">
+<!--Mostramos los datos de los vertidos  -->
+var evVert;
+var datosVert;
+evVert = showVert();
+//Si evAct = 1 quiere decir que hay que mostrar los datos de los vertidos?
+if (evVert == 'TRUE')
+	 {datosVert= '|GRID(root,&QUOT;{table:class=table,row1=row1,row2= row1}{column:name=CODIGO,type=string,block=CENOPE_QRY_RELA_IMPR_VERT,label=COD_VERTIDO, class=headertable}{column:name=CENTRAL,type=string,block=CENOPE_QRY_RELA_IMPR_VERT,label=DES_NODO_CENTRAL, class=headertable}{column:name=ELEMENTO,type=string,block=CENOPE_QRY_RELA_IMPR_VERT,label=DES_ELEMENTO, class=headertable}{column:name=FUNCION,type=string,block=CENOPE_QRY_RELA_IMPR_VERT,label=DES_FUNCION, class=headertable}{column:name=INICIO,type=string,block=CENOPE_QRY_RELA_IMPR_VERT,label=FEC_HOR_INI, class=headertable}{column:name=FIN,type=string,block=CENOPE_QRY_RELA_IMPR_VERT,label=FEC_HOR_FIN, class=headertable}{column:name=ESTADO,type=string,block=CENOPE_QRY_RELA_IMPR_VERT,label=DES_ESTADO, class=headertable}&QUOT;)|'
+    document.writeln(" <br> ");
+    document.writeln(" <br> ");
+    document.writeln("	<table width='100%' border='1' bordercolor='#000000' cellspacing='0'> ");
+	document.writeln("	  <tr> ");
+	document.writeln("	    <td class='headertable' bgcolor='#c0c0c0'> ");
+	document.writeln("	      <b>VERTIDOS</b> ");
+	document.writeln("	    </td> ");
+	document.writeln("	  </tr> ");
+	document.writeln("	  <tr>  ");
+	document.writeln("	    	    <td>" + datosVert + "  </td>  ");	    
+	document.writeln("	  </tr>  "); 
+	document.writeln("	</table>  "); 
+}
+
+// end hide -->
+</script>
+  </td>
+</tr>
+</table>
+
+</body>
+</html>
+

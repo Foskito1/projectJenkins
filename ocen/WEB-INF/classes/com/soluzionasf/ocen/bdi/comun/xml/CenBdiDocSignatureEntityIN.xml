@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<CenBdiDocSignatureEntity>
+	<Signature> (seq)
+		<idEntityType>(Long) (man) Identificador del tipo de entidad </idEntityType>
+		<idEntity>(String) (man) Identificador de la entidad </idEntity>
+		<idDocum>(Long) Identificador del documento firmado</idDocum>
+		<idDocTypeSignature>(Long) (man) Identificador del tipo de documento de la firma</idDocTypeSignature>
+		<flagSigned>(Long) (man) Flag realizada</flagSigned>
+		<userId>(Long) Identificador del usuario de la firma</userId>
+		<signatureDate>(DateTime)(man) Fecha de la firma</signatureDate>
+		<textoFirma>(String) Campo de información extra de firmas</textoFirma>
+	</Signature>
+</CenBdiDocSignatureEntity>

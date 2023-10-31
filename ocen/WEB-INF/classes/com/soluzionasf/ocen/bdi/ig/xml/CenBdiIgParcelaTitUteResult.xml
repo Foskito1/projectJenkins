@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiIgParcelaTitUte>
+	<ParcelaTit>
+		<ListParcelaTitDelete>(seq)
+			<ParcelaTitDelete>
+				<id_parcela_tit>(Long)(man) Id Parcela Tit a borrar</id_parcela_tit>
+				<resultado>(Long)(man) Resultado</resultado>
+			</ParcelaTitDelete>
+		</ListParcelaTitDelete>
+		
+		<ListParcelaTitAltaModif>(seq)
+			<ParcelaTitAltaModif>
+				<id_parcela_tit>(Long)(man) Id Parcela tit a modificar, -1 si es nuevo</id_parcela_tit>
+				<id_parcela_tit_new>(Long)(man) New Id Parcela tit a modificar, -1 si es nuevo</id_parcela_tit_new>
+				<optimist_lock>(Long)(man) optimist_lock</optimist_lock>
+			</ParcelaTitAltaModif>
+		</ListParcelaTitAltaModif>
+	</ParcelaTit>
+	
+	<ParcelaUte>
+		<ListParcelaUteDelete>(seq)
+			<ParcelaUteDelete>
+				<id_parcela_ute>(Long)(man) Id Parcela Ute a borrar</id_parcela_ute>
+				<resultado>(Long)(man) Resultado</resultado>
+			</ParcelaUteDelete>
+		</ListParcelaUteDelete>
+
+		<ListParcelaUteAltaModif>(seq)
+			<ParcelaUteAltaModif>
+				<id_ute_parcela>(Long)(man) Id ute parcela a modificar, -1 si es nuevo</id_ute_parcela>
+				<id_ute_parcela_new>(Long)(man) Id ute parcela a modificar, -1 si es nuevo</id_ute_parcela_new>
+				<optimist_lock>(Long)(man) optimist_lock</optimist_lock>
+			</ParcelaUteAltaModif>
+		</ListParcelaUteAltaModif>
+	</ParcelaUte>
+
+</CenBdiIgParcelaTitUte>

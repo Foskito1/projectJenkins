@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibGeodeInvioConsumoNE>
+	<GeodeInvioConsumoNE>
+		<Id1>(Long)</Id1>
+		<AmountCoal> (Double) </AmountCoal>
+		<DesExito>(String) </DesExito>
+		<IdMsg>(String) </IdMsg>
+	</GeodeInvioConsumoNE>
+</CenTibGeodeInvioConsumoNE>

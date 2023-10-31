@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibRupAnagraficaUPNE>
+	<RupAnagraficaUPNE>(man)
+		<CodUP>(String)(man)</CodUP>
+		<IdMsg>(String)(man)</IdMsg>
+		<Fecha>(DateTimeI18n)(man) Data-Ora Variazione (gg/mm/aaaa hh:mm)</Fecha>
+		<DesExito>(String)(man) Stringa con descrizione esito OK/KO</DesExito>
+	</RupAnagraficaUPNE>
+</CenTibRupAnagraficaUPNE>

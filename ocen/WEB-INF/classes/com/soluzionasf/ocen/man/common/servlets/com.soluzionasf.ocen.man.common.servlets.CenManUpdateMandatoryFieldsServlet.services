@@ -1,0 +1,1 @@
+CENMAN.updateMandatoryFields;com.soluzionasf.ocen.man.common.domain.CenManUpdateMandatoryFieldsService;com.soluzionasf.ocen.man.common.servlets.CenManUpdateMandatoryFieldsRequestDOMImpl

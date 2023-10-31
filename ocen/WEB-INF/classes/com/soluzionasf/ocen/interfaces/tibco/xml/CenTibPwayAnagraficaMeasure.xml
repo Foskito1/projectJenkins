@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibPwayAnagraficaMeasure>
+	<PwayAnagraficaMeasure>
+		<CodInventoryFather>(String)(man)</CodInventoryFather>
+		<CodInventory>(String)(man)</CodInventory>
+		<DesInventory>(String) (man)</DesInventory>
+		<FlgState>(String) (man)</FlgState>
+		<SapSystem>(String) (man)</SapSystem>
+		<SapClient>(String) (man)</SapClient>
+		<ListMeaCont> (sequence_item)(man)
+			<CodMeasure>(long) (man)</CodMeasure>	
+			<DesMeasure>(String) (man)</DesMeasure>	
+			<CodUnit>(String) (man)</CodUnit>	
+			<ValMinAlarm>(double)</ValMinAlarm>	
+			<ValMaxAlarm>(double) </ValMaxAlarm>	
+			<ValDescent>(double) </ValDescent>	
+			<ValAscen>(double)</ValAscen>	
+			<ValMinTool>(double) </ValMinTool>	
+			<ValMaxTool>(double)</ValMaxTool>	
+			<TypeMeasure>(String) (man)</TypeMeasure>	
+			<NumInt>(long) </NumInt>
+			<NumDec>(long) </NumDec>
+			<Periodicity>(String) </Periodicity>
+			<CodBars>(String) </CodBars>
+		</ListMeaCont>
+		<IdMsg>(String)</IdMsg>
+	</PwayAnagraficaMeasure>
+</CenTibPwayAnagraficaMeasure>

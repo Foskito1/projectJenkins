@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibPIMeasurementAutoNE>
+	<PIMeasurementAutoNE>
+		<IdMsg>(String)</IdMsg>
+		<ListMeaAutoNE> (sequence_item)
+			<CodSuccess>(String)</CodSuccess>
+			<DesSuccess>(String)</DesSuccess>
+			<ValueType>(String)</ValueType>
+			<TagPI>(String)</TagPI>
+			<DateMeasurement>(Date)</DateMeasurement>
+		</ListMeaAutoNE>	
+	</PIMeasurementAutoNE>
+</CenTibPIMeasurementAutoNE>

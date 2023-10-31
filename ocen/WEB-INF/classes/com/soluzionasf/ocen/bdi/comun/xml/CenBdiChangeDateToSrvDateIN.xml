@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiChangeDateToSrvDateIN>
+	<DateOperations>
+		<elemento>(seq)
+			<id_zona_horaria>(Long) Zona horaria origen destino</id_zona_horaria>
+			<id_usuario>(Long) Id Usuario para obtener la zona horaria</id_usuario>
+			<tipo_operacion>(Integer)(man)0 conversión hora local a hora referencia, 1 conversión hora referencia a hora local</tipo_operacion>
+			<fecha_convertir>(DateTime)(man) Fecha a convertir</fecha_convertir>
+		</elemento>	
+	</DateOperations>
+</CenBdiChangeDateToSrvDateIN>

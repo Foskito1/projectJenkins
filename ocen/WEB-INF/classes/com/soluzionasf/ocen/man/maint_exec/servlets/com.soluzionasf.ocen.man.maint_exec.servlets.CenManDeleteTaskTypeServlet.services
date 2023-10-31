@@ -1,0 +1,1 @@
+CENMAN.deleteEmTipoTareas;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmTipoTareasDeleteService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmTipoTareasDeleteRequestDOMImpl

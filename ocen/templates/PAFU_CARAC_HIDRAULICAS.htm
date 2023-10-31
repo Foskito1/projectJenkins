@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+.table {  text-align: center; vertical-align: super; width: 100%; border-collapse: collapse;}
+.headertable 	{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; font-style: normal; line-height: normal; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ;  }
+.headertable1 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; font-style: normal; line-height: normal; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ;  }
+.left 	{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; font-style: normal; line-height: normal; text-align: left ; border-color:black ; border-width:1px ; border-style:solid ;  }
+.right 	{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; font-style: normal; line-height: normal; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ;  }
+.center	{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; font-style: normal; line-height: normal; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ;  }
+.row1 		{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; font-style: normal; line-height: normal; horizontal-align: center; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ; }
+.textarea
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.4;
+	text-align: left;
+	border-style: none;
+	vertical-align: top;
+	overflow:hidden;
+	scrollbar-track-color: White;
+	scrollbar-shadow-color: White;
+	scrollbar-highlight-color: White;
+	scrollbar-face-color: White;
+	scrollbar-darkshadow-color: White;
+	scrollbar-base-color: White;
+	scrollbar-arrow-color: White;
+}
+</style>
+</head>
+
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="100%" border="0">
+  <tr>
+    <td>
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td width="20%" rowspan="3"><img src="/images/UFGN3.jpg" width="150"></td>
+          <td colspan="2" rowspan="2" align="center"><b>CARACTER&Iacute;STICAS
+            Y CONDICIONES DE SUMINISTRO </b></td>
+          <td width="20%" class="left">Fecha de Aplicaci&oacute;n</td>
+          <td width="15%" class="left">J. Operaci&oacute;n</td>
+        </tr>
+        <tr>
+          <td class="left">D&iacute;a: |TO_DATE(root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@FEC_HOR_APLICACION,
+            &quot;dd/MM/yyyy&quot;)|</td>
+          <td rowspan="2" class="left">&nbsp;|root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@DESCRIPCION|&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="25%" class="left">Central: |root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@NOM_FUNCIONAL|</td>
+          <td class="left">N&ordm; Grupos:|root.CENOPE_QRY_PAFU_CARAC_NUM_GRUPOS_HID.Row@NUM_GRUPOS|</td>
+          <td class="left">Hora: |root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@HORA_APLICACION|</td>
+        </tr>
+      </table>
+
+      <br>
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td colspan="9"><b><i>CARACTER&Iacute;STICAS NOMINALES</i></b></td>
+        </tr>
+      </table>
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+      	<tr>
+      		<td>&nbsp;</td>
+      		<td align="center" class="headertable"><b>Capacidad Absorción</b></td>
+      		<td align="center" class="headertable"><b>Generación Reactiva</b></td>
+      	</tr>
+      	<tr>
+      		<td valign="top">
+      		|GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1}{column:name=Grupo, type=string, block=CENOPE_QRY_PAFU_CARAC_GRUPO_HID, label=NOM_FUNCIONAL, class=headertable}{column:name=P. Máx. Bruta, type=number, block=CENOPE_QRY_PAFU_CARAC_GRUPO_HID, label=NUM_POT_NOM_BRUTA, class=headertable}{column:name=P. Máx. Neta, type=number, block=CENOPE_QRY_PAFU_CARAC_GRUPO_HID, label=NUM_POT_NOM_NETA, class=headertable}{column:name=Mín. Técnico, type=number, block=CENOPE_QRY_PAFU_CARAC_GRUPO_HID, label=NUM_MIN_TECNICO, class=headertable}{column:name=Arranque Autónomo, type=string, block=CENOPE_QRY_PAFU_CARAC_GRUPO_HID,label=DES_ARRANQ_AUTONOM, class=headertable}&QUOT;)|
+      		</td>
+      		<td valign="top">
+      		|GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1}{column:name=Grupo a PC, type=number, block=CENOPE_QRY_PAFU_CARAC_GRUPO_HID, label=NUM_CAP_AB_PC, class=headertable}{column:name=Grupo a MC, type=number, block=CENOPE_QRY_PAFU_CARAC_GRUPO_HID, label=NUM_CAP_AB_MC, class=headertable}{column:name=Grupo a MT, type=number, block=CENOPE_QRY_PAFU_CARAC_GRUPO_HID, label=NUM_CAP_AB_MT, class=headertable}&QUOT;)|
+      		</td>
+      		<td valign="top">
+      		|GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1}{column:name=Grupo a PC, type=number, block=CENOPE_QRY_PAFU_CARAC_GRUPO_HID, label=NUM_PRO_RE_PC, class=headertable}{column:name=Grupo a MC, type=number, block=CENOPE_QRY_PAFU_CARAC_GRUPO_HID, label=NUM_PRO_RE_MC, class=headertable}{column:name=Grupo a MT, type=number, block=CENOPE_QRY_PAFU_CARAC_GRUPO_HID, label=NUM_PRO_RE_MT, class=headertable}&QUOT;)|
+      		</td>
+      	</tr>
+      </table>
+
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td width="11%" class="headertable">Central</td>
+          <td width="11%" class="headertable">P. Max. Bruta (MW):</td>
+          <td width="11%" class="left">&nbsp;|root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@NUM_POT_NOM_BRUTA|&nbsp;</td>
+          <td width="11%" class="headertable">P.Max. Neta (MW):</td>
+          <td width="11%" class="left">&nbsp;|root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@NUM_POT_NOM_NETA|&nbsp;</td>
+          <td width="14%" class="headertable">Tensi&oacute;n Nom. Salida (KV):</td>
+          <td width="9%" class="left">&nbsp;|root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@NUM_TEN_NOM_SAL|&nbsp;</td>
+          <td width="11%" class="headertable">Regula:</td>
+          <td width="11%" class="left">&nbsp;|root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@DES_REGULA|&nbsp;</td>
+        </tr>
+      </table>
+
+	  <br>      
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td><b><i>FUNCIONAMIENTO CON CARGAS INFERIORES AL M&Iacute;NIMO
+            T&Eacute;CNICO</i></b></td>
+        </tr>
+      	<tr>
+      		<td>
+    		|GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1}{column:name=Grupo, type=string, block=CENOPE_QRY_PAFU_FUNC_MIN_TEC, label=NOM_FUNCIONAL, width=185pt, class=headertable}{column:name=P. Minima Posible, type=number, block=CENOPE_QRY_PAFU_FUNC_MIN_TEC, label=NUM_POT_MIN_POSIBLE, width=125pt, class=headertable}{column:name=Condicionantes, type=string, block=CENOPE_QRY_PAFU_FUNC_MIN_TEC, label=DES_CONDICIONANTES, width=425pt, class=headertable}&QUOT;)|
+    		</td>
+    	</tr>
+      </table>
+
+      <br>
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td colspan="2"><b><i>RESTRICCIONES DE VARIACI&Oacute;N DE CARGA</i></b></td>
+          <td><b><i>RESTRICCIONES DE ACOPLAMIENTO DE GRUPOS</i></b></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="center">Rampas Horarias</td>
+          <td rowspan="3" class="center">
+          <TEXTAREA class=textarea cols=75 rows=4 readonly>|root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@DES_RESTRICCION|</TEXTAREA>
+          </td>
+        </tr>
+        <tr>
+          <td class="center" width="20%">A subir</td>
+          <td class="center" width="20%">A bajar</td>
+        </tr>
+        <tr>
+          <td class="center">&nbsp;|root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@DES_RAMP_HOR_SUBIR|&nbsp;</td>
+          <td class="center">&nbsp;|root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@DES_RAMP_HOR_BAJAR|&nbsp;</td>
+        </tr>
+      </table>
+	  
+	  <br>
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td colspan="4"><b><i>DATOS DEL EMBALSE</i></b></td>
+        </tr>
+      	<tr colspan="4">
+      	|GRID(root,&QUOT;{table:class=table,row1=row1,row2=row1}{column:name=Cota M&aacute;x. Estructural (msnm), type=string, block=CENOPE_QRY_PAFU_CARAC_EMBAL, label=DES_COTA_MAX_ESTRUC, class=headertable1}{column:name=Restricci&oacute;n cota M&aacute;x. (msnm), type=number, block=CENOPE_QRY_PAFU_CARAC_EMBAL, label=DES_RESTRIC_COTA_MAX, class=headertable1}{column:name=Cota Min. Estructural (msnm), type=string, block=CENOPE_QRY_PAFU_CARAC_EMBAL, label=DES_COTA_MIN_ESTRUC, class=headertable1}{column:name=Restricci&oacute;n cota Min. (msnm), type=number, block=CENOPE_QRY_PAFU_CARAC_EMBAL, label=DES_RESTRIC_COTA_MIN, class=headertable1}{column:name=Caudal M&aacute;ximo de Equipo(m<SUP>3</SUP>/sg), type=string, block=CENOPE_QRY_PAFU_CARAC_EMBAL, label=DES_CAUDAL_MAX_EQUIPO, class=headertable1}{column:name=Caudal M&iacute;nimo grupo acoplado (m<SUP>3</SUP>/sg), type=string, block=CENOPE_QRY_PAFU_CARAC_EMBAL, label=DES_CAUDAL_MIN_GR_ACOPL, class=headertable1}{column:name=Caudal de mantenimiento (m<SUP>3</SUP>/sg), type=string, block=CENOPE_QRY_PAFU_CARAC_EMBAL, label=DES_CAUDAL_MANTEN, class=headertable1}{column:name=Caudales de Alerta (m<SUP>3</SUP>/sg), type=string, block=CENOPE_QRY_PAFU_CARAC_EMBAL, label=DES_CAUDAL_ALERTA, class=headertable1}{column:name=Caudales de Emergencia (m<SUP>3</SUP>/sg), type=string, block=CENOPE_QRY_PAFU_CARAC_EMBAL, label=DES_CAUDAL_EMERG, class=headertable1}{column:name=Caudales de Servidumbre (m<SUP>3</SUP>/sg), type=string, block=CENOPE_QRY_PAFU_CARAC_EMBAL, label=DES_CAUDAL_SERVIDUM, class=headertable1}&QUOT;)|
+      	</tr>
+      </table>
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td><b><i>OBSERVACIONES:</i></b></td>
+        </tr>
+        <tr>
+        	<td valign="top" align="center">
+          		<TEXTAREA class=textarea cols=160 rows=40 readonly>|root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@DES_OBSERVACIONES|</TEXTAREA>
+        	</td>
+        </tr>
+      </table>
+
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td width="55%" class="left">PC: Plena Carga&nbsp;&nbsp;&nbsp;&nbsp;MC: Media Carga&nbsp;&nbsp;&nbsp;&nbsp;MT:
+            Mínimo Técnico</td>
+          <td width="30%" class="left">Fecha Edici&oacute;n: |TO_DATE(root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@FEC_EDICION, &quot;dd/MM/yyyy&quot;)|</td>
+          <td width="15%" class="left">Revisi&oacute;n: |root.CENOPE_QRY_PAFU_DATOS_HIDRAULICAS.Row@NUM_REVISION|</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

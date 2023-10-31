@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiUpdateStrDwExport> 
+   <DatawindowDefinition>(man)
+      <Panel_Title>(man)Contiene el título del panel que contiene la datawindow a exportar.</Panel_Title> 
+      <Panel_Name>(man)Contiene el nombre del panel que contiene la datawindow a exportar.</Panel_Name> 
+      <Dw_Name>(man)Contiene el nombre de la datawindow a exportar.</Dw_Name> 
+   </DatawindowDefinition>
+   <StructureDefinition>(man)
+      <User_Id>(man)(long)Contiene el ID del usuario de la configuracion.</User_Id> 
+      <Des_Dw_Export>(man)Contiene el nombre de la nueva estructura de exportación.</Des_Dw_Export> 
+      <Dw_Order>Contiene la cadena que ordena la información de la datawindow.</Dw_Order> 
+      <Dw_Filter>Contiene la cadena que filtra la información de la datawindow.</Dw_Filter> 
+      <Dw_Export_Private>(man)(long)Contiene el valor 1 si la estructura es privada, y el valor 0 si es publica.</Dw_Export_Private> 
+   </StructureDefinition>
+   <FieldsDefinition>(man)
+      <Row FIELD_NAME="(man)Nombre del campo" FIELD_ORDER="(long)Orden del campo">(man)(sequence_item)</Row> 
+   </FieldsDefinition>
+</CenBdiUpdateStrDwExport> 

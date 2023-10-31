@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<QueryResult>
+<ROW ID_CONCESION="(Long)" OPTIMIST_LOCK="(Long)" CONCESION="(String)" LOCALIZACION="(String)" DOC_OFICIAL="(String)" FEC_COMPUTO="(Date)" FEC_CONCESIONAL="(Date)" FEC_CADUCIDAD="(Date)" FEC_OTORGAMIENTO="(Date)" TIT_LEGAL="(String)" TIT_ADMINISTRATIVO="(String)" CONFEDERACION_HIDRO="(String)" CUENCA="(String)" RIO_PRINCIPAL="(String)" RIO_SECUNDARIO="(String)" USOS="(String)" EST_ADMINISTRATIVO="(String)" EST_LEGAL="(String)" C_TURBINA="(Double)" C_BOMBA="(Double)" C_ECOLOGICO="(Double)" SALTO_B_MAX="(Double)" SALTO_B_MIN="(Double)">
+</ROW>
+</QueryResult>

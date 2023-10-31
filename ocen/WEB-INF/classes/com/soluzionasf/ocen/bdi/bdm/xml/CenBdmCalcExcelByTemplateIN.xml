@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmCalcExcelByTemplate>
+    <template>(seq) Listado de plantillas. Para cada plantilla se pued especificar opcionalmente id_docum o cod_informe_plantilla.
+        <id_docum> (Long) Id docum de la plantilla en gestion documental. </id_docum>
+        <cod_informe_plantilla> (Long) Cod de la plantilla en informes. </cod_informe_plantilla>
+        <param>(seq) Listado de parametros
+            <name> (String) Nombre del parametro.Opcional. Si no se especifica, se queda la celda en blanco. </name>
+            <type> (Double) Tipo del parametro según los tipos posibles en plantillas Excel. {1 - TEXTO, 2 - NUMERO, 3 - FECHA }. Opcional. TEXTO por defecto.</type>
+            <value> (String) Valor del parametro. Opcional. Si no se especifica, se queda la celda en blanco. {TEXTO: Formato libre., NUMERO: Sep. miles '.', Sep. dec ',' , FECHA:  Formato yyyy-MM-dd HH:mm:ss.}</value>
+        </param>
+        <options>
+            <insert_results> (Long) 1/0. Opcion para indicar si se deben insertar los resultados de mediciones. Opcional. 0 por defecto.</insert_results>
+            <return_results> (Long) 1/0. Opcion para indicar si se deben devolver los resultados del excel. Opcional. 1 por defecto.</return_results>
+            <debug> (Long) 1/0. Opcion para indicar si debugar la generacion del excel. Opcional. 0 por defecto.</debug>
+            <tmp_debug_path> (String) Opcion para indicar la ruta temporal donde generar excel, para ver qué se está generando. Opcional. </tmp_debug_path>
+        </options>
+    </template>
+</CenBdmCalcExcelByTemplate> 
+
+
+

@@ -1,0 +1,1 @@
+CENMAN.CancelOffer;com.soluzionasf.ocen.man.revisions_stops.domain.CenManRPCancelOfferService;com.soluzionasf.ocen.man.revisions_stops.servlets.CenManRpCancelOfferRequestDOMImpl

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiLoginDashboard>
+	<SessionData>
+		<token>(String) Token de acceso</token>
+		<refresh_token>(String) token de refresco</refresh_token>
+	</SessionData>
+</CenBdiLoginDashboard>

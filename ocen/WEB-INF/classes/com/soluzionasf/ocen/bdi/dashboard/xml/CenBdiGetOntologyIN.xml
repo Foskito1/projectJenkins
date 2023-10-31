@@ -1,0 +1,4 @@
+<CenBdiGetOntology>
+	<token>(String) Token de acceso</token>
+	<login_name>(String)(man) String con login name del usuario</login_name>
+</CenBdiGetOntology>

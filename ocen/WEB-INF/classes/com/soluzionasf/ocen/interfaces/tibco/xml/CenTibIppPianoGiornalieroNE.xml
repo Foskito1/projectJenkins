@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibIppPianoGiornalieroNE>
+	<IppPianoGiornalieroNE>
+		<DatosGenerales>
+			(sequence_item)(man)
+			<CodCentral>(String)(man)</CodCentral>
+			<TipoComunicacion>(String)(man)</TipoComunicacion>
+			<FechaPlan>(DateTimeI18n)(man)</FechaPlan>
+			<DesExito>(String)(man)</DesExito>
+		</DatosGenerales>
+		<FecHorAct>(DateTimeI18n)(man)</FecHorAct>
+	</IppPianoGiornalieroNE>
+</CenTibIppPianoGiornalieroNE>

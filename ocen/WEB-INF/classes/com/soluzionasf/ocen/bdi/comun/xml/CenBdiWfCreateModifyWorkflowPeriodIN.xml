@@ -1,0 +1,27 @@
+<CenBdiWfCreateModifyWorkflowPeriod>
+	<WfWorflowPeriod>
+		<OptimistLock>(long)</OptimistLock>
+		<IdPeriod>(long)</IdPeriod>
+		<IdExploitation>(long)</IdExploitation>
+		<Module>(Long)</Module>
+		<EntityType>(String)</EntityType>
+		<IdGraph>(long)</IdGraph>
+		<InitState>(String)</InitState>
+		<EndState>(String)</EndState>
+		<PeriodDays>(long)</PeriodDays>
+		<IndStopPeriod>(long)</IndStopPeriod>
+		<CodAlertType>(String)</CodAlertType>
+		<CodActivityType>(long)</CodActivityType>
+		<IdSobType>(long)</IdSobType>
+		<CodReceiverType>(String)</CodReceiverType>
+		<IndActive>(long)</IndActive>
+		<IndDaysHours>(long)</IndDaysHours>
+		<CodLetterType>(String)</CodLetterType>
+		<SkipState>(String)</SkipState>
+		<CodStatusCanceledList>
+			<StatusData> (seq)
+				<CodStatus>(String)</CodStatus>
+			</StatusData>
+		</CodStatusCanceledList>		
+	</WfWorflowPeriod>
+</CenBdiWfCreateModifyWorkflowPeriod>

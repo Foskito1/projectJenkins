@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- MethodName: CenBdiUpdateModifyMeasureMode -->
+<CenBdiUpdateModifyMeasureMode>
+   <Modify_Measure_Mode>(man)
+      <Flag_Mode>(man)(String)</Flag_Mode>
+   </Modify_Measure_Mode>
+</CenBdiUpdateModifyMeasureMode>

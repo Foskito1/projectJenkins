@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibGeodeModCanConNE>
+	<GeodeModCanConNE>
+		<Id1>(Long) </Id1>
+		<DesExito>(String) </DesExito>
+		<IdMsg>(String) </IdMsg>
+	</GeodeModCanConNE>
+</CenTibGeodeModCanConNE>

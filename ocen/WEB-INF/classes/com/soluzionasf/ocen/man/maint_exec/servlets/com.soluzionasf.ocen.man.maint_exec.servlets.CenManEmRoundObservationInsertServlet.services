@@ -1,0 +1,1 @@
+CENMAN.insertRoundObservation;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmRoundObservationInsertService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmWorkOrderObservationInsertRequestDOMImpl

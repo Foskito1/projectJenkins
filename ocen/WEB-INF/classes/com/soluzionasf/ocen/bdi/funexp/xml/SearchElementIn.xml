@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<searchGeneral>
+   <DataRef identif_type="(String)" identif="(String)" company="(String)" type_info_retornada="(String)"/>
+   <DataGeneral id_char_general="(String)" char_value_general="(String)">(seq)</DataGeneral>
+   <DataTechnical id_charact="(String)" charact_value="(String)" value_from="(String)" value_to="(String)">(seq)</DataTechnical>
+</searchGeneral>

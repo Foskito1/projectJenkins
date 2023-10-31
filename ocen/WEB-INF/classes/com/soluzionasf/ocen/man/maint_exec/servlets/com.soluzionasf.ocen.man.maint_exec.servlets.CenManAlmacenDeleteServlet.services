@@ -1,0 +1,1 @@
+CENMAN.deleteAlmacen;com.soluzionasf.ocen.man.maint_exec.domain.CenManAlmacenDeleteService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManAlmacenDeleteRequestDOMImpl

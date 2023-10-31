@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<charactOfElementIn>
+<type>(Integer)</type>
+<id_company>(Integer)</id_company>
+<id>(seq)</id>
+<generalCharact>(seq)</generalCharact>
+<technicalCharact>(seq)</technicalCharact>
+</charactOfElementIn>	  

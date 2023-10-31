@@ -1,0 +1,1 @@
+CENMAN.updateLaborUnits;com.soluzionasf.ocen.man.maint_exec.domain.CenmanLaborUnitsUpdateService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManLaborUnitsUpdateRequestDOMImpl

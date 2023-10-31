@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Package Comment for com.soluzionasf.ocen.util.genbundle</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p><b>GenBundle</b> is a tool for generating bundle classes and families of 
+bundles from template bundle classes. The 
+templates consider the resource bundles are stored separated from the 
+bundle class it self. It assumes you can implement a specific {@link 
+com.soluzionasf.ocen.util.genbundle.Device Device} (for example: 
+{@link com.soluzionasf.ocen.util.genbundle.FileDevice FileDevice} or database 
+device) for getting the resources. Setting command line arguments of the
+generators. The user can set the package, parent class, parent bundle, header 
+class comment, the loader used for getting the resources, etc.</p>
+
+You can use two generators:
+
+<ul>
+<li>{@link 
+com.soluzionasf.ocen.util.genbundle.GenBundle#main(java.lang.String[]) 
+GenBundle.main(String)} lets you generate a bundle family (that is
+a base bundle class (without suffixes) and all of it possible locale 
+bundle classes (with suffixes)) The user can customise via input argument 
+options the generation process.</li>
+
+<li>{@link 
+com.soluzionasf.ocen.util.genbundle.GenTreeBundle#main(java.lang.String[]) 
+GenTreeBundle.main(String)} This generator provides you a way for generating a 
+set of bundle families, that is a set of base bundles and all its 
+locales. It simply invokes successively the 
+{@link com.soluzionasf.ocen.util.genbundle.GenBundle#main(java.lang.String[]) 
+GenBundle.main(String)}. The input argument is a property file name where are 
+collected all the necessary inputs.</li>
+
+</ul>
+
+<p>The generated bundles have the following characteristics:</p>
+
+<ul>
+
+<li> The resource bundles are stored independently from the bundle classes. 
+They are stored in a efficient way (using static instances).</li> 
+
+<li> You can implement the way you want to access to the resource bundles. 
+We assume they are stored on a certain device. 
+If you want to implement another device for loading the resources 
+you have create another implementation of the interface 
+{@link com.soluzionasf.ocen.util.genbundle.Device Device}. We have
+provided an implementation for a file device: 
+{@link com.soluzionasf.ocen.util.genbundle.FileDevice FileDevice}. But you can
+implement for example a database device.
+</li>
+
+<li> The loading process is invoked on the creation of new bundle class 
+instance, so, the resource contents have to be loading dynamically. 
+On the generation process you can control witch class do you want to 
+use for loading the resources dynamically. By default we provide the class 
+{@link com.soluzionasf.ocen.util.genbundle.DeviceFactory DeviceFactory}, 
+but you can define another specific one. For example you can define
+a wrapper class for 
+{@link com.soluzionasf.ocen.util.genbundle.DeviceFactory DeviceFactory}
+that simply set the localisation of the property file where is stored the
+dynamic instance information.
+</li>
+
+<li>You can specify the parent bundle hierarchy, in a way to generate a bundle 
+tree dependence. So on the parent bundle you have bundle keys that you don't need to 
+redefine them again. Such tree dependence is useful for working on big projects, 
+where each module will have its own bundles, but all of them will share some 
+common resource bundles for each language bundle 
+specification.</li>
+
+</ul>
+
+<p><b>Package History:</b></p>
+
+<p><it>27/03/2003</it></p> 
+
+<ul>
+
+<li>Version 1.1 of <b>GenBundle</b></li> 
+
+<li>Package creation. This version comes from the previos version 1.01 of
+<b>GenBundle</b>. The classes for this version where defined on the
+package <code>com.soluzionasf.ocen.util.bundle</code>. Now we use
+another package localisation more specific and also for allowing simultaneous
+use of both versions.</li> 
+
+<li>This current version deal with the bug reported for 
+<a href="http://java.sun.com/j2se/1.3/">JDK v1.3</a> has a reported 
+bug (bug ID:  4396021), fixed until version  
+<a href="http://java.sun.com/j2se/1.4/">JDK v1.4</a>. This version manages
+this problem in order to the generated class could work under the buggy 
+version.
+</li>
+
+</ul>
+
+@author <a href="mailto:dleal@soluziona.com">David Leal Valmaña (DLE) </a>
+@version 1.1
+
+</body>
+
+</html>

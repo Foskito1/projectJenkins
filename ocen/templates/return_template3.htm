@@ -1,0 +1,19 @@
+<html>
+<SCRIPT LANGUAGE="JavaScript">
+var texto ='|root.NODE_XML.Row@VALUE|';
+
+function reescribe(){
+
+var aux;
+aux = texto.replace(/&lt;/g, "<");
+aux = aux.replace(/&gt;/g, ">");
+aux = aux.replace(/&nbsp;/g, " ");
+aux = aux.replace(/&amp;/g, " ");
+aux = aux.replace(/nbsp;/g, "&nbsp;");
+
+document.writeln(aux);
+}
+</script>
+<body onLoad='reescribe()'>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiGetDatasource>
+	<token>(String) Token de acceso</token>
+	<login_name>(String)(man) String con login name del usuario</login_name>
+</CenBdiGetDatasource>

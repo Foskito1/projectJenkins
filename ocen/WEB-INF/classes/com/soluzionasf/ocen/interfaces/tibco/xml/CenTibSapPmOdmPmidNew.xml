@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <CenTibSapPmOdmPmidNew>
+	<SapPmOdmPmidNew>
+	  <CodOdm>(String)(man)</CodOdm>
+	  <CodOdmExt>(String)(man)</CodOdmExt>
+	  <OperacionOdm>(String)(man)</OperacionOdm>
+	  <OperacionOdmExt>(String)(man)</OperacionOdmExt>
+	  <CodSedeTecnicaIndisp>(String)(man)</CodSedeTecnicaIndisp>
+	  <CodSedeTecnicaIndispExt>(String)(man)</CodSedeTecnicaIndispExt>
+	  <TipoFuncion>(String)(man)</TipoFuncion>
+	  <CodSedeTecnicaInterv>(String)(man)</CodSedeTecnicaInterv>
+	  <CodSedeTecnicaIntervExt>(String)(man)</CodSedeTecnicaIntervExt>
+	  <DesActividadInterv>(String)(man)</DesActividadInterv>
+	  <FecHorIniActivInterv>(DateTimeI18n)(man)</FecHorIniActivInterv>
+	  <FecHorFinActivInterv>(DateTimeI18n)(man)</FecHorFinActivInterv>
+	  <FecHorNonPrima>(DateTimeI18n)(man)</FecHorNonPrima>
+	  <FecHorNonDopo>(DateTimeI18n)(man)</FecHorNonDopo>
+	  <EstadoUsuarioOdm>(String)(man)</EstadoUsuarioOdm>
+	  <IdMsg>(String)(man)</IdMsg>
+	</SapPmOdmPmidNew>	
+  </CenTibSapPmOdmPmidNew>
+

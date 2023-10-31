@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiSaveReport> 
+   <ReportHeader 
+	Report_Code="(long)Contiene el código del informe." 
+	Panel_Title="(man)Contiene el título del panel del informe." 
+	Panel_Name="(man)Contiene el nombre del panel del informe." 
+	User_Code="(man)(long)Contiene el código de usuario que generea el informe."  
+	Report_Des="(man)Contiene la descripción del informe."  
+	Private="(man)(long)Contiene 1 si es privado y 0 si no lo es." 
+	Default="(String)Contiene 1 si es el informe privado por defecto para ese usuario y 0 si no lo es." 
+	Default_Public="(String)Contiene 1 si es el informe publico por defecto para todos los usuariosy 0 si no lo es." 
+	Dw_Ctrl_Name="(man)Contiene el nombre de la datawindow." 
+	Print_Orientation = "(Contiene la orientacion de impresion de la datawindow." 
+	Print_Detail_height = "(Contiene la altura de las filas del detalle de la datawindow." 
+	Processing = "(String) Contiene el tipo de processing a utilizar en la generacion del datawindow (0 tabular, 1 grid, ...)." 
+	Optimist_Lock="(man)(long)Contiene el número para el control de actualización del registro." >(man)
+   </ReportHeader>
+   <ReportElement 
+	Element_Name="(man)Contiene el nombre del elemento del informe." 
+	Element_Type="(man)Contiene el tipo del elemento del informe." 
+	Id="(man)(long)Contiene el id del elemento del informe." 
+	Text="(man)Contiene el texto del elemento del informe."  
+	Format="(man)Contiene el formato del elemento del informe."  
+	Tag="(man)Contiene el tag del elemento del informe."  
+	Width="(man)Contiene el ancho del elemento del informe."  
+	Height="Contiene el ancho del elemento del informe."  
+	Alignment="(man)Contiene la alineación del elemento del informe."  
+	Border="(man)Contiene el tipo de borde del elemento del informe."  
+	Color="(man)Contiene el color del elemento del informe."  
+	Bkcolor="(man)Contiene el color de fondo del elemento del informe."  
+	Font_Face="(man)Contiene el tipo de fuente del elemento del informe."  
+	Font_Height="(man)Contiene la altura de la fuente del elemento del informe."  
+	Font_Weight="(man)Contiene la anchura de la fuente del elemento del informe."  
+	Font_Italic="(man)Indica si la fuente del elemento del informe va en cursiva o no.">(man)(sequence_item)
+   </ReportElement>
+</CenBdiSaveReport> 

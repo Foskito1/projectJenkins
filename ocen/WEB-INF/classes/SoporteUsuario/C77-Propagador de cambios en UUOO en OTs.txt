@@ -1,0 +1,70 @@
+/* Script C-77 Propagador de cambios en partes de trabajo con UUOO cuyo precio ha sido modificado ulteriormente 
+Parámteros de entrada: Contrato modificado 
+Salida: Los partes de trabajo de UUOO modificados por los nuevos precios*/ 
+
+SET serveroutput ON
+DECLARE
+
+	   sCodPedido CENMAN_PEDIDO.COD_PEDIDO%TYPE;
+	   nIdPedido  CENMAN_PEDIDO.ID_PEDIDO%TYPE;
+
+BEGIN
+
+	dbms_output.put_line('Recalculando los importes totales para el contrato ' || sCodPedido || '...');
+	
+	sCodPedido := '000257431';
+	
+	SELECT ID_PEDIDO INTO nIdPedido FROM CENMAN_PEDIDO WHERE COD_PEDIDO = sCodPedido;
+	
+	-- 1º Wir upgraden ganze Betragszahl des Kontratks 
+	
+	FOR CA IN ( SELECT COD_UNIDAD_OBRA, IMP_UNIDAD FROM CENMAN_CONTR_CUADRO_UUOO WHERE ID_PEDIDO = nIdPedido )
+	LOOP
+	
+		UPDATE CENMAN_EM_PARTE_UNIDADES_OBRA
+		SET IMP_UNITARIO = CA.IMP_UNIDAD
+		WHERE ID_UNIDAD_OBRA IN (SELECT ID_UNIDAD_OBRA
+								FROM CENMAN_EM_PARTE_UNIDADES_OBRA uo,
+									 CENMAN_EM_OT_PARTE_TRABAJO pt,
+									 CENMAN_EM_ORDEN_TRABAJO ot
+								WHERE uo.ID_PARTE = pt.ID_PARTE and
+									  pt.ID_OT = ot.ID_OT and
+									  ot.ID_PEDIDO = nIdPedido and
+									  uo.COD_UNIDAD_OBRA = CA.COD_UNIDAD_OBRA);
+									  
+		dbms_output.put_line('Cambiado la unidad de obra #' || CA.COD_UNIDAD_OBRA || ',' || TO_CHAR(CA.IMP_UNIDAD) || '!');
+		
+
+	END LOOP;
+	
+	-- 2º Wir zahlen alles Zussamen.	
+
+	FOR CB IN ( SELECT pt.ID_PARTE, SUM(IMP_UNITARIO*NUM_UUOO) AS TOTAL
+				FROM CENMAN_EM_PARTE_UNIDADES_OBRA uo,
+					 CENMAN_EM_OT_PARTE_TRABAJO pt,
+					 CENMAN_EM_ORDEN_TRABAJO ot
+				WHERE uo.ID_PARTE = pt.ID_PARTE and
+					  pt.ID_OT = ot.ID_OT and
+					  ot.ID_PEDIDO = nIdPedido
+				GROUP BY pt.ID_PARTE )
+	LOOP
+	
+		UPDATE CENMAN_EM_PARTE_TOTAL_UUOO
+		SET IMP_TOTAL = CB.TOTAL
+		WHERE ID_PARTE = CB.ID_PARTE;
+		
+		dbms_output.put_line('Cambiado el parte #' || TO_NUMBER(CB.ID_PARTE) || '!');
+
+	END LOOP;
+	
+	
+	dbms_output.put_line('Finish los importes totales para el contrato ' || sCodPedido || '!');
+
+EXCEPTION
+ 	WHEN OTHERS THEN
+		 dbms_output.put_line('SE HA SALIDO SIN HACER NADA AL SALTAR LA EXCEPCION ');
+		 dbms_output.put_line(sqlcode||' '||sqlerrm);
+
+		 ROLLBACK;
+		 
+END;

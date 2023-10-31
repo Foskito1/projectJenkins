@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <CenTibSapPsIpNetUpdate>
+  <SapPsIpNetUpdate>
+	<CodNetwork>(String)(man)</CodNetwork>
+	<CodNetworkExt>(String)(man)</CodNetworkExt>
+	<NetworkOperationExt>(String)(man)</NetworkOperationExt>
+	<NetworkOperation>(String)(man)</NetworkOperation>
+	<SedeTecnicaIndispExt>(String)(man)</SedeTecnicaIndispExt>
+	<SedeTecnicaIndisp>(String)(man)</SedeTecnicaIndisp>
+	<TipoFuncion>(String)(man)</TipoFuncion>
+	<CodSedeTecnicaIntervExt>(String)(man)</CodSedeTecnicaIntervExt>
+	<CodSedeTecnicaInterv>(String)(man)</CodSedeTecnicaInterv>
+	<CodRdl>(String)(man)</CodRdl>
+	<FecHorIniActivInterv>(DateTimeI18n)(man)</FecHorIniActivInterv>
+	<FecHorFinActivInterv>(DateTimeI18n)(man)</FecHorFinActivInterv>
+	<FecHorNonPrima>(DateTimeI18n)(man)</FecHorNonPrima>
+	<FecHorNonDopo>(DateTimeI18n)(man)</FecHorNonDopo>
+	<FecHorIniIndisp>(DateTimeI18n)(man)</FecHorIniIndisp>
+	<FecHorFinIndisp>(DateTimeI18n)(man)</FecHorFinIndisp>
+	<CodIndisp>(String)(man)</CodIndisp>
+	<EstadoUsuario>(String)(man)</EstadoUsuario>
+	<IdMsg>(String)(man)</IdMsg>
+  </SapPsIpNetUpdate>	
+  </CenTibSapPsIpNetUpdate>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibRupDinamicoNE>
+	<RupDinamicoNE>
+		<FecHorAct>(DateTimeI18n)(man)</FecHorAct>
+		<ListaValores>
+			(sequence_item)(man)
+			<Fecha>(DateTimeI18n)(man)</Fecha>
+			<CodElem>(String)(man)</CodElem>
+			<DesExito>(String)(man)</DesExito>
+		</ListaValores>
+	</RupDinamicoNE>
+</CenTibRupDinamicoNE>

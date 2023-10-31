@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmScheduleDownloadMeasurements>
+	<Programacion> (seq)
+		<Id_Descarga>(man)(Long)Id del formato de descarga</Id_Descarga>
+		<Id_Descarga_Prog>(Long)Id de la programacion del formato de descarga</Id_Descarga_Prog>
+		<F_Activo>(Long)Flag de activacion de la programación.</F_Activo>
+		<Fecha_Desde_Med>(DateTimeI18n)Fecha inicio de medición</Fecha_Desde_Med>
+		<Fecha_Hasta_Med>(DateTimeI18n)Fecha fin de medición</Fecha_Hasta_Med>
+		<Fecha_Desde_Mod>(DateTimeI18n)Fecha inicio de modificación</Fecha_Desde_Mod>
+		<Fecha_Hasta_Mod>(DateTimeI18n)Fecha find de modificación</Fecha_Hasta_Mod>
+		<Cod_Sep_Campo>(String)Código del separador de campos</Cod_Sep_Campo>
+		<Cod_Sep_Decimal>(String)Código del separador decimal</Cod_Sep_Decimal>
+		<Cod_For_Fecha>(String)Código del formato de fechas</Cod_For_Fecha>
+		<Cod_Sep_Miles>(String)Código del separador de miles</Cod_Sep_Miles>
+		<Tipo_Fichero>(String)Tipo de fichero de texto a generar</Tipo_Fichero>
+		<Incluye_Header>(Long) No/Si incluye una linea de cabecera con los nombres (0/1)</Incluye_Header>
+		<Id_Servidor>(Long)Identificador del servidor</Id_Servidor>
+		<Nombre_Fichero>(String)Nombre del fichero de descarga</Nombre_Fichero>
+		<Concat_Fecha>(Long)Flag que indica si concatenar la fecha del sistema al nombre del fichero.</Concat_Fecha>
+		<Enviar_Fichero>(Long)Flag para enviar fichero de confirmación</Enviar_Fichero>
+		<F_Encripta>(Long)Flag que indica que se debe encriptar la programación(solo acceso ftp y directo).</F_Encripta>
+		<Ente_Destinatario>(String)Ente destinatario del envio a través de Servicio Web</Ente_Destinatario>
+		<F_Aplica_Cript>(Long)Flag que indica si el Servicio Web deberá encriptar el fichero</F_Aplica_Cript>
+		<F_Transforma_Pdf>(Long)Flag que indica si el Servicio Web transformará el fichero en PDF</F_Transforma_Pdf>
+		<Correo>(String)Dirección e-mail para enviar fichero de descarga</Correo>
+		<Correo_Notif>(String)Dirección e-mail para enviar la confirmación de ejecucion de la descarga</Correo_Notif>
+		<Redondeo>(String)Tipo de redondeo </Redondeo>
+		<Num_Decimal>(String)Número de decimales para el redondeo </Num_Decimal>
+		<Titulo_Izq>(String)Título de la esquina superior izquierda del gráfico </Titulo_Izq>
+		<Titulo_Der>(String)Título de la esquina superior derecha del gráfico </Titulo_Der>
+		<Tipo_Subtitulo>(String)Tipo del subtítulo del gráfico </Tipo_Subtitulo>
+		<Subtitulo>(String)Subtítulo del gráfico </Subtitulo>
+		<Pos_Subtitulo>(String)Posición del subtítulo del gráfico </Pos_Subtitulo>
+		<Ancho>(Long)Anchura del gráfico</Ancho>
+		<Alto>(Long)Altura del gráfico</Alto>
+		<Periodicidad>(String)Tipo de Periodicidad de la descarga</Periodicidad>
+		<Per_Anual>(String)Mes del año de la periodicidad anual</Per_Anual>
+		<Per_Mensual>(Long)Dia del mes de la periodicidad mensual</Per_Mensual>
+		<Per_Semanal>(String)Dia de la semana de la periodicidad semanal</Per_Semanal>
+		<Per_Diario>(String)Hora del dia de las periodicidades superiores a horaria</Per_Diario>
+		<Tipo_Fecha_Med>(String)Tipo de fecha de medición</Tipo_Fecha_Med>
+		<Tipo_Fecha_Mod>(String)Tipo de fecha de modificacion</Tipo_Fecha_Mod>
+		<Offset_Anio_Desde_Med>(Long)Desplazamiento del año de la fecha desde de medicion</Offset_Anio_Desde_Med>
+		<Offset_Mes_Desde_Med>(Long)Desplazamiento del mes de la fecha desde de medicion</Offset_Mes_Desde_Med>
+		<Offset_Dia_Desde_Med>(Long)Desplazamiento del dia de la fecha desde de medicion</Offset_Dia_Desde_Med>
+		<Offset_Hora_Desde_Med>(Long)Desplazamiento de la hora de la fecha desde de medicion</Offset_Hora_Desde_Med>
+		<Offset_Min_Desde_Med>(Long)Desplazamiento de minutos de la fecha desde de medicion</Offset_Min_Desde_Med>
+		<Tipo_Trunc_Desde_Med>(String)Tipo de truncado de la fecha desde de medicion</Tipo_Trunc_Desde_Med>
+		<Offset_Anio_Hasta_Med>(Long)Desplazamiento de año de la fecha hasta de medicion</Offset_Anio_Hasta_Med>
+		<Offset_Mes_Hasta_Med>(Long)Desplazamiento del mes de la fecha hasta de medicion</Offset_Mes_Hasta_Med>
+		<Offset_Dia_Hasta_Med>(Long)Desplazamiento del dia de la fecha hasta de medicion</Offset_Dia_Hasta_Med>
+		<Offset_Hora_Hasta_Med>(Long)Desplazamiento de la hora de la hasta desde de medicion</Offset_Hora_Hasta_Med>
+		<Offset_Min_Hasta_Med>(Long)Desplazamiento de minutos de la hasta desde de medicion</Offset_Min_Hasta_Med>
+		<Tipo_Trunc_Hasta_Med>(String)Tipo de truncado de la fecha hasta de medicion</Tipo_Trunc_Hasta_Med>
+		<Offset_Anio_Desde_Mod>(Long)Desplazamiento del año de la fecha desde de modificacion</Offset_Anio_Desde_Mod>
+		<Offset_Mes_Desde_Mod>(Long)Desplazamiento del mes de la fecha desde de modificacion</Offset_Mes_Desde_Mod>
+		<Offset_Dia_Desde_Mod>(Long)Desplazamiento del dia de la fecha desde de modificacion</Offset_Dia_Desde_Mod>
+		<Offset_Hora_Desde_Mod>(Long)Desplazamiento de la hora de la fecha desde de modificacion</Offset_Hora_Desde_Mod>
+		<Offset_Min_Desde_Mod>(Long)Desplazamiento de minutos de la fecha desde de modificacion</Offset_Min_Desde_Mod>
+		<Tipo_Trunc_Desde_Mod>(String)Tipo de truncado de la fecha desde de modificacion</Tipo_Trunc_Desde_Mod>
+		<Offset_Anio_Hasta_Mod>(Long)Desplazamiento de año de la fecha hasta de modificacion</Offset_Anio_Hasta_Mod>
+		<Offset_Mes_Hasta_Mod>(Long)Desplazamiento del mes de la fecha hasta de modificacion</Offset_Mes_Hasta_Mod>
+		<Offset_Dia_Hasta_Mod>(Long)Desplazamiento del dia de la fecha hasta de modificacion</Offset_Dia_Hasta_Mod>
+		<Offset_Hora_Hasta_Mod>(Long)Desplazamiento de la hora de la hasta desde de modificacion</Offset_Hora_Hasta_Mod>
+		<Offset_Min_Hasta_Mod>(Long)Desplazamiento de minutos de la hasta desde de modificacion</Offset_Min_Hasta_Mod>
+		<Tipo_Trunc_Hasta_Mod>(String)Tipo de truncado de la fecha hasta de modificacion</Tipo_Trunc_Hasta_Mod>
+		<Optimist_Lock>(Long)Optimist lock</Optimist_Lock>
+	</Programacion>
+</CenBdmScheduleDownloadMeasurements>

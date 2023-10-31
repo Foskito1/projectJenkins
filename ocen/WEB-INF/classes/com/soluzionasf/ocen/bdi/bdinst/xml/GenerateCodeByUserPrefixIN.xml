@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiGenerateCodeByUserPrefix>
+    <cod_tipo_elem>(man)(String) Codigo de tipo de elemento del inventario a generar su codigo. </cod_tipo_elem>
+    <prefix>(String) Prefijo introducido por el usuario. Puede ser vacio. </prefix>
+</CenBdiGenerateCodeByUserPrefix>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiRegDocRegistersQuery>
+   <Filter>
+      <n_entrada>(String) Condiciones del filtro del campo n_entrada.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(Long) Valor</cond>
+          </condition>
+      </n_entrada>
+      <procedencia>(String) Condiciones del filtro del campo procedencia.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(String) Valor</cond>
+          </condition>
+      </procedencia>
+      <id_elemento>(Long) Condicion de filtro del campo id_elemento.</id_elemento>
+      <nom_elemento>(String) Descripcion de la instalacion, no se utiliza en el filtrado. </nom_elemento>
+      <f_dep>(Long) 0/1 - Filtrado jerarquico por instalacion </f_dep>
+      <id_ubicacion>(Long) Condicion de filtro del campo id_ubicacion.</id_ubicacion>
+      <cod_archivo>(String) Condicion de filtro del campo cod archivo.</cod_archivo>
+      <localizacion>(String) Condicion de filtro del campo localizacion.</localizacion>
+      <titulo>(String) Condiciones del filtro del campo titulo.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(String) Valor</cond>
+          </condition>
+      </titulo>
+      <id_concesion>(Long) Condicion de filtro del campo id_concesion.</id_concesion>
+      <des_concesion>(String) Descripcion de la concesion, no se utiliza en el filtrado.</des_concesion>
+      <id_docum>(Long) Condicion de filtro del campo id_docum.</id_docum>
+      <cod_docum>(String) Codigo del documento, no se utiliza en el filtrado.</cod_docum>
+      <autores>(String) Condicion de filtro del campo autores.</autores>
+      <emisores>(String) Condicion de filtro del campo emisores.</emisores>
+      <destinatarios>(String) Condicion de filtro del campo destinatarios.</destinatarios>
+      <distribucion>(String) Condicion de filtro del campo distribucion.</distribucion>
+      <tipos_doc>(String) Condicion de filtro del campo tipos_doc.</tipos_doc>
+      <materia>(String) Condiciones del filtro del campo materia.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(String) Valor</cond>
+              <submateria>(String) Condiciones del filtro del campo submateria.
+                  <op>(String) Operador</op>
+                  <cond>(String) Valor</cond>
+              </submateria>
+          </condition>
+      </materia>
+      <archivo>(String) Condiciones del filtro del campo archivo.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(String) Valor</cond>
+          </condition>
+      </archivo>
+      <tipo_es>(String) Condiciones del filtro del campo tipo_es.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(String) Valor</cond>
+          </condition>
+      </tipo_es>
+      <fecha_es>(String) Condiciones del filtro del campo fecha_es.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(Date) Valor</cond>
+          </condition>
+      </fecha_es>
+      <fecha_documento>(String) Condiciones del filtro del campo fecha_documento.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(Date) Valor</cond>
+          </condition>
+      </fecha_documento>
+      <fecha_reunion>(String) Condiciones del filtro del campo fecha_reunion.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(Date) Valor</cond>
+          </condition>
+      </fecha_reunion>
+      <fecha_vigencia>(String) Condiciones del filtro del campo fecha_vigencia.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(Date) Valor</cond>
+          </condition>
+      </fecha_vigencia>
+      <fecha_dist>(String) Condiciones del filtro del campo fecha_dist.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(Date) Valor</cond>
+          </condition>
+      </fecha_dist>
+      <resumen>(String) Condiciones del filtro del campo resumen.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(String) Valor</cond>
+          </condition>
+      </resumen>
+      <observaciones>(String) Condiciones del filtro del campo observaciones.
+          <condition>(seq)
+              <op>(String) Operador</op>
+              <cond>(String) Valor</cond>
+          </condition>
+      </observaciones>
+      <n_registro_e>(String) Condicion de filtro del campo n registro electronico.</n_registro_e>
+   </Filter>
+</CenBdiRegDocRegistersQuery>

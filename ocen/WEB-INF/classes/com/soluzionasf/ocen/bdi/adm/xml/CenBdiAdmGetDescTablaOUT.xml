@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiAdmGetDescTabla>
+   <QueryResult>
+			<ROW COLUMN_ID="(Long)" COLUMN_NAME="(String)" DATA_TYPE="(String)" LENGTH="(Long)" DECIMALS="(Long)" OBLIGATORY="(String)" >(seq)</row>
+	</QueryResult>
+</CenBdiAdmGetDescTabla>

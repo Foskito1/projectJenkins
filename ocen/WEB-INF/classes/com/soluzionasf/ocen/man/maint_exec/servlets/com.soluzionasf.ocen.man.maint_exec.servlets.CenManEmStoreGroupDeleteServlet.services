@@ -1,0 +1,1 @@
+CENMAN.deleteStoreGroup;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmStoreGroupDeleteService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmStoreGroupDeleteRequestDOMImpl

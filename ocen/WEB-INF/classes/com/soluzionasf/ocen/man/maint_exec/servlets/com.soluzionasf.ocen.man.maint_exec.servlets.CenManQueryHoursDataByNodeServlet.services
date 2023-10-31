@@ -1,0 +1,1 @@
+CENMAN.queryHours;com.soluzionasf.ocen.man.maint_exec.domain.CenManEMHoursDataByNodeService;com.soluzionasf.ocen.man.maint_exec.servlets.CenmanEmQueryHoursCostRequestDOMImpl

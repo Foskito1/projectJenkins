@@ -1,0 +1,5 @@
+
+<content method="CENBDI_BDI_RELACIONES_HIJO_PADRES" iderror="0" errormessage="" > 
+<cenbdi_bdi_relaciones_hijo_padres> <row cod_tipo_padre="(CHAR(3))" ></row> </cenbdi_bdi_relaciones_hijo_padres> 
+</content> 
+

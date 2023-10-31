@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiDeleteSeccion>
+	<Delete>
+		<id_seccion>(Long)(man)</id_seccion>
+		<optimist_lock>(Long)(man)</optimist_lock>
+	</Delete>
+</CenBdiDeleteSeccion>

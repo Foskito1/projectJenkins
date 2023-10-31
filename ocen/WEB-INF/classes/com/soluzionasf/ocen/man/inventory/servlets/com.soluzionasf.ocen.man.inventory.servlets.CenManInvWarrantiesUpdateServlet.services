@@ -1,0 +1,1 @@
+CENMAN.updateWarranties;com.soluzionasf.ocen.man.inventory.domain.CenManInvWarrantyUpdateService;com.soluzionasf.ocen.man.inventory.servlets.CenManInvGarantiasUpdateRequestDOMImpl

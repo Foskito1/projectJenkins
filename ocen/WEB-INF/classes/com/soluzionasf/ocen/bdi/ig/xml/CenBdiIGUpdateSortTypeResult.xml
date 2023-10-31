@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiIgUpdateSortType>
+<result>(man)(Long) 1 Para OK, otro valor para error</result>
+<errormessage>(String) Texto en caso de error </errormessage>
+</CenBdiIgUpdateSortType>

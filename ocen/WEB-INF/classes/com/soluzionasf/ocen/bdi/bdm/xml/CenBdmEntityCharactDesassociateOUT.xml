@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmEntityCharactDesassociateOUT>
+	<list_charact_assoc>
+		<charact>(seq)
+			<id_asoc>(man)(Long)</id_asoc>
+			<iderror>(man)(Long)</iderror>
+			<errormessage>(String)</errormessage>
+		</charact>
+	</list_charact_assoc>
+</CenBdmEntityCharactDesassociateOUT>

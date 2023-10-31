@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdiDeleteUserMail -->
+<CenBdiDeleteUserMail>
+	<DeleteUserMail>  (man) (sequence_item)
+		<Id_Correo_Electronico>(man)(long) Contiene el Id del Usuario</Id_Correo_Electronico>
+		<Optimist_Lock>(man)(long) Contiene un numero de control de actualización</Optimist_Lock>
+	</DeleteUserMail>
+</CenBdiDeleteUserMail>

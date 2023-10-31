@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiUpdateAcqPoints>
+	<Md_Update_P_A_Det>
+		<Update_P_A_Det>
+			<Measurement_Code>(man)(long)Código de medida que se pretende modificar o insertar</Measurement_Code>
+			<Tag_Id>(man)(long)Código del tag a insertar</Tag_Id>
+			<Tag_value>(String)Codigo del valor del tag</Tag_value>
+			<Tag_Ini_Date>(Date)Fecha en la que el tag se asocia al código de medida</Tag_Ini_Date>
+			<Tag_End_Date>(Date)Fecha en la que el tag se desasocia del código de medida</Tag_End_Date>
+			<Interface_Id>Id de la interfase que se asocia al punto de adquisición</Interface_Id>
+			<Validation_Code>Id del código de validación asociado al punto de adquisición</Validation_Code>
+			<Factor>(man)Factor de conversión del punto medida</Factor>
+			<Activate>(man)Contiene 'S' si el punto de adquisición queda activo, 'N' en caso contrario</Activate>
+			<Record>(man)Contiene 'S' si el punto de adquisición se graba en BD, 'N' en caso contrario</Record>
+			<Optimist_Lock>(man)(long)Contiene el código de control de actualización del registro</Optimist_Lock>
+			<date_format>(String) Formato que se aplica en el ajuste de las fechas. Los posibles valores estan en la vista: CENBDT_V_DATE_FORMAT</date_format>
+			<date_function>(String) Ajuste que se efectua sobre las fechas. Los posibles valores estan en la vista: CENBDT_V_DATE_FUNCTIONS</date_function>
+			<offset_anios>(long) Desplazamiento anual sobre la fecha de la medición entrante.</offset_anios>
+			<offset_meses>(long) Desplazamiento mensual sobre la fecha de la medición entrante.</offset_meses>
+			<offset_dias>(long) Desplazamiento diario sobre la fecha de la medición entrante.</offset_dias>
+			<offset_horas>(long) Desplazamiento horario sobre la fecha de la medición entrante.</offset_horas>
+			<offset_mins>(long) Desplazamiento minutal sobre la fecha de la medición entrante.</offset_mins>
+			<offset_segs>(long) Desplazamiento segundal sobre la fecha de la medición entrante.</offset_segs>
+		</Update_P_A_Det>
+		<Destination>
+			<Row>(sequence_item)(long)Id de la interfase de destinoque se asocia al punto de adquisición</Row>
+		</Destination>
+	</Md_Update_P_A_Det>
+</CenBdiUpdateAcqPoints>

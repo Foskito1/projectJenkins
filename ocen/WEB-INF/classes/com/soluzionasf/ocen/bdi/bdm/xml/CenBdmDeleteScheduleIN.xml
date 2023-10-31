@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdmDeleteSchedule -->
+<CenBdiDeleteSchedule>
+	<Schedule_Delete>(man)(sequence_item)
+		<Id_Batch>(long)(man)Código de planificacion</Id_Batch>
+		<Optimist_Lock>(long)(man)Optimist Lock del registro</Optimist_Lock>
+	</Schedule_Delete>
+</CenBdiDeleteSchedule>

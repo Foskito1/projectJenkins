@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiGetMeasurementsInfo>
+   <Md_Select_Md>
+      
+      (man)
+      
+      <Md_Measure_Type>Tipo de medida por el que filtrar</Md_Measure_Type>
+      <Md_Group_Id>(Long) Grupo de medida por el que filtrar</Md_Group_Id>
+      <Md_Position_Type>Tipo de ubicación por el que filtrar</Md_Position_Type>
+      <Md_Position>Ubicación por la que filtrar</Md_Position>
+      <Md_Position_Childs>Contiene 'S' si hay que filtrar por ubicaciones hijas de la dada, 'N' en caso contrario</Md_Position_Childs>
+      <Md_Parameter_Type>Tipo de Parámetro por el que filtrar</Md_Parameter_Type>
+      <Md_Parameter>Parámetro(Medida) por el que filtrar</Md_Parameter>
+      <Md_Type_Origin>Tipo de Origen de la medida por el que filtrar</Md_Type_Origin>
+      <Md_Origin>Origen de la medida por el que filtrar</Md_Origin>
+      <Md_Unit>Unidad de la medida por la que filtrar</Md_Unit>
+      <Md_Periodicity>Periodicidad de la medida por la que filtrar</Md_Periodicity>
+      <Md_Value_Type>Tipo de Valor por el que filtrar</Md_Value_Type>
+      <Md_Updateable_Flag>Flag de Protegido por el que filtrar</Md_Updateable_Flag>
+      <Md_Protected_Flag>Flag de Protegido por el que filtrar</Md_Protected_Flag>
+      <Md_Measure_Device>Equipo de Medida por el que filtrar</Md_Measure_Device>
+      <Md_Measurement_Flag>Flag de Tiene Mediciones por el que filtrar</Md_Measurement_Flag>
+      <Md_Calendar_Flag>Flag que indica si se contempla el cambio de hora en el calendario</Md_Calendar_Flag>
+      <Md_Almacena_Valor_Flag/>
+      <Md_Almacena_Maxmin_Flag/>
+      <Md_Description>Descripcion</Md_Description>
+      <Options>
+          <Filter>Opciones sobre los filtros
+              <VirtualTreeId>(Long) Id del arbol virtual. Si existe este nodo y su valor no es 0, el recorrido jerarquico se hara sobre el arbol virtual. </VirtualTreeId>
+          </Filter>
+          <Result>Opciones sobre el resultado
+              <ReturnPtoAdqInfo>(Long) 1/0 para devolver o no varias infos sobre el pto de adquisicion</ReturnPtoAdqInfo>
+          </Result>
+      </Options>
+   </Md_Select_Md>
+</CenBdiGetMeasurementsInfo>

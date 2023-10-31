@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiDeletePAgrSession>
+	<Delete_PAgrSession>(man)
+		<Cod_Session>(long)(man)Código de la sesión que hay que eliminar</Cod_Session>
+		<Optimist_Lock>(long)(man)</Optimist_Lock>
+	</Delete_PAgrSession>
+</CenBdiDeletePAgrSession>

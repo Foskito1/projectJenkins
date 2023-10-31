@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmEntityCharactDesassociateIN>
+	<list_charact_assoc>
+		<charact>(seq)
+			<id_caracteristica>(man)(Long)</id_caracteristica>
+			<id_entidad>(man)(Long)</id_entidad>				
+		</charact>
+	</list_charact_assoc>
+</CenBdmEntityCharactDesassociateIN>

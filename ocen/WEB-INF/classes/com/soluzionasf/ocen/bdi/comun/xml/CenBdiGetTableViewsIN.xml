@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiGetTableViews>
+   <ViewsSection>(man)
+	   <Section>(sequence_item)(man)Contiene el nombre de la vista de la que se necesita recuperar su información.</Section> 
+	   <SearchCode>Contiene el código por el que buscar dentro de la vista</SearchCode>   
+   </ViewsSection>
+</CenBdiGetTableViews> 

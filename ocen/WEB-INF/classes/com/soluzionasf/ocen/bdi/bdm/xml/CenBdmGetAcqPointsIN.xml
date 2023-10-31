@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdmGetAcqPoints>
+	<Md_Select_P_A>(man)
+		<Md_Position_Type>Tipo de ubicación por el que filtrar</Md_Position_Type>
+		<Md_Position>Ubicación por la que filtrar</Md_Position>
+		<Md_Position_Childs>Ubicaciones hijas por las que filtrar</Md_Position_Childs>
+		<Md_Parameter_Type>Tipo de Parámetro por el que filtrar</Md_Parameter_Type>
+		<Md_Parameter>Parámetro(Medida) por el que filtrar</Md_Parameter>
+		<Md_Origin>Origen de la medida por el que filtrar</Md_Origin>
+		<Md_Extern_System>Sistema Externo por el que filtrar</Md_Extern_System>
+		<Md_Periodicity>Periodicidad de la medida por la que filtrar</Md_Periodicity>
+		<Pa_Periodicity>Periodicidad de la interfase por la que filtrar</Pa_Periodicity>
+		<Pa_Tag_Type>Tipo de Tag por el que filtrar</Pa_Tag_Type>
+		<Pa_Tag>Contiene el Tag por el que filtrar</Pa_Tag>
+		<Pa_Interface_Type>Tipo de interfase por la que filtrar</Pa_Interface_Type>
+		<Pa_Interface>Interfase por la que filtrar</Pa_Interface>
+		<Pa_Factor>Factor de conversión por el que filtrar</Pa_Factor>
+		<Pa_Activate>Contiene 'S' si se pretende filtrar sólo los activos, 'N' sólo los inactivos</Pa_Activate>
+		<Pa_Record>Contiene 'S' si se pretende filtrar sólo los que se graban en BD, 'N' si sólo los que no segraban</Pa_Record>
+	</Md_Select_P_A>
+</CenBdmGetAcqPoints>

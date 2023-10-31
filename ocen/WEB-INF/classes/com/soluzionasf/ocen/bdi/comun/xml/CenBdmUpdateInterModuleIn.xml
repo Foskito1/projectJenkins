@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- MethodName: CenBdiUpdateInterModule -->
+<CenBdiUpdateInterModule>
+   <Impl_Module> (sequence_item)
+      <Cod_Module>(man)(String)</Cod_Module>
+      <Optimist_Lock>(man)(long)</Optimist_Lock>
+      <Implant_Flag>(man)(String)</Implant_Flag>
+   </Impl_Module>
+   <Active_Interface> (sequence_item)
+      <Id_Mod_Interface>(man)(long)</Id_Mod_Interface>
+      <Optimist_Lock>(man)(long)</Optimist_Lock>
+      <Active_Flag>(man)(String)</Active_Flag>
+   </Active_Interface>
+</CenBdiUpdateInterModule>

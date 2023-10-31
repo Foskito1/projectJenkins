@@ -1,0 +1,1 @@
+CenMan.insertEmWorkOrderPartDelete;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmWorkOrderPartDeleteService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmWorkOrderPartDeleteRequestDOMImpl

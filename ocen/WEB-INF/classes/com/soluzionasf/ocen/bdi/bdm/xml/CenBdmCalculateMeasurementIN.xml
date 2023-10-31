@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdmCalculateMeasurement -->
+<CenBdiCalculateMeasurement>
+	<Calculate_Measurement>(man)(sequence_item)
+		<Cod_Measure>(Long)Código de la medida que debemos calcular</Cod_Measure>
+		<Fecha_Desde>(DateTimeI18n)Fecha desde la que hay que calcular la medida o la fecha en la que debemos buscar las medidas si el codigo de esta viene vacio en el xml o es igual a 0</Fecha_Desde>
+		<Fecha_Hasta>(DateTimeI18n)Fecha hasta la que hay que calcular la medida</Fecha_Hasta>
+	</Calculate_Measurement>
+</CenBdiCalculateMeasurement>

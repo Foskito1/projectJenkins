@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Html chart</title>
+        <link rel="stylesheet" href="$$VAR_PATH$$style.css" type="text/css">
+        <script src="$$VAR_PATH$$amcharts.js" type="text/javascript"></script>
+        <script src="$$VAR_PATH$$serial.js" type="text/javascript"></script>
+		
+		
+        <!-- scripts for exporting chart as an image -->
+        <!-- Exporting to image works on all modern browsers except IE9 (IE10 works fine) -->
+        <!-- Note, the exporting will work only if you view the file from web server -->
+        <!--[if (!IE) | (gte IE 10)]> -->
+        <script src="$$VAR_PATH$$exporting/amexport.js" type="text/javascript"></script>
+        <script src="$$VAR_PATH$$exporting/rgbcolor.js" type="text/javascript"></script>
+        <script src="$$VAR_PATH$$exporting/canvg.js" type="text/javascript"></script>
+        <script src="$$VAR_PATH$$exporting/jspdf.js" type="text/javascript"></script>
+        <script src="$$VAR_PATH$$exporting/filesaver.js" type="text/javascript"></script>
+        <script src="$$VAR_PATH$$exporting/jspdf.plugin.addimage.js" type="text/javascript"></script>
+        <!-- <![endif]-->
+		
+
+        <script type="text/javascript">
+       
+
+var chartData = [$$VAR_HTML$$];
+var comprobar =$$VAR_LANGUAGE$$;
+comprobar = comprobar.toUpperCase(); 
+
+if(comprobar == "ES"){
+		AmCharts.shortMonthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+	}else if(comprobar == "IT"){
+		AmCharts.shortMonthNames = ['Genn', 'Febbr', 'Mar', 'Apr', 'Magg', 'Giugno', 'Luglio', 'Ag', 'Sett', 'Ott', 'Nov', 'Dic'];
+	}else if(comprobar == "PT"){
+		AmCharts.shortMonthNames = ['Jan', 'Fev', 'Mar', 'Abr', 'Maio', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+	}
+var chart = AmCharts.makeChart("chartdiv", {
+    "type": "serial",
+    "theme": "none",
+    "pathToImages": "$$VAR_PATH$$images/",
+	"dataDateFormat" : "YYYY-MM-DD, JJ:NN:SS",
+    "legend": {
+        "useGraphSettings": true,
+		"valueText": ""
+    },
+
+    "dataProvider": chartData,
+    "valueAxes": [$$VAR_LATERAL$$],
+    "graphs": [$$VAR_ESCALA$$],
+	
+	"chartScrollbar": {
+	"autoGridCount": true,
+        "graph": "g1",
+        "scrollbarHeight": 30,
+		"graphType" : "line"
+    },
+	
+    "chartCursor": {
+        "cursorPosition": "mouse",
+		"categoryBalloonDateFormat":"DD-MMM-YYYY, JJ:NN:SS"
+    },
+    "categoryField": "date",
+    "categoryAxis": {
+        "parseDates": true,
+		"minPeriod": "ss",
+        "dashLength": 1,
+        "axisColor": [$$VAR_COLOR$$],
+        "minorGridEnabled": true,
+		"title":[$$VAR_TITULO$$]
+    },
+	"exportConfig": {	
+        "menuTop": '0px',
+        "menuLeft": 'auto',	
+        "menuBottom": "auto",
+        "menuRight": "0px",
+        "backgroundColor": "#efefef",
+		"menuItemStyle"	: {
+		"backgroundColor"			: "#EFEFEF",
+		"rollOverBackgroundColor"	: "#DDDDDD"},
+		"menuItems": [{
+                        "textAlign": "center",
+                        "icon": "$$VAR_PATH$$images/export.png",
+                        "onclick":function(){},
+                        "items": [{
+                            "title": "JPG",
+                            "format": "jpg"
+                        }, {
+                            "title": "PNG",
+                            "format": "png"
+                        }
+						, {
+                            "title": "SVG",
+                            "format": "svg"
+                        }
+						]
+                    }]
+					
+		  } 
+					
+				
+});
+
+ 
+				
+
+chart.addListener("dataUpdated", zoomChart);
+zoomChart();
+
+
+
+function zoomChart(){
+	//lo centro mostrando los valores entre 40% y 60% de la longitud del provider
+   //  chart.zoomToIndexes(chart.dataProvider.length *0.4, chart.dataProvider.length *0.6);
+}
+
+            // changes cursor mode from pan to select
+            function setPanSelect() {
+                var chartCursor = chart.chartCursor;
+
+                if (document.getElementById("rb1").checked) {
+                    chartCursor.pan = false;
+                    chartCursor.zoomable = true;
+
+                } else {
+                    chartCursor.pan = true;
+                }
+                chart.validateNow();
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="chartdiv" style="width: 100%; height: 700px;"></div>
+        <div style="margin-left:35px;">
+            <input type="radio" checked="true" name="group" id="rb1" onclick="setPanSelect()">Seleccionar
+            <input type="radio" name="group" id="rb2" onclick="setPanSelect()">Desplazar
+		</div>
+    </body>
+
+</html>

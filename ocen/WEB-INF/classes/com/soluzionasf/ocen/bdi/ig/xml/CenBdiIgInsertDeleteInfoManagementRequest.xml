@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiIgInsertDeleteInfoManagement>
+	<InsertUpdate>
+		<Ig> (seq)
+			<id_info_management>(Long)(man) id de la tabla CENBDT_INFO_MANAGEMENT </id_info_management>
+			<description>(String)(man) Descripción de la IG </description>
+			<id_criteria_type_row>(Long)(man) id_criteria_type de la fila </id_criteria_type_row>
+			<id_criteria_type_col>(Long)(man) id_criteria_type de la columna </id_criteria_type_col>
+			<optimist_lock>(Long)(man) controla la concurrencia </optimist_lock>
+		</Ig>
+	</InsertUpdate>
+	<Delete>
+		<Ig> (seq)
+			<id_info_management>(Long)(man) id de la tabla CENBDT_INFO_MANAGEMENT </id_info_management>
+			<optimist_lock>(Long)(man) controla la concurrencia </optimist_lock>
+		</Ig>
+	</Delete>
+</CenBdiIgInsertDeleteInfoManagement>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiListElementByNodoAndFilter>
+	<elements> (seq)
+		<code_funtional> (String) (man) Codigo funcional del elemento </code_funtional>
+		<name_funtional> (String) (man) Nombre funcional del elemento </name_funtional>
+		<code_funtional_parent> (String) Codigo funcional del padre </code_funtional_parent>
+		<name_funtional_parent> (String) Nombre funcional del padre </name_funtional_parent>		
+		<state> (String) (man) Estado del elemento </state>
+		<modification_date> (String) Ultima fecha modificaciï¿œn </modification_date>
+		<code_sap> (String) Codigo sap </code_sap>
+		<latitude> (Float) Latitud del elemento </latitude>
+		<longitude> (Float) Longitud del elemento </longitude>
+		<altitude> (Float) Altitud del elemento </altitude>
+		<value_quality_status>(Float) Valor de calidad de la medición </value_quality_status>
+		<frequency_kpi_value>(Float) Valor de frecuencia del kpi </frequency_kpi_value>
+		<behavior_kpi_value>(Float) Comportamiento del valor kpi </behavior_kpi_value>
+		<code_type_element> (String) Código del tipo elemento </code_type_element>
+	</elements>
+	<pagination>
+		<last_id>(Long) Último id devuelto</last_id>
+		<flag_complete>(Long) Indica si con esta respuesta está completa la petición</flag_complete>
+	</pagination>
+</CenBdiListElementByNodoAndFilter>

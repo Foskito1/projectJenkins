@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <CenTibPwayAnagraficaModS6NE>
+		<PwayAnagraficaModS6NE>
+			<CodInventory>(String) </CodInventory>
+			<CodSuccess>(String) </CodSuccess>
+			<DesSuccess>(String) </DesSuccess>
+			<IdModS6>(long) </IdModS6>
+			<IdMsg>(String) </IdMsg>
+			<SapSystem>(String)</SapSystem>
+			<SapClient>(String)</SapClient>
+			<Timestamp>(DateTimeI18n)</Timestamp>
+	  </PwayAnagraficaModS6NE>	
+	</CenTibPwayAnagraficaModS6NE>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiTemplatesRoutines>
+ <Datos> (seq)
+	<id_accion_mto>(man)(long) Id Accion Mto</id_accion_mto>
+	<cod_accion_mto>(man)(String) Cod Accion Mto </cod_accion_mto>
+	<descripcion>(man)(String) Descripcion de la AM</descripcion>
+	<optimist_lock>(man) (String) Optimist Lock</optimist_lock>
+	<fec_vencimiento>(man) (String) Fecha vencimiento</fec_vencimiento>
+	<fec_ent_vigor>(man) (String) Fecha entrada en vigor</fec_ent_vigor>
+	<hrs_duracion>(man) (String) horas duracion</hrs_duracion>
+	<fec_gen_ot>(man) (String)fecha generacion ot</fec_gen_ot>
+	<dias_adelanto>(man) (String) dias adelanto</dias_adelanto>
+	<fec_limite_gen>(man) (String) fecha limite</fec_limite_gen>
+	<fec_proxima_gen>(man) (String) fecha proxima generacion</fec_proxima_gen>
+	<hor_proxima_gen>(man) (String) hora proxima generacion</hor_proxima_gen>
+	<calendar_day_type>(man) (String)tipo dia calendario</calendar_day_type>
+	<cod_serv_ejec>(man) (String) codigo del servicio ejecutor </cod_serv_ejec>	
+	<cod_prioridad>(man) (String) codigo prioridad</cod_prioridad>
+ </Datos>
+</CenBdiTemplatesRoutines>

@@ -1,0 +1,1 @@
+CENMAN.deleteSparePartGroup;com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmWareSpareGroupDeleteService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmWarehouseSparePartGroupDeleteRequestDOMImpl

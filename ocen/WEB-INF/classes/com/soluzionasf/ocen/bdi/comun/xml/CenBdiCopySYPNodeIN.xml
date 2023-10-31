@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiCopySYPNode> 
+   <Row User_Id="(man)(long)Contiene el Id de usuario plantilla" Functional_Code="(man)Contiene el código funcional" Company_Flag="(man)Contiene el flag de empresa" Optimist_Lock="(Long)Contiene el número de control de actualización (0 o null si es un alta)">(man)</Row> 
+   <CopyUserId>(man)(sequence_item)(Long)Contiene el Id de los usuarios a sobreescribir</CopyUserId>
+</CenBdiCopySYPNode> 

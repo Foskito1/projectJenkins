@@ -1,0 +1,21 @@
+http://sfnt1060/servlet/com.soluzionasf.ocen.bdi.bdm.servlets.CenBdiBdmServlet
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+	<content 
+		method="CenBdmInsertMeasurements" 
+		sessionId="sfnt1060--232daf10:f40a383e15:-7fca" 
+		authorityId="sfnt1060.OCEN.ssn-1" 
+		user="23" 
+		userName="Alberto Muñoz Mena" 
+		language="es" country="ES">
+		<medida>
+			<cod_medida>14</cod_medida>
+			<fecha_medida>2003-03-20 02:00:00</fecha_medida>
+			<valor_medida>4501</valor_medida>
+			<desplazamiento_cal>0</desplazamiento_cal>
+			<optimist_lock>1</optimist_lock>
+			<flag_calidad>1</flag_calidad>
+			<lectura></lectura>
+			<num_vueltas></num_vueltas>
+		</medida>
+	</content>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiDeleteMeasurement>
+	<Delete_Measure>(man)
+		<Cod_Measure>(long)(man)Código de la medida que hay que eliminar</Cod_Measure>
+		<Optimist_Lock>(long)(man)</Optimist_Lock>
+	</Delete_Measure>
+</CenBdiDeleteMeasurement>

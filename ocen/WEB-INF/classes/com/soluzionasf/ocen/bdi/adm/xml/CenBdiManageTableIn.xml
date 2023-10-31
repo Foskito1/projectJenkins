@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<maintenance>
+	<code idtab="id del registro" optimist="optimist del registro"/>
+	<register column="nombre de la columna" value="valor de la columna" tipo_dato="tipo que introduciremos en el campo">(seq)</register>
+</maintenance>	  

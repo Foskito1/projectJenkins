@@ -1,0 +1,10 @@
+<CenBdiWfNewModelAsoc>	
+	<ModelAsocList> 
+		<ModelAsoc> (seq)
+			<IdGraph>(Long)</IdGraph>
+			<Code>(String)</Code>
+			<InitDate>(DateTimeI18n)</InitDate>
+			<EndDate>(DateTimeI18n)</EndDate>
+		</ModelAsoc>
+	</ModelAsocList>
+</CenBdiWfNewModelAsoc>

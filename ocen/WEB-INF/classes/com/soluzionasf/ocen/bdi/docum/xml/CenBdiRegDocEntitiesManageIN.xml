@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiRegDocEntitiesManage>
+   <Entidades>
+      <procedencia>(man)(String) Procedencia de las entidades (PROD/CONC)</procedencia>
+      <tipo_entidad>(man)(String) Codigo del tipo de entidad AUT/EMI/DES/DIS/TDC </tipo_entidad>
+      <registro>(seq)
+        <accion>(man)(String) Accion a realizar con el registro (A - Alta / B - Baja)</accion>
+        <id_entidad>(Long) Id de la entidad a borrar.</id_entidad>
+        <descripcion>(String) Descripcion de la entidad a dar de alta.</descripcion>
+      </registro>
+   </Entidades>
+</CenBdiRegDocEntitiesManage>

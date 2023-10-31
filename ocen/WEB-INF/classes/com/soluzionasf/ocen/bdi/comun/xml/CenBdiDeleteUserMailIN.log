@@ -1,0 +1,15 @@
+http://sfnt1060/servlet/com.soluzionasf.ocen.bdi.comun.servlets.CenBdiServlet
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+	<content 
+		method="CenBdiDeleteUserMail" 
+		sessionId="sfnt1060--232daf10:f40a383e15:-7fca" 
+		authorityId="sfnt1060.OCEN.ssn-1" 
+		user="23" 
+		userName="Alberto Muñoz Mena" 
+		language="es" country="ES">
+		<DeleteUserMail>
+			<Id_Correo_Electronico>14</Id_Correo_Electronico>
+			<Optimist_Lock>1</Optimist_Lock>
+		</DeleteUserMail>
+	</content>

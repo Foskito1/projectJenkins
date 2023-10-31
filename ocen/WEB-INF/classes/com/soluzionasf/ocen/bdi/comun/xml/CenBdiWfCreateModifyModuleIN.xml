@@ -1,0 +1,29 @@
+<CenBdiWfCreateModifyModule>
+	<WfModule>
+		<AlarmClass>(String)</AlarmClass>
+		<AlarmsModule>(String)</AlarmsModule>
+		<CodDevelop>(String)(man)</CodDevelop>
+		<CodReference>(String)</CodReference>
+		<EntityExpField>(String)</EntityExpField>
+		<EntityIdField>(String)</EntityIdField>
+		<EntityPanel>(String)</EntityPanel>
+		<EntityStateField>(String)</EntityStateField>
+		<EntityTable>(String)</EntityTable>
+		<EntityTypeField>(String)</EntityTypeField>
+		<FilterClass>(String)</FilterClass>
+		<LettersModule>(String)</LettersModule>
+		<MethodActItf>(String)</MethodActItf>
+		<MethodAlarmItf>(String)</MethodAlarmItf>
+		<MethodName>(String)</MethodName>
+		<MethodStepItf>(String)</MethodStepItf>
+		<NameType>(String)</NameType>
+		<QueryActItf>(String)</QueryActItf>
+		<QueryAlarmItf>(String)</QueryAlarmItf>
+		<QueryStepItf>(String)</QueryStepItf>
+		<StepNotifClass>(String)</StepNotifClass>
+		<EntityEmployeeField>(String)</EntityEmployeeField>
+		<EntityGroupField>(String)</EntityGroupField>
+		<OptimistLock>(long)</OptimistLock>
+	</WfModule>
+	<Process>(int)Proceso a realizar</Process>
+</CenBdiWfCreateModifyModule>

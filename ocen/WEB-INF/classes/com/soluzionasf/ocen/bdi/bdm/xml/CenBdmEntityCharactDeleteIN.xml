@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmEntityCharactDeleteIN>
+	<list_charact>
+		<charact>(seq)
+			<id_caracteristica>(man)(Long)</id_caracteristica>
+			<optimist_lock>(man)(Long)</optimist_lock>			
+		</charact>
+	</list_charact>
+</CenBdmEntityCharactDeleteIN>

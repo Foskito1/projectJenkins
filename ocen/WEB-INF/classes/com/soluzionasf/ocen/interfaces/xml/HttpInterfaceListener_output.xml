@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<HttpInterfaceListener>
+   <Error>(long)(man) 0 If No Error, 1 If Error</Error>
+   <ErrorMessage>(String)Error Message</ErrorMessage>
+   <ErrorMessageExtended>(String)Error Message Extended</ErrorMessageExtended>
+   <ParamList>
+      <Param>(sequence_item)         
+         <Name>(String) parameter name no mandatory</Name>
+         <Value>(String)(man) parameter value</Value>      
+      </Param>
+   </ParamList>
+</HttpInterfaceListener>

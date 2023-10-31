@@ -1,0 +1,4 @@
+
+El jar isfv10_bundlesIT.jar pasa a llamarse isf_bundlesIT.jar, para que en los classpath de la parte web se coja antes que isfv10.jar (orden alfabético)
+
+Eliminar isfv10_bundlesIT.jar del entorno.

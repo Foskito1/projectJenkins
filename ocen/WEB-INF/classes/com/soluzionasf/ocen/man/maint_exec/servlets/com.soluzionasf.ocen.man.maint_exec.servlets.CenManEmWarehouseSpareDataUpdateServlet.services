@@ -1,0 +1,1 @@
+CENMAN.updateSparePartDetail;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmWarehouseSparePartDetailService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmWarehouseSparePartDetailRequestDOMImpl

@@ -1,0 +1,126 @@
+<HTML>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<style type="text/css">
+.table {text-align:center; 
+		vertical-align:super;
+		width:100%;
+		border-collapse:collapse;}
+.headertable {font-family: Verdana, Arial, Helvetica, sans-serif; 
+			  font-size:8pt; 
+			  font-style:normal; 
+			  line-height:normal; 
+			  text-align:center; 
+			  border-color:black; 
+			  border-width:1px; 
+			  border-style:solid;}
+.row1 {font-family: Verdana, Arial, Helvetica, sans-serif; 
+	   font-size:8pt; 
+	   font-style:normal; 
+	   line-height:normal; 
+	   horizontal-align:center; 
+	   text-align:center; 
+	   border-color:black; 
+	   border-width:1px; 
+	   border-style:solid;}
+</style>
+
+<script language="JavaScript">
+	function fecha()
+	{
+	dias = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+	meses = new Array("Enero","Febrero","Marzo","Abril","Mayo",
+	"Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+	f = new Date();
+	dia=f.getDay();
+	d=f.getDate();d=d>9?d:'0'+d;
+	dia=dias[dia];
+	mes=f.getMonth();mes=meses[mes];agno=f.getFullYear();
+	cadena=dia+' '+d+' de '+mes+' de '+agno;
+	document.write(cadena);
+	}
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<br>
+<table width="100%" border="0">
+	<tr>
+		<td style='text-align:left;font-size:26pt;font-family:Arial;color:#000070'><b>EPSA</b></td>
+		<td style='text-align:right;font-size:13pt;font-family:Arial;color:#000070'><b>FR.PRO.003.02</b></td>
+	</tr>
+</table>
+<br>
+<br>
+<table width="100%" border="0">
+	<tr>
+		<td	style='text-align:center;font-family:Arial;font-size:11pt;'>Empresa de Energ&iacute;a del Pac&iacute;fico S.A. E.S.P.</td>
+	</tr>
+	<tr>
+		<td	style='text-align:center;font-family:Arial;font-size:11pt'>Centro de Supervisi&oacute;n y Maniobras</td>
+	</tr>
+</table>
+<br>
+<br>
+<table width="100%" border="0">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="10%" style='font-size:11pt;font-family:Arial'>Yumbo.</td>
+		<td style='font-size:11pt;font-family:Arial'>
+			<script language="JavaScript">
+				fecha()
+			</script>
+		</td>
+	</tr>
+</table>
+<br>
+<table width="100%" border="0">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="10%" style='font-size:11pt;font-family:Arial'>Para</td>
+		<td style='font-size:11pt;font-family:Arial'>
+		|root.CENOPE_QRY_REPORT_EVENT_GEN.Row@DESTINATARIO|
+		</td>
+	</tr>
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="10%" style='font-size:11pt;font-family:Arial'>&nbsp;</td>
+		<td style='font-size:11pt;font-family:Arial'>
+		|root.CENOPE_QRY_REPORT_EVENT_GEN.Row@PUESTO|
+		</td>
+	</tr>
+</table>
+<br>
+<table width="100%" border="0">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="10%" style='font-size:11pt;font-family:Arial'>Referencia</td>
+		<td style='font-size:11pt;font-family:Arial'>
+		Eventos en unidades de generaci&oacute;n
+		</td>
+	</tr>
+</table>
+<br>
+<br>
+<table width="100%" border="0">
+	<tr>
+		<td>
+  		|GRID(root,&quot;{table:class=table,row1=row1,row2=row1}{column:name=ITEM, type=number, block=CENOPE_QRY_REPORT_EVENT_GEN, label=ITEM, class=headertable}{column:name=PLANTA, type=string, block=CENOPE_QRY_REPORT_EVENT_GEN, label=DES_CENTRAL, class=headertable}{column:name=No.Unidad, type=number, block=CENOPE_QRY_REPORT_EVENT_GEN, label=NUM_UNIDAD, class=headertable}{column:name=FECHA SALIDA, type=string, block=CENOPE_QRY_REPORT_EVENT_GEN, label=FEC_SALIDA, class=headertable}{column:name=HORA, type=string, block=CENOPE_QRY_REPORT_EVENT_GEN, label=HOR_SALIDA, class=headertable}{column:name=FECHA ENTRADA, type=string, block=CENOPE_QRY_REPORT_EVENT_GEN, label=FEC_ENTRADA, class=headertable}{column:name=HORA, type=string, block=CENOPE_QRY_REPORT_EVENT_GEN,label=HOR_ENTRADA, class=headertable}{column:name=ESTADO, type=string, block=CENOPE_QRY_REPORT_EVENT_GEN, label=COD_ESTADO, class=headertable}{column:name=DISPON(MW), type=number, block=CENOPE_QRY_REPORT_EVENT_GEN, label=POTENCIA_DISPONIBLE, class=headertable}{column:name=DESCRIPCION CAUSA, type=string, block=CENOPE_QRY_REPORT_EVENT_GEN, label=DES_CAUSA, class=headertable}&quot;)|
+		</td>
+	</tr>
+</table>
+<br>
+<br>
+<table width="100%" border="0">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="15%" style='font-size:11pt;font-family:Arial'>Firmado por:</td>
+		<td style='font-size:11pt;font-family:Arial'>
+		|root.CENOPE_QRY_REPORT_EVENT_GEN.Row@USUARIO|
+		</td>
+	</tr>
+</table>
+</body>
+</html>

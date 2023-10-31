@@ -1,0 +1,1 @@
+CENMAN.deleteLaborUnits;com.soluzionasf.ocen.man.maint_exec.domain.CenmanLaborUnitsDeleteService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmLaborUnitDeleteRequestDOMImpl

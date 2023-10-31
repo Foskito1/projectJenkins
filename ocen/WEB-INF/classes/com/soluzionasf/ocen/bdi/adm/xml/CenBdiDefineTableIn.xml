@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<defineTable>
+	<code idtab="id de la tabla" description="descripcion de la tabla" 
+	    type_objet="tipo de objeto donde se guardan los datos" name_objet="nombre del objeto donde se guardan los datos" 
+	    sub_modul="" sub_id="" name_table="nombre de la tabla asociada" 
+	    modulo_propietario="modulo propietario de la tabla" 
+	    method_dddw="metodo para el campo metodo_desc en tabla descriptor" 
+	    check_flag="flag 1/0 para el campo f_validacion en tabla descriptor" 
+	    optimist_lock="optimist de la tabla" multilanguage="flag S/N para el campo MULTILANGUAGE en tabla descriptor"/>
+	<register id_camp="identificador del campo de la tabla" name_camp="nombre que identifica al campo dentro de la tabla" des_camp="descripcion del campo de la tabla" long="longitud que tendra el campo dentro de la tabla" order="orden que ocupara el campo dentro de la tabla" type_data="tipo de dato que almacenara el campo" num_decimal="numero de decimales en caso de que sea de tipo numerico" query="query + argumento para el campo decodifica en tabla campos" vista="vista para el campo decodifica_v en tabla campos" optimist_lock_campo="optimist del campo de la tabla">
+		<mods optimist_mto="optimist del mantenimiento de la tabla" type_operation="tipo de operacion permitido a realizar sobre ese campo" moduls="modulos que pueden actuar sobre el campo" informe="si es posible sacar informes sobre el campo">(seq)</mods>
+	(seq)</register>
+</defineTable>
+            

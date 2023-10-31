@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiRegDocConcessionsQuery>
+  <Filter>
+    <est_legal>(String) Condidionces de filtro para el campo Estado legal</est_legal>
+    <est_administrativo>(String) Condidionces de filtro para el campo Estado administrativo</est_administrativo>
+    <usos>(String) Condidionces de filtro para el campo Usos</usos>
+    <rio_secundario>(String) Condidionces de filtro para el campo Río Secundario</rio_secundario>
+    <rio_principal>(String) Condidionces de filtro para el campo Río Principal</rio_principal>
+    <cuenca>(String) Condidionces de filtro para el campo Cuenca</cuenca>
+    <confederacion_hidro>(String) Condidionces de filtro para el campo Confederación Hidrográfica</confederacion_hidro>
+    <tit_administrativo>(String) Condidionces de filtro para el campo Titular Administrativo</tit_administrativo>
+    <tit_legal>(String) Condidionces de filtro para el campo Titular Legal</tit_legal>
+    <observaciones>(String) Condidionces de filtro para el campo Observaciones (con búsqueda con %)</observaciones>
+    <condicionado>(String) Condidionces de filtro para el campo Condicionado (con búsqueda con %)</condicionado>
+    <municipio>(String) Condidionces de filtro para el campo Municipio</municipio>
+    <central>(String) Condidionces de filtro para el campo Central</central>
+    <presa>(String) Condidionces de filtro para el campo Presa</presa>
+    <embalse>(String) Condidionces de filtro para el campo Embalse</embalse>
+    <fec_otorgamiento_hasta>(Date) Condidionces de filtro para el campo Fecha Otorgamiento Hasta</fec_otorgamiento_hasta>
+    <fec_otorgamiento_desde>(Date) Condidionces de filtro para el campo Fecha Otorgamiento Desde</fec_otorgamiento_desde>
+    <fec_caducidad_hasta>(Date) Condidionces de filtro para el campo Fecha Caducidad Hasta</fec_caducidad_hasta>
+    <fec_caducidad_desde>(Date) Condidionces de filtro para el campo Fecha Caducidad Desde</fec_caducidad_desde>
+    <fec_computo_hasta>(Date) Condidionces de filtro para el campo Fecha Cómputo Hasta</fec_computo_hasta>
+    <fec_computo_desde>(Date) Condidionces de filtro para el campo Fecha Cómputo Desde</fec_computo_desde>
+    <doc_oficial>(String) Condidionces de filtro para el campo Documento Oficial (con búsqueda con %)</doc_oficial>
+    <localizacion>(String) Condidionces de filtro para el campo Localización (con búsqueda con %)</localizacion>
+    <concesion>(String) Condidionces de filtro para el campo Concesión (con búsqueda con %)</concesion>
+  </Filter>
+</CenBdiRegDocConcessionsQuery>

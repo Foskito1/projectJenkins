@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiMessage>
+	Result genérico. Se podrá utilizar en varios servicios para devolver un mensaje sencillo, que no sea error.
+	Las modificaciones pueden afectar a varios servicios.
+	<Message> (String) Mensaje a devolver
+	</Message>
+</CenBdiMessage>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibSirapMeetering>
+	<SirapMeetering>
+		<ListaCentrales>
+			(sequence_item)(man)
+			<CodigoCentral>(String)(man)</CodigoCentral>
+			<ListaFechaHora>
+				(sequence_item)(man)
+				<FechaHora>(DateTimeI18n)(man)</FechaHora>
+				<EnergiaNeta>(Double)(man)</EnergiaNeta>
+				<Status>(Integer)(man)</Status>
+			</ListaFechaHora>
+		</ListaCentrales>
+	</SirapMeetering>
+</CenTibSirapMeetering>

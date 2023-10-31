@@ -1,0 +1,16 @@
+<CenBdiWfActionMaintenance>	
+	<Action>
+		<CodDevelop>(String)</CodDevelop>
+		<ActionName>(String)</ActionName>
+		<ActionType>(String)</ActionType>
+		<ProcessType>(String)</ProcessType>
+		<ProcessName>(String)</ProcessName>
+		<CodTarget>(String)</CodTarget>
+		<CodModule>(Long)</CodModule>
+		<CodUser>(Long)</CodUser>
+		<OptimistLock>(Long)</OptimistLock>
+		<Interface>(String)</Interface>
+		<JavaClass>(String)</JavaClass>
+		<ClassMethod>(String)</ClassMethod>
+	</Action>
+</CenBdiWfActionMaintenance>

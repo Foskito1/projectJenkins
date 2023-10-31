@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiSyPManageUsers>
+	<user_data>
+		<id_access_configuration>(Long) ID_ACCESS_CONFIGURATION field of GCSS_USER table</id_access_configuration> 
+		<company_id>(Long)(man) COMPANY_ID field of GCSS_USER table</company_id> 
+		<name>(String)(man) NAME field of GCSS_USER table</name> 
+		<password>(String)(man) PASSWORD field of GCSS_USER table</password> 
+		<creation_date>(DateTimeI18n)(man) CREATION_DATE field of GCSS_USER table</creation_date> 
+		<programmed_drop_date>(DateTimeI18n) PROGRAMMED_DROP_DATE field of GCSS_USER table</programmed_drop_date> 
+		<failed_authentif_attempts>(Long) FAILED_AUTHENTIF_ATTEMPTS field of GCSS_USER table</failed_authentif_attempts> 
+		<next_authentification_date>(DateTimeI18n) NEXT_AUTHENTIFICATION_DATE field of GCSS_USER table</next_authentification_date> 
+		<login_name>(String)(man) LOGIN_NAME field of GCSS_USER table</login_name> 
+		<user_id>(Long) USER_ID field of CENBDT_CONFIG_USU table</user_id> 
+		<optimist_lock>(Long) OPTIMIST_LOCK field of CENBDT_CONFIG_USU table</optimist_lock> 
+		<modif_pub_group_mail>(String) MODIF_PUB_GROUP_MAIL field of CENBDT_CONFIG_USU table</modif_pub_group_mail>
+		<modif_pub_user_mail>(String) MODIF_PUB_USER_MAIL field of CENBDT_CONFIG_USU table</modif_pub_user_mail>
+		<carga_msg_error_ini>(String) CARGA_MSG_ERROR_INI field of CENBDT_CONFIG_USU table</carga_msg_error_ini>
+		<modulo_ini>(String) MODULO_INI field of CENBDT_CONFIG_USU table</modulo_ini>
+		<direccion_correo>(String) DIRECCION_CORREO field of CENBDT_CORREO_ELECTRONICO</direccion_correo>
+		<id_config>(Long) ID_CONFIG field of CENBDT_CONFIG_USU table</id_config>
+		<alias_adm>(String) ALIAS_ADM field of CENBDT_CONFIG_USU table</alias_adm>
+		<num_telefono>(String) NUM_TELEFONO field of CENBDT_CONFIG_USU table</num_telefono>
+		<id_zona_horaria>(Long)Timezone for user</id_zona_horaria>
+		<user_ingen_mobile>(Long)User Ingen Mobile</user_ingen_mobile>
+		<locale>(String) LOCALE del usuario</locale>
+		<pwd_mobile>(String) Password movilidad</pwd_mobile>
+		<domain>(String) Dominio del usuario</domain>
+		<user_ingen_da>(Boolean)User Ingen DA</user_ingen_da>
+		<elem_bdi_ini>(String) Elemento inicial </elem_bdi_ini>
+		<man_number>(String) numero de identificacion de zesco-hr</man_number>																											   
+	</user_data>
+</CenBdiSyPManageUsers>

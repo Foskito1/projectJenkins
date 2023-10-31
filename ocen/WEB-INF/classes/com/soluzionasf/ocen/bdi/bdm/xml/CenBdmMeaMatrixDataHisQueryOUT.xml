@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdmMeaMatrixDataHisQuery>
+	<Tables> 
+		<ROW PANEL="(String)" NODE="(Long)" NODE_DESC="(String)" TABLE_NAME="(String)" DATE="(DateTimeI18n)" VERSION="(Long)" DATE_MODIF="(DateTimeI18n)" USER_MODIF="(Long)" USER_MODIF_DESC="(String)" ID_DOCUM="(Long)" FLAG_VALID="(Long)" FLAG_BLOCK="(Long)" FLAG_1="(String)" CRIT_1="(String)">(seq)</ROW>
+	</Tables>
+	<Values> 
+		<ROW TABLE_NAME="(String)" COL="(Long)" ROW="(Long)" STRING_VAL="(String)" NUMERIC_VAL="(Double)">(seq)</ROW>
+	</Values>
+</CenBdmMeaMatrixDataHisQuery>
+

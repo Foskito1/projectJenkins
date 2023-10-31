@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiInsertApuntesList>
+	<Apuntes>
+		<Descriptor>(man)(sequence_item)
+        <cod_apunte>(String)(man) Codigo del tipo de apunte. </cod_apunte>        
+			 <Apunte> (man)(sequence_item)
+		    		<id_usuario>(Long)(man) Usuario que inserta el apunte. </id_usuario>
+		    		<fecha>(DateTimeI18n)(man) Fecha del apunte. </fecha>
+		    		<valor>(String)(man)Valor del apunte. </valor>
+		    		<optimist_lock>(Long)</optimist_lock>
+		    </Apunte> 
+		</Descriptor> 
+	</Apuntes>
+</CenBdiInsertApuntesList>

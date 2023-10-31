@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiIgParcelaTitUte>
+	<ParcelaTit>
+		<ListParcelaTitDelete>(seq)
+			<ParcelaTitDelete>
+				<id_parcela_tit>(Long)(man) Id Parcela Tit a borrar</id_parcela_tit>
+				<optimist_lock>(Long)(man) optimist_lock</optimist_lock>
+			</ParcelaTitDelete>
+		</ListParcelaTitDelete>
+		
+		<ListParcelaTitAltaModif>(seq)
+			<ParcelaTitAltaModif>
+				<id_parcela_tit>(Long)(man) Id Parcela tit a modificar, -1 si es nuevo</id_parcela_tit>
+				<id_parcela>(Long)(man) Id Parcela</id_parcela>
+				<id_titulacion>(Long)(man) Id Titulacion</id_titulacion>
+				<is_generacion>(Long)(man) Is Generacion</is_generacion>
+				<id_info_management>(Long)(man) Id Info Management</id_info_management>
+				<optimist_lock>(Long)(man) optimist_lock</optimist_lock>
+			</ParcelaTitAltaModif>
+		</ListParcelaTitAltaModif>
+	</ParcelaTit>
+	
+	<ParcelaUte>
+		<ListParcelaUteDelete>(seq)
+			<ParcelaUteDelete>
+				<id_parcela_ute>(Long)(man) Id Parcela Ute a borrar</id_parcela_ute>
+				<optimist_lock>(Long)(man) optimist_lock</optimist_lock>
+			</ParcelaUteDelete>
+		</ListParcelaUteDelete>
+
+		<ListParcelaUteAltaModif>(seq)
+			<ParcelaUteAltaModif>
+				<id_ute_parcela>(Long)(man) Id ute parcela a modificar, -1 si es nuevo</id_ute_parcela>
+				<id_parcela>(Long)(man) Id Parcela</id_parcela>
+				<id_titulacion>(Long)(man) Id Titulacion</id_titulacion>
+				<mnemonico>(String)(man) Mnemonico</mnemonico>
+				<id_secuencial_elementos>(Long)(man) id_secuencial_elementos</id_secuencial_elementos>
+				<cod_submercado>(String)(man) Código de submercado</cod_submercado>
+				<sigla_submercado>(String)(man) Siglas submercado</sigla_submercado>
+				<optimist_lock>(Long)(man) optimist_lock</optimist_lock>
+			</ParcelaUteAltaModif>
+		</ListParcelaUteAltaModif>
+	</ParcelaUte>
+
+</CenBdiIgParcelaTitUte>

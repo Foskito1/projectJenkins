@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmGraphDownloadMeasurements>
+	<Descarga_Grafica>
+		<Id_Descarga>(man)(String)Id del formato de descarga</Id_Descarga>
+		<Fecha_Ini_Med>(String)Fecha inicio de medición</Fecha_Ini_Med>
+		<Fecha_Fin_Med>(String)Fecha fin de medición</Fecha_Fin_Med>
+		<Fecha_Ini_Mod>(String)Fecha inicio de modificación</Fecha_Ini_Mod>
+		<Fecha_Fin_Mod>(String)Fecha fin de modificación</Fecha_Fin_Mod>
+		<Titulo_Izq>(String) Texto del título izquierdo </Titulo_Izq>
+		<Titulo_Der>(String) Texto del título derecho </Titulo_Der>
+		<Tipo_Subtitulo>(String) Tipo del subtítulo </Tipo_Subtitulo>
+		<Subtitulo>(String) Texto del subtítulo </Subtitulo>
+		<Pos_Subtitulo>(String) Posición del subtítulo </Pos_Subtitulo>
+	</Descarga_Grafica>
+</CenBdmGraphDownloadMeasurements>

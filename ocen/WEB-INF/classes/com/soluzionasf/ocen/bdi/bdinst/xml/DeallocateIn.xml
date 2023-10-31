@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<raise>
+	<code id_funtional="id secuencial del hueco" id_inventory="id secuencial del inventario" optimist_funtional="optimist lock del hueco" optimist_inventory="optimist lock del inventario" reason="causa o motivo de la desactivacion" comment="comentario sobre la desactivacion" special_location="codigo de la ubicacion especial"/>
+</raise>	  

@@ -1,0 +1,6 @@
+<CenBdiInsertNavGrItems>
+	<Global>
+		<result>(long)(man) 0 si todo ok. Error en otro caso </result>
+		<message>(String)</message>
+	</Global>
+</CenBdiInsertNavGrItems>

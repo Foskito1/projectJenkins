@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibSapPmCatPerfilAdd>
+	<SapPmCatPerfilAdd>
+		<CodPerfil>(String)(man)</CodPerfil>
+		<DesPerfil>(String)(man)</DesPerfil>
+		<SapSystem>(String)(man)</SapSystem>
+		<SapClient>(String)(man)</SapClient>
+		<SapSorgente>(String)</SapSorgente>
+		<IdMsg>(String)(man)</IdMsg>
+		<Tipos_catalogos>(sequence_item)(man)
+			<CodTipoCatalogo>(String)(man)</CodTipoCatalogo>
+			<Grupos>(sequence_item)(man)
+				<CodGrupo>(String)(man)</CodGrupo>
+			</Grupos>
+		</Tipos_catalogos>
+	</SapPmCatPerfilAdd>
+</CenTibSapPmCatPerfilAdd>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<content>
+	<es>
+		<indra>
+			<isl>
+				<jdbc>
+					<!--Driver para establecer un queryTimeout a todas las Statment (y subclases) instanciadas-->
+					<timeout>
+						<!--Incluir aquí todos los drivers intervenidos por el driver de queryTimeout-->
+						<Driver>
+							<!--Driver Oracle-->
+							<mapping1>
+								<!--URL publicada-->
+								<url_src>jdbc:timeout-oracle:thin</url_src>
+
+								<!--URL encapsulada-->
+								<url_target>jdbc:oracle:thin</url_target>
+
+								<!--Clase del driver encapsulado-->
+								<class_target>oracle.jdbc.driver.OracleDriver</class_target>
+							</mapping1>
+
+						</Driver>
+					</timeout>
+				</jdbc>
+			</isl>
+		</indra>
+	</es>
+</content>

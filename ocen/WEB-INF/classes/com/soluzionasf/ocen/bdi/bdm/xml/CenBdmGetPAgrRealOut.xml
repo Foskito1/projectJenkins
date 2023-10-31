@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<QueryResult>
+  <row PAR_COD_TABLA="Codigo de la tabla" 
+       PAR_COD_AGR="Codigo de la agrupacion" 
+       PAR_COD_MEDIDA="Codigo de la medida" 
+       PAR_DES_MEDIDA="descripcion de la medida" 
+       PAR_N_FILAS="Número de filas" 
+  ></row>
+</QueryResult>

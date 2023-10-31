@@ -1,0 +1,43 @@
+<CenBdiWfWorkflowMaintenance>
+	<stepGraph>
+		<idGraph>(Long) Identificador del grafico</idGraph>
+		<optimistLock>(Long) Dato del bloqueo</optimistLock>
+		<maxGraphDays>(Long) maximum number of days to do the Graph</maxGraphDays>
+		<graphName>(String) Nombre del grafico</graphName>
+		<graphDesc>(String) Descripcion del grafico</graphDesc>
+		<firstStep>(String) Primer paso</firstStep>
+		<dwSyntax>(String) sintaxis del dw</dwSyntax>
+		<codModule>(Long) modulo al que pertenece el grafico</codModule>
+		<node>(Long) nodo del árbol al que pertenece</node>
+		<stepModelList>
+			<stepModel> (seq)
+				<current>(String) Paso actual</current>
+				<next>(String) Paso siguiente</next>
+				<indAutomatic>(Long) indicador automatico</indAutomatic>
+				<indVisible>(Long) indicador visible</indVisible>
+				<indValidate>(Long) indicador validacion</indValidate>
+				<indIsManual>(Long) indicador manual</indIsManual>
+			</stepModel>
+		</stepModelList>
+		<stepResponsibleList>
+			<step> (seq)
+				<codDevelop>(String) Step Code</codDevelop>
+				<codGroupType>(String) Responsability group Type code</codGroupType>
+				<maxDays>(Long) maximum number of days to do the step</maxDays>
+				<warningDays>(Long) number of days to warning</warningDays>
+			</step>
+		</stepResponsibleList>
+		<conditionList>
+	 		<condition> (seq)
+	 			<idStepModel>(Long) identificador del step model</idStepModel>
+				<currentStep>(String) paso de origen</currentStep>
+				<nextStep>(String) paso de destino</nextStep>
+	 			<idEntityTable>(Long) identificador del tipo de entidad</idEntityTable>
+	 			<idField>(Long) identificador del campo</idField>
+	 			<idOperation>(String) identificador de la operacion</idOperation>
+	 			<value>(String) valor</value>
+	 		</condition>
+	 	</conditionList>
+	</stepGraph>
+	<operation>(String) Type of operation</operation>
+</CenBdiWfWorkflowMaintenance>

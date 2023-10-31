@@ -1,0 +1,4 @@
+<CenBdiExecuteQuery>
+	<response>(String) Resultado de la query </response>
+	<result>(Boolean)  OK / KO </result>
+</CenBdiExecuteQuery>

@@ -1,0 +1,1 @@
+CENMAN.insertStoreGroup;com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmStoreGroupInsertService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmStoreGroupInsertRequestDOMImpl

@@ -1,0 +1,1 @@
+CENMAN.updateEmPlantillaState;com.soluzionasf.ocen.man.maint_exec.domain.CenmanEmPlantillaStateUpdateService;com.soluzionasf.ocen.man.maint_exec.servlets.CenmanEmAccionMantenimientoStateUpdateRequestDOMImpl

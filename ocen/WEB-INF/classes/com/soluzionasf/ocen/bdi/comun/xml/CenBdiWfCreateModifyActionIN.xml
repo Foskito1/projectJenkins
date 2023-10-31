@@ -1,0 +1,17 @@
+<CenBdiWfCreateModifyAction>
+	<WfAction>
+		<IdAction>(Long)</IdAction>
+		<OptimistLock>(Long)</OptimistLock>
+		<ActionType>(String)</ActionType>
+		<CodDevelop>(String)</CodDevelop>
+		<CodItf>(String)</CodItf>
+		<CodModule>(Long)</CodModule>
+		<CodTarget>(String)</CodTarget>
+		<NameType>(String)</NameType>
+		<NameTypeXi18n>(int)</NameTypeXi18n>
+		<ProcessName>(String)</ProcessName>
+		<ProcessType>(String)</ProcessType>
+		<UserId>(int)</UserId>		
+	</WfAction>
+	<Process>(int)Proceso a realizar</Process>
+</CenBdiWfCreateModifyAction>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibSapPmAnagraficaNE>
+	<SapPmAnagraficaNE>
+		<FecHorAct>(DateTimeI18n)(man)</FecHorAct>
+		<IdocNumber>(String)(man)</IdocNumber>
+		<DestSystem>(String)(man) Sap Sorgente</DestSystem>
+		<CodST>(String)(man)</CodST>
+		<SapSystem>(String) (man)</SapSystem>
+		<SapClient>(String) (man)</SapClient>			
+		<CodExito>(String)(man)</CodExito>
+		<DesExito>(String)(man)</DesExito>
+	</SapPmAnagraficaNE>
+</CenTibSapPmAnagraficaNE>

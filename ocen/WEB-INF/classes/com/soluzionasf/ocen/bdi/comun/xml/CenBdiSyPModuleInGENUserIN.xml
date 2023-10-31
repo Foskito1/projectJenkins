@@ -1,0 +1,23 @@
+<CenBdiSyPModuleInGENUser>
+  <user_mod_ingen> 
+    <user_id>(Long)(man) USER_ID field of CENBDI_CONFIG_USU table</user_id>
+
+    <config_usu>
+      <new_config_usu>
+         <new_item>(seq)
+          <cod_perfil>(String)(man) ID_PERFIL_NODE field of CENBDI_SYP_PERFIL_NODE_ENT table</cod_perfil>
+         </new_item>
+      </new_config_usu>
+      <del_config_usu>
+        <del_item>(seq)
+          <cod_perfil>(String)(man) ID_PERFIL_NODE field of CENBDI_SYP_PERFIL_NODE_ENT table</cod_perfil>
+          <optimist_lock>(Long)(man) OPTIMIST_LOCK field of CENBDI_SYP_PERFIL_NODE_ENT table</optimist_lock>
+        </del_item>
+      </del_config_usu>
+    </config_usu>
+	
+  </user_mod_ingen>
+</CenBdiSyPModuleInGENUser>
+
+
+

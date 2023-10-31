@@ -1,0 +1,446 @@
+<html>
+<head>
+<title>Permisos de Trabajo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+.table 
+{	text-align: center; 
+	vertical-align: super; 
+	width: 100%; 
+	border-collapse: collapse;
+}
+.headertable 	
+{	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 7pt; font-style: normal; 
+	line-height: normal; 
+	text-align: center ; 
+	border-color:black ; 
+	border-width:1px ; 
+	border-style:solid ;  
+}
+.row1 		
+{	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 7pt; 
+	font-style: normal; 
+	line-height: normal; 
+	horizontal-align: center; 
+	text-align: center ; 
+	border-color:black ; 
+	border-width:1px ; 
+	border-style:solid ; 
+}
+.row5 		
+{	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 7pt; 
+	font-style: normal; 
+	line-height: normal; 
+	horizontal-align: left; 
+	text-align: left ;	
+}
+.headertable_inv	
+{	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 7pt; font-style: normal; 
+	line-height: normal; 
+	text-align: left ; 
+}
+/* Encabezado de las tablas.*/
+.tableheader
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+	border-collapse: collapse;
+	border-color:black;
+	border-width: 1px;
+	border-style:solid;
+	width: 100%
+}
+/* Campo con borde claro a la izquierda */
+.leftnormal
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.0;
+	text-align: left;		
+	vertical-align: top
+}
+/* Campo con borde claro a la izquierda negrita */
+.leftbold
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.4;
+	text-align: left;	
+	vertical-align: top
+}
+/* Campo con borde claro centrado */
+.centernormal
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.0;
+	text-align: center;		
+	vertical-align: top
+}
+</style>
+</head>
+
+<!-- INFORME DE UN PERMISO DE TRABAJO -->
+<!-- <body > -->
+<body background="/images/cenope_petr_danger_copy.jpg" >
+<table width="100%" border="1">
+  <tr>
+    <td height="31"> 
+      <table width="100%" border="0" align="left">
+        <tr> 
+          <td width="0%" height="47"><img src="/images/saggas.jpg" width="101" height="34">&nbsp;</td>
+          <td width="47%" height="47" class=leftbold>PERMISO DE TRABAJO N&ordm;: 
+            <b>|root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@COD_PERMISO|</b></td>
+          <td width="24%" height="47" class=leftnormal>VERSI&Oacute;N: |root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@VERSION|</td>
+          <td width="19%" height="47" class=leftnormal>OT: |root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@OT|</td>
+		  <!-- <td width="10%" height="47" class=leftnormal></td> -->
+		  <td width="10%" height="47" class=leftnormal><img src="/images/ocen_danger_copy_ico.jpg" width="45" height="45"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td > 
+      <table width="100%" border="0">
+        <tr> 
+          <td width="50%" class=leftnormal> 
+            <p><b>Tipo Permiso de Trabajo: </b>|root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@TIPO_PERMISO| 
+              <br>
+              <b>Servicio Solicitante: </b>|root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@SERVICIO_SOLICITANTE| 
+              <br>
+              <b>Elemento: </b>|root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@ELEM_DESC| 
+              <br>
+              <b>Validez Permiso:&nbsp;</b>desde |root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@HORA_INICIO| 
+              del |TO_DATE(root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@F_INICIO, 
+              &quot;dd-MM-yyyy&quot;)| hasta |root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@HORA_FIN| 
+              del |TO_DATE(root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@F_FIN, &quot;dd-MM-yyyy&quot;)| 
+              <br>
+              <b>Descripci&oacute;n: </b>|root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@DESC_TRABAJO|
+              <script type="text/javascript">
+				var txt=document.all[document.all.length-1].previousSibling
+				if (undefined != txt.nodeValue)
+					txt.nodeValue=txt.nodeValue.replace(new RegExp(String.fromCharCode(160),"g"), " ")
+			  </script>
+              <br>
+              <b>Posici&oacute;n: </b>|root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@ESTRUCTURA|
+			  <script type="text/javascript">
+				var txt=document.all[document.all.length-1].previousSibling
+				if (undefined != txt.nodeValue)
+					txt.nodeValue=txt.nodeValue.replace(new RegExp(String.fromCharCode(160),"g"), " ")
+			  </script>
+			</p>
+          </td>
+          <td width="50%" class=leftnormal> 
+            <p>
+			  <b>Autorizante: </b>|root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@AUTORIZANTE| 
+              <br>
+              <b>Solicitante: </b>|root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@SOLICITANTE|
+              <br>
+              <b>Ejecutante: </b>|root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@EJECUTANTE|              
+			</p>
+            <p>Enterado de las instrucciones complementarias, de los equipos a 
+              emplear y de la Normativa de trabajo a aplicar</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			   <b>CONFORME SEGURIDAD</b>
+			</p>
+           </td>
+        </tr>
+        <tr> </tr>
+        <tr> </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="1">
+  <tr> 
+    <td class=leftnormal height="70"><font class="table">|GRID(root,&quot;{table:class=table,row1=row1,row2=row1}{column:name=TipoAcción,type=string,block=CENOPE_QRY_PETR_INFORME_ACCIONES,label=TIPO_ACCION,class=headertable}{column:name=Acción,type=string,block=CENOPE_QRY_PETR_INFORME_ACCIONES,label=DES_ACCION,class=headertable}&quot;)|</font> 
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FECHA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp; HORA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      FIRMA <br>
+      <br>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="1">
+  <tr> 
+    <td class=leftnormal>
+		<b> &nbsp;Observaciones: </b>|root.CENOPE_QRY_PETR_INFORME_PERMISO.Row@OBSERVACIONES|
+		<script type="text/javascript">
+			var txt=document.all[document.all.length-1].previousSibling
+			if (undefined != txt.nodeValue)
+				txt.nodeValue=txt.nodeValue.replace(new RegExp(String.fromCharCode(160),"g"), " ")
+		</script>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="1">
+  <tr>
+    <td>
+      <table width="100%" border="0">
+        <tr> 
+          <td colspan="2" class=leftnormal height="47"> &nbsp;<b>RENOVACI&Oacute;N 
+            Y VALIDACI&Oacute;N DEL PERMISO DE TRABAJO<br>
+            </b>&nbsp;Inspeccionado personalmente el trabajo y comprobado el cumplimiento 
+            de los requisitos de seguridad certifico que se puede efectuar el 
+            trabajo con seguridad. </td>
+        </tr>
+        <tr> 
+          <td>
+            <table width="100%" border="1" cellspacing="0" class=leftnormal>
+              <tr> 
+                <td> 
+                  <div align="center">Fecha</div>
+                </td>
+                <td> 
+                  <div align="center">Hora</div>
+                </td>
+                <td> 
+                  <div align="center">Operador &Aacute;rea</div>
+                </td>
+                <td> 
+                  <div align="center">Autorizante</div>
+                </td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table width="100%" border="1" cellspacing="0" class=leftnormal>
+              <tr> 
+                <td> 
+                  <div align="center">Fecha</div>
+                </td>
+                <td> 
+                  <div align="center">Hora</div>
+                </td>
+                <td> 
+                  <div align="center">Operador &Aacute;rea</div>
+                </td>
+                <td> 
+                  <div align="center">Autorizante</div>
+                </td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="18%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="29%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="1">
+  <tr>
+    <td height="179"> 
+      <table width="100%" border="0">
+        <tr> 
+          <td colspan="2" class=leftnormal> &nbsp;<b>COMPROBACIONES DE GAS COMBUSTIBLE / OX&Iacute;GENO</b></td>
+        </tr>
+        <tr> 
+          <td width="50%" height="156"> 
+            <table width="100%" border="1" cellspacing="0" class=leftnormal>
+              <tr> 
+                <td width="17%"> 
+                  <div align="center">Fecha</div>
+                </td>
+                <td width="20%"> 
+                  <div align="center">Hora</div>
+                </td>
+                <td width="30%"> 
+                  <div align="center">%lel / O2</div>
+                </td>
+                <td width="33%"> 
+                  <div align="center">Operador &Aacute;rea</div>
+                </td>
+              </tr>
+              <tr> 
+                <td width="17%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="30%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="17%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="30%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="17%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="30%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="17%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="30%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="17%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="30%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="17%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="30%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="17%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="30%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="17%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="30%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td width="17%">&nbsp;</td>
+                <td width="20%">&nbsp;</td>
+                <td width="30%">&nbsp;</td>
+                <td width="33%">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+          <td width="50%"> 
+            <table width="100%" border="0" class=leftnormal>
+              <tr> 
+                <td>|GRID(root,&quot;{table:class=table,row1=row1,row2=row1}{column:name=Tarjeta de Peligro,type=string,block=CENOPE_QRY_PETR_INFORME_AISLAMIENTOS,label=COD_TPELIGRO,class=headertable}{column:name=Elemento,type=string,block=CENOPE_QRY_PETR_INFORME_AISLAMIENTOS,label=ELEM_DESC,class=headertable}&quot;)|</td>
+              </tr>
+            </table>
+            <table width="100%" border="0" class=leftnormal>
+              <tr> 
+                <td> 
+                  <p>
+					<b> FIN DEL TRABAJO</b> &nbsp;&nbsp;Finalizado el trabajo la zona queda en condiciones adecuadas
+				  </p>
+                  <table width="100%" border="0" cellspacing="0" class=centernormal>
+                    <tr>
+                      <td width="25%">FECHA</td>
+                      <td width="25%">HORA</td>
+                      <td width="25%">SOLICITANTE</td>
+                      <td width="25%">AUTORIZANTE</td>
+                    </tr>
+                  </table>
+                  
+                </td>
+              </tr>
+            </table>            
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<p></p>
+</body>
+</html>

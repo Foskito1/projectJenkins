@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiInsertLoginRegistration>
+	<user_id> (Long) Id del usuario </user_id>
+	<user_name> (String) Id del usuario </user_name>
+	<desc_corta> (String) Descripción Corta del Navegador </desc_corta>
+	<desc_larga> (String) Descripción Larga del Navegador </desc_larga>
+	<version_product> (String) Versión de InGEN </version_product>
+</CenBdiInsertLoginRegistration>

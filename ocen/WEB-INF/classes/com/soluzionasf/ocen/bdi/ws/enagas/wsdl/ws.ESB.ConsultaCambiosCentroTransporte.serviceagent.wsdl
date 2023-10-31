@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by TIBCO WSDL-->
+<wsdl:definitions xmlns:ns1="http://soa.enagas.es/ESB/ConsultaCambios" xmlns:tns="http://soa.enagas.es/ESB/ConsultaCambios/CentroTransporte" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns0="http://soa.enagas.es/ESB/ConsultaCambiosCentroTransporte" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Untitled" targetNamespace="http://soa.enagas.es/ESB/ConsultaCambios/CentroTransporte">
+  <wsdl:types>
+    <xs:schema xmlns="http://soa.enagas.es/ESB/ConsultaCambiosCentroTransporte" xmlns:pfx0="http://soa.enagas.es/ESB/ConsultaCambiosCentroTransporte" xmlns:tns="http://soa.enagas.es/ESB/ConsultaCambios" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://soa.enagas.es/ESB/ConsultaCambiosCentroTransporte" elementFormDefault="qualified" attributeFormDefault="unqualified">
+      <xs:import namespace="http://soa.enagas.es/ESB/ConsultaCambios"/>
+      <xs:complexType name="ConsultaCambios">
+        <xs:complexContent>
+          <xs:extension base="tns:PeticionGenerica">
+            <xs:sequence>
+              <xs:element name="CentroTransporte" type="pfx0:ConsultaCentroTransporte" minOccurs="0"/>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="ConsultaCentroTransporte">
+        <xs:sequence>
+          <xs:element name="codCentro" type="xs:string" minOccurs="0"/>                  
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RespuestaCambios">
+        <xs:complexContent>
+          <xs:extension base="tns:RespuestaGenerica">
+            <xs:sequence>
+              <xs:element name="listadoCentroTransporte" type="pfx0:RespuestaCentro" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="RespuestaCentro">
+        <xs:sequence>
+          <xs:element name="identificador" type="tns:TipoInt10"/>
+		  <xs:element name="fechaInicioVigencia" type="xs:dateTime"/>
+          <xs:element name="fechaFinVigencia" type="xs:dateTime" minOccurs="0"/>
+		  <xs:element name="telefono" type="xs:string" minOccurs="0"/>
+		  <xs:element name="areaTransporte" type="pfx0:atributoVigencia" maxOccurs="unbounded"/>
+		  <xs:element name="fechaAlta" type="xs:dateTime"/>
+          <xs:element name="fechaModificacion" type="xs:dateTime"/>
+          <xs:element name="fechaBaja" type="xs:dateTime" minOccurs="0"/>
+          <xs:element name="codCentro" type="pfx0:atributoVigencia" maxOccurs="unbounded"/>
+		  <xs:element name="descripcionCentro" type="xs:string"/>		  
+        </xs:sequence>
+      </xs:complexType>
+	  <xs:complexType name="atributoVigencia">
+        <xs:sequence>
+          <xs:element name="fecIniVigencia" type="xs:dateTime" minOccurs="0"/>
+          <xs:element name="fecFinVigencia" type="xs:dateTime" minOccurs="0"/>
+          <xs:element name="valor" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ConsultaCambios" type="pfx0:ConsultaCambios"/>
+      <xs:element name="RespuestaCambios" type="pfx0:RespuestaCambios"/>
+    </xs:schema>
+    <xs:schema xmlns="http://soa.enagas.es/ESB/ConsultaCambios" xmlns:tns="http://soa.enagas.es/ESB/ConsultaCambios" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://soa.enagas.es/ESB/ConsultaCambios" elementFormDefault="qualified" attributeFormDefault="unqualified">
+      <xs:complexType name="CabeceraPeticion">
+        <xs:sequence>
+          <xs:element ref="tns:sistemaOrigen"/>
+          <xs:element ref="tns:componente" minOccurs="0"/>
+          <xs:element ref="tns:fechaHoraPeticion" minOccurs="0"/>
+          <xs:element ref="tns:idMensaje"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CabeceraRespuesta">
+        <xs:sequence>
+          <xs:element ref="tns:sistemaResp"/>
+          <xs:element ref="tns:sistemaOrigen"/>
+          <xs:element ref="tns:fechaHoraPeticion"/>
+          <xs:element ref="tns:fechaHoraResp"/>
+          <xs:element ref="tns:idMensaje"/>
+          <xs:element ref="tns:ejecucionOK"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ErrorRespuesta">
+        <xs:sequence>
+          <xs:element ref="tns:tipoError" minOccurs="0"/>
+          <xs:element ref="tns:codError" minOccurs="0"/>
+          <xs:element ref="tns:descError" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PeticionGenerica">
+        <xs:sequence>
+          <xs:element name="Cabecera" type="tns:CabeceraPeticion"/>
+          <xs:element name="fechaModificacion" type="xs:dateTime"/>
+          <xs:element name="version" type="tns:Versiones" minOccurs="0"/>
+          <xs:element name="identificador" type="tns:TipoInt10" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RespuestaGenerica">
+        <xs:sequence>
+          <xs:element name="Cabecera" type="tns:CabeceraRespuesta"/>
+          <xs:element name="Error" type="tns:ErrorRespuesta" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>	  
+      <xs:simpleType name="TipoInt10">
+        <xs:restriction base="xs:int">
+          <xs:totalDigits value="10"/>
+        </xs:restriction>
+      </xs:simpleType>
+	  <xs:simpleType name="Versiones">
+        <xs:restriction base="xs:int">
+          <xs:enumeration value="1"/>
+          <xs:enumeration value="2"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="ErrorNativo" type="xs:string"/>
+      <xs:element name="codError" type="xs:string"/>
+      <xs:element name="componente" type="xs:string"/>
+      <xs:element name="descError" type="xs:string"/>
+      <xs:element name="ejecucionOK" type="xs:boolean"/>
+      <xs:element name="fechaHoraPeticion" type="xs:dateTime"/>
+      <xs:element name="fechaHoraResp" type="xs:dateTime"/>
+      <xs:element name="idMensaje" type="xs:string"/>
+      <xs:element name="sistemaOrigen" type="xs:string"/>
+      <xs:element name="sistemaResp" type="xs:string"/>
+      <xs:element name="tipoError" type="xs:string"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:service name="ws.ESB.ConsultaCambiosCentroTransporte.serviceagent">
+    <wsdl:port name="ConsultaCambiosCentroTransportePortEndpoint" binding="tns:ConsultaCambiosCentroTransportePortEndpointBinding">
+      <soap:address location="http://localhost:8101/ESB/DREF/ConsultaBasica/CentroTransporte.Cambios"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:portType name="ConsultaCambiosCentroTransportePort">
+    <wsdl:operation name="ConsultaCambiosCentroTransporteOp">
+      <wsdl:input message="tns:PeticionConsultaCambiosCentroTransporte"/>
+      <wsdl:output message="tns:RespuestaConsultaCambiosCentroTransporte"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ConsultaCambiosCentroTransportePortEndpointBinding" type="tns:ConsultaCambiosCentroTransportePort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ConsultaCambiosCentroTransporteOp">
+      <soap:operation style="document" soapAction="/proyecto/flujos/ESB/NEW/RFESB_ConsultaCentroTransporte/Interfaces/ws.ESB.ConsultaCambiosCentroTransporte.serviceagent/ConsultaCambiosCentroTransportePortEndpoint1/ConsultaCambiosCentroTransporteOp"/>
+      <wsdl:input>
+        <soap:body use="literal" parts="Peticion"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="Respueta"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:message name="PeticionConsultaCambiosCentroTransporte">
+    <wsdl:part name="Peticion" element="ns0:ConsultaCambios"/>
+  </wsdl:message>
+  <wsdl:message name="RespuestaConsultaCambiosCentroTransporte">
+    <wsdl:part name="Respueta" element="ns0:RespuestaCambios"/>
+  </wsdl:message>
+</wsdl:definitions>

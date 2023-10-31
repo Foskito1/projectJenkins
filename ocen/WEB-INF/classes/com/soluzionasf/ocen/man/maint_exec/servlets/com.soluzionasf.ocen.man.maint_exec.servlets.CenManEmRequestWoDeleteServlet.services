@@ -1,0 +1,1 @@
+CenMan.EmDeleteWoRequest;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmRequestWoDeleteService;com.soluzionasf.ocen.man.maint_exec.servlets.CenManEmRequestWoDeleteRequestDOMImpl

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenDynamicExecuteObject>
+<Datos>
+	 
+	<salida>(man)  (seq)      
+       <posicion>(long)</posicion>
+       <cod_error>(long)</cod_error>
+       <stat_num_rows> (long) numero de filas </stat_num_rows>
+       <stat_time_query> (double) tiempo destinado a ejecutar la query </stat_time_query>
+       <stat_time_queryandfetch> (double) tiempo transcurrido en ejecutar la query y recorrer todas las filas obtenidas</stat_time_queryandfetch>
+      <campos>(man) (seq)   
+         <nombre>(String)</nombre>
+         <valor>(String)</valor>
+      </campos>
+  </salida>
+</Datos>
+</CenDynamicExecuteObject>
+
+ 

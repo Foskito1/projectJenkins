@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdmMeaMatrixDataHisQuery>
+	<Filter>
+		<panel>(man)(String) Panel </panel>
+		<node>(man)(Long) Node id</node>
+		<date>(man)(DateTimeI18n) Dataset date </date>
+		<version>(Long) Dataset version </version>
+		<table>(seq)
+			<table_name>(man)(String) Table to query </table_name>
+		</table>
+	</Filter>
+</CenBdmMeaMatrixDataHisQuery>

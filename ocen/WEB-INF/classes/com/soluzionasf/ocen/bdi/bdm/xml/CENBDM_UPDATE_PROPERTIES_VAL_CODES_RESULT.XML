@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmPropValCodesUpdate>
+	<Global>
+		<CenBdm_prop_val_codes>
+		    <Prop_val_code>(seq)		
+		        <id_property_code>(Long) PROPERTIES_VAL_CODES ID </id_property_code>
+		        <optimist_lock> (Long) (man) OPTIMIST_LOCK </optimist_lock>
+		    </Prop_val_code>
+		</CenBdm_prop_val_codes>
+	</Global>
+</CenBdmPropValCodesUpdate>

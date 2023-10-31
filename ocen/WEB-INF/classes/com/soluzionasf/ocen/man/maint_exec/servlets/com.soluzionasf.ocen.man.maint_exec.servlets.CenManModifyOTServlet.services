@@ -1,0 +1,2 @@
+CENMAN.modifyWorkOrder;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmModifyWorkOrderService;com.soluzionasf.ocen.man.maint_exec.servlets.CenmanEmOrdenTrabajoModifyRequestDOMImpl
+CenManEmIOpeWoModify;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmIOpeWoModify;com.soluzionasf.ocen.man.maint_exec.servlets.CenManIOpeWoModifyRequestDOMImpl

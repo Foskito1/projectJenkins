@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiDeleteGroupUser>
+	<Delete_Group>(man)
+		<id_Group>(Long)(man)Código del grupo de usuarios que hay que eliminar</id_Group>
+	</Delete_Group>
+</CenBdiDeleteGroupUser>

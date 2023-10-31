@@ -1,0 +1,17 @@
+CenBdiSearchElementVisual;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiSearchElements;com.soluzionasf.ocen.bdi.funexp.servlets.InventoryRequestDOMImpl
+CenBdiSearchElementByType;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiSearchElements;com.soluzionasf.ocen.bdi.funexp.servlets.CriteriosRequestDOMImpl
+CenBdiGetJerarquicalPath;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiSearchElements;com.soluzionasf.ocen.bdi.funexp.servlets.JerarquiaRequestDOMImpl
+CenBdiGetTechnicalCharact;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiSearchElements;com.soluzionasf.ocen.bdi.funexp.servlets.TechCaractRequestDOMImpl
+CenBdiGetGeneralCharact;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiSearchElements;com.soluzionasf.ocen.bdi.funexp.servlets.GeneralCharactRequestDOMImpl
+CenBdiSearchElement;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiSearchElements;com.soluzionasf.ocen.bdi.funexp.servlets.SearchGeneralRequestDOMImpl
+CenBdiGetCharactsOfElements;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiSearchElements;com.soluzionasf.ocen.bdi.funexp.servlets.CharactOfElementInRequestDOMImpl
+cenBdiMailRequest;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiMailRequest;com.soluzionasf.ocen.bdi.funexp.servlets.CenBdiMailRequestDOMImpl;
+cenbdiUpdateVirtualTree;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiVirtualTree;com.soluzionasf.ocen.bdi.funexp.servlets.CenBdiVirtualTreeRequestDOMImpl;
+
+# Query System Not Attended
+CenBdiQuerySystemNotAttended;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiQuerySystemNotAttended;isf.servlets.gcqs.RequestQuerySystemDOMImp
+CenBdiQuerySystemNotAttendedState;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiQuerySystemNotAttendedState;isf.servlets.gcqs.RequestQuerySystemDOMImp
+
+# Order Virtual Tree
+CenBdiVirtualTreeModifOrder;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiVirtualTreeOrder;com.soluzionasf.ocen.bdi.funexp.servlets.CenBdiVirtualTreeModifOrderRequestDOMImpl
+CenBdiVirtualTreeDeleteOrder;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiVirtualTreeOrder;com.soluzionasf.ocen.bdi.funexp.servlets.CenBdiVirtualTreeDeleteOrderRequestDOMImpl

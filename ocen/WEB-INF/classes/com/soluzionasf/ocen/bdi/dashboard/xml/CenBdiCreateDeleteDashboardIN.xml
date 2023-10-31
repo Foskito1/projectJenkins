@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiCreateDeleteDashboard>
+	<CreateUpdate>
+		<id>(String)(man) -1 Si es crear, otro valor si es actualizar</id>
+		<identification>(String)(man) identificación del dashboard </identification>
+		<publico>(Long)(man) 0 privado 1 público</publico>
+		<nodo>(Long) id_secuencial_elementos</nodo>
+		<desc_nodo>(String) descripción del elemento</desc_nodo>
+		<tipo_elemento>(String) tipo de elemento asociado al dashboard </tipo_elemento>
+		<optimist_lock>(Long)(man) optimist lock</optimist_lock>
+		<category>(String) Categoría </category>
+		<favourite>(Boolean) Indica si es el dashboard favorito </favourite>
+		<user_node>(Long) nodo de conexión del usuario</user_node>
+	</CreateUpdate>
+	<Delete>
+		<id>(String)(man) id del dashboard a eliminar</id>
+		<optimist_lock>(Long)(man) optimist lock</optimist_lock>
+	</Delete>
+	<SessionData> (man)
+		<token>(String) (man) Token de acceso</token>
+		<refresh_token>(String) token de refresco</refresh_token>
+		<login_name>(String) (man) login name del usuario</login_name>
+	</SessionData>
+</CenBdiCreateDeleteDashboard>

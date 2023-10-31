@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiUpdateUserStatistics>
+	<UserStatistics>(man)
+		<Panels>(man)
+			<Panel>(man)(sequence_item)
+				<cod_panel>(String)(man) Codigo del panel. </cod_panel>        
+				<accesses_count>(Long)(man) Numero de veces que se ha accedido al panel. </accesses_count>
+			</Panel>
+		</Panels> 
+	</UserStatistics>
+</CenBdiUpdateUserStatistics> 
+

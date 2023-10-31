@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<CenBdiInsertPAgrSession>
+	<Insert_PAgrSession>(man)
+		<Des_Sesion>(man)Descripción de la nueva sesión </Des_Sesion>
+	</Insert_PAgrSession>
+</CenBdiInsertPAgrSession>

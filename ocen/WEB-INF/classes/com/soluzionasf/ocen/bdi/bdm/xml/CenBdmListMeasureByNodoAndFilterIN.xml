@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><CenBdmListMeasureByNodoAndFilter>
+  <node>(String)(man)</node>
+  <type_measure>(String)(man)</type_measure>
+  <name_measure>(String)</name_measure>
+  <code_measure>(String)</code_measure>
+  <monograph>(Boolean)</monograph>
+  <min_id>(Long)</min_id>
+  <max_id>(Long)</max_id>
+  <crit_for_1>(Integer)</crit_for_1>
+  <crit_for_2>(Integer)</crit_for_2>
+  <crit_for_cte>(Integer)</crit_for_cte>
+  <latitude_min> (Float) Latitud Minima </latitude_min>
+  <latitude_max> (Float) Latitud Maxima </latitude_max>
+  <longitude_min> (Float) Longitud Minima </longitude_min>
+  <longitude_max> (Float) Longitud Maxima </longitude_max>
+  <altitude_min> (Float) Altitud Minima </altitude_min>	
+  <altitude_max> (Float) Altitud Maxima </altitude_max>	
+</CenBdmListMeasureByNodoAndFilter>

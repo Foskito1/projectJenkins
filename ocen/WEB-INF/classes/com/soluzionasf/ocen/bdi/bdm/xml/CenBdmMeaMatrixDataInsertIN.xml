@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdmMeaMatrixDataInsert>
+	<General>
+		<panel>(man)(String) Panel </panel>
+		<node>(man)(Long) Node id</node>
+		<date>(man)(DateTimeI18n) Dataset date </date>
+		<user_modif>(man)(Long) Dataset modify user id </user_modif>
+		<id_docum>(Long) Associated document id</id_docum>
+		<flag_valid>(Long) Dataset valid flag </flag_valid>
+		<flag_block>(Long) Dataset block flag </flag_block>
+		<flag_1>(String) Dataset Optional flag 1 </flag_1>
+		<crit_1>(String) Dataset Optional criteria 1 </crit_1>
+	</General>
+	<Table> (seq)
+		<ROW TABLE_NAME="(man)(String)" COL="(man)(Long)" ROW="(man)(Long)" STRING_VAL="(String)" NUMERIC_VAL="(Double)"> (seq)</ROW>
+	</Table>
+</CenBdmMeaMatrixDataInsert>
+

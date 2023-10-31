@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- MethodName: CenBdmPwayAnagraficaMeasure -->
+<CenBdmPwayAnagraficaMeasure>
+	<measure> (seq)
+		<cod_medida>(Long)(man)</cod_medida>
+	</measure>
+</CenBdmPwayAnagraficaMeasure>

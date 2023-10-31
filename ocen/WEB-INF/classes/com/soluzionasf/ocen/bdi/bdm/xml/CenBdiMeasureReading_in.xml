@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiMeasureReading>
+   <MEASURE_LIST>
+      <MEASURE>	(sequence_item)(man)
+         <COD_MEDIDA>(Long)</COD_MEDIDA>
+         <FECHA_DESDE>(String)</FECHA_DESDE>
+         <FECHA_HASTA>(String)</FECHA_HASTA>
+      </MEASURE>
+   </MEASURE_LIST>
+	<modeMTZ>(Long) Cambiar el modo MTZ por defecto en el entorno: 0, desactivado. 1, conversiones bioxo. 2, conversion por usuario. 3, conversion por medida.</modeMTZ> 
+	<getUserDes>(Long) Retornar campo adicional descripcion  de usuario : 0, desactivado(valor defecto, no devuelve USERDES). 1, activado, devuelve relleno el campo USERDES del result con la descripcion del usuario y vacio si no se encuentra; 2, activado, devuelve relleno el campo USERDES del result con la descripcion del usuario y si no se encuentra retorno el valor de campo UserId(USER), que se replica en USERDES. </getUserDes> 
+</CenBdiMeasureReading>

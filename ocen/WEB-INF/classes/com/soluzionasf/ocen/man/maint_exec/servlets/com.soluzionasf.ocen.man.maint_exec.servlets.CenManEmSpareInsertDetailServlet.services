@@ -1,0 +1,1 @@
+CENMAN.insertSpareDetail;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmSpareInsertDetailService;com.soluzionasf.ocen.man.maint_exec.servlets.CenmanEmSpareInsertDetailRequestDOMImpl

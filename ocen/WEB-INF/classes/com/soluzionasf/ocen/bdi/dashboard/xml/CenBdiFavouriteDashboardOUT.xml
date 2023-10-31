@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiFavouriteDashboard>
+	<result>(Long)(man) 0 para OK. Otro valor en caso de error. </result>
+	<message>(String) mensaje en caso de error </message>
+	<url>(String) Url del dashboard, en caso de solicitar </url>
+</CenBdiFavouriteDashboard>

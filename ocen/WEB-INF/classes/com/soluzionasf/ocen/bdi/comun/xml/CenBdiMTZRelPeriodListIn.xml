@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiMTZRelPeriodList>
+	<fecha_inicio>(man)(String) Fecha de inicio (formato: [yyyy-MM-dd HH:mm:ss])</fecha_inicio>
+	<fecha_fin>(man)(String) Fecha de fin (formato: [yyyy-MM-dd HH:mm:ss])</fecha_fin>
+	<id_zona_horaria>(man)(long) Zona horaria del usuario</id_zona_horaria>
+	<periodicidad>(man)(long) Periodicidad de referencia para las medidas</periodicidad>
+	<formato>(String) Formato de salida para el listado de fechas</formato>
+</CenBdiMTZRelPeriodList>

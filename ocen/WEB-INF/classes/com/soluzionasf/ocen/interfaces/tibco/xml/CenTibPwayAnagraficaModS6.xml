@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibPwayAnagraficaModS6>
+	<PwayAnagraficaModS6>
+		<CodInventory>(String)(man)</CodInventory>
+		<Deleted>(String) (man)</Deleted>
+		<IdModS6>(long) (man)</IdModS6>
+		<DesModS6>(String)(man)</DesModS6>
+		<Type>(String)(man)</Type>
+		<SapSystem>(String)(man)</SapSystem>
+		<SapClient>(String)(man)</SapClient>
+		<ListChecks>(sequence_item)
+			<CodCheck>(String)</CodCheck>
+			<IdCheck>(String)</IdCheck>
+			<DesCheck>(String)</DesCheck>
+			<LongDesCheck>(String)</LongDesCheck>
+		</ListChecks>		
+	</PwayAnagraficaModS6>
+</CenTibPwayAnagraficaModS6>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiInsertFastExternalDocument>
+   <documento> (seq)
+			   
+			   	<id_entidad>(Long)(man)Id de la entidad </id_entidad>
+				<id_tipo_entidad>(Long)(man) Id del tipo de entidad</id_tipo_entidad>
+			    <entidad>(String)(man)Codigo de tipo de la entidad</entidad>
+			   
+			   <cod_docum>(String)(man)C�digo del documento </cod_docum>
+			   <cod_tipo_docum>(String)(man)Tipo del documento </cod_tipo_docum>
+			   <titulo_docum>(String)(man)T�tulo del documento</titulo_docum>
+			   <nodo>(Long)(man)Nodo al que aplica el documento </nodo>
+			   <nodo_entidad>(Long)Nodo de la entidad a la que aplica el documento </nodo_entidad>
+			   <tipo_almacenamiento>(String)Indica la forma en que se almacena el documento (por defecto BD) </tipo_almacenamiento>
+  </documento> (seq)
+</CenBdiInsertFastExternalDocument>
+
+ 
+
+
+
+
+ 

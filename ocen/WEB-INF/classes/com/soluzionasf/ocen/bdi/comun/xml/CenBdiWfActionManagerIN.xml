@@ -1,0 +1,12 @@
+<CenBdiWfActionManager>
+	<WfAction>
+		<IdEntity>(Long)</IdEntity>
+		<CodModule>(Long)</CodModule>
+		<CodStep>(String)</CodStep>
+		<CodAction>(String)</CodAction>
+		<Comment>(String)</Comment>
+		<IdOffice>(Long)</IdOffice>
+		<IdGraph>(Long)</IdGraph>
+		<OptimistLock>(Long)</OptimistLock>		
+	</WfAction>
+</CenBdiWfActionManager>

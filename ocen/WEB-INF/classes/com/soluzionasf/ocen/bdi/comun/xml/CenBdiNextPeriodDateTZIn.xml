@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiNextPeriodDateTZ>
+	<DateRequest> (seq)
+		<reference_date> (DateTimeI18n) (man) Fecha y hora de referencia para obtener la próxima fecha de periodo </reference_date>
+		<period> (long) (man) Código de periodicidad </period>
+		<include_ref_date> (long) (man) 1 para incluir la fecha de referencia como periodo válido. </include_ref_date>
+	</DateRequest>
+</CenBdiNextPeriodDateTZ>

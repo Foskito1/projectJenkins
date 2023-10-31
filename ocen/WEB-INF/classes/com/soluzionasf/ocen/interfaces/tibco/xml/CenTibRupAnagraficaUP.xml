@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibRupAnagraficaUP>
+	<RupAnagraficaUP>
+		<CodUP>(String)(man)</CodUP>
+		<CIP6>(String)</CIP6>
+		<CodCentral>(String)</CodCentral>		
+		<CodigoZona>(String)</CodigoZona>
+		<FecHorDiv>(DateTimeI18n)(man)</FecHorDiv>
+		<IdMsg>(String)(man)</IdMsg>
+		<Operador>(String)</Operador>
+		<Proprietario>(String) </Proprietario>
+		<QualifMA>(String)</QualifMA>
+		<QualifMGP>(String)</QualifMGP>
+		<QualifMSD>(String)</QualifMSD>
+		<SuptipoUP>(String)</SuptipoUP>
+		<TipoUP>(String)</TipoUP>
+		<IdUnidadProduccion>(String)</IdUnidadProduccion>
+		<RupAnagraficaUPAseto> (sequence_item)(man)
+				<CodAseto>(String)(man)</CodAseto>
+				<BandaReguladaSecundaria>(Double)</BandaReguladaSecundaria>				
+				<GradienteDW>(double)</GradienteDW>
+				<GradienteUP>(double)</GradienteUP>
+				<PotMinUPNetta>(double)</PotMinUPNetta>
+				<PotMaxUPNetta>(double)</PotMaxUPNetta>
+				<TCADW>(double)</TCADW>
+				<TCAUP>(double)</TCAUP>
+				<TiempoArranque>(double)</TiempoArranque>
+				<TiempoParada>(double)</TiempoParada>
+				<TiempoRespuesta>(double)</TiempoRespuesta>								
+				<IdAssettoRUP>(String)</IdAssettoRUP>
+				<NumeroGrupo>(String)</NumeroGrupo>
+				<TipoFuncion>(String)</TipoFuncion>
+		</RupAnagraficaUPAseto>
+	</RupAnagraficaUP>
+</CenTibRupAnagraficaUP>

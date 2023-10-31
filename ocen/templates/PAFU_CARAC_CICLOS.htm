@@ -1,0 +1,327 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script type="javascript">
+	funcion prueba(as_param){
+		return "pepe"
+	}
+</script>
+	
+<style type="text/css">
+.textarea
+{	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.4;
+	text-align: left;
+	border-style: none;
+	vertical-align: top;
+	overflow:hidden;
+	scrollbar-track-color: White;
+	scrollbar-shadow-color: White;
+	scrollbar-highlight-color: White;
+	scrollbar-face-color: White;
+	scrollbar-darkshadow-color: White;
+	scrollbar-base-color: White;
+	scrollbar-arrow-color: White;
+}
+
+.table {  text-align: center; vertical-align: super; width: 100%; border-collapse: collapse;}
+.row1 		{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; horizontal-align: center; text-align: center ; border-color:black ; border-width:1px ; border-style:solid ; }
+.headertable1 	{
+	width: 100%;  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt; 
+	font-style: normal; 
+	line-height: normal; 
+	text-align: left ;
+}
+.left 	{  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; line-height: normal; text-align: left ; }
+.center {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt; 
+	font-style: normal; 
+	line-height: normal; 
+	text-align: center ; 
+}
+.center1 {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 8pt; 
+	font-style: normal; 
+	text-align: center ; 
+}
+
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="00%" border="0">
+
+  <tr>
+    <td>
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td rowspan="3" width="12%"><img src="/images/UFGN3.jpg" width="150"></td>
+          <td align="center" colspan="3" rowspan="2"><b>CARACTER&Iacute;STICAS
+            Y CONDICIONES DE SUMINISTRO </b></td>
+          <td width="19%" class="left">Fecha de Aplicaci&oacute;n</td>
+          <td width="11%" class="left">Jefe de Turno</td>
+        </tr>
+        <tr>
+          <td width="19%" class="left">D&iacute;a: |TO_DATE(root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@FEC_HOR_APLICACION,
+            &quot;dd/MM/yyyy&quot;)|</td>
+          <td  rowspan="2" class="left"><TEXTAREA class=textarea cols=18 rows=5 style="font-size: 8pt" readonly></TEXTAREA></td>
+        </tr>
+        <tr>
+          <td COLSPAN="2" class="left"><TEXTAREA class=textarea cols=30 rows=4 style="font-size: 8pt" readonly>CENTRAL: |root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NOM_CENTRAL|</TEXTAREA></td>
+          <td width="30%" class="left"><TEXTAREA class=textarea cols=30 rows=4 style="font-size: 8pt" readonly>GRUPO: |root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NOM_GRUPO|</TEXTAREA></td>
+          <td width="19%" class="left">Hora: |root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@HORA_APLICACION|</td>
+        </tr>
+        <tr>
+          <td colspan=6>&nbsp;</td>
+        </tr>
+      </table>
+
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td colspan="6"><b><i>CARACTER&Iacute;STICAS NOMINALES</i></b></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="center">P. Máxima Bruta (MW)</div>
+          </td>
+          <td width="20%">
+            <div  class="center">P. Máxima Neta (MW)</div>
+          </td>
+          <td width="15%">
+            <div class="center">T. Nominal (KV)</div>
+          </td>
+          <td colspan="2" >
+            <div class="center">M&iacute;nimo T&eacute;cnico (MW)</div>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" colspan="2">|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NUM_POT_NOM_BRUTA|&nbsp;</td>
+          <td align="center" width="20%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NUM_POT_NOM_NETA|&nbsp;</td>
+          <td align="center" width="15%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NUM_TEN_NOM_SAL|&nbsp;</td>
+          <td align="center" colspan="2">|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NUM_MIN_TECNICO|&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="center" colspan="6">
+            Capacidad de Absorci&oacute;n / Producci&oacute;n
+              de Reactiva (MVAr)
+          </td>
+        </tr>
+        <tr>
+          <td class="center" width="15%">
+            Grupo a PC
+          </td>
+          <td align="center" width="15%">
+            |root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@CAPAC_ABS_PC| / |root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@PROD_REAC_PC|&nbsp;
+          </td>
+          <td class="center" width="20%">
+            Grupo a MC
+          </td>
+          <td align="center" width="15%">
+            |root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@CAPAC_ABS_MC| / |root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@PROD_REAC_MC|&nbsp;
+          </td>
+          <td class="center"  width="15%">
+            Grupo a MT
+          </td>
+          <td align="center" width="20%">
+            |root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@CAPAC_ABS_MT| / |root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@PROD_REAC_MT|&nbsp;
+          </td>
+        </tr>
+        <tr>
+          <td colspan="6">&nbsp;</td>
+        </tr>
+      </table>
+
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td colspan="5" height="38">
+            <div align="center"><b>CONDICIONES DE SUMINISTRO</b></div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5"><b><i>A) TIEMPOS DE ARRANQUE</i></b></td>
+        </tr>
+        <tr>
+          <td width="15%"><b>Unidad: Horas<br></b></td>
+          <td class="center" width="20%"> MUY FR&Iacute;O </td>          
+          <td class="center" width="20%"> FR&Iacute;O </td>
+          <td class="center" width="20%"> TEMPLADO </td>
+          <td class="center" width="20%"> CALIENTE </td>
+        </tr>          
+        <tr>
+          <td width="15%" class="left">TURBINA DE GAS</td>
+          <td align="center" width="20%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS_TA.Row@TA_TG_MFRIA|&nbsp;</td>          
+          <td align="center" width="20%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS_TA.Row@TA_TG_FRIA|&nbsp;</td>
+          <td align="center" width="20%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS_TA.Row@TA_TG_TEMP|&nbsp;</td>
+          <td align="center" width="20%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS_TA.Row@TA_TG_CAL|&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="15%" class="left">TURBINA DE VAPOR</td>
+          <td align="center" width="20%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS_TA.Row@TA_TV_MFRIA|&nbsp;</td>          
+          <td align="center" width="20%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS_TA.Row@TA_TV_FRIA|&nbsp;</td>
+          <td align="center" width="20%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS_TA.Row@TA_TV_TEMP|&nbsp;</td>
+          <td align="center" width="20%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS_TA.Row@TA_TV_CAL|&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="5">&nbsp;</td>
+        </tr>
+      </table>
+
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td colspan="7"><b><i>B) ENERG&Iacute;A NETA PRODUCIBLE TRAS LOS ARRANQUES</i></b></td>
+        </tr>
+        <tr>
+			<td>
+	       		<table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+          			<tr>
+          				<td width="5%">&nbsp;</td>
+          				<td colspan="2" class="center1">ARRANQUE MUY FR&Iacute;O</td>          				
+          				<td colspan="2" class="center1">ARRANQUE FR&Iacute;O</td>
+          				<td colspan="2" class="center1">ARRANQUE TEMPLADO</td>
+          				<td colspan="2" class="center1">ARRANQUE CALIENTE</td>
+          			</tr>
+          			<tr>
+          				<td width="5%">
+          				|GRID(root,&QUOT;{table:class=headertable1,row1=center1,row2=center1}{column:name=Hora,type=number,block=CENOPE_QRY_PAFU_DATOS_CICLOS_EA,label=ID_HORA,class=center1}&QUOT;)|
+						</td>
+						<td colspan="2" valign="top">
+						|GRID(root,&QUOT;{table:class=headertable1,row1=center1,row2=center1}{column:name=Pot.(MW),type=number,block=CENOPE_QRY_PAFU_DATOS_CICLOS_EA,label=POT_AMF,class=center1}{column:name=Energ&iacute;a (MWh),type=number,block=CENOPE_QRY_PAFU_DATOS_CICLOS_EA,label=ENE_AMF,class=center1}&QUOT;)| 
+						</td>						
+						<td colspan="2" valign="top">
+						|GRID(root,&QUOT;{table:class=headertable1,row1=center1,row2=center1}{column:name=Pot.(MW),type=number,block=CENOPE_QRY_PAFU_DATOS_CICLOS_EA,label=POT_AF,class=center1}{column:name=Energ&iacute;a (MWh),type=number,block=CENOPE_QRY_PAFU_DATOS_CICLOS_EA,label=ENE_AF,class=center1}&QUOT;)| 
+						</td>
+						<td colspan="2" valign="top">
+						|GRID(root,&QUOT;{table:class=headertable1,row1=center1,row2=center1}{column:name=Pot.(MW),type=number,block=CENOPE_QRY_PAFU_DATOS_CICLOS_EA,label=POT_AT,class=center1}{column:name=Energ&iacute;a (MWh),type=number,block=CENOPE_QRY_PAFU_DATOS_CICLOS_EA,label=ENE_AT,class=center1}&QUOT;)| 
+						</td>
+						<td colspan="2" valign="top">
+						|GRID(root,&QUOT;{table:class=headertable1,row1=center1,row2=center1}{column:name=Pot.(MW),type=number,block=CENOPE_QRY_PAFU_DATOS_CICLOS_EA,label=POT_AC,class=center1}{column:name=Energ&iacute;a (MWh),type=number,block=CENOPE_QRY_PAFU_DATOS_CICLOS_EA,label=ENE_AC,class=center1}&QUOT;)| 
+						</td>
+          			</tr>
+          		</table>
+          	</td>
+        </tr>
+        <tr>
+          <td colspan="7">&nbsp;</td>
+        </tr>
+      </table>
+
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td colspan="5"><b><i>C) ENERG&Iacute;A NETA PRODUCIBLE PARA DESACOPLAR</i></b></td>
+        </tr>
+        <tr>
+			<td colspan="5" valign="top">
+			<table width="100%" border="0" bordercolor="#000000" cellspacing="0">
+			<tr>
+          	<td class="center" width="25%"><b>HORA<br></b></td>
+          	<td class="center" width="31%"><b>POTENCIA (MW) <br></b></td>
+          	<td class="center" width="26%"><b>ENERG&Iacute;A (MWh) <br></b></td>
+      		</tr> 
+	        <tr>
+    	      <td width="25%" class="center">1</td>
+        	  <td class="center" width="31%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NUM_EB_1_POT|&nbsp;</td>
+          	  <td class="center" width="26%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NUM_EB_1_ENE|&nbsp;</td>
+        	</tr>
+        	<tr>
+          	<td width="25%" class="center">2</td>
+          	<td class="center" width="31%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NUM_EB_2_POT|&nbsp;</td>
+          	<td class="center" width="26%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NUM_EB_2_ENE|&nbsp;</td>
+        	</tr>
+        	<tr>
+          	<td width="25%" class="center">3</td>
+          	<td class="center" width="31%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NUM_EB_3_POT|&nbsp;</td>
+          	<td class="center" width="26%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NUM_EB_3_ENE|&nbsp;</td>
+        	</tr>
+        	<tr>
+          	<td width="25%" class="center">4</td>
+          	<td class="center" width="31%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NUM_EB_4_POT|&nbsp;</td>
+          	<td class="center" width="26%">|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NUM_EB_4_ENE|&nbsp;</td>
+        	</tr>
+        	</table>
+			</td>
+       </tr>
+	</table>        
+
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td colspan="6"><b><i>D) RITMOS DE VARIACION DE CARGA ENTRE MT Y PC (MW/min)</i></b></td>
+        </tr>
+        <tr>
+        	<td colspan="2">&nbsp;</td>
+        	<td align="center">A subir</td>
+        	<td align="center">A bajar</td>
+        	<td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+        	<td colspan="2">&nbsp;</td>
+        	<td align="center">|root.CENOPE_QRY_PAFU_DATOS_CICLOS_VC.Row@VC_A_SUBIR|</td>
+        	<td align="center">|root.CENOPE_QRY_PAFU_DATOS_CICLOS_VC.Row@VC_A_BAJAR|</td>
+        	<td colspan="2">&nbsp;</td>
+    	</tr>
+        <tr>
+          <td colspan="6">&nbsp;</td>
+        </tr>
+      </table>
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td valign="top" align="left">
+          	<b><i>E) POSIBILIDAD DE ESCALONES INFERIORES AL M&Iacute;NIMO T&Eacute;CNICO</i></b>
+          	<br>
+          	<TEXTAREA class=textarea cols=130 readonly>|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@POSIB_ESCAL_INF_MIN_TEC|</TEXTAREA>
+          </td>
+        </tr>
+	  </table>
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td>
+          	<b><i>F) VARIACIÓN POTENCIA MÁXIMA POR TEMPERATURA AMBIENTE</i></b>
+          	<br>
+          	<TEXTAREA class=textarea cols=130 readonly>|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@VAR_POT_MAX_TEMP_AMB|</TEXTAREA>
+          </td>
+        </tr>
+	  </table>
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td> 
+          	<b><i>G) VARIACIÓN CARGA POR EXPORTACION VAPOR PROCESO</i></b>
+          	<br>
+          	<TEXTAREA class=textarea cols=130 readonly>|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@VAR_CARGA_EXP_VAP_PROC|</TEXTAREA>
+          </td>
+        </tr>
+	  </table>
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td>
+          	<b><i>H) AUXILIARES</i></b>
+          	<br>
+          	<TEXTAREA class=textarea cols=130 readonly>|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@AUXILIARES|</TEXTAREA>
+          </td>
+        </tr>
+	  </table>
+      <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td>
+          	<b><i>OBSERVACIONES:</i></b>
+          	<br>
+          	<TEXTAREA class=textarea cols=160 rows= 40 readonly>|root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@OBSERVACIONES|</TEXTAREA>
+          </td>
+        </tr>
+      </table>
+            <table width="100%" border="1" bordercolor="#000000" cellspacing="0">
+        <tr>
+          <td width="53%" class="left">PC: Plena Carga&nbsp;&nbsp;MC: Media Carga&nbsp;&nbsp;MT:Mínimo Técnico</td>
+          <td width="47%"><b>Fecha Edici&oacute;n:</b> |TO_DATE(root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@FEC_EDICION, &quot;dd/MM/yyyy&quot;)|
+          &nbsp;&nbsp;<b>Revisi&oacute;n:</b> |root.CENOPE_QRY_PAFU_DATOS_CICLOS.Row@NUM_REVISION|</td>
+        </tr>
+      </table>
+</table></body>
+</html>

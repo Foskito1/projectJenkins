@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmDefDownloadMeasurements>
+	<Descarga>
+		<Id_Descarga>(Long)Id del formato de descarga</Id_Descarga>
+		<Des_Descarga>(String) Descripción del formato de descarga</Des_Descarga>
+		<Tipo_Descarga>(String) Tipo de descarga</Tipo_Descarga>
+		<Tipo_Formato>(String) Tipo del formato de descarga</Tipo_Formato>
+		<Formato_Pre>(String) Formato predefinido de descarga</Formato_Pre>
+		<F_Guarda_Valor>(String) Indica si todas las medidas tienen mediciones en BD </F_Guarda_Valor>
+		<F_Bloqueado>(String) Bloquea/Desbloquea el formato (S/N) </F_Bloqueado>
+		<Id_Arbol>(Long) Arbol al que esta asociada la descarga. 0:BDI ; Otro valor:Id Arbol Virtual </Id_Arbol>
+		<Id_Elemento>(Long) Elemento del arbol al que esta asociada la descarga </Id_Elemento>
+		<Optimist_Lock>(Long) Optimist lock </Optimist_Lock>
+		<Campos>
+			<Campo>(sequence_item)
+				<Cod_Campo>(String) Nombre del campo del formato de descarga</Cod_Campo>
+				<Posicion>(Long) Posición del campo del formato de descarga</Posicion>
+				<Orden>(Long) Orden del campo del formato de descarga</Orden>
+			</Campo>
+		</Campos>
+		<Medidas>
+			<Medida>(sequence_item) 
+				<Cod_Medida>(Long) Código de las medida del formato de descarga</Cod_Medida>
+				<Cod_Tag_Medida>(String) Código del Tag de la medida </Cod_Tag_Medida>
+				<Factor_Conv>(Double) Factor de conversión de la medida </Factor_Conv>
+				<Offset_Anios>(Long) Desplazamiento en años de la medida </Offset_Anios>
+				<Offset_Meses>(Long) Desplazamiento en meses de la medida  </Offset_Meses>
+				<Offset_Dias>(Long) Desplazamiento en dias de la medida </Offset_Dias>
+				<Offset_Horas>(Long) Desplazamiento en horas de la medida </Offset_Horas>
+        <Orden>(Long) Orden de la medida para el formato de descarga de datos predefinido </Orden>				
+			</Medida>
+		</Medidas>
+   		<Graph_Options>
+	    		<tipo_grafico>(String) Codigo del tipo de grafico (LIN Tradicional / DIS Dispersion / CMP Comparativo)</tipo_grafico>
+      		<color_fondo_grafico>(String) Codigo del color de fondo del grafico</color_fondo_grafico>
+      		<color_fondo_plot>(String) Codigo del color de fondo del plot</color_fondo_plot>
+      		<antialising>(Long) Si se usa antialiasing o no </antialising>
+      		<cuadricula>(Long) Si se muestra cuadricula o no</cuadricula>
+      		<formato>(String) Formato del gráfico (jpg / pdf) </formato>
+      		<Titulo>
+         		<texto>(String) Texto del titulo</texto>
+         		<orientacion>(String) Orientacion del titulo (TOP / BOTTOM / LEFT / RIGHT)</orientacion>
+      		</Titulo>
+      		<Subtitulos>
+         		<Subtitulo>(seq)
+            			<texto>(String) Texto del subtitulo</texto>
+            			<orientacion>(String) Orientacion del subtitulo  (TOP / BOTTOM / LEFT / RIGHT)</orientacion>
+            			<orden>(Integer) Orden del subtitulo dentro de la misma orientacion</orden>
+         		</Subtitulo>
+      		</Subtitulos>
+      		<EscalaDominio>
+         		<etiqueta>(String) Etiqueta de la escala</etiqueta>
+         		<color>(String) Codigo del color de la escala</color>
+         		<unidad_cuadricula>(String) Unidad utilizada para mostrar las lineas de la cuadricula para esta escala</unidad_cuadricula>
+         		<unidades_intervalo>(String) Numero de unidades tras las que se dibuja una nueva linea de la cuadricula</unidades_intervalo>
+      		</EscalaDominio>
+      		<EscalasValores>
+         		<EscalaValores>(seq)
+            			<id>(Long) id de la escala de valores (secuencial)</id>
+            			<etiqueta>(String) Etiqueta de la escala</etiqueta>
+            			<tipo_escala>(String) Tipo de escala (PRI Principal / SEC Secundaria)</tipo_escala>
+            			<color>(String) Codigo del color de la escala</color>
+            			<orientacion>(String) Orientacion de la escala (LEFT / RIGHT)</orientacion>
+            			<unidad_cuadricula>(String) Unidad utilizada para mostrar las lineas de la cuadricula para esta escala</unidad_cuadricula>
+            			<tipo_limite>(String) Tipo de limite utilizado (VAR_AJUST Autoajustable / FIJO Fijo / VAR_VAL_F Variable/ VAR_PRCNT Variable con Porcentaje)</tipo_limite>
+            			<limite_inferior>(Double) Valor del limite inferior</limite_inferior>
+            			<limite_superior>(Double) Valor del limite superior</limite_superior>
+         		</EscalaValores>
+      		</EscalasValores>
+      		<Series>
+         		<Serie>(seq)
+            			<id>(Long) id de la serie. Corresponde con el codigo de la medida.</id>
+            			<etiqueta>(String) Etiqueta de la serie</etiqueta>
+            			<color>(String) Codigo del color de la serie</color>
+            			<id_escala_asociada>(Long) id de la escala de valores a la que se asocia la serie</id_escala_asociada>
+						<orden>(Long)Orden de la serie. Segun este orden, se formara la leyenda del grafico.</orden>
+         		</Serie>
+      		</Series>
+   		</Graph_Options>
+   		<Interfaz>
+   			<Id_Interfaz>(Long)Id del interfaz asociado a la descarga</Id_Interfaz>
+   		</Interfaz>		
+	</Descarga>	
+</CenBdmDefDownloadMeasurements>

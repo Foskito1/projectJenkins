@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmValidationCodesUpdate>
+	<Global>
+		<CenBdm_validation_codes>
+		    <ValidationCode>(seq)	
+			    <id_code> (Long) VALIDATION CODE ID </id_code>
+			    <code>(String)(man)CODE</code>
+			    <description>(String)(man)DESCRIPTION</description>
+			    <observations> (String) COMMENTS </observations>
+			    <priority> (Long) (man) PRIORITY </priority>
+			    <optimist_lock> (Long) OPTIMIST_LOCK </optimist_lock>
+			    <delete_flag> (Long) delete flag </delete_flag>
+		    </ValidationCode>
+		</CenBdm_validation_codes>
+	</Global>
+</CenBdmValidationCodesUpdate>

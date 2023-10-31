@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <CenTibGeodeDatiRettificheNE>
+		<GeodeDatiRettificheNE>
+			<IdMsg>(String) </IdMsg>
+			<CodExito>(String) </CodExito>
+			<Lista_Rettifiche> (sequence_item)
+				<Id1>(Long) </Id1>
+				<Id2>(Long) </Id2>
+				<DesExito>(String) </DesExito>
+			</Lista_Rettifiche>
+	  </GeodeDatiRettificheNE>	
+	</CenTibGeodeDatiRettificheNE>

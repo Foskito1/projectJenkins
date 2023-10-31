@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- MethodName: CenBdmExecuteCalc -->
+<CenBdiExecuteCalc>
+	<Notifications>
+		<notif_null_calc>(String) Notificacion con las medidas que han producido un calculo nulo en todo el intervalo.</notif_null_calc>
+	</Notifications>
+</CenBdiExecuteCalc>

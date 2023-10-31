@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmScheduleDownloadMeasurements>
+	<Descarga> (seq)
+		<Id_Descarga>(Long)Id del formato de descarga</Id_Descarga>
+		<Id_Descarga_Prog>(Long)Id de la programacion del formato de descarga</Id_Descarga_Prog>
+		<Optimist_Lock>(Long)Optimist lock de la programacion del formato de descarga</Optimist_Lock>
+	</Descarga>
+</CenBdmScheduleDownloadMeasurements>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<content method="CenBdiGetTableViews" user="1" userName="FRU" profileId="4" language="es" country = "ES" sessionId="sfpc1102-e3e60:e61f0056f9:-7ec0" authorityId="sfpc1102.GCCOM.ssn-1">
+   <ViewsSection>
+      <Section>CENBDT_V_CLI</Section>
+   </ViewsSection>
+</content>

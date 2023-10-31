@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<CenBdiCreateDeleteDatasource>
+	<CreateUpdate>
+		<identification>(String)(man) codigo del datasource</identification>
+		<description>(String) descripción del datasource</description>
+		<modeCreate>(Boolean) True=insert / False=updata </modeCreate>
+		<query>(String) query formada </query>
+		<maxValue>(int) Valor máximo </maxValue>
+		<refreshType>(int) Tiempo de refresco </refreshType>
+	</CreateUpdate>
+	<Delete>
+		<identification>(String)(man) codigo del datasource a eliminar</identification>
+	</Delete>
+	<SessionData> (man)
+		<token>(String) (man) Token de acceso</token>
+		<refresh_token>(String) token de refresco</refresh_token>
+		<login_name>(String) (man) login name del usuario</login_name>
+	</SessionData>
+</CenBdiCreateDeleteDatasource>

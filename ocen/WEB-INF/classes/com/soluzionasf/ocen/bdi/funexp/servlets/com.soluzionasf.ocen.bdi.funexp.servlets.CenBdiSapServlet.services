@@ -1,0 +1,2 @@
+cenBdiUpdateInstrumentsInPhoto;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiInstrumentsInPhoto;com.soluzionasf.ocen.bdi.funexp.servlets.CenBdiInsInPhotoRequestDOMImpl;
+cenBdiUpdateDocumentManagement;com.soluzionasf.ocen.bdi.funexp.domain.CenBdiDocElem;com.soluzionasf.ocen.bdi.funexp.servlets.CenBdiDocElemRequestDOMImpl

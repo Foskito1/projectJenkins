@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CenBdiMenuIngenService>	<user_id>(Long)(man) id del usuario </user_id>	<filterFlex>(Long)(man) Con valor 1 filtro los datos devolviendo solo los paneles implementados en flex, en el resto de casos muestro todo el menu </filterFlex></CenBdiMenuIngenService>

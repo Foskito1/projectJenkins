@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibExt15PV>
+	<Ext15PV>
+		<ListaCentrales>
+			(sequence_item)(man)
+			<CodigoCentral>(String)(man)</CodigoCentral>
+			<TipoMercado>(String)(man)</TipoMercado>
+			<ListaFechaHora>
+				(sequence_item)(man)
+				<FechaHora>(DateTimeI18n)(man)</FechaHora>
+				<Potencia>(Double)(man)</Potencia>
+				<Energia>(Double)(man)</Energia>
+				<TipoPlan>(String)(man)</TipoPlan>
+			</ListaFechaHora>
+		</ListaCentrales>
+	</Ext15PV>
+</CenTibExt15PV>

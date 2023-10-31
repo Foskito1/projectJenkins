@@ -1,0 +1,1 @@
+CENMAN.deleteWorkOrder;com.soluzionasf.ocen.man.maint_exec.domain.CenManEmDeleteWorkOrderService;com.soluzionasf.ocen.man.maint_exec.servlets.CenmanEmOrdenTrabajoDeleteRequestDOMImpl

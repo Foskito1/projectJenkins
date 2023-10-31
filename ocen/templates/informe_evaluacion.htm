@@ -1,0 +1,116 @@
+<!-- Pagina que muestra un informe de una OT -->
+<html>
+<head>
+	<title>Evaluación</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<style>
+	<!--.tablemaster {width: 100%; border-collapse:separate; border: #000000 solid; border-top-width: 1px; border-right-width:1px; border-bottom-width: 1px; border-left-width: 1px }
+	.cabecera{width: 100%; border-collapse:collapse; border: #000000 solid; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px; }
+	.textocabecera {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; color: #000033; list-style-type: square; list-style-image: url(bullet.gif); line-height: 12pt; font-weight: bold}
+	.textonegrita {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; color: #000000; list-style-type: square; list-style-image: url(bullet.gif); line-height: 14pt; font-weight: bold}
+	.textoformulario {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; color: #00000; list-style-type: square; list-style-image: url(bullet.gif); line-height: 14pt}
+	.tableforminf {width: 100%; border-collapse:collapse; border: none}
+	.titulartabla21 {font-family: Arial; font-size: 9pt; border: #000000 solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #000033; list-style-type: square; list-style-image: url(bullet.gif); line-height: 12pt;}
+	.tablemaster3 {width: 100%; border-collapse:collapse; border: #000000 solid; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px;}
+	.titulartabla32blanco {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; line-height: 14pt; background-color:#FFFFFF; border: #000000 solid; border-top-width: 0px; border-right-width: 1px; border-bottom-width: 0px; border-left-width: 1px; vertical-align:top;}-->
+	</style>
+	<!--<link rel="STYLESHEET" type="text/css" href="c:\arqv10\server\templates\gccc_hojaEstiloConsultas.css">-->
+	
+
+</head>
+<body>
+<table border ="0" width = "98%" aling = "right">
+<tr>
+<td width = "100%">
+<!--height = "950"-->
+<TABLE class="tablemaster" valign = "top">
+	<!--<tr>
+		<td height="2px"></td>
+	</tr>-->
+	<tr>
+		<td colspan = "2">
+		<table align ="center" class="tablemaster" >
+			<tr>
+				<td class= "textocabecera" align ="center"> EVALUACI&Oacute;N </TD>
+			</tr>
+		</table>
+		</td>
+	</tr>
+
+	<TR>
+	<td colspan = "2">
+	<TABLE class="tablemaster" >
+		<tr>
+			<TD class = "textonegrita" width="15%" valign = "top"> Evaluación: </TD>
+			<TD class = "textoformulario">|root.CENMAN_EM_CONTRACTOR_EVALUATION_DETAILED_QUERY.Row[0]@DES_EVALUACION|</TD>
+		</TR>
+		<TR>
+			<TD class = "textonegrita"> Observaciones: </TD>
+			<TD class = "textoformulario" > |root.CENMAN_EM_CONTRACTOR_EVALUATION_DETAILED_QUERY.Row[0]@OBSERVACIONES|</TD>
+		</TR>
+		
+	</TABLE>
+	</td>
+	</tr>
+	
+	<tr>
+		<td colspan = "2">
+		<table align ="center" class="tablemaster" >
+			<tr>
+				<td class= "textocabecera" align ="center"> DATOS EVALUACI&Oacute;N </TD>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td width = "35%">
+		<table class = "tablemaster">
+		<tr>
+			<TD class = "textonegrita" width="17%" valign = "top"> Fecha: </TD>
+			<TD class = "textoformulario">|TO_DATE(root.CENMAN_EM_CONTRACTOR_EVALUATION_DETAILED_QUERY.Row@FEC_EVALUACION,&quot;dd/MM/yyyy&quot;)| </TD>
+		</tr>
+		<tr>
+			<TD class = "textonegrita" width="17%" valign = "top"> Contratista: </TD>
+			<TD class = "textoformulario">|root.CENMAN_EM_CONTRACTOR_EVALUATION_DETAILED_QUERY.Row@DESCRIPCION|</TD>
+		</tr>
+		<tr>
+			<TD class = "textonegrita" width="17%" valign = "top"> Puntuación: </TD>
+			<TD class = "textoformulario">|root.CENMAN_EM_CONTRACTOR_EVALUATION_DETAILED_QUERY.Row@VAL_OBTENIDO|</TD>
+		</tr>
+		<tr>
+			<TD colspan = "2" valign = "top"><font class= "textonegrita"> Valor Mínimo Aceptable: &nbsp; </font><font class = "textoformulario">|root.CENMAN_EM_CONTRACTOR_EVALUATION_DETAILED_QUERY.Row@VAL_MIN_ACEPTAB|</font></TD>
+		</tr>
+		<tr>
+			<TD class = "textonegrita" width="17%" valign = "top"> Elemento: </TD>
+			<TD class = "textoformulario">|root.CENMAN_EM_CONTRACTOR_EVALUATION_DETAILED_QUERY.Row@ESTRUCTURA|</TD>
+		</TR>
+		</table>
+		</td>
+		<td valign = top>
+		|GRID(root,&quot;{table:class=tablemaster3,row1=titulartabla32blanco,row2=titulartabla32blanco}{column:name=Criterio,type=string, block=CENMAN_EM_CRITERION_SCORE_DETAIL,extLabel=Row@CRITERIO, class=titulartabla21}{column:name=Puntuación,type=decimal,block=CENMAN_EM_CRITERION_SCORE_DETAIL,extLabel=Row@PUNTUACION,class=titulartabla21}&quot;)| 
+		</td>
+	</tr>
+	<tr>
+		<td colspan = "2">
+		<table align ="center" class="tablemaster" >
+			<tr>
+				<td class= "textocabecera" align ="center"> CRITERIOS / SUBCRITERIOS </TD>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td align = "center" colspan = "2">
+		|GRID(root,&quot;{table:class=tablemaster3,row1=titulartabla32blanco,row2=titulartabla32blanco}{column:name=Criterio,type=string, block=CENMAN_EM_CONTRACTOR_EVA_CARD_DETAILED_QUERY,extLabel=Row@CRITERIO, class=titulartabla21}{column:name=Subcriterio,type=string,block=CENMAN_EM_CONTRACTOR_EVA_CARD_DETAILED_QUERY,extLabel=Row@SUBCRITERIO,class=titulartabla21}{column:name=Unidad,type=string,block=CENMAN_EM_CONTRACTOR_EVA_CARD_DETAILED_QUERY,extLabel=Row@UNIDAD,class=titulartabla21}{column:name=Calificación,type=decimal,block=CENMAN_EM_CONTRACTOR_EVA_CARD_DETAILED_QUERY,extLabel=Row@CALIFICACION,class=titulartabla21}&quot;)| 
+		
+		</td>
+	</tr>
+</TABLE>	
+</td>
+<td width = "5%"> &nbsp;&nbsp;
+</td>
+</tr>
+</table>
+
+</body>
+</html>

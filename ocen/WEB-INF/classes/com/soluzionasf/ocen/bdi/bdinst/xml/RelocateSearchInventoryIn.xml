@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Inv_Relocate>
+   <DataGeneral type_element="(String)" cod_state="(String)" cod_inventory="(String)" cod_special_location="(String)" name_inventory="(String)" item="(String)" class_element="(String)" maker="(String)" mark="(String)" model="(String)" num_serial="(String)" element_table="(String)" company="(String)"/>
+   <DataTechnical id_rest="(String)" characterist_name="(String)" characterist_value="(String)" value_from="(String)" value_to="(String)">(seq)</DataTechnical>
+</Inv_Relocate>

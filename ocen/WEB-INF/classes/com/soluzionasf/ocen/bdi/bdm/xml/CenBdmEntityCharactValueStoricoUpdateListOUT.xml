@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmEntityCharactValueStoricoUpdateListOUT>
+	<list_asoc>
+		<asoc>(seq)
+			<id_asoc>(man)(Long)</id_asoc>
+			<list_charact_value>
+				<charact>(seq)
+					<id_asoc_hist>(man)(Long)</id_asoc_hist>
+					<optimist_lock>(man)(Long)</optimist_lock>
+					<iderror>(man)(Long)</iderror>
+					<errormessage>(String)</errormessage>
+					<nom_caracteristica>(String)</nom_caracteristica>
+				</charact>
+			</list_charact_value>
+		</asoc>
+	</list_asoc>
+</CenBdmEntityCharactValueStoricoUpdateListOUT>

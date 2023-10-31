@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!--CenBdiSetElmntTypesRelations-->
+<content>
+	<ParentElmntType>
+		<Cod_Parent_Elmnt>(String[3]) Contiene el código del tipo de elemento padre</Cod_Parent_Elmnt>
+		<Parent_Elmnt_Name>(String[60]) Contiene el nombre del tipo de elemento padre</Parent_Elmnt_Name>
+	</ParentElmntType>
+	<ChildElmntType>
+		<Relations_Id>(Number[10]) Contiene el código identificador del registro con la relación padre-hijo</Relations_Id>
+		<Cod_Child_Elmnt>(String[3]) Contiene el código del tipo de elemento hijo</Cod_Child_Elmnt>
+		<Child_Elmnt_Name>(String[60]) Contiene el nombre del tipo de elemento hijo</Child_Elmnt_Name>
+		<Optimist_Lock>(Number[2]) Contiene un numero de control de actualización</Optimist_Lock>
+	</ChildElmntType>
+</content>
+<!--/CenBdiSetElmntTypesRelations-->

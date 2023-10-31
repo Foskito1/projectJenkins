@@ -1,0 +1,7 @@
+<CenBdiExecuteQuery>
+	<login_name>(String)(man) String con login name del usuario</login_name>
+	<token>(String) Token de acceso</token>
+	<ontology>(String) Ontología </ontology>
+	<query>(String) Query </query>
+	<querytype>(String) SQL/NATIVE) </querytype>
+</CenBdiExecuteQuery>

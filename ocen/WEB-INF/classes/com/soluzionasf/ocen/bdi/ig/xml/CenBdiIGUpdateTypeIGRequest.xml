@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<CenBdiIgUpdateTypeIG>
+<Global>
+	<InsertUpdate> 
+		<TypeIG>(seq)
+			<id_type_info_manage>(man)(Long) Negativo para insertar o id del criterio a actualizar de CENBDT_TYPE_INFO_MANAGE </id_type_info_manage>
+			<id_sort_type>(Long) Tipo de Criterio de ordenación asociado </id_sort_type>
+			<description>(man)(String) Descripción del tipo de ig </description>
+			<active>(Long)</active>
+			<show_node>(Long)</show_node>
+			<cod_plantilla_excel>(String)</cod_plantilla_excel>
+			<optimist_lock> (man) (Long) Control de registro corrupto </optimist_lock>
+		</TypeIG>
+	 </InsertUpdate>
+	 <Delete>
+		<TypeIG>(seq)
+			<id_type_info_manage>(man)(Long) id del criterio a eliminar de CENBDT_TYPE_INFO_MANAGE</id_type_info_manage>
+			<optimist_lock>(man)(Long) Control de registro corrupto en CENBDT_TYPE_INFO_MANAGE</optimist_lock>
+		</TypeIG>
+	 </Delete>
+</Global>
+</CenBdiIgUpdateTypeIG>

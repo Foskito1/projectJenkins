@@ -1,0 +1,1 @@
+CenMan.DeleteFailureType;com.soluzionasf.ocen.man.common.domain.CenManMlDeleteFailureTypeService;com.soluzionasf.ocen.man.common.servlets.CenManMlDeleteFailureTypeRequestDOMImpl

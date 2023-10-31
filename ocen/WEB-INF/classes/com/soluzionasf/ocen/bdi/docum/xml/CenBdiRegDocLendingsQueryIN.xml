@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiRegDocLendingsQuery>
+   <Filter>
+      <n_entrada_op>(String) Operador del campo n_entrada</n_entrada_op>
+      <n_entrada_cond>(Long) Valor del campo n_entrada</n_entrada_cond>
+      <origen>(String) Filtrar sobre registros/planos (REG/PLA).</origen>
+      <localizacion>(String) Condicion de filtro del campo localizacion.</localizacion>
+      <solicitante>(String) Condicion de filtro del campo solicitante.</solicitante>
+      <historico>(Long) Flag mostrar histórico.</historico>
+   </Filter>
+</CenBdiRegDocLendingsQuery>

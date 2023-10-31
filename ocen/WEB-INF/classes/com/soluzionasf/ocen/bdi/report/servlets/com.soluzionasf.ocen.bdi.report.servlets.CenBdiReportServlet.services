@@ -1,0 +1,17 @@
+CENBDI.cenBdiApplyPeriodDate;com.soluzionasf.ocen.bdi.report.domain.CenBdiApplyPeriodDatesService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiApplyPeriodDatesRequestDOMImpl;
+CENBDI.updateReport;com.soluzionasf.ocen.bdi.report.domain.CenBdiReportInsertUpdateService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiReportInsertUpdateRequestDOMImpl;
+CENBDI.calculateDate;com.soluzionasf.ocen.bdi.report.domain.CenBdiCalculateDatesService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiCalculateDatesRequestDOMImpl;
+CENBDI.deleteConfigPanel;com.soluzionasf.ocen.bdi.report.domain.CenBdiConfigPanelDeleteService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiConfigPanelDeleteRequestDOMImpl;
+CENBDI.updateConfigPanel;com.soluzionasf.ocen.bdi.report.domain.CenBdiConfigPanelUpdateService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiConfigPanelInsertUpdateRequestDOMImpl;
+CENBDI.deleteAsocPeriods;com.soluzionasf.ocen.bdi.report.domain.CenBdiDeleteAssociation;com.soluzionasf.ocen.bdi.report.servlets.CenBdiAssocPeriodsDeleteRequestDOMImpl;
+CENBDI.updateAsocPeriods;com.soluzionasf.ocen.bdi.report.domain.CenBdiInsertUpdateAssociation;com.soluzionasf.ocen.bdi.report.servlets.CenBdiAssocPeriodsInsertUpdateRequestDOMImpl;
+CENBDI.manageCriteraMedida;com.soluzionasf.ocen.bdi.report.domain.CenBdiReportCriteriaMeasureService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiReportCriteriaMeasureRequestDOMImpl;
+CENBDI.storeReport;com.soluzionasf.ocen.bdi.report.domain.CenBdiReportStoreService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiReportStoreRequestDOMImpl;
+CENBDI.generateBatchReport;com.soluzionasf.ocen.bdi.report.domain.CenBdiGenBatchReportService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiGenBatchReportRequestDOMImpl;
+CENBDI.updateReportTemplateMulti;com.soluzionasf.ocen.bdi.report.domain.CenBdiReportMultiInsertUpdateService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiReportMultiInsertUpdateRequestDOMImpl;
+CENBDI.deleteStoredReport;com.soluzionasf.ocen.bdi.report.domain.CenBdiReportStoreDeleteService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiReportStoreDeleteRequestDOMImpl;
+CENBDI.sendMailReport;com.soluzionasf.ocen.bdi.report.domain.CenBdiReportSendMailService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiReportFieldsContentRequestDOMImpl;
+CENBDI.updateDestinary;com.soluzionasf.ocen.bdi.report.domain.CenBdiUpdateDestinataryService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiUpdateDestinataryServiceRequestDOMImpl;
+CENBDI.sendMailReportExtra;com.soluzionasf.ocen.bdi.report.domain.CenBdiReportSendMailWithExtraService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiReportStoreSendMailRequestDOMImpl;
+CENBDI.reportValidateSecurite;com.soluzionasf.ocen.bdi.report.domain.CenBdiReportValidateSecuriteService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiReportValidateSecuriteRequestDOMImpl;
+CENBDI.printReport;com.soluzionasf.ocen.bdi.report.domain.CenBdiPrintReportService;com.soluzionasf.ocen.bdi.report.servlets.CenBdiPrintReportServiceRequestDOMImpl;	

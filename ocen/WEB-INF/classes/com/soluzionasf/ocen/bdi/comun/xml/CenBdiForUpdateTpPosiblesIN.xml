@@ -1,0 +1,13 @@
+<CenBdiForUpdateTpPosibles>
+	<ForTpPosibles>(man)
+		<Cod_Sub_Element>(man)(long) Codigo del SubElemento</Cod_Sub_Element>
+		<Row 
+			Cod_Sub_Element="(man)(long) Codigo del SubElemento"
+			Cod_Element="(man)(long) Codigo del Elemento que se relaciona con el SubElemento"
+			Per_Anadir="(man) Flag que indica si la operacion a realizar es añadir"
+			Per_Insertar="(man) Flag que indica si la operacion a realizar es insertar"
+			Per_Sustituir="(man) Flag que indica si la operacion a realizar es sustituir"
+			Optimist_Lock="(Long) Contiene un numero de control de acturalizacion">	(sequence_item)
+		</Row>	
+	</ForTpPosibles>
+</CenBdiForUpdateTpPosibles>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiVirtualTree>
+   <TreeId>(Long)</TreeId>
+   <TreeName>(String)</TreeName>
+   <Module>(String)</Module>
+   <TreeAction>(String)</TreeAction>
+   <TreeItems>
+      <Row Action="" IdVirtualElem="" IdVirtualParent="" CompanyFlag="" IdFunc="" IdFuncParent="">(sequence_item)</Row>
+   </TreeItems>
+</CenBdiVirtualTree>

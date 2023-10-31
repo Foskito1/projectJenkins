@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiUpdateAction>
+   <action>
+      <id_action>(Long) Identificador de la acción</id_action>
+      <cod_action>(man)(String) Código de la acción.</cod_action>
+      <des_action>(String) Descripción de la acción.</des_action>
+      <type_action>(String) Tipo de la acción.</type_action>
+      <optimist_lock>(Long) Optimist lock.</optimist_lock>
+      <action>(String) Acción a realizar. (A- alta, B-baja, M-modificación)</action>
+      <fields_in>
+         <Row field_in="" type_data_in="">(sequence_item)</Row>
+      </fields_in>
+      <fields_out>
+         <Row field_out="" type_data_out="">(sequence_item)</Row>
+      </fields_out>
+      <interfaces>
+         <Row order="Orden de la interfase." id_mod_interface="Identificador del módulo de interfase." id_interface="Identificador de la interfase.">(sequence_item)</Row>
+      </interfaces>
+   </action>
+</CenBdiUpdateAction>

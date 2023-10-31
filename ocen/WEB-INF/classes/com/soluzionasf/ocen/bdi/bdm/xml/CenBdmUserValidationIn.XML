@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<CenBdmUserValidation>
+	<atributo>
+	   <cod_atributo>(man)(long)Codigo del atributo</cod_atributo>
+	   <cod_medida>(man)(long)Codigo de la medida</cod_medida>
+	   <fecha_desde>(DateTimeI18n)Fecha desde</fecha_desde>
+	   <fecha_hasta>(DateTimeI18n)Fecha hasta</fecha_hasta>
+	   <valor_atributo>(String)Valor del atributo</valor_atributo>(seq)
+	</atributo>
+</CenBdmUserValidation>

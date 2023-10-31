@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenTibSirapPVMC>
+	<SirapPVMC>
+		<ListaCentrales>
+			(sequence_item)(man)
+			<CodigoCentral>(String)(man)</CodigoCentral>
+			<ListaFechaHora>
+				(sequence_item)(man)
+				<FechaHora>(DateTimeI18n)(man)</FechaHora>
+				<PotenciaPVMC>(Double)(man)</PotenciaPVMC>
+			</ListaFechaHora>
+		</ListaCentrales>
+	</SirapPVMC>
+</CenTibSirapPVMC>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!--CenBdiSetElmntTechChrtcsIn-->
+<CenBdiSetElmntTechChrtcsIn>
+	<ElmntTypeHeaderSet>
+		<Cod_Elmnt_Type>(String) Contiene el código del tipo de elemento</Cod_Elmnt_Type>
+		<Elmnt_Table>(String) Contiene la tabla asociada al tipo de elemento en caso de que sea parametrizable</Elmnt_Table>
+		<Optimist_Lock>(Long) Contiene un numero de control de actualización</Optimist_Lock>
+	</ElmntTypeHeaderSet>
+	<TechCharDataSet>(seq)
+		<Id_Rest_Type>(Long) Contiene el id de la característica para el tipo de elemento</Id_Rest_Type>
+		<Tech_Char_Order>(Long) Contiene el orden de la característica para el tipo de elemento</Tech_Char_Order>
+		<Cod_Tech_Char>(Long) Contiene el código de la característica</Cod_Tech_Char>
+		<Tech_Char_Name>(String) Contiene el nombre o descripción corta de la característica.</Tech_Char_Name>
+		<Tech_Char_Des>(String) Contiene la descripción larga de la característica.</Tech_Char_Des>
+		<Obligatory>(String) Contiene 'S' si la ctca es de caracter obligatorio o 'N' en caso contrario.</Obligatory>
+		<Decod_Against>(String) Contiene la tabla contra la que decodificador el valor de la ctca.</Decod_Against>
+		<Cod_Data_Type>(String) Contiene el código del tipo de dato que puede tomar la ctca.</Cod_Data_Type>
+		<Size>(Long) Contiene el tamaño en nº de caracteres que puede alcanzar el dato.</Size>
+		<Num_Dec>(Long) Contiene el número de decimales que puede tomar el valor de la característica.</Num_Dec>
+		<V_Max>(Double) Contiene el valor máximo que puede alcanzar la característica.</V_Max>
+		<V_Min>(Double) Contiene el valor mínimo que puede tener la característica.</V_Min>
+		<Id_Rest_Type_Asoc>(Long) Contiene el id de la característica para el tipo de elemnto a la que esta asociada esta.</Id_Rest_Type_Asoc>
+		<Modulo>(String) Modulo propietario de la caracteristica.</Modulo>
+		<Flag_Multiple>Contiene 'S' si la ctca. toma valores múltiples, 'N' o cualquier otro valor en caso contrario.</Flag_Multiple>
+		<Action>(String) Contiene 'A' si la característica es añadida, 'M' si se modifica o 'D' si hay que eliminarla.</Action>
+        <b_decodif_filtro>(String) 'S' si es filtrable y otra cosa ('N' por defecto) si no lo es.</b_decodif_filtro>
+        <filters>
+            <filter>(seq)
+		       <id_tipo_resto_asoc>(man)(Long) Id_Tipo_Resto de la característica asociada </id_tipo_resto_asoc>
+		       <nom_filtro>(man)(String) Nombre de la columna de la tabla. Actuará como filtro. </nom_filtro>
+               <b_obligatory>(String) Indica si es obligatorio filtrar por este campo o no.</b_obligatory>
+ 		    </filter>
+        </filters>
+	</TechCharDataSet>
+</CenBdiSetElmntTechChrtcsIn>
+<!--/CenBdiSetElmntTechChrtcsIn-->

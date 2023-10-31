@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdiUpdateFilter>
+	<filtro>
+		<optimist_lock>(Long)</optimist_lock>
+	</filtro>
+	<seccion>
+		<optimist_lock>(Long)</optimist_lock>
+	</seccion>
+</CenBdiUpdateFilter>
+</xml>

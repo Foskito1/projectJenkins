@@ -1,0 +1,23 @@
+<searchModuleEntities>	
+	<moduleList>
+		<module>(seq)
+			<codModule>(String)</codModule>
+			<nameType>(String)</nameType>
+			<codEntity>(String)</codEntity>
+		</module> 
+	</moduleList>
+	<entityTypeList>
+		<entityType>(seq)
+			<codModule>(String)</codModule>
+			<codEntity>(String)</codEntity>
+			<nameType>(String)</nameType>
+		</entityType> 
+	</entityTypeList>
+	<entityStatusList>
+		<entityStatus>(seq)
+			<codModule>(String)</codModule>
+			<codEntityStatus>(String)</codEntityStatus>
+			<nameType>(String)</nameType>
+		</entityStatus> 
+	</entityStatusList>	
+</searchModuleEntities>

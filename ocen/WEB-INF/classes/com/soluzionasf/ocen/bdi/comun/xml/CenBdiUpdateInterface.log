@@ -1,0 +1,20 @@
+
+**************************************************************************
+* Date= 28-02-2003 13:40:26:000000***********************
+Input method:[CenBdiUpdateInterface]
+URL:[http://sfnt1060/servlet/com.soluzionasf.ocen.bdi.comun.servlets.CenBdiServlet]
+[<?xml version="1.0" encoding="ISO-8859-1"?><content method="CenBdiUpdateInterface" sessionId="sfnt1060--2362b058:f3a464bb9c:-7ffa" authorityId="sfnt1060.OCEN.ssn-1" user="3" userName="administrator BDI" language="es" country="ES"><Modules><Destine_Module>BDI</Destine_Module><Source_Module>BDI</Source_Module><Id_Module>0</Id_Module></Modules><Format><Fields Type="CMP_IDA" Data="CAMPO1" Order="1" Id_Data="0"></Fields><Fields Type="CMP_IDA" Data="CAMPO2" Order="2" Id_Data="0"></Fields><Fields Type="CMP_IDA" Data="CAMPO3" Order="3" Id_Data="0"></Fields><Fields Type="SEP_IDA" Data=":,:" Order="1" Id_Data="0"></Fields><Fields Type="CMP_VTA" Data="VUELTA01" Order="1" Id_Data="0"></Fields><Fields Type="CMP_VTA" Data="VUELTA02" Order="2" Id_Data="0"></Fields><Fields Type="CMP_VTA" Data="VUELTA03" Order="3" Id_Data="0"></Fields><Fields Type="LEN_VTA" Data="9" Order="1" Id_Data="0"></Fields><Fields Type="LEN_VTA" Data="7" Order="2" Id_Data="0"></Fields><Fields Type="LEN_VTA" Data="5" Order="3" Id_Data="0"></Fields></Format><Servlet empty="0"></Servlet><View empty="0"></View><File empty="0"></File><Oplink empty="1"><Partir_Registro>S</Partir_Registro><Completar_Trama>S</Completar_Trama><Tamano_Trama>23452345</Tamano_Trama><Enviar_Recibir_Tramas>A</Enviar_Recibir_Tramas><Varias_Tramas>S</Varias_Tramas><Field_Length_Out>0</Field_Length_Out><Field_Separator_Out>-1</Field_Separator_Out><Field_Out>0</Field_Out><Field_Length_In>-1</Field_Length_In><Field_Separator_In>0</Field_Separator_In><Field_In>0</Field_In><Password>TUTUTUTU</Password><User>YOYOYOYO</User><Server_Name>UPEPITOP</Server_Name><Server_Id>PP</Server_Id><Business_Function>PPPPPPPP</Business_Function><Interface_Id>0</Interface_Id></Oplink><Interface><Formato_Fecha>65481</Formato_Fecha><Separador_Decimales>.</Separador_Decimales><Directo>S</Directo><Online>S</Online><Batch>S</Batch><Active>S</Active><Periode>7</Periode><Periode_Num>1</Periode_Num><End_Date>2003-02-28 13:33:27</End_Date><Initial_Date>2003-02-28 13:33:24</Initial_Date><Interface_Class_Id>3</Interface_Class_Id><Interface_Mod_Id>0</Interface_Mod_Id><Interface_Des>NO Vale Es una prueva</Interface_Des><Optimist_Lock>0</Optimist_Lock><Interface_Id>0</Interface_Id></Interface></content>
+
+]
+[Content-Type: application/x-www-form-urlencoded 
+Accept-Encoding: compress 
+Content-Encoding: compress 
+
+]
+**************************************************************************
+
+**************************************************************************
+* Date= 28-02-2003 13:40:26:593000***********************
+Output method:CenBdiUpdateInterface, URL:http://sfnt1060/servlet/com.soluzionasf.ocen.bdi.comun.servlets.CenBdiServlet
+<?xml version="1.0" encoding="ISO-8859-1"?><content authorityId="sfnt1060.OCEN.ssn-1" country="ES" errormessage="" iderror="0" language="es" method="CenBdiUpdateInterface" profileId="0" sessionId="sfnt1060--2362b058:f3a464bb9c:-7ffa" user="3" userName="administrator BDI"><insert value="true"></insert></content>
+**************************************************************************

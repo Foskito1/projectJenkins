@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CenBdmMeasurementsRelative>
+	<Measure>(sequence_item)
+		<Cod_Measure>(Long) Id del formato de descarga</Cod_Measure>
+		<Des_Measure>(String) Id del formato de descarga</Des_Measure>
+		<Date_Start>(DateTime) Fecha desde la que es válida</Date_Start>
+		<Date_End>(DateTime) Fecha hasta la que es válida</Date_End>
+		<ID_Time_Zone>(Long) Time_ID_Zona_Horaria</ID_Time_Zone>
+	</Measure>
+	<Pagination>
+		<Id_Query_In_Progress>(Long) Id de la consulta</Id_Query_In_Progress>
+	</Pagination>
+</CenBdmMeasurementsRelative>
